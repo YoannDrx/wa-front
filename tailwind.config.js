@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/daisyui/dist/**/*.js', 'node_modules/react-daisyui/dist/**/*.js'
   ],
   theme: {
     extend: {
@@ -11,7 +12,26 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '2xl': '1280px',
+      }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui:{
+    themes:[
+      {
+        wa: {
+          primary: "#043629",
+          secondary: "#FFFD82",
+          accent: "#E84855",
+          neutral: "#043629",
+          error: "#E84855",
+          "base-100": "#ffffff",
+          'primary-content': '#ffffff',
+        }
+      },
+      "light"
+    ]
+  }
 }
