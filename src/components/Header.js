@@ -1,12 +1,15 @@
 import Image from "next/image";
-import { Button, Drawer, Menu, Navbar } from "react-daisyui";
+import { Button, Drawer, Dropdown, Menu, Navbar } from "react-daisyui";
 import { useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
+import { readableLocale } from '../services/i18n';
 
 export default function Header({ children, light = false, ...args }) {
     const [visible, setVisible] = useState(false);
     const { t } = useTranslation();
+    const router = useRouter()
 
     const toggleVisible = () => {
         setVisible(!visible);
@@ -30,6 +33,18 @@ export default function Header({ children, light = false, ...args }) {
         </Menu.Item>
         <Menu.Item>
             <Link href={t("/contact")}>{t('Contact')}</Link>
+        </Menu.Item>
+        <Menu.Item>
+            <Dropdown className="p-0" hover horizontal="left">
+                <Dropdown.Toggle button={false} className="py-2 px-4">
+                    {readableLocale(router.locale)}
+                </Dropdown.Toggle>
+                <Dropdown.Menu className="w-52 mt-4">
+                    <Link href={router.pathname} locale='fr' className="p-2">Français</Link>
+                    <Link href={router.pathname} locale='en' className="p-2">English</Link>
+                    <Link href={router.pathname} locale='de' className="p-2">Deutsch</Link>
+                </Dropdown.Menu>
+            </Dropdown>
         </Menu.Item>
     </>
 
