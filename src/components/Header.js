@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
-import { readableLocale } from '../services/i18n';
+import { readableLocale, reversePathnameTranslate } from '../services/i18n';
 
 export default function Header({ children, light = false, ...args }) {
     const [visible, setVisible] = useState(false);
@@ -40,9 +40,9 @@ export default function Header({ children, light = false, ...args }) {
                     {readableLocale(router.locale)}
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="w-52 mt-4">
-                    <Link href={router.pathname} locale='fr' className="p-2">Français</Link>
-                    <Link href={router.pathname} locale='en' className="p-2">English</Link>
-                    <Link href={router.pathname} locale='de' className="p-2">Deutsch</Link>
+                    <Link href={t(router.pathname, {lng:'fr'})} locale='fr' className="p-2">Français</Link>
+                    <Link href={t(router.pathname, {lng:'en'})} locale='en' className="p-2">English</Link>
+                    <Link href={t(router.pathname, {lng:'de'})} locale='de' className="p-2">Deutsch</Link>
                 </Dropdown.Menu>
             </Dropdown>
         </Menu.Item>
