@@ -49,3 +49,14 @@
         @apply rounded-full;
     }
 }
+
+
+.jumbo-background {
+    background: url('/assets/home/pattern.png'), #3B3D48;
+    background-size: cover;
+    color: white;
+}
+
+.menu {
+    color: white;
+}

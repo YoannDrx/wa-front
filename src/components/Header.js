@@ -64,14 +64,14 @@ export default function Header({ children, light = false, ...args }) {
                     <Navbar className={`container ${light ? "text-white" : "text-base-content"}`}>
                         <div className="flex-none lg:hidden">
                             <Button shape="square" color="ghost" onClick={toggleVisible}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-white">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                             </Button>
                         </div>
                         <div className="flex-1 px-2 mx-2">
                             <Link href={"/"}>
-                                <Image src={"/assets/logo.png"} alt={"Weil associés avocats"} width={180} height={48} />
+                                <Image src={"/assets/logo_white.png"} alt={"Weil associés avocats"} width={84} height={34} />
                             </Link>
                         </div>
                         <div className="flex-none hidden lg:block">

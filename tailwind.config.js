@@ -22,10 +22,10 @@ module.exports = {
     themes:[
       {
         wa: {
-          primary: "#043629",
+          primary: "#37749E",
           secondary: "#FFFD82",
           accent: "#E84855",
-          neutral: "#043629",
+          neutral: "#2E2E2E",
           error: "#E84855",
           "base-100": "#ffffff",
           'primary-content': '#ffffff',
