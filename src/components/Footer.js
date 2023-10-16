@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Footer = () => {
-    return <div className={'bg-primary mt-6'}>
+    return <div className={'bg-[#1C3D54] mt-6'}>
         <footer className="footer py-10 container text-white">
             <div>
                 <span className="footer-title">Weil associés</span>
