@@ -1,12 +1,16 @@
+import FR from "@/components/lang/FR"
+import UK from "@/components/lang/UK"
+import DE from "@/components/lang/DE"
+
 export const readableLocale = locale => {
     switch (locale) {
         case "fr":
-            return "Français"
+            return <div className="gap-2 flex"><FR/> Français</div>
         case "en":
-            return "English"
+            return <div className="gap-2 flex"><UK/> English</div>
         case "de":
-            return "Deutsch"
+            return <div className="gap-2 flex"><DE/> Deutsch</div>
         default:
-            return "Français"
+            return <div className="gap-2 flex"><FR/> Français</div>
     }
 }

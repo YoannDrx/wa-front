@@ -5,6 +5,9 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { readableLocale, reversePathnameTranslate } from '../services/i18n';
+import FR from '@/components/lang/FR';
+import UK from '@/components/lang/UK';
+import DE from '@/components/lang/DE';
 
 const LangMenu = () => {
     const router = useRouter()
@@ -15,9 +18,9 @@ const LangMenu = () => {
             {readableLocale(router.locale)}
         </Dropdown.Toggle>
         <Dropdown.Menu>
-            <Link href={t(router.pathname, { lng: 'fr' })} locale='fr' className="p-2">Français</Link>
-            <Link href={t(router.pathname, { lng: 'en' })} locale='en' className="p-2">English</Link>
-            <Link href={t(router.pathname, { lng: 'de' })} locale='de' className="p-2">Deutsch</Link>
+            <Link href={t(router.pathname, { lng: 'fr' })} locale='fr' className="p-2 gap-2 flex"><FR/> Français</Link>
+            <Link href={t(router.pathname, { lng: 'en' })} locale='en' className="p-2 gap-2 flex"><UK /> English</Link>
+            <Link href={t(router.pathname, { lng: 'de' })} locale='de' className="p-2 gap-2 flex"><DE /> Deutsch</Link>
         </Dropdown.Menu>
     </Dropdown>
 }
