@@ -3,6 +3,7 @@ import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 import en from "@/lang/en"
 import de from "@/lang/de"
+import fr from "@/lang/fr"
 import "@/styles/globals.css"
 import { useRouter } from 'next/router'
 import { useEffect } from "react"
@@ -16,6 +17,9 @@ i18n
         },
         de: {
             translation: de
+        },
+        fr: {
+            translation: fr
         },
     },
     lng: "en", // if you're using a language detector, do not define the lng option
