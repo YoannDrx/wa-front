@@ -18,7 +18,7 @@ const Footer = () => {
 						<br />
 						info@weil-paris.fr
 					</div>
-					<div>
+					<div className="leftblue">
 						<h3>{t("Pratique Juridique")}</h3>
 						<Link href="#">{t("Droit du travail & de l'emploi")}</Link>
 						<Link href="#">{t("Fusions & Acquisitions")}</Link>
@@ -30,7 +30,7 @@ const Footer = () => {
 						<Link href="#">{t("Délinquance financière")}</Link>
 					</div>
 
-					<div>
+					<div className="leftblue">
 						<h3>{t("À propos de notre cabinet")}</h3>
 						<Link href="#">{t("Ce que nous faisons")}</Link>
 						<Link href="#">{t("Notre histoire")}</Link>
@@ -42,7 +42,7 @@ const Footer = () => {
 						<Link href="#">{t("Pro bono")}</Link>
 					</div>
 
-					<div>
+					<div className="leftblue">
 						<h3>{t("Ressources")}</h3>
 						<Link href="#">{t("Articles & Publications")}</Link>
 						<Link href="#">{t("Rapport sur la propriété intellectuelle 2022")}</Link>
