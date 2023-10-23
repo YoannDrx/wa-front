@@ -1,5 +1,5 @@
 import { Button as BB } from "react-daisyui";
 
-export default function Button({ ...props }) {
-  return <BB {...props} className="rounded-none font-light" shape="square" wide={true} />;
+export default function Button({ className, ...props }) {
+  return <BB {...props} className={`rounded-none font-light ${className}`} shape="square" wide={true} />;
 }
