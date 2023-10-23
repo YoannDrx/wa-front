@@ -33,55 +33,44 @@ const LangMenu = () => {
   );
 };
 
+const MenuItemLink = ({ href, label }) => {
+  const router = useRouter();
+  const { t } = useTranslation();
+  return (
+    <Menu.Item>
+      <Link href={href} className={`font-semibold text-lg ${router.pathname === href ? "underblueNav" : ""}`}>
+        {t(label)}
+      </Link>
+    </Menu.Item>
+  );
+};
+
+const MenuItems = () => {
+  const { t } = useTranslation();
+  const menuData = [
+    { href: "/", label: "Accueil" },
+    { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
+    { href: "/partenaires", label: "Partenaires" },
+    { href: "/expertise", label: "Expertise" },
+    { href: "/carriere", label: "Carriere" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  return (
+    <>
+      {menuData.map((item, index) => (
+        <MenuItemLink key={index} {...item} />
+      ))}
+    </>
+  );
+};
+
 export default function Header({ children, light = false, ...args }) {
   const [visible, setVisible] = useState(false);
-  const { t } = useTranslation();
-  const router = useRouter();
 
   const toggleVisible = () => {
     setVisible(!visible);
   };
-
-  const MenuItems = () => (
-    <>
-      <Menu.Item>
-        <Link href={"/"} className={`font-semibold text-lg ${router.pathname === "/" ? "underblueNav" : ""}`}>
-          {t("Accueil")}
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link
-          href={t("/qui-sommes-nous")}
-          className={`font-semibold text-lg ${router.pathname === "/qui-sommes-nous" ? "underblueNav" : ""}`}>
-          {t("Qui sommes-nous")}
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link
-          href={t("/partenaires")}
-          className={`font-semibold text-lg ${router.pathname === "/partenaires" ? "underblueNav" : ""}`}>
-          {t("Partenaires")}
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link
-          href={t("/expertise")}
-          className={`font-semibold text-lg ${router.pathname === "/expertise" ? "underblueNav" : ""}`}>
-          {t("Expertise")}
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link href={t("/carriere")} className={`font-semibold text-lg ${router.pathname === "/carriere" ? "underblueNav" : ""}`}>
-          {t("Carriere")}
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link href={t("/contact")} className={`font-semibold text-lg ${router.pathname === "/contact" ? "underblueNav" : ""}`}>
-          {t("Contact")}
-        </Link>
-      </Menu.Item>
-    </>
-  );
 
   return (
     <Drawer
