@@ -1,8 +1,7 @@
 import Button from "@/components/Button";
 import Image from "next/image";
 import { Trans, useTranslation } from "react-i18next";
-import ArticleCardOne from "@/components/ArticleCards/ArticleCardOne";
-import ArticleCardTwo from "@/components/ArticleCards/ArticleCardTwo";
+import ArticleCard from "@/components/ArticleCard";
 
 const Jumbo = () => {
   const { t } = useTranslation();
@@ -84,24 +83,19 @@ function Home() {
       <div className="container py-20">
         <h2 className="text-center underblue">Articles</h2>
         <div className="flex flex-wrap gap-4 justify-center">
-          <ArticleCardOne
+          <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/image-test.jpg"
             date="01.01.2023"
           />
-          <ArticleCardTwo
+          <ArticleCard
             className="min-w-[256px]"
-            title={t("Protection des données et de la vie privée sur le lieu de travail")}
+            title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/image-test.jpg"
             date="01.01.2023"
-            description={t(
-              "Avec une nouvelle loi promulguée le 30 juillet 2018, le droit français comprend une disposition législative sur la protection du secret des affaires. Avant cette date, le secret des affaires n'était pas défini et était protégé...."
-            )}
-            buttonText={t("En savoir plus")}
-            position="top"
           />
-          <ArticleCardOne
+          <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/image-test.jpg"
