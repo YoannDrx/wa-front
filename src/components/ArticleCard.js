@@ -3,10 +3,12 @@ import Image from "next/image";
 import Button from "./Button";
 import { t } from "i18next";
 import { useIsMobile } from "../../utils/useIsMobile";
+import { useArticleCardContext } from "../../contexts/ArticleCardContext";
 
 export default function ArticleCard({ backgroundImage, date, title, href }) {
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useIsMobile();
+  const { setOpenedCard } = useArticleCardContext();
 
   const day = new Date(date).getDate();
   const month = new Date(date).toLocaleString("fr-FR", { month: "short" }).toUpperCase().replace(".", "");
@@ -14,6 +16,7 @@ export default function ArticleCard({ backgroundImage, date, title, href }) {
   const toggleHover = () => {
     if (isMobile) {
       setIsHovered(!isHovered);
+      setOpenedCard(title);
     }
   };
 
