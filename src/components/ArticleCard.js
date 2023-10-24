@@ -1,25 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
 import { t } from "i18next";
+import { useIsMobile } from "../../utils/useIsMobile";
 
 export default function ArticleCard({ backgroundImage, date, title, href }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile();
 
   const day = new Date(date).getDate();
   const month = new Date(date).toLocaleString("fr-FR", { month: "short" }).toUpperCase().replace(".", "");
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 400);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const toggleHover = () => {
     if (isMobile) {
