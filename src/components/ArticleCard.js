@@ -8,7 +8,7 @@ import { useArticleCardContext } from "../../contexts/ArticleCardContext";
 export default function ArticleCard({ backgroundImage, date, title, href }) {
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useIsMobile();
-  const { setOpenedCard } = useArticleCardContext();
+  const { openedCard, setOpenedCard } = useArticleCardContext();
 
   const day = new Date(date).getDate();
   const month = new Date(date).toLocaleString("fr-FR", { month: "short" }).toUpperCase().replace(".", "");
