@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ExpertiseCard from "@/components/ExpertiseCard";
 import PageJumbo from "@/components/PageJumbo";
 
-export default function WhoWeAre() {
+export default function Expertise() {
   const { t } = useTranslation();
 
   const expertiseItems = [
