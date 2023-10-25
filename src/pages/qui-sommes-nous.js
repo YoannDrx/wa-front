@@ -1,58 +1,46 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
-import TeamCard from "@/components/TeamCard";
+import { Trans } from "react-i18next";
+import { t } from "i18next";
 
 export default function WhoWeAre() {
-  const { t } = useTranslation();
-
-  const teamMembers = [
-    {
-      image: "/assets/team/test.png",
-      name: "BRUNO WEIL",
-      references: "AVOCAT (1999)",
-      description: "LL.M. European Business Law (Pallas Consortium)",
-    },
-    {
-      image: "/assets/team/test.png",
-      name: "ERIC WEIL",
-      references: "Avocat (1996), Rechtsanwalt (1999), Attorney at Law (2002)",
-      description: "LL.M. (Berlin et Duke-Law)",
-    },
-    {
-      image: "/assets/team/test.png",
-      name: "PATRICIA VINCENT",
-      references: "Avocat (2005)",
-      description: "LL.M. (Postdam)",
-    },
-    {
-      image: "/assets/team/test.png",
-      name: "MATHILDE HOUET-WEIL",
-      references: "Avocat (1996), Attorney at Law (2002)",
-      description: "LL.M. (Duke-Law)",
-    },
-    {
-      image: "/assets/team/test.png",
-      name: "HEINZ WEIL",
-      references: "Avocat (1986), Rechtsanwalt (1971)",
-      description: "Ancien Président du Conseil des Barreaux de l'Union Européenne (CCBE)",
-    },
-  ];
-
   return (
     <div>
-      <PageJumbo titleKey="NOS ASSOCIÉS" textKey="teamPresentation" />
+      <PageJumbo titleKey="PRESENTATION" textKey="firmPresentation" />
       <div className="container py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {teamMembers.map((member, index) => (
-            <TeamCard
-              key={index}
-              image={member.image}
-              name={member.name}
-              references={member.references}
-              description={member.description}
+        <div className="flex flex-col">
+          {/* Section 1 */}
+          <div className="flex my-10">
+            <h2 className="text-2xl font-bold mr-10">{t("NOUS SOMMES DEDIES A VOTRE SUCCES")}</h2>
+            <Trans
+              i18nKey={"nous-sommes-dedies-a-votre-succes-description"}
+              components={[<span className="font-bold" key="0"></span>]}
             />
-          ))}
+          </div>
+          {/* Section 2 */}
+          <div className="flex flex-row-reverse my-10">
+            <h2 className="text-2xl font-bold ml-10">{t("NOUS SOMMES INTERNATIONAUX")}</h2>
+            <Trans
+              i18nKey={"nous-sommes-internationnaux-description"}
+              components={[<span className="font-bold" key="0"></span>]}
+            />
+          </div>
+          {/* Section 3 */}
+          <div className="flex my-10">
+            <h2 className="text-2xl font-bold mr-10">{t("PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE")}</h2>
+            <Trans
+              i18nKey={"plus-loin-plus-intelligent-plus-rapide-description"}
+              components={[<span className="font-bold" key="0"></span>]}
+            />
+          </div>
+          {/* Section 4 */}
+          <div className="flex flex-row-reverse my-10">
+            <h2 className="text-2xl font-bold ml-10">{t("VOTRE CONFIANCE NOUS HONORE")}</h2>
+            <Trans
+              i18nKey={"votre-confiance-nous-honore-description"}
+              components={[<span className="font-bold" key="0"></span>]}
+            />
+          </div>
         </div>
       </div>
     </div>
