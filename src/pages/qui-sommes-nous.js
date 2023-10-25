@@ -10,9 +10,7 @@ const ExpertiseJumbo = () => {
       <div className="container text-center pt-24">
         <h1 className="underblue">{t("NOTRE EXPERTISE")}</h1>
         <p>
-          {t(
-            "Our goal is very simple : To provide successful businesses, individuals and entreprenors with high-level tailored services to solve their problems. The law is constantely evolving, along with related developments in your industry and the larger economy, may affect you and your business. That’s why we are making a point to always go further, work smarter and always act swiftly with your best interest in mind and greatest attention to detail."
-          )}
+          <Trans i18nKey="ourGoal" components={[<span className="font-bold" key="0"></span>]} />
         </p>
       </div>
     </div>
@@ -22,14 +20,14 @@ const ExpertiseJumbo = () => {
 export default function WhoWeAre() {
   const { t } = useTranslation();
   const expertiseItems = [
-    { image: "/assets/home/image-test.jpg", title: t("Droit social & Restructurations") },
-    { image: "/assets/home/image-test.jpg", title: t("Fusions & acquisitions") },
-    { image: "/assets/home/image-test.jpg", title: t("Corporate & Regulatory") },
-    { image: "/assets/home/image-test.jpg", title: t("Contentieux,\n Médiation & Arbitrage international") },
-    { image: "/assets/home/image-test.jpg", title: t("Procédures collectives") },
-    { image: "/assets/home/image-test.jpg", title: t("Droit commercial & Concurrence") },
-    { image: "/assets/home/image-test.jpg", title: t("IP, Droit du numérique, Tech & Data") },
-    { image: "/assets/home/image-test.jpg", title: t("Droit pénaldes affaires") },
+    { image: "/assets/home/image-test.jpg", title: t("DROIT SOCIAL & RESTRUCTURATION") },
+    { image: "/assets/home/image-test.jpg", title: t("FUSIONS & ACQUISITIONS") },
+    { image: "/assets/home/image-test.jpg", title: t("CORPORATE & RÉGLEMENTAIRE") },
+    { image: "/assets/home/image-test.jpg", title: t("CONTENTIEUX, MÉDIATION & ARBITRAGE INTERNATIONAL") },
+    { image: "/assets/home/image-test.jpg", title: t("PROCÉDURES COLLECTIVES") },
+    { image: "/assets/home/image-test.jpg", title: t("DROIT COMMERCIAL & CONCURRENCE") },
+    { image: "/assets/home/image-test.jpg", title: t("IP, DROIT DU NUMÉRIQUE, TECH & DATA") },
+    { image: "/assets/home/image-test.jpg", title: t("DROIT PÉNAL DES AFFAIRES") },
   ];
 
   return (
