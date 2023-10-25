@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import TeamCard from "@/components/TeamCard";
 
-export default function WhoWeAre() {
+export default function Partners() {
   const { t } = useTranslation();
 
   const teamMembers = [
