@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className={"bg-[#1C3D54] mt-6"}>
+      <div className={"bg-[#1C3D54]"}>
         <footer className="footer py-10 container text-white font-light">
           <div className="leading-6">
             <Image src={"/assets/logo_white.png"} width={168} height={67} alt={"logo weil & associés"} />
