@@ -1,35 +1,33 @@
 import React from "react";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
-import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <div>
       <PageJumbo titleKey="INFORMATIONS PRATIQUES" textKey="" />
       <div className="container py-20 flex">
         <div className="w-1/2 px-5">
-          <h2 className="text-xl font-bold text-primary">Comment nous trouver ?</h2>
+          <h2 className="text-xl font-bold text-primary">{t("Comment nous trouver")} ?</h2>
           <p className="text-md leading-normal">
-            Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L&apos;Etoile.Ils sont situés au centre du
-            quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de
-            l&apos;Avenue Carnot et de la Porte Maillot.La station de Métro ARGENTINE (ligne 1) est proche. La station du RER
-            Charles de Gaulle - Etoile se trouve à 5 minutes à pied.
+            <Trans i18nKey="info-contact" />
           </p>
           <p className="text-md leading-normal">
-            <span className="font-bold">Aéroport Charles de Gaulle :</span>
+            <span className="font-bold">{t("Aéroport Charles de Gaulle")} :</span>
             <br />
-            Taxi (30 minutes)
+            {t("Taxi (30 minutes)")}
             <br />
-            Le car Air France en direction de l&apos;ETOILE (30 minutes de trajet et 5 minutes à pied)
+            {t("Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
           </p>
           <p className="text-md leading-normal">
-            <span className="font-bold">Aéroport d&apos;Orly :</span>
+            <span className="font-bold">{t("Aéroport d'Orly ")}:</span>
             <br />
-            Taxi (40 minutes)
+            {t("Taxi (40 minutes)")}
             <br />
-            Hôtels : De nombreux hôtels à proximité. Réservation possible.
+            {t("Hôtels : De nombreux hôtels à proximité. Réservation possible.")}
           </p>
         </div>
         <div className="w-1/2 px-5">
@@ -37,7 +35,6 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="bg-[#2E2E2E] flex">
         <ContactForm />
         <div className="w-1/2 px-5 relative">

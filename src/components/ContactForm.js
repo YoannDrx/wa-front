@@ -1,14 +1,17 @@
 import React from "react";
 import Button from "@/components/Button";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-1/2 px-5 py-10 px-40">
-      <h2 className="text-xl font-bold underblue text-white text-center mb-5">Restons en Contact</h2>
+      <h2 className="text-xl font-bold underblue text-white text-center mb-5">{t("Restons en Contact")}</h2>
       <form>
         <div className="mb-4">
           <label className="block text-gray-600 text-xs font-bold mb-2" htmlFor="name">
-            Nom
+            {t("Nom")}
           </label>
           <input
             className="bg-[#2E2E2E] text-gray-600 placeholder-gray-600 w-full py-2 px-3 border border-gray-600 focus:border-primary rounded"
@@ -19,7 +22,7 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-gray-600 text-xs font-bold mb-2" htmlFor="email">
-            Email
+            {t("Email")}
           </label>
           <input
             className="bg-[#2E2E2E] text-gray-600 placeholder-gray-600 w-full py-2 px-3 border border-gray-600 focus:border-primary rounded"
@@ -30,17 +33,17 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-gray-600 text-xs font-bold mb-2" htmlFor="message">
-            Message
+            {t("Message")}
           </label>
           <textarea
             className="bg-[#2E2E2E] text-gray-600 placeholder-gray-600 w-full py-2 px-3 border border-gray-600 focus:border-primary rounded"
             id="message"
-            placeholder="...votre message"
+            placeholder={t("Écrivez ici votre message")}
             rows="4"></textarea>
         </div>
         <div className="flex justify-end">
           <Button className={"w-40"} color="primary">
-            Envoyer
+            {t("Envoyer")}
           </Button>
         </div>
       </form>
