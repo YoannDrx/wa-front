@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageJumbo from "@/components/PageJumbo";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { t } from "i18next";
 
 export default function WhoWeAre() {
+  const { i18n } = useTranslation();
+  useEffect(() => {}, [i18n.language]);
+
   return (
     <div>
       <PageJumbo titleKey="PRESENTATION" textKey="firmPresentation" />
