@@ -30,8 +30,8 @@ export default function ArticleCard({ backgroundImage, date, title, href }) {
         src={backgroundImage}
         alt="Article Background"
         className="absolute w-full h-full object-cover"
-        layout="fill"
-        objectFit="cover"
+        width={200}
+        height={200}
       />
       <div
         className={`absolute bottom-0 left-0 w-full h-1/4 bg-black bg-opacity-80 transition-all duration-500 ${

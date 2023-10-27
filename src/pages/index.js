@@ -86,19 +86,19 @@ function Home() {
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/home/image-test.jpg"
+            backgroundImage="/assets/team/bruno-weil.png"
             date="01.01.2023"
           />
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/home/image-test.jpg"
+            backgroundImage="/assets/team/bruno-weil.png"
             date="01.01.2023"
           />
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/home/image-test.jpg"
+            backgroundImage="/assets/team/bruno-weil.png"
             date="01.01.2023"
           />
         </div>

@@ -6,7 +6,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-1/2 px-5 py-10 px-40">
+    <div className="w-1/2 px-5 py-10 px-40 ">
       <h2 className="text-xl font-bold underblue text-white text-center mb-5">{t("Restons en Contact")}</h2>
       <form>
         <div className="mb-4">
