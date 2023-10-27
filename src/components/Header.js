@@ -50,7 +50,7 @@ const MenuItems = () => {
   const menuData = [
     { href: "/", label: "Accueil" },
     { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
-    { href: "/partenaires", label: "Partenaires" },
+    { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
     { href: "/carriere", label: "Carriere" },
     { href: "/contact", label: "Contact" },
