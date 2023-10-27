@@ -1,4 +1,3 @@
-const BiSection = () => {
-};
+const BiSection = () => {};
 
-export default BiSection
+export default BiSection;

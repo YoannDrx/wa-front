@@ -2,82 +2,152 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    h1 {
-        @apply text-4xl;
-        @apply font-bold;
-        @apply mb-4;
-    }
-    h2 {
-        @apply text-3xl;
-        @apply font-bold;
-        @apply mb-4;
-    }
-    h3 {
-        @apply text-xl;
-        @apply font-semibold;
-    }
-    p {
-        @apply mb-8;
-    }
-    p a {
-        @apply font-semibold;
-        @apply text-accent;
-    }
-    small {
-        @apply text-gray-600;
-    }
-    .grid3 {
-        @apply grid-cols-1;
-        @apply sm:grid-cols-1;
-        @apply lg:grid-cols-2;
-        @apply xl:grid-cols-3;
-    }
-    .grid4 {
-        @apply grid-cols-2;
-        @apply sm:grid-cols-3;
-        @apply lg:grid-cols-4;
-        @apply xl:grid-cols-4;
-    }
-    .container{
-        @apply px-4;
-        @apply mx-auto;
-    }
-    .menu li > *{
-        @apply rounded-full;
-    }
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+    @apply mb-4;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply mb-4;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-semibold;
+  }
+  p {
+    @apply mb-8;
+  }
+  p a {
+    @apply font-semibold;
+    @apply text-accent;
+  }
+  small {
+    @apply text-gray-600;
+  }
+  .grid3 {
+    @apply grid-cols-1;
+    @apply sm:grid-cols-1;
+    @apply lg:grid-cols-2;
+    @apply xl:grid-cols-3;
+  }
+  .grid4 {
+    @apply grid-cols-2;
+    @apply sm:grid-cols-3;
+    @apply lg:grid-cols-4;
+    @apply xl:grid-cols-4;
+  }
+  .container {
+    @apply px-4;
+    @apply mx-auto;
+  }
+  .menu li > * {
+    @apply rounded-full;
+  }
 }
 
 * {
-    font-family: Source Sans 3, sans-serif;
+  font-family: Source Sans 3, sans-serif;
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    font-family: Syncopate, sans-serif;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: Syncopate, sans-serif;
 }
 
 .jumbo-background {
-    background: url('/assets/home/pattern.png'), #3B3D48;
-    background-size: cover;
-    color: white;
+  background: url("/assets/home/pattern.png"), #3b3d48;
+  background-size: cover;
+  color: white;
 }
 
 .underblue {
-    position: relative;
-    padding-bottom: 17px;
-    margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 25px;
 }
 
-.underblue::after{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -0;
-    left: 50%;  /* Move the starting point to the center of the div */
-    transform: translateX(-50%);  /* Shift it back by half its own width to center it */
-    width: 36px;
-    height: 6px;
-    background-color: #37749E;
+/* UNDERBLUE */
+.underblue::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0;
+  left: 50%; /* Move the starting point to the center of the div */
+  transform: translateX(-50%); /* Shift it back by half its own width to center it */
+  width: 36px;
+  height: 6px;
+  background-color: #37749e;
+}
+
+/* LEFTBLUE */
+.leftblue {
+  position: relative;
+  padding-left: 20px;
+}
+
+.leftblue::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: #37749e;
+}
+
+.underblueNav::after {
+  content: "";
+  position: absolute;
+  bottom: -0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 6px;
+  background-color: #37749e;
+}
+
+/* LEFTBLUE BLOG CARD */
+.leftBlueCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  background-color: #37749e;
+}
+
+/* SQUAREBLUE */
+.square-blue {
+  position: relative;
+  padding-left: 20px;
+}
+
+.square-blue::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #37749e;
+}
+
+.menu li > *:hover {
+  background-color: white;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.menu li > *.underblueNav {
+  background-color: white;
 }
