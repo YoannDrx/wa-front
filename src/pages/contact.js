@@ -7,7 +7,7 @@ import { Trans, useTranslation } from "react-i18next";
 export default function Contact() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="container mx-auto">
       <PageJumbo titleKey="INFORMATIONS PRATIQUES" textKey="" />
       <div className="container py-20 flex">
         <div className="w-1/2 px-5">

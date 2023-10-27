@@ -113,6 +113,17 @@ h3 {
   background-color: #37749e;
 }
 
+/* LEFTBLUE BLOG CARD */
+.leftBlueCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  background-color: #37749e;
+}
+
 /* SQUAREBLUE */
 .square-blue {
   position: relative;

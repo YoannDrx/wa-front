@@ -22,18 +22,18 @@ export default function WhoWeAre() {
   );
 
   return (
-    <div>
+    <div className="container mx-auto">
       <PageJumbo titleKey="PRESENTATION" textKey="firmPresentation" />
       <div className="container py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-0">
           {renderSection(
             "NOUS SOMMES DEDIES A VOTRE SUCCES",
             "nous-sommes-dedies-a-votre-succes-description",
             "bg-primary",
             "text-white",
-            2
+            1
           )}
-          {renderSection("NOUS SOMMES INTERNATIONAUX", "nous-sommes-internationnaux-description", "bg-white", "text-black", 1)}
+          {renderSection("NOUS SOMMES INTERNATIONAUX", "nous-sommes-internationnaux-description", "bg-white", "text-black", 3)}
 
           <div className="col-span-full my-4 relative w-full h-[400px]">
             <Image src="/assets/who-we-are/salle-de-conference.png" alt="Séparateur" layout="fill" objectFit="cover" />

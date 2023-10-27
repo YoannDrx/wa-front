@@ -18,7 +18,7 @@ export default function Expertise() {
   ];
 
   return (
-    <div>
+    <div className="container mx-auto">
       <PageJumbo titleKey="NOTRE EXPERTISE" textKey="ourGoal" />
       <div className="container py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

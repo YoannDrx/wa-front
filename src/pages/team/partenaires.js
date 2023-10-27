@@ -40,7 +40,7 @@ export default function Partners() {
   ];
 
   return (
-    <div>
+    <div className="container mx-auto">
       <PageJumbo titleKey="NOS ASSOCIÉS" textKey="teamPresentation" backgroundColor="#E4EDF1" />
       <div className="container py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
