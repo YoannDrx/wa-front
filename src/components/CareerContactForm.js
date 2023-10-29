@@ -30,13 +30,13 @@ const CareerContactForm = () => {
   };
 
   return (
-    <div className="bg-primary p-8 rounded">
+    <div className="bg-primary p-8 ">
       <h2 className="text-2xl text-neutral mb-1">{t("career.career-contact-form.title")}</h2>
       <h3 className="text-sm text-white">{t("career.career-contact-form.text")}</h3>
       <form className="mt-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <input
-            className="w-full p-2 rounded text-black bg-white focus:border-2 focus:border-gray-800"
+            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
             type="text"
             placeholder={t("career.career-contact-form.placeholder.name")}
             {...register("name", { required: requiredName })}
@@ -45,7 +45,7 @@ const CareerContactForm = () => {
         </div>
         <div className="mb-4">
           <input
-            className="w-full p-2 rounded text-black bg-white focus:border-2 focus:border-gray-800"
+            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
             type="email"
             placeholder={t("career.career-contact-form.placeholder.email")}
             {...register("email", {
@@ -60,7 +60,7 @@ const CareerContactForm = () => {
         </div>
         <div className="mb-4">
           <input
-            className="w-full p-2 rounded text-black bg-white focus:border-2 focus:border-gray-800"
+            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
             type="text"
             placeholder={t("career.career-contact-form.placeholder.subject")}
             {...register("subject", { required: requiredSubject })}
@@ -69,7 +69,7 @@ const CareerContactForm = () => {
         </div>
         <div className="mb-4">
           <textarea
-            className="w-full p-2 rounded text-black bg-white focus:border-2 focus:border-gray-800"
+            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
             rows="4"
             placeholder={t("career.career-contact-form.placeholder.message")}
             {...register("message", { required: requiredMessage })}

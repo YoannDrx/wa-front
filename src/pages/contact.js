@@ -14,7 +14,17 @@ export default function Contact() {
           <div className="w-full md:w-1/2 px-5">
             <h2 className="text-xl font-bold text-primary">{t("contact.commentNousTrouvez")} ?</h2>
             <p className="text-md leading-normal">
-              <Trans i18nKey="contact.info-contact" />
+              <Trans
+                i18nKey="contact.info-contact"
+                components={{
+                  nl: (
+                    <>
+                      <br />
+                      <br />
+                    </>
+                  ),
+                }}
+              />
             </p>
 
             <p className="text-md leading-normal">
