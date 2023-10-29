@@ -33,5 +33,37 @@
   "Nom": "Nom",
   "Email": "Email",
   "Message": "Message",
-  "Écrivez ici votre message": "Écrivez ici votre message"
+  "Écrivez ici votre message": "Écrivez ici votre message",
+  "career": {
+    "recrutement": "Recrutement",
+    "image-description": "photo d'un groupe d'avocats au travail",
+    "talents": {
+      "title": "Talents",
+      "subtitle": "Notre objectif est de libérer le potentiel de tous nos collaborateurs",
+      "paragraph1": "Nous accueillons toujours les candidatures de jeunes avocats ayant un diplôme en droit international des affaires éventuellement couplé à une expérience professionnelle, et qui parlent couramment le français, l'anglais et l'allemand.",
+      "paragraph2": "Venez travailler sur des cas intéressants au sein d'une équipe innovante et passionnée. Nous sommes un cabinet d'avocats de premier plan qui travaillent sur des dossiers avec un esprit positif. Chaque jour, nous nous mettons au défi de construire ensemble des solutions durables pour nos clients."
+    },
+    "internship": {
+      "title": "Stages",
+      "subtitle": "Les étudiants et notre programme de stages",
+      "paragraph1": "Nous accueillons toujours les candidatures de jeunes avocats ayant un diplôme en droit international des affaires éventuellement couplé à une expérience professionnelle, et qui parlent couramment le français, l'anglais et l'allemand.",
+      "paragraph2": "Venez travailler sur des cas intéressants au sein d'une équipe innovante et passionnée. Nous sommes un cabinet d'avocats de premier plan qui travaillent sur des dossiers avec un esprit positif. Chaque jour, nous nous mettons au défi de construire ensemble des solutions durables pour nos clients."
+    },
+    "admins-and-paralegals": {
+      "title": "Assistants et Parajuristes",
+      "text": "Les candidatures d'assistants ayant une bonne connaissance en français, anglais et allemand sont également les bienvenues et très appréciées.",
+      "contact": "Vous pouvez aussi nous envoyer votre candidature et votre CV par mail à :"
+    },
+    "career-contact-form": {
+      "title": "Merci",
+      "text": "de nous envoyer votre candidature accompagnée de votre CV et d'une lettre de motivation",
+      "placeholder": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "En recehrche de stage ? Avocat motivé ? Nous vous encourageons à soumettre votre candidature. Vous êtes probablement la personne que nous recherchons.",
+        "send": "Envoyer"
+      }
+    }
+  }
 }

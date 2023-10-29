@@ -13,7 +13,9 @@ const Jumbo = () => {
           <div className="flex-1">
             <h1>{t("VOTRE CONFIANCE NOUS HONORE")}</h1>
             <p>{t("Un cabinet d'excellence dédié au conseil des entreprises internationales")}</p>
-            <Button color="primary">{t("Nous contacter")}</Button>
+            <Button href={"/contact"} color="primary">
+              {t("Nous contacter")}
+            </Button>
           </div>
           <div className="flex-1">
             <video src="/assets/home/cabinet.mp4" />
@@ -55,7 +57,7 @@ function Home() {
                   }}
                 />
               </p>
-              <Button className="rounded-none mt-4" color="primary">
+              <Button href={"/qui-sommes-nous"} className="rounded-none mt-4" color="primary">
                 {t("En savoir plus")}
               </Button>
             </div>
@@ -86,19 +88,19 @@ function Home() {
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/team/bruno-weil.png"
+            backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
           />
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/team/bruno-weil.png"
+            backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
           />
           <ArticleCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
-            backgroundImage="/assets/team/bruno-weil.png"
+            backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
           />
         </div>
