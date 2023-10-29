@@ -59,10 +59,6 @@ h3 {
   font-family: Syncopate, sans-serif;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .jumbo-background {
   background: url("/assets/home/pattern.png"), #3b3d48;
   background-size: cover;
