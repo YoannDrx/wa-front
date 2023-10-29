@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ArticleCard = ({ article }) => {
   return (
-    <div className="bg-white p-4 rounded mb-4 w-full border border-gray-300">
+    <div className="bg-white p-4 rounded-none mb-4 w-full border border-gray-300">
       <div className="flex justify-between">
         <div>
           <h2 className="text-2xl font-bold text-primary">{article.title}</h2>

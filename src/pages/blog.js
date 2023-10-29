@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ArticleCard";
 import PageJumbo from "@/components/PageJumbo";
-import Link from "next/link";
+import Sidebar from "@/components/Sidebar";
+import { useState } from "react";
 
 const articles = [
   {
@@ -33,13 +34,33 @@ const articles = [
 ];
 
 export default function Blog() {
+  const [filteredArticles, setFilteredArticles] = useState(articles);
+
+  const setFilter = (filters) => {
+    const newFilteredArticles = articles.filter((article) =>
+      Object.keys(filters).every((field) =>
+        filters[field] ? article[field]?.toLowerCase().includes(filters[field].toLowerCase()) : true
+      )
+    );
+    setFilteredArticles(newFilteredArticles);
+  };
+
+  const authors = Array.from(new Set(articles.map((article) => article.author)));
+  const categories = Array.from(new Set(articles.flatMap((article) => article.categories)));
+  const tags = Array.from(new Set(articles.flatMap((article) => article.tags)));
+
   return (
     <div>
       <PageJumbo titleKey="Articles" />
-      <div className="container mx-auto">
-        {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-        ))}
+      <div className="container mx-auto flex flex-col md:flex-row">
+        <div className="w-full md:w-64 p-4 mb-4 md:mb-0 md:ml-4 md:order-2" style={{ backgroundColor: "#E4EDF1" }}>
+          <Sidebar setFilter={setFilter} authors={authors} categories={categories} tags={tags} />
+        </div>
+        <div className="flex-grow md:order-1">
+          {filteredArticles.map((article) => (
+            <ArticleCard key={article.id} article={article} />
+          ))}
+        </div>
       </div>
     </div>
   );
