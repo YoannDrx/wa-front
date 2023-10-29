@@ -1,7 +1,7 @@
+import ArticleHomeCard from "@/components/ArticleHomeCard";
 import Button from "@/components/Button";
 import Image from "next/image";
 import { Trans, useTranslation } from "react-i18next";
-import ArticleCard from "@/components/ArticleCard";
 
 const Jumbo = () => {
   const { t } = useTranslation();
@@ -85,19 +85,19 @@ function Home() {
       <div className="container py-20">
         <h2 className="text-center underblue">Articles</h2>
         <div className="flex flex-wrap gap-4 justify-center">
-          <ArticleCard
+          <ArticleHomeCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
           />
-          <ArticleCard
+          <ArticleHomeCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
           />
-          <ArticleCard
+          <ArticleHomeCard
             className="min-w-[256px]"
             title={t("Discrimination sexiste en France")}
             backgroundImage="/assets/home/article1.png"

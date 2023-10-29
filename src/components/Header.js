@@ -53,6 +53,7 @@ const MenuItems = () => {
     { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
     { href: "/carriere", label: "Carriere" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
