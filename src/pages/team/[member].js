@@ -48,7 +48,7 @@ const Member = () => {
         <div className="w-full md:w-1/2 text-left px-4">
           <h2 className="text-primary mb-1">{memberData.title}</h2>
           <p className="text-xs text-gray-500">{memberData.label}</p>
-          <div className="bg-gray-200 py-4 mr-4">
+          <div className="bg-gray-200 py-4 px-4">
             <div className="flex flex-col md:flex-row justify-around">
               <div>
                 <h4 className="font-bold square-blue">Areas of responsibility</h4>

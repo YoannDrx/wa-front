@@ -1,54 +1,44 @@
 import React, { useEffect } from "react";
-import PageJumbo from "@/components/PageJumbo";
-import { useTranslation } from "react-i18next";
-import { t } from "i18next";
 import Image from "next/image";
-import Section from "@/components/Section";
+import { useTranslation } from "react-i18next";
+import PageJumbo from "@/components/PageJumbo";
 
 export default function WhoWeAre() {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   useEffect(() => {}, [i18n.language]);
 
-  const renderSection = (titleKey, descKey, bgColor, textColor, colSpan = 1, titleColor) => (
-    <Section
-      title={t(titleKey)}
-      descriptionKey={descKey}
-      bgColor={bgColor}
-      textColor={textColor}
-      colSpan={colSpan}
-      titleColor={titleColor}
-      className="my-4"
-    />
-  );
-
   return (
-    <div className="container mx-auto">
-      <PageJumbo titleKey="PRESENTATION" textKey="firmPresentation" />
-      <div className="container py-20">
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-0">
-          {renderSection(
-            "NOUS SOMMES DEDIES A VOTRE SUCCES",
-            "nous-sommes-dedies-a-votre-succes-description",
-            "bg-primary",
-            "text-white",
-            1
-          )}
-          {renderSection("NOUS SOMMES INTERNATIONAUX", "nous-sommes-internationnaux-description", "bg-white", "text-black", 3)}
+    <div className="container mx-auto px-4 md:px-8">
+      <PageJumbo titleKey="whoWeAre.presentation" textKey="whoWeAre.firmPresentation" />
 
-          <div className="col-span-full my-4 relative w-full h-[400px]">
-            <Image src="/assets/who-we-are/salle-de-conference.png" alt="Séparateur" layout="fill" objectFit="cover" />
-          </div>
-
-          {renderSection(
-            "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE",
-            "plus-loin-plus-intelligent-plus-rapide-description",
-            "#E4EDF1",
-            "#2E2E2E",
-            3
-          )}
-          {renderSection("VOTRE CONFIANCE NOUS HONORE", "votre-confiance-nous-honore-description", "#2E2E2E", "#E4EDF1", 3)}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="bg-primary p-8 text-white">
+          <h2 className="text-3xl font-semibold mb-4">{t("whoWeAre.NOUS SOMMES DEDIES A VOTRE SUCCES")}</h2>
+          <p>{t("whoWeAre.nous-sommes-dedies-a-votre-succes-description")}</p>
         </div>
-      </div>
+
+        <div className="bg-white p-8 text-black">
+          <h2 className="text-3xl font-semibold mb-4">{t("whoWeAre.NOUS SOMMES INTERNATIONAUX")}</h2>
+          <p>{t("whoWeAre.nous-sommes-internationnaux-description")}</p>
+        </div>
+      </section>
+
+      <section className="relative my-16 h-[400px]">
+        <Image src="/assets/who-we-are/salle-de-conference.png" layout="fill" objectFit="cover" alt="Séparateur" />
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="bg-gray-200 p-8 text-black">
+          <h2 className="text-3xl font-semibold mb-4">{t("whoWeAre.PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE")}</h2>
+          <p>{t("whoWeAre.plus-loin-plus-intelligent-plus-rapide-description")}</p>
+        </div>
+
+        <div className="bg-black p-8 text-white">
+          <h2 className="text-3xl font-semibold mb-4">{t("whoWeAre.VOTRE CONFIANCE NOUS HONORE")}</h2>
+          <p>{t("whoWeAre.votre-confiance-nous-honore-description")}</p>
+        </div>
+      </section>
     </div>
   );
 }

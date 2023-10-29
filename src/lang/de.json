@@ -1,47 +1,193 @@
 {
-  "/qui-sommes-nous": "/wer-wir-sind",
+  "/qui-sommes-nous": "/wer-sind-wir",
   "/partenaires": "/partner",
-  "/carriere": "/karriere",
-  "Qui sommes-nous": "Wer wir sind",
-  "Un cabinet d'excellence dédié au conseil des entreprises internationales": "Eine Exzellenzkanzlei, die sich der Beratung internationaler Unternehmen widmet",
+  "/expertise": "/sachverstand",
+  "/carriere": "/krriere",
+  "/blog": "/blog",
+  "/contact": "/kontakt",
+  "Accueil": "Willkommen",
+  "Qui sommes-nous": "Wer sind wir",
+  "Partenaires": "Partner",
+  "Expertise": "Sachverstand",
+  "Carrière": "Karriere",
+  "Blog": "Blog",
+  "Contact": "Kontakt",
   "Nous contacter": "Kontaktieren Sie uns",
-  "En savoir plus": "Mehr wissen",
-  "PRESENTATION": "PRÄSENTATION",
-  "home1": "WEIL & ASSOCIES ist eine Anwaltskanzlei, die seit 1974 im Dienste internationaler Unternehmen steht.<nl/>Unsere Kanzlei hat es sich zur Aufgabe gemacht, internationale Unternehmen jeder Größe bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Vertretung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.<nl/>Wir denken weiter, arbeiten intelligenter und handeln schneller.<nl/>Wir vertreten und beraten unsere Mandanten auf nationaler und internationaler Ebene bei Handelsgeschäften und Firmenübernahmen, einschließlich M&A, Joint Ventures, Technologietransfers, Rechtsstreitigkeiten und Schiedsverfahren, Wirtschaftskriminalität, Arbeitsrecht sowie Unternehmensführung und Wirtschaftsrecht.<nl/>Unser Team, das aus etwa 20 Personen besteht, konzentriert sich ausschließlich auf die Bedürfnisse Ihres Unternehmens, um Ihnen unsere Dienstleistungen und Lösungen auf effizientere und nachhaltigere Weise anbieten zu können.",
-  "Further. Smarter.": "Weiter. Klüger.",
-  "Swiftly.": "Schneller.",
-  "Notre cabinet est membre d'un réseau international de cabinets d'avocats partageant sa culture d'excellence et d'efficacité. Nos avocats sont également admis à exercer devant des barreaux étrangers, notamment en Allemagne ou au barreau de New York. Outre le français et l'anglais, l'équipe travaille également en allemand, ce qui fait du cabinet un partenaire de haut niveau, expert dans les relations d'affaires transfrontalières entre la France et l'Allemagne.": "Unsere Kanzlei ist Mitglied eines internationalen Netzwerks von Anwaltskanzleien, die unsere Kultur der Exzellenz und Effizienz teilen. Unsere Anwälte sind auch bei ausländischen Anwaltskammern zugelassen, z. B. in Deutschland oder bei der New Yorker Anwaltskammer. Neben Französisch und Englisch arbeitet das Team auch auf Deutsch, was die Kanzlei zu einem hochrangigen Partner macht, der Experte für grenzüberschreitende Geschäftsbeziehungen zwischen Frankreich und Deutschland ist.",
-  "NOTRE EXPERTISE": "UNSERE EXPERTISE",
-  "ourGoal": "<0>Unser Ziel ist sehr einfach:</0> Wir bieten erfolgreichen Unternehmen, Privatpersonen und Unternehmern maßgeschneiderte Dienstleistungen auf hohem Niveau zur Lösung ihrer Probleme. Das Recht entwickelt sich ständig weiter, und die damit verbundenen Entwicklungen in Ihrer Branche und der Wirtschaft insgesamt können sich auf Sie und Ihr Unternehmen auswirken. Deshalb sind wir bestrebt, immer weiterzugehen, intelligenter zu arbeiten und immer schnell zu handeln, wobei wir Ihr bestes Interesse im Auge haben und den Details größte Aufmerksamkeit schenken.",
-  "DROIT SOCIAL & RESTRUCTURATION": "ARBEITSRECHT & UMSTRUKTURIERUNGEN",
-  "FUSIONS & ACQUISITIONS": "M & A",
-  "CORPORATE & RÉGLEMENTAIRE": "CORPORATE & REGULATORY",
-  "CONTENTIEUX, MÉDIATION & ARBITRAGE INTERNATIONAL": "RECHTSSTREITIGKEITEN UND INTERNATIONALE SCHIEDSVERFAHREN",
-  "PROCÉDURES COLLECTIVES": "INSOLVENZVERFAHREN",
-  "DROIT COMMERCIAL & CONCURRENCE": "HANDELS UND WETTBEWERBSRECHT",
-  "IP, DROIT DU NUMÉRIQUE, TECH & DATA": "IP/IT, DIGITAL, TECH & DATENRECHT",
-  "DROIT PÉNAL DES AFFAIRES": "WIRTSCHAFTSSTRAFRECHT",
-  "NOS ASSOCIÉS": "UNSERE PARTNER",
-  "teamPresentation": "Unsere Kanzlei besteht aus vier erfahrenen Partnern, die zusammen <0>über 100 Jahre Berufserfahrung haben</0>. Jeder von ihnen spricht fließend Englisch und Deutsch und verfügt über ein internationales juristisches Profil und eine internationale Ausbildung. Neben ihren spezialisierten Fachgebieten verfügt jeder unserer Partner über umfassende Kenntnisse im Wirtschaftsrecht, so dass alle vier zusammen sämtliche Aktivitäten und <0>Bedürfnisse unserer Mandanten abdecken</0>. Nachfolgend finden Sie eine individuelle Vorstellung jedes Partners. Wir verfügen außerdem über ein Team von erfahrenen Mitarbeitern und Juristen, die all eine juristische Ausbildung oder internationale Erfahrung haben.",
-  "firmPresentation": "Seit ihrer Gründung im Jahr 1974 ist WEIL &amp; ASSOCIES eine Anwaltskanzlei im Dienste internationaler Unternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
-  "NOUS SOMMES INTERNATIONAUX": "WIR SIND INTERNATIONAL",
-  "NOUS SOMMES DEDIES A VOTRE SUCCES": "WIR WIDMEN UNS IHREM ERFOLG",
-  "nous-sommes-dedies-a-votre-succes-description": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationaler Unternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
-  "nous-sommes-internationnaux-description": "Geschäftsbeziehungen mit deutsch- und englischsprachigen Ländern waren schon immer ein wichtiger Teil unserer Tätigkeit. Daher sind in unserer Kanzlei Anwälte tätig, die sowohl in Frankreich (Paris) als auch in Deutschland (Berlin) und den USA (New York) zugelassen sind. Unsere Beteiligung an der Beratung und Vertretung von französischen und internationalen Mandanten bedeutet, dass unsere Anwälte fließend Französisch, Englisch und Deutsch schreiben und sprechen. Im Laufe der Zeit hat unsere Tätigkeit dazu geführt, dass wir unseren Horizont erweitern und Unternehmen aus asiatischen Ländern wie Japan, Korea und China oder dem Nahen Osten vertreten.",
-  "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "WEITER, KLÜGER & SCHNELLER",
-  "plus-loin-plus-intelligent-plus-rapide-description": "Obwohl alle Anwälte spezialisiert sind, glauben wir an die Bereicherung der juristischen Kreativität durch ein breites Spektrum an Erfahrung in der Rechtsberatung und -verteidigung.",
-  "VOTRE CONFIANCE NOUS HONORE": "IHR VERTRAUEN EHRT UNS",
-  "votre-confiance-nous-honore-description": "Unsere Arbeit basiert auf gegenseitigem Vertrauen zu jedem unserer Kunden, egal ob es sich um internationale Konzerne oder kleine und mittlere Unternehmen handelt. Die Geschäftstätigkeit, die Produkte und das geschäftliche Umfeld jedes Mandanten werden sorgfältig berücksichtigt, denn unser Ziel ist es, unseren Mandanten maßgeschneiderte Lösungen zu bieten, die ihren spezifischen Geschäftsinteressen Rechnung tragen. Dank der geringen Größe unserer Kanzlei stellen wir ein dynamisches Team von Anwälten zusammen, die schnell und flexibel auf die Bedürfnisse des Mandanten reagieren können. Wir werden nie vergessen, dass der Kern unserer Arbeit, sei es Rechtsberatung oder vor Gericht, darin besteht, ein wirtschaftlich wertvolles Ergebnis für unseren Mandanten zu erzielen.",
-  "COMMENT NOUS TROUVER": "WIE SIE UNS FINDEN",
-  "info-contact": "Unsere Büros befinden sich in der Avenue de la Grande Armée 26, nur einen Katzensprung von L'Etoile entfernt, im Herzen des Geschäftsviertels. Ihr Auto können Sie nur wenige Schritte entfernt in den öffentlichen Tiefgaragen der Avenue Carnot und Porte Maillot parken. Die Metrostation ARGENTINE (Linie 1) ist ganz in der Nähe. Die RER-Station Charles de Gaulle - Etoile ist nur 5 Gehminuten entfernt.",
-  "Aéroport Charles de Gaulle": "Flughafen Charles de Gaulle",
-  "Taxi (30 minutes)": "Taxi (30 Minuten)",
-  "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Air France-Bus nach L'ETOILE (30 Minuten Fahrt und 5 Minuten Fußweg)",
-  "Aéroport d'Orly ": "Flughafen Orly",
-  "Taxi (40 minutes)": "Taxi (40 minutes)",
-  "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hotels: Zahlreiche Hotels in der Nähe. Reservierungen möglich.",
-  "Nom": "Name",
-  "Email": "Email",
-  "Message": "Nachricht",
-  "Écrivez ici votre message": "Schreiben Sie hier Ihre Nachricht"
+  "En savoir plus": "Mehr erfahren",
+  "Envoyer": "Senden",
+  "errorMessages": {
+    "requiredName": "Bitte geben Sie Ihren Namen ein",
+    "requiredEmail": "Geben Sie bitte Ihre Email-Adresse ein",
+    "requiredSubject": "Bitte geben Sie den Betreff Ihrer Nachricht ein",
+    "invalidEmail": "Ungültige E-Mail-Adresse",
+    "requiredMessage": "Bitte füllen Sie Ihre Nachricht aus"
+  },
+  "footer": {
+    "Pratique Juridique": "Rechtspraxis",
+    "À propos de notre cabinet": "Über unser Unternehmen",
+    "Ressources": "Ressourcen",
+    "Droit du travail & de l'emploi": "Arbeitsrecht",
+    "Fusions & Acquisitions": "Fusionen",
+    "Propriété intellectuelle / industrielle": "Geistiges/gewerbliches Eigentum",
+    "Droit des sociétés": "Gesellschaftsrecht",
+    "Litige & Arbitrage": "Disput",
+    "Droit commercial & de la concurrence": "Handelsrecht",
+    "Droit de la faillite": "Insolvenzrecht",
+    "Délinquance financière": "Finanzielle Kriminalität",
+    "Ce que nous faisons": "Was wir tun",
+    "Notre histoire": "Unsere Geschichte",
+    "Notre équipe": "Unser Team",
+    "Partenaires": "Partner",
+    "Rejoignez-nous : Carrières": "Machen Sie mit: Karriere",
+    "Rejoignez-nous : Stagiaire juridique": "Kommen Sie zu uns: Rechtspraktikant",
+    "Diversité & Inclusion": "Diversität",
+    "Pro bono": "Pro Bono",
+    "Articles & Publications": "Artikel",
+    "Rapport sur la propriété intellectuelle 2022": "Bericht über geistiges Eigentum 2022",
+    "Rapport sur le droit du travail 2022": "Arbeitsrechtsbericht 2022",
+    "Prévisions M&A 2022": "Prognose M",
+    "Réseau d'alliance Innangard": "Netzwerk der Innangard-Allianz",
+    "Prix & Reconnaissance": "Preis",
+    "Rapport sur le droit des sociétés 2022": "Gesellschaftsrechtsbericht 2022",
+    "Blog": "Blog",
+    "allRightsReserved": "2023 Weil & Associés. Gesetzliche Informationen. Alle Rechte vorbehalten."
+  },
+  "home": {
+    "votreConfiance": "Ihr Vertrauen ehrt uns",
+    "presentation": "Präsentation",
+    "heroSubtitle": "Eine Exzellenzkanzlei, die sich der Beratung internationaler Unternehmen widmet.",
+    "further": "Weiter",
+    "smarter": "Klüger",
+    "swiftly": "Schneller",
+    "home1": "WEIL & ASSOCIES ist eine Anwaltskanzlei, die seit 1974 im Dienste internationaler Unternehmen steht. Unsere Kanzlei hat es sich zur Aufgabe gemacht, internationale Unternehmen jeder Größe bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Vertretung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.<nl/>Wir denken weiter, arbeiten intelligenter und handeln schneller.<nl/>Wir vertreten und beraten unsere Mandanten auf nationaler und internationaler Ebene bei Handelsgeschäften und Firmenübernahmen, einschließlich M & A, Joint Ventures, Technologietransfers, Rechtsstreitigkeiten und Schiedsverfahren Wirtschaftskriminalität, Arbeitsrecht sowie Unternehmensführung und Wirtschaftsrecht. Unser Team, das aus etwa 20 Personen besteht, konzentriert sich ausschließlich auf die Bedürfnisse Ihres Unternehmens, um Ihnen unsere Dienstleistungen und Lösungen auf effizientere und nachhaltigere Weise anbieten zu können.",
+    "home2": "Unsere Kanzlei ist Mitglied eines internationalen Netzwerks von Anwaltskanzleien, die unsere Kultur der Exzellenz und Effizienz teilen. Unsere Anwälte sind auch bei ausländischen Anwaltskammern zugelassen, z. B. in Deutschland oder bei der New Yorker Anwaltskammer.<nl/>Neben Französisch und Englisch arbeitet das Team auch auf Deutsch, was die Kanzlei zu einem hochrangigen Partner macht, der Experte für grenzüberschreitende Geschäftsbeziehungen zwischen Frankreich und Deutschland ist.",
+    "articles": {
+      "title": "Artikel",
+      "art1": "Sexistische Diskriminierung in Frankreich",
+      "art2": "Das französische Kassationsgericht",
+      "art3": "Die neuen EU-Regeln"
+    }
+  },
+  "expertise": {
+    "notreExpertise": "Unser Erfahrungsschatz",
+    "ourGoal": "<bold>Unser Ziel ist sehr einfach:</bold> Wir bieten erfolgreichen Unternehmen, Privatpersonen und Unternehmern maßgeschneiderte Dienstleistungen auf hohem Niveau zur Lösung ihrer Probleme. Das Recht entwickelt sich ständig weiter, und die damit verbundenen Entwicklungen in Ihrer Branche und der Wirtschaft insgesamt können sich auf Sie und Ihr Unternehmen auswirken. Deshalb sind wir bestrebt, immer weiterzugehen, intelligenter zu arbeiten und immer schnell zu handeln, wobei wir Ihr bestes Interesse im Auge haben und den Details größte Aufmerksamkeit schenken.",
+    "droitSocialrestructuration": "Arbeitsrecht und Umstrukturierungen",
+    "fusionAquisitions": "M & A",
+    "corporateReglement": "Corporate & Regulatory",
+    "contentieux": "Rechtsstreitigkeiten, Mediation und internationale Schiedsverfahren",
+    "procedureColl": "Insolvenzverfahren",
+    "droitCommercial": "Handels und Wettbewerbsrecht",
+    "droitNumerique": "IP/IT, Digital, Tech und Datenrecht",
+    "droitpenal": "Wirtschaftsstrafrecht"
+  },
+  "partenaire": {
+    "nosAssocies": "Unsere Partner",
+    "teamPresentation": "Unsere Kanzlei besteht aus vier erfahrenen Partnern, die zusammen <bold>über 100 Jahre Berufserfahrung haben</bold>. Jeder von ihnen spricht fließend Englisch und Deutsch und verfügt über ein internationales juristisches Profil und eine internationale Ausbildung. Neben ihren spezialisierten Fachgebieten verfügt jeder unserer Partner über umfassende Kenntnisse im Wirtschaftsrecht, so dass alle vier zusammen sämtliche Aktivitäten und Bedürfnisse unserer Mandanten abdecken. <nl/>Nachfolgend finden Sie eine individuelle Vorstellung jedes Partners. Wir verfügen außerdem über ein Team von erfahrenen Mitarbeitern und Juristen, die alle eine juristische Ausbildung oder internationale Erfahrung haben.",
+    "members": {
+      "brunoWeil": {
+        "intro": "Bruno Weil ist seit fünfundzwanzig Jahren als Rechtsanwalt für internationale Unternehmen aller Größenordnungen tätig, die in Frankreich präsent oder aktiv sind. Er ist Ihr bevorzugter Ansprechpartner in unserer Kanzlei für alle Fragen im Zusammenhang mit geistigem Eigentum, das Recht der Digitalisierung, Tech und Data, seinem bevorzugten Bereich. In dieser Eigenschaft ist er als Berater oder Anwalt vor Gericht in allen Arten von Streitfällen tätig. Als Anwalt hat er mehrere große amerikanische und deutsche börsennotierte Unternehmen erfolgreich vor französischen Gerichten vertreten, insbesondere in komplexen Fällen von Patent-, Marken- und Urheberrechtsverletzungen. Als ehemaliger französischer Korrespondent des Verlags KLUWER LAW INTERNATIONAL ist er auch Mitglied mehrerer internationaler Vereinigungen, die sich mit geistigem Eigentum und neuen Technologien befassen, wie der Licensing Executive Society - LES - Germany, GRUR und ITECHLAW. Bruno Weil ist auch in anderen Bereichen tätig, z. B. bei Unternehmensumstrukturierungen und - übernahmen. Seine tägliche Arbeit umfasst auch alle Arten von Rechtsstreitigkeiten im Zusammenhang mit Unternehmen. Sein Hauptziel ist es, die effektivste Geschäftsstrategie zu entwickeln, um die Interessen unserer Kunden durchzusetzen. Neben Französisch spricht er auch fließend Deutsch und Englisch. Er ist Amateur-Schlagzeuger und Percussionist und Vater von drei Kindern."
+      },
+      "ericWeil": {
+        "intro": ""
+      },
+      "patriciaVincent": {
+        "intro": ""
+      },
+      "mathildeHouet": {
+        "intro": ""
+      },
+      "heinzWeil": {
+        "intro": ""
+      }
+    }
+  },
+  "whoWeAre": {
+    "presentation": "Präsentation",
+    "firmPresentation": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationalerUnternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
+    "NOUS SOMMES DEDIES A VOTRE SUCCES": "WIR WIDMEN UNS IHREM ERFOLG",
+    "nous-sommes-dedies-a-votre-succes-description": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationalerUnternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
+    "NOUS SOMMES INTERNATIONAUX": "WIR SIND INTERNATIONAL",
+    "nous-sommes-internationnaux-description": "Geschäftsbeziehungen mit deutsch- und englischsprachigen Ländern waren schon immer ein wichtiger Teil unserer Tätigkeit. Daher sind in unserer Kanzlei Anwälte tätig, die sowohl in Frankreich (Paris) als auch in Deutschland (Berlin) und den USA (New York) zugelassen sind. Unsere Beteiligung an der Beratung und Vertretung von französischen und internationalen Mandanten bedeutet, dass unsere Anwälte fließend Französisch, Englisch und Deutsch schreiben und sprechen. Im Laufe der Zeit hat unsere Tätigkeit dazu geführt, dass wir unseren Horizont erweitern und Unternehmen aus asiatischen Ländern wie Japan, Korea und China oder dem Nahen Osten vertreten.",
+    "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "WEITER KLÜGER SCHNELLER",
+    "plus-loin-plus-intelligent-plus-rapide-description": "Obwohl alle Anwälte spezialisiert sind, glauben wir an die Bereicherung der juristischen Kreativität durch ein breites Spektrum an Erfahrung in der Rechtsberatung und -verteidigung.",
+    "VOTRE CONFIANCE NOUS HONORE": "IHR VERTRAUEN EHRT UNS",
+    "votre-confiance-nous-honore-description": "Unsere Arbeit basiert auf gegenseitigem Vertrauen zu jedem unserer Kunden, egal ob es sich um internationale Konzerne oder kleine und mittlere Unternehmen handelt. Die Geschäftstätigkeit, die Produkte und das geschäftliche Umfeld jedes Mandanten werden sorgfältig berücksichtigt, denn unser Ziel ist es, unseren Mandanten maßgeschneiderte Lösungen zu bieten, die ihren spezifischen Geschäftsinteressen Rechnung tragen. Dank der geringen Größe unserer Kanzlei stellen wir ein dynamisches Team von Anwälten zusammen, die schnell und flexibel auf die Bedürfnisse des Mandanten reagieren können. Wir werden nie vergessen, dass der Kern unserer Arbeit, sei es Rechtsberatung oder vor Gericht, darin besteht, ein wirtschaftlich wertvolles Ergebnis für unseren Mandanten zu erzielen."
+  },
+  "contact": {
+    "informationPratique": "Praktische Information",
+    "commentNousTrouvez": "So finden Sie uns",
+    "info-contact": "Unsere Büros befinden sich in der 26, Avenue de la Grande Armée, nur wenige Schritte vom L'Etoile entfernt.Sie liegen im Zentrum des Geschäftsviertels. Sie können Ihr Auto nur wenige Schritte entfernt in den öffentlichen Tiefgaragen der Avenue Carnot und der Porte Maillot parken. Die Metrostation ARGENTINE (Linie 1) befindet sich in der Nähe. Die RER-Station Charles de Gaulle - Etoile ist 5 Minuten zu Fuß entfernt.",
+    "Aéroport Charles de Gaulle": "Flughafen Charles de Gaulle",
+    "Taxi (30 minutes)": "Taxi (30 Minuten)",
+    "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Der Air-France-Bus Richtung ETOILE (30 Minuten Fahrt und 5 Minuten zu Fuß)",
+    "Aéroport d'Orly ": "Flughafen Orly ",
+    "Taxi (40 minutes)": "Taxi (40 Minuten)",
+    "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hotels: Viele Hotels in der Nähe. ",
+    "Nom": "Name",
+    "Email": "Email",
+    "Message": "Nachricht",
+    "Écrivez ici votre message": "Schreibe deine Nachricht hier",
+    "contactForm": {
+      "restonEnContact": "Den Kontakt halten",
+      "name": "Name",
+      "email": "Email",
+      "message": "Nachricht",
+      "placeholderMessage": "Schreibe deine Nachricht hier"
+    }
+  },
+  "career": {
+    "recrutement": "Rekrutierung",
+    "image-description": "Foto einer Gruppe von Anwälten bei der Arbeit",
+    "talents": {
+      "title": "Talente",
+      "subtitle": "Unser Ziel ist es, das Potenzial aller unserer Mitarbeiter freizusetzen",
+      "paragraph1": "Wir freuen uns immer über Bewerbungen junger Rechtsanwälte mit einem Abschluss im internationalen Wirtschaftsrecht, ggf. mit Berufserfahrung, und fließenden Französisch-, Englisch- und Deutschkenntnissen.",
+      "paragraph2": "Arbeiten Sie in einem innovativen und leidenschaftlichen Team an interessanten Fällen. "
+    },
+    "internship": {
+      "title": "Praktika",
+      "subtitle": "Studierende und unser Praktikumsprogramm",
+      "paragraph1": "Wir freuen uns immer über Bewerbungen junger Rechtsanwälte mit einem Abschluss im internationalen Wirtschaftsrecht, ggf. mit Berufserfahrung, und fließenden Französisch-, Englisch- und Deutschkenntnissen.",
+      "paragraph2": "Arbeiten Sie in einem innovativen und leidenschaftlichen Team an interessanten Fällen. "
+    },
+    "admins-and-paralegals": {
+      "title": "Assistenten und Rechtsanwaltsgehilfen",
+      "text": "Bewerbungen von Assistenten mit guten Französisch-, Englisch- und Deutschkenntnissen sind ebenfalls willkommen und sehr willkommen.",
+      "contact": "Sie können uns Ihre Bewerbung und Ihren Lebenslauf auch per E-Mail senden an:"
+    },
+    "career-contact-form": {
+      "title": "DANKE",
+      "text": "senden Sie uns Ihre Bewerbung zusammen mit Ihrem Lebenslauf und einem Anschreiben zu",
+      "placeholder": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Thema",
+        "message": "Auf der Suche nach einem Praktikum? ",
+        "send": "Schicken"
+      }
+    }
+  },
+  "blog": {
+    "articles": "Artikel",
+    "authors": "Autoren",
+    "categories": "Kategorien",
+    "tags": "Stichworte",
+    "knowMore": "Erfahren Sie mehr",
+    "filters": {
+      "searchByAuthor": "Suche nach Autor",
+      "searchByCategory": "Suche nach Kategorie",
+      "searchByTag": "Suche nach Tag"
+    },
+    "sidebar": {
+      "filters": "Filter",
+      "author": "Autor",
+      "category": "Kategorie",
+      "tag": "Etikett",
+      "applyFilters": "Filter"
+    },
+    "filterOption": {
+      "all": "All die {{type}}",
+      "delete": "Filter entfernen"
+    }
+  }
 }

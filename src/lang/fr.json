@@ -1,37 +1,193 @@
 {
-  "home1": "WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales depuis 1974.<nl/>Notre cabinet a pour vocation d'assister les entreprises internationales, de toutes tailles, dans leurs activités commerciales ou industrielles en France ou à l'étranger par le biais de conseils juridiques proactifs ainsi que par la représentation de nos clients devant les tribunaux et les instances arbitrales.<nl/>Nous pensons plus loin, nous travaillons plus intelligemment et nous agissons plus rapidement.<nl/>Nous représentons et conseillons nos clients au niveau national et international dans le cadre de transactions commerciales et rachats d'entreprises, y compris les fusions et acquisitions, les jointventures, les transferts de technologie, les contentieux et l'arbitrage, la criminalité en col blanc, le droit du travail ainsi que la gouvernance et le droit économique des entreprises.<nl/>Notre équipe, composée d'une vingtaine de personnes, se concentre exclusivement sur les besoins de votre entreprise afin de vous apporter nos services et solutions d'une manière plus efficace et durable.",
-  "PRESENTATION": "PRESENTATION",
-  "NOTRE EXPERTISE": "NOTRE EXPERTISE",
-  "ourGoal": "<0>Notre objectif est très simple :</0> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
-  "DROIT SOCIAL & RESTRUCTURATION": "DROIT SOCIAL & RESTRUCTURATION",
-  "FUSIONS & ACQUISITIONS": "FUSION & ACQUISITION",
-  "CORPORATE & RÉGLEMENTAIRE": "CORPORATE & REGLEMENTAIRE",
-  "CONTENTIEUX, MÉDIATION & ARBITRAGE INTERNATIONAL": "CONTENTIEUX, MEDIATION & ARBITRAGE INTERNATIONAL",
-  "PROCÉDURES COLLECTIVES": "PROCEDURES COLLECTIVES",
-  "DROIT COMMERCIAL & CONCURRENCE": "DROIT COMMERCIAL & CONCURRENCE",
-  "IP, DROIT DU NUMÉRIQUE, TECH & DATA": "IP, DROIT DU NUMERIQUE, TECH & DATA",
-  "DROIT PÉNAL DES AFFAIRES": "DROIT PÉNAL DES AFFAIRES",
-  "NOS ASSOCIÉS": "NOS ASSOCIÉS",
-  "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <0>qui cumulent plus de 100 annéesd’expérience professionnelle</0>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <0>et besoins</0> de nos clients. Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
-  "firmPresentation": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
-  "NOUS SOMMES DEDIES A VOTRE SUCCES": "NOUS SOMMES DEDIES A VOTRE SUCCES",
-  "nous-sommes-dedies-a-votre-succes-description": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
-  "NOUS SOMMES INTERNATIONAUX": "NOUS SOMMES INTERNATIONAUX",
-  "nous-sommes-internationnaux-description": "Les relations d'affaires avec les pays germanophones et anglophones ont toujours constitué une part importante de notre activité. C'est pourquoi notre cabinet compte des avocats admis aux barreaux de France (Paris), d'Allemagne (Berlin) et des Etats-Unis (New-York) à la fois. Notre implication dans le conseil et la représentation de clients français et internationaux implique que tous les avocats écrivent et parlent couramment le français, l'anglais et l'allemand. Au fil du temps, notre activité nous a amenés à élargir notre horizon et à représenter des entreprises de pays asiatiques tels que le Japon, la Corée et la Chine ou du Moyen-Orient.",
-  "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE",
-  "plus-loin-plus-intelligent-plus-rapide-description": "Bien que tous les avocats soient spécialisés, nous croyons en l'enrichissement de la créativité juridique par un large champ d'expérience en matière de conseil et de défense juridique.",
-  "VOTRE CONFIANCE NOUS HONORE": "VOTRE CONFIANCE NOUS HONORE",
-  "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises. L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques. Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client. Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client.",
-  "COMMENT NOUS TROUVER": "COMMENT NOUS TROUVER",
-  "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot. La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
-  "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
-  "Taxi (30 minutes)": "Taxi (30 minutes)",
-  "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
-  "Aéroport d'Orly ": "Aéroport d'Orly ",
-  "Taxi (40 minutes)": "Taxi (40 minutes)",
-  "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hôtels : De nombreux hôtels à proximité. Réservation possible.",
-  "Nom": "Nom",
-  "Email": "Email",
-  "Message": "Message",
-  "Écrivez ici votre message": "Écrivez ici votre message"
+  "/qui-sommes-nous": "/qui-sommes-nous",
+  "/partenaires": "/partenaires",
+  "/expertise": "/expertise",
+  "/carriere": "/carriere",
+  "/blog": "/blog",
+  "/contact": "/contact",
+  "Accueil": "Accueil",
+  "Qui sommes-nous": "Qui sommes-nous",
+  "Partenaires": "Partenaires",
+  "Expertise": "Expertise",
+  "Carrière": "Carrière",
+  "Blog": "Blog",
+  "Contact": "Contact",
+  "Nous contacter": "Nous contacter",
+  "En savoir plus": "En savoir plus",
+  "Envoyer": "Envoyer",
+  "errorMessages": {
+    "requiredName": "Veuillez renseigner votre nom",
+    "requiredEmail": "Veuillez renseigner votre adresse email",
+    "requiredSubject": "Veuillez renseigner le sujet de votre message",
+    "invalidEmail": "Adresse email invalide",
+    "requiredMessage": "Veuillez renseigner votre message"
+  },
+  "footer": {
+    "Pratique Juridique": "Pratique juridique",
+    "À propos de notre cabinet": "À propos de notre cabinet",
+    "Ressources": "Ressources",
+    "Droit du travail & de l'emploi": "Droit du travail & de l'emploi",
+    "Fusions & Acquisitions": "Fusions & Acquisitions",
+    "Propriété intellectuelle / industrielle": "Propriété intellectuelle / industrielle",
+    "Droit des sociétés": "Droit des sociétés",
+    "Litige & Arbitrage": "Litige & Arbitrage",
+    "Droit commercial & de la concurrence": "Droit commercial & de la concurrence",
+    "Droit de la faillite": "Droit de la faillite",
+    "Délinquance financière": "Délinquance financière",
+    "Ce que nous faisons": "Ce que nous faisons",
+    "Notre histoire": "Notre histoire",
+    "Notre équipe": "Notre équipe",
+    "Partenaires": "Partenaires",
+    "Rejoignez-nous : Carrières": "Rejoignez-nous : Carrières",
+    "Rejoignez-nous : Stagiaire juridique": "Rejoignez-nous : Stagiaire juridique",
+    "Diversité & Inclusion": "Diversité & Inclusion",
+    "Pro bono": "Pro bono",
+    "Articles & Publications": "Articles & Publications",
+    "Rapport sur la propriété intellectuelle 2022": "Rapport sur la propriété intellectuelle 2022",
+    "Rapport sur le droit du travail 2022": "Rapport sur le droit du travail 2022",
+    "Prévisions M&A 2022": "Prévisions M&A 2022",
+    "Réseau d'alliance Innangard": "Réseau d'alliance Innangard",
+    "Prix & Reconnaissance": "Prix & Reconnaissance",
+    "Rapport sur le droit des sociétés 2022": "Rapport sur le droit des sociétés 2022",
+    "Blog": "Blog",
+    "allRightsReserved": "2023 Weil & Associés. Informations légales. Tous droits réservés."
+  },
+  "home": {
+    "votreConfiance": "Votre confiance nous honore",
+    "presentation": "Présentation",
+    "heroSubtitle": "Un cabinet d'excellence dédié aux entreprises internationales",
+    "further": "Plus loin",
+    "smarter": "Plus intelligent",
+    "swiftly": "Plus rapide",
+    "home1": "WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales depuis 1974.<nl/>Notre cabinet a pour vocation d'assister les entreprises internationales, de toutes tailles, dans leurs activités commerciales ou industrielles en France ou à l'étranger par le biais de conseils juridiques proactifs ainsi que par la représentation de nos clients devant les tribunaux et les instances arbitrales.<nl/>Nous pensons plus loin, nous travaillons plus intelligemment et nous agissons plus rapidement.<nl/>Nous représentons et conseillons nos clients au niveau national et international dans le cadre de transactions commerciales et rachats d'entreprises, y compris les fusions et acquisitions, les jointventures, les transferts de technologie, les contentieux et l'arbitrage, la criminalité en col blanc, le droit du travail ainsi que la gouvernance et le droit économique des entreprises.<nl/>Notre équipe, composée d'une vingtaine de personnes, se concentre exclusivement sur les besoins de votre entreprise afin de vous apporter nos services et solutions d'une manière plus efficace et durable.",
+    "home2": "Notre cabinet est membre d'un réseau international de cabinets d'avocats partageant sa culture d'excellence et d'efficacité. Nos avocats sont également admis à exercer devant des barreaux étrangers, notamment en Allemagne ou au barreau de New York.<nl/>Outre le français et l'anglais, l'équipe travaille également en allemand, ce qui fait du cabinet un partenaire de haut niveau, expert dans les relations d'affaires transfrontalières entre la France et l'Allemagne.",
+    "articles": {
+      "title": "Articles",
+      "art1": "Discrimination sexiste en France",
+      "art2": "La Cour de cassation française",
+      "art3": "Les nouvelles règles de l'UE"
+    }
+  },
+  "expertise": {
+    "notreExpertise": "Notre Expertise",
+    "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise.<nl/>C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
+    "droitSocialrestructuration": "DROIT SOCIAL & RESTRUCTURATION",
+    "fusionAquisitions": "FUSION & ACQUISITION",
+    "corporateReglement": "CORPORATE & REGLEMENTAIRE",
+    "contentieux": "CONTENTIEUX, MEDIATION & ARBITRAGE INTERNATIONAL",
+    "procedureColl": "PROCEDURES COLLECTIVES",
+    "droitCommercial": "DROIT COMMERCIAL & CONCURRENCE",
+    "droitNumerique": "IP, DROIT DU NUMERIQUE, TECH & DATA",
+    "droitpenal": "DROIT PÉNAL DES AFFAIRES"
+  },
+  "partenaire": {
+    "nosAssocies": "Nos Associées",
+    "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <bold>qui cumulent plus de 100 annéesd’expérience professionnelle</bold>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <bold>et besoins</bold> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
+    "members": {
+      "brunoWeil": {
+        "intro": "Actif depuis vingt-cinq ans en tant qu'avocat d’entreprises internationales de toutes tailles, présentes ou actives en France, Bruno Weil est votre interlocuteur privilégié au sein de notre cabinet pour toute question relative à la propriété intellectuelle, le droit du numérique, tech et data, son domaine de prédilection. A ce titre, il intervient en tant que conseil ou avocat devant les juridictions pour tout type de dossiers contentieux. En sa qualité de conseil, il a représenté avec succès plusieurs grandes sociétés américaines ou allemandes cotées en bourse devant les tribunaux français, notamment dans des procès complexes de contrefaçon de brevets, marques et droit d’auteur. Ancien correspondant pour la France de l'éditeur KLUWER LAW INTERNATIONAL, il est également membre de plusieurs associations internationales traitant de la propriété intellectuelle et des nouvelles technologies, telles que Licensing Executive Society - LES - Allemagne, GRUR et ITECHLAW. Bruno Weil est également actif dans d'autres domaines tels que la restructuration d'entreprises ou les rachats d'entreprises. Sa pratique quotidienne implique également tous types de litiges liés à l'entreprise. Son objectif principal consiste à élaborer avec succès la stratégie économique la plus efficace pour faire prévaloir les intérêts de nos clients.Outre le français, il parle couramment l'allemand et l'anglais. Batteur et percussionniste amateur, il est père de trois enfants."
+      },
+      "ericWeil": {
+        "intro": ""
+      },
+      "patriciaVincent": {
+        "intro": ""
+      },
+      "mathildeHouet": {
+        "intro": ""
+      },
+      "heinzWeil": {
+        "intro": ""
+      }
+    }
+  },
+  "whoWeAre": {
+    "presentation": "Présentation",
+    "firmPresentation": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
+    "NOUS SOMMES DEDIES A VOTRE SUCCES": "NOUS SOMMES DEDIES A VOTRE SUCCES",
+    "nous-sommes-dedies-a-votre-succes-description": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
+    "NOUS SOMMES INTERNATIONAUX": "NOUS SOMMES INTERNATIONAUX",
+    "nous-sommes-internationnaux-description": "Les relations d'affaires avec les pays germanophones et anglophones ont toujours constitué une part importante de notre activité. C'est pourquoi notre cabinet compte des avocats admis aux barreaux de France (Paris), d'Allemagne (Berlin) et des Etats-Unis (New-York) à la fois. Notre implication dans le conseil et la représentation de clients français et internationaux implique que tous les avocats écrivent et parlent couramment le français, l'anglais et l'allemand. Au fil du temps, notre activité nous a amenés à élargir notre horizon et à représenter des entreprises de pays asiatiques tels que le Japon, la Corée et la Chine ou du Moyen-Orient.",
+    "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE",
+    "plus-loin-plus-intelligent-plus-rapide-description": "Bien que tous les avocats soient spécialisés, nous croyons en l'enrichissement de la créativité juridique par un large champ d'expérience en matière de conseil et de défense juridique.",
+    "VOTRE CONFIANCE NOUS HONORE": "VOTRE CONFIANCE NOUS HONORE",
+    "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises. L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques. Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client. Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client."
+  },
+  "contact": {
+    "informationPratique": "Information Pratique",
+    "commentNousTrouvez": "COMMENT NOUS TROUVER",
+    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot. La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
+    "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
+    "Taxi (30 minutes)": "Taxi (30 minutes)",
+    "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
+    "Aéroport d'Orly ": "Aéroport d'Orly ",
+    "Taxi (40 minutes)": "Taxi (40 minutes)",
+    "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hôtels : De nombreux hôtels à proximité. Réservation possible.",
+    "Nom": "Nom",
+    "Email": "Email",
+    "Message": "Message",
+    "Écrivez ici votre message": "Écrivez ici votre message",
+    "contactForm": {
+      "restonEnContact": "Restons en contact",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "placeholderMessage": "Écrivez ici votre message"
+    }
+  },
+  "career": {
+    "recrutement": "Recrutement",
+    "image-description": "photo d'un groupe d'avocats au travail",
+    "talents": {
+      "title": "Talents",
+      "subtitle": "Notre objectif est de libérer le potentiel de tous nos collaborateurs",
+      "paragraph1": "Nous accueillons toujours les candidatures de jeunes avocats ayant un diplôme en droit international des affaires éventuellement couplé à une expérience professionnelle, et qui parlent couramment le français, l'anglais et l'allemand.",
+      "paragraph2": "Venez travailler sur des cas intéressants au sein d'une équipe innovante et passionnée. Nous sommes un cabinet d'avocats de premier plan qui travaillent sur des dossiers avec un esprit positif. Chaque jour, nous nous mettons au défi de construire ensemble des solutions durables pour nos clients."
+    },
+    "internship": {
+      "title": "Stages",
+      "subtitle": "Les étudiants et notre programme de stages",
+      "paragraph1": "Nous accueillons toujours les candidatures de jeunes avocats ayant un diplôme en droit international des affaires éventuellement couplé à une expérience professionnelle, et qui parlent couramment le français, l'anglais et l'allemand.",
+      "paragraph2": "Venez travailler sur des cas intéressants au sein d'une équipe innovante et passionnée. Nous sommes un cabinet d'avocats de premier plan qui travaillent sur des dossiers avec un esprit positif. Chaque jour, nous nous mettons au défi de construire ensemble des solutions durables pour nos clients."
+    },
+    "admins-and-paralegals": {
+      "title": "Assistants et Parajuristes",
+      "text": "Les candidatures d'assistants ayant une bonne connaissance en français, anglais et allemand sont également les bienvenues et très appréciées.",
+      "contact": "Vous pouvez aussi nous envoyer votre candidature et votre CV par mail à :"
+    },
+    "career-contact-form": {
+      "title": "Merci",
+      "text": "de nous envoyer votre candidature accompagnée de votre CV et d'une lettre de motivation",
+      "placeholder": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "En recherche de stage ? Avocat motivé ? Nous vous encourageons à soumettre votre candidature. Vous êtes probablement la personne que nous recherchons.",
+        "send": "Envoyer"
+      }
+    }
+  },
+  "blog": {
+    "articles": "Articles",
+    "authors": "Auteurs",
+    "categories": "Catégories",
+    "tags": "Tags",
+    "knowMore": "En savoir plus",
+    "filters": {
+      "searchByAuthor": "Rechercher par auteur",
+      "searchByCategory": "Rechercher par catégorie",
+      "searchByTag": "Rechercher par tag"
+    },
+    "sidebar": {
+      "filters": "Filtres",
+      "author": "Auteur",
+      "category": "Catégorie",
+      "tag": "Tag",
+      "applyFilters": "Filtrer"
+    },
+    "filterOption": {
+      "all": "Tous les {{type}}",
+      "delete": "Supprimer les filtres"
+    }
+  }
 }

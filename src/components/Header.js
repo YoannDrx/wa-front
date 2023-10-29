@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button, Drawer, Dropdown, Menu, Navbar } from "react-daisyui";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
@@ -53,6 +53,7 @@ const MenuItems = () => {
     { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
     { href: "/carriere", label: "Carriere" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -67,10 +68,31 @@ const MenuItems = () => {
 
 export default function Header({ children, light = false, ...args }) {
   const [visible, setVisible] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState("show");
 
   const toggleVisible = () => {
     setVisible(!visible);
   };
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      let st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        setScrollDirection("slideUp");
+      } else {
+        setScrollDirection("slideDown");
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Drawer
@@ -84,8 +106,11 @@ export default function Header({ children, light = false, ...args }) {
         </Menu>
       }>
       <div>
-        <div>
-          <Navbar className={`container ${light ? "text-white" : "text-base-content"}`}>
+        <div
+          className={`fixed bg-white top-0 z-50 w-full transition-all duration-300 ${scrollDirection} ${
+            scrollDirection !== "show" ? "shadow-md" : ""
+          }`}>
+          <Navbar className={`sticky top-0 container ${light ? "text-white" : "text-base-content"}`}>
             <div className="flex-none lg:hidden">
               <Button shape="square" color="ghost" onClick={toggleVisible}>
                 <svg

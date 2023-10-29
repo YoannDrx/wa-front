@@ -9,27 +9,27 @@ export default function Contact() {
   return (
     <div>
       <div className="container mx-auto">
-        <PageJumbo titleKey="INFORMATIONS PRATIQUES" textKey="" />
+        <PageJumbo titleKey="contact.informationPratique" textKey="" />
         <div className="md:flex py-20">
           <div className="w-full md:w-1/2 px-5">
-            <h2 className="text-xl font-bold text-primary">{t("Comment nous trouver")} ?</h2>
+            <h2 className="text-xl font-bold text-primary">{t("contact.commentNousTrouvez")} ?</h2>
             <p className="text-md leading-normal">
-              <Trans i18nKey="info-contact" />
+              <Trans i18nKey="contact.info-contact" />
             </p>
 
             <p className="text-md leading-normal">
-              <span className="font-bold">{t("Aéroport Charles de Gaulle")} :</span>
+              <span className="font-bold">{t("contact.Aéroport Charles de Gaulle")} :</span>
               <br />
-              {t("Taxi (30 minutes)")}
+              {t("contact.Taxi (30 minutes)")}
               <br />
-              {t("Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
+              {t("contact.Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
             </p>
             <p className="text-md leading-normal">
-              <span className="font-bold">{t("Aéroport d'Orly ")}:</span>
+              <span className="font-bold">{t("contact.Aéroport d'Orly ")}:</span>
               <br />
-              {t("Taxi (40 minutes)")}
+              {t("contact.Taxi (40 minutes)")}
               <br />
-              {t("Hôtels : De nombreux hôtels à proximité. Réservation possible.")}
+              {t("contact.Hôtels : De nombreux hôtels à proximité. Réservation possible.")}
             </p>
           </div>
           <div className="w-full md:w-1/2 px-5">
