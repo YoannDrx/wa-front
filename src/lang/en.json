@@ -103,15 +103,15 @@
   },
   "whoWeAre": {
     "presentation": "Presentation",
-    "firmPresentation": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies.<nl/>Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
+    "firmPresentation": "Founded in 1974, WEIL & ASSOCIES has rapidly earned a reputation for excellence in corporate law on a global scale. <nl/>At the heart of our mission: cutting-edge legal expertise that fosters innovation and growth for our clients, whether they are multinational companies or SMEs. <nl/>Our versatile team is particularly renowned for its responsiveness and attention to detail, ensuring effective representation before courts and arbitral institutions.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "WE ARE DEDICATED TO YOUR SUCCESS",
-    "nous-sommes-dedies-a-votre-succes-description": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies. Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
+    "nous-sommes-dedies-a-votre-succes-description": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies.<nl/>Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
     "NOUS SOMMES INTERNATIONAUX": "WE ARE INTERNATIONAL",
-    "nous-sommes-internationnaux-description": "Business relationships of German and English speaking countries have always been a major part of our activity. Therefore, our firm has lawyers admitted at bars in France, Germany and the USA at the same time. Our involvement in the advice to and representation of international clients implies that all lawyers write and speak fluently German, French and English. In the course of time, our activity conducted us to broaden our horizon and to represent companies from countries such as Japan, Korea and China.",
+    "nous-sommes-internationnaux-description": "Business relationships of German and English speaking countries have always been a major part of our activity. Therefore, our firm has lawyers admitted at bars in France, Germany and the USA at the same time.<nl/>Our involvement in the advice to and representation of international clients implies that all lawyers write and speak fluently German, French and English.<nl/>In the course of time, our activity conducted us to broaden our horizon and to represent companies from countries such as Japan, Korea and China.",
     "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "FARTER SMARTER SWIFTLY",
     "plus-loin-plus-intelligent-plus-rapide-description": "Even though all lawyers are specialised, we believe in an enrichment of the juristic creativity by a large field of experience in legal advice and defence.",
     "VOTRE CONFIANCE NOUS HONORE": "Your Trust is our Pride",
-    "votre-confiance-nous-honore-description": "Our work is based on mutual trust with each and every client, international companies as well as small and medium-sized enterprises. Each client’s activity, products and professional environment are carefully taken into consideration as our goal is to provide our client with tailor made solutions which take due account of the client’s specific business interests. Thanks to the small size of our firm, we compose a team of dynamic lawyers who are acquainted to respond rapidly and with flexibility to the client’s needs. We shall never forget that the essence of our work, be it legal advice or advocacy, is to achieve an economically valuable result for our client."
+    "votre-confiance-nous-honore-description": "Our work is based on mutual trust with each and every client, international companies as well as small and medium-sized enterprises.<nl/>Each client’s activity, products and professional environment are carefully taken into consideration as our goal is to provide our client with tailor made solutions which take due account of the client’s specific business interests.<nl/>Thanks to the small size of our firm, we compose a team of dynamic lawyers who are acquainted to respond rapidly and with flexibility to the client’s needs.<nl/>We shall never forget that the essence of our work, be it legal advice or advocacy, is to achieve an economically valuable result for our client."
   },
   "contact": {
     "informationPratique": "Practical information",
@@ -188,6 +188,12 @@
     "filterOption": {
       "all": "All the {{type}}",
       "delete": "Remove filters"
-    }
+    },
+    "shareArticle": "Share this article",
+    "comment": "Leave a comment",
+    "reply": "Reply",
+    "author": "Author",
+    "date": "Publication date",
+    "category": "Category"
   }
 }

@@ -12,7 +12,7 @@ export default function Career() {
       <PageJumbo titleKey="Recrutement" textKey="" />
       <div className="container py-20">
         {/* Bloc 1 */}
-        <div className="flex flex-wrap md:flex-nowrap items-center">
+        <div className="flex flex-wrap md:flex-nowrap items-center pb-20">
           <div className="w-full md:w-1/2 flex justify-center mb-4 md:mb-0">
             <Image src="/assets/career/career1.jpg" alt={t("career.image-description")} width={500} height={300} />
           </div>

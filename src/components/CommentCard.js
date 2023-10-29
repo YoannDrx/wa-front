@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const CommentCard = ({ name, date, content }) => {
+  const { t } = useTranslation();
   return (
     <div className={"w-full border p-4 mb-4 relative leftBlueCard"}>
       <div className="absolute top-2 right-2 font-bold text-primary">
-        <button className="text-sm">Reply</button>
+        <button className="text-sm">{t("blog.reply")}</button>
       </div>
       <div className="flex items-start">
         <div className="flex-shrink-0">

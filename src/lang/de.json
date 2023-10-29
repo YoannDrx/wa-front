@@ -103,15 +103,15 @@
   },
   "whoWeAre": {
     "presentation": "Präsentation",
-    "firmPresentation": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationalerUnternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
+    "firmPresentation": "WEIL & ASSOCIES wurde 1974 gegründet und hat sich schnell einen Ruf als weltweit führende Kanzlei im Bereich des Unternehmensrechts erworben. <nl/> Im Mittelpunkt unseres Auftrags steht eine hochkarätige juristische Expertise, die die Innovation und das Wachstum unserer Mandanten fördert, seien es multinationale Unternehmen oder mittelständische Betriebe. <nl/> Unser vielseitiges Team ist besonders für seine Reaktionsfähigkeit und Detailgenauigkeit bekannt und gewährleistet so eine effektive Vertretung vor Gerichten und Schiedsinstitutionen.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "WIR WIDMEN UNS IHREM ERFOLG",
-    "nous-sommes-dedies-a-votre-succes-description": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationalerUnternehmen. Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
+    "nous-sommes-dedies-a-votre-succes-description": "Seit ihrer Gründung im Jahr 1974 ist WEIL & ASSOCIES eine Anwaltskanzlei im Dienste internationalerUnternehmen.<nl/>Unsere Kanzlei hat es sich zur Aufgabe gemacht, sowohl internationale als auch kleine und mittlere Unternehmen bei ihren Handels- oder Industrieaktivitäten in Frankreich oder im Ausland durch proaktive Rechtsberatung sowie durch die Verteidigung unserer Mandanten vor Gerichten und Schiedsgerichten zu unterstützen.",
     "NOUS SOMMES INTERNATIONAUX": "WIR SIND INTERNATIONAL",
-    "nous-sommes-internationnaux-description": "Geschäftsbeziehungen mit deutsch- und englischsprachigen Ländern waren schon immer ein wichtiger Teil unserer Tätigkeit. Daher sind in unserer Kanzlei Anwälte tätig, die sowohl in Frankreich (Paris) als auch in Deutschland (Berlin) und den USA (New York) zugelassen sind. Unsere Beteiligung an der Beratung und Vertretung von französischen und internationalen Mandanten bedeutet, dass unsere Anwälte fließend Französisch, Englisch und Deutsch schreiben und sprechen. Im Laufe der Zeit hat unsere Tätigkeit dazu geführt, dass wir unseren Horizont erweitern und Unternehmen aus asiatischen Ländern wie Japan, Korea und China oder dem Nahen Osten vertreten.",
+    "nous-sommes-internationnaux-description": "Geschäftsbeziehungen mit deutsch- und englischsprachigen Ländern waren schon immer ein wichtiger Teil unserer Tätigkeit. Daher sind in unserer Kanzlei Anwälte tätig, die sowohl in Frankreich (Paris) als auch in Deutschland (Berlin) und den USA (New York) zugelassen sind.<nl/>Unsere Beteiligung an der Beratung und Vertretung von französischen und internationalen Mandanten bedeutet, dass unsere Anwälte fließend Französisch, Englisch und Deutsch schreiben und sprechen.<nl/>Im Laufe der Zeit hat unsere Tätigkeit dazu geführt, dass wir unseren Horizont erweitern und Unternehmen aus asiatischen Ländern wie Japan, Korea und China oder dem Nahen Osten vertreten.",
     "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "WEITER KLÜGER SCHNELLER",
     "plus-loin-plus-intelligent-plus-rapide-description": "Obwohl alle Anwälte spezialisiert sind, glauben wir an die Bereicherung der juristischen Kreativität durch ein breites Spektrum an Erfahrung in der Rechtsberatung und -verteidigung.",
     "VOTRE CONFIANCE NOUS HONORE": "IHR VERTRAUEN EHRT UNS",
-    "votre-confiance-nous-honore-description": "Unsere Arbeit basiert auf gegenseitigem Vertrauen zu jedem unserer Kunden, egal ob es sich um internationale Konzerne oder kleine und mittlere Unternehmen handelt. Die Geschäftstätigkeit, die Produkte und das geschäftliche Umfeld jedes Mandanten werden sorgfältig berücksichtigt, denn unser Ziel ist es, unseren Mandanten maßgeschneiderte Lösungen zu bieten, die ihren spezifischen Geschäftsinteressen Rechnung tragen. Dank der geringen Größe unserer Kanzlei stellen wir ein dynamisches Team von Anwälten zusammen, die schnell und flexibel auf die Bedürfnisse des Mandanten reagieren können. Wir werden nie vergessen, dass der Kern unserer Arbeit, sei es Rechtsberatung oder vor Gericht, darin besteht, ein wirtschaftlich wertvolles Ergebnis für unseren Mandanten zu erzielen."
+    "votre-confiance-nous-honore-description": "Unsere Arbeit basiert auf gegenseitigem Vertrauen zu jedem unserer Kunden, egal ob es sich um internationale Konzerne oder kleine und mittlere Unternehmen handelt.<nl/>Die Geschäftstätigkeit, die Produkte und das geschäftliche Umfeld jedes Mandanten werden sorgfältig berücksichtigt, denn unser Ziel ist es, unseren Mandanten maßgeschneiderte Lösungen zu bieten, die ihren spezifischen Geschäftsinteressen Rechnung tragen.<nl/>Dank der geringen Größe unserer Kanzlei stellen wir ein dynamisches Team von Anwälten zusammen, die schnell und flexibel auf die Bedürfnisse des Mandanten reagieren können.<nl/>Wir werden nie vergessen, dass der Kern unserer Arbeit, sei es Rechtsberatung oder vor Gericht, darin besteht, ein wirtschaftlich wertvolles Ergebnis für unseren Mandanten zu erzielen."
   },
   "contact": {
     "informationPratique": "Praktische Information",
@@ -188,6 +188,12 @@
     "filterOption": {
       "all": "All die {{type}}",
       "delete": "Filter entfernen"
-    }
+    },
+    "shareArticle": "Artikel teilen",
+    "comment": "Einen Kommentar hinterlassen",
+    "reply": "Antworten",
+    "author": "Autor",
+    "date": "Veröffentlichungsdatum",
+    "category": "Kategorie"
   }
 }

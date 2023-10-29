@@ -70,7 +70,7 @@
   },
   "expertise": {
     "notreExpertise": "Notre Expertise",
-    "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise.<nl/>C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
+    "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
     "droitSocialrestructuration": "DROIT SOCIAL & RESTRUCTURATION",
     "fusionAquisitions": "FUSION & ACQUISITION",
     "corporateReglement": "CORPORATE & REGLEMENTAIRE",
@@ -103,20 +103,20 @@
   },
   "whoWeAre": {
     "presentation": "Présentation",
-    "firmPresentation": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
+    "firmPresentation": "Créé en 1974, WEIL & ASSOCIES a rapidement acquis une réputation d'excellence dans le domaine du droit des entreprises à l'échelle mondiale. <nl/>Au cœur de notre mission : une expertise juridique pointue qui favorise l'innovation et la croissance de nos clients, qu'ils soient des entreprises multinationales ou des PME. <nl/>Notre équipe polyvalente est particulièrement réputée pour sa réactivité et son sens du détail, garantissant ainsi une représentation efficace devant les tribunaux et les institutions arbitrales.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "NOUS SOMMES DEDIES A VOTRE SUCCES",
-    "nous-sommes-dedies-a-votre-succes-description": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales. Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
+    "nous-sommes-dedies-a-votre-succes-description": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales.<nl/>Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
     "NOUS SOMMES INTERNATIONAUX": "NOUS SOMMES INTERNATIONAUX",
-    "nous-sommes-internationnaux-description": "Les relations d'affaires avec les pays germanophones et anglophones ont toujours constitué une part importante de notre activité. C'est pourquoi notre cabinet compte des avocats admis aux barreaux de France (Paris), d'Allemagne (Berlin) et des Etats-Unis (New-York) à la fois. Notre implication dans le conseil et la représentation de clients français et internationaux implique que tous les avocats écrivent et parlent couramment le français, l'anglais et l'allemand. Au fil du temps, notre activité nous a amenés à élargir notre horizon et à représenter des entreprises de pays asiatiques tels que le Japon, la Corée et la Chine ou du Moyen-Orient.",
+    "nous-sommes-internationnaux-description": "Les relations d'affaires avec les pays germanophones et anglophones ont toujours constitué une part importante de notre activité. C'est pourquoi notre cabinet compte des avocats admis aux barreaux de France (Paris), d'Allemagne (Berlin) et des Etats-Unis (New-York) à la fois.<nl/>Notre implication dans le conseil et la représentation de clients français et internationaux implique que tous les avocats écrivent et parlent couramment le français, l'anglais et l'allemand.<nl/>Au fil du temps, notre activité nous a amenés à élargir notre horizon et à représenter des entreprises de pays asiatiques tels que le Japon, la Corée et la Chine ou du Moyen-Orient.",
     "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE",
     "plus-loin-plus-intelligent-plus-rapide-description": "Bien que tous les avocats soient spécialisés, nous croyons en l'enrichissement de la créativité juridique par un large champ d'expérience en matière de conseil et de défense juridique.",
     "VOTRE CONFIANCE NOUS HONORE": "VOTRE CONFIANCE NOUS HONORE",
-    "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises. L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques. Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client. Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client."
+    "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises.<nl/>L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques.<nl/>Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client.<nl/>Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client."
   },
   "contact": {
     "informationPratique": "Information Pratique",
     "commentNousTrouvez": "COMMENT NOUS TROUVER",
-    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot. La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
+    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. <nl/>Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot.<nl/>La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
     "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
     "Taxi (30 minutes)": "Taxi (30 minutes)",
     "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
@@ -188,6 +188,12 @@
     "filterOption": {
       "all": "Tous les {{type}}",
       "delete": "Supprimer les filtres"
-    }
+    },
+    "shareArticle": "Partager l'article",
+    "comment": "Laisser un commentaire",
+    "reply": "Répondre",
+    "author": "Auteur",
+    "date": "Date de publication",
+    "category": "Catégorie"
   }
 }
