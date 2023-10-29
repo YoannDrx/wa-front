@@ -97,25 +97,34 @@ function Home() {
         </div>
       </div>
       <div className="container py-20">
-        <h2 className="text-center underblue">Articles</h2>
+        <h2 className="text-center underblue">{t("home.articles.title")}</h2>
         <div className="flex flex-wrap gap-4 justify-center">
           <ArticleHomeCard
             className="min-w-[256px]"
             title={t("home.articles.art1")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
+            slug={
+              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
+            }
           />
           <ArticleHomeCard
             className="min-w-[256px]"
             title={t("home.articles.art2")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
+            slug={
+              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
+            }
           />
           <ArticleHomeCard
             className="min-w-[256px]"
             title={t("home.articles.art3")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
+            slug={
+              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
+            }
           />
         </div>
       </div>

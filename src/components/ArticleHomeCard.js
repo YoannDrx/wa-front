@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
-import { t } from "i18next";
 import { useIsMobile } from "../../utils/useIsMobile";
 import { useArticleCardContext } from "../../contexts/ArticleCardContext";
+import { useTranslation } from "react-i18next";
 
-export default function ArticleHomeCard({ backgroundImage, date, title, href }) {
+export default function ArticleHomeCard({ backgroundImage, date, title, slug }) {
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useIsMobile();
+  const { t } = useTranslation();
   const { openedCard, setOpenedCard } = useArticleCardContext();
 
   const day = new Date(date).getDate();
@@ -22,7 +23,7 @@ export default function ArticleHomeCard({ backgroundImage, date, title, href }) 
 
   return (
     <div
-      className="relative w-80 h-64 overflow-hidden cursor-pointer"
+      className="relative w-80 h-64 overflow-hidden"
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
       onClick={toggleHover}>
@@ -52,7 +53,7 @@ export default function ArticleHomeCard({ backgroundImage, date, title, href }) 
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores iste totam vero earum aliquid ducimus
               vel dolor delectus distinctio et, facere quos illum temporibus recusandae illo pariatur, ad labore.
             </div>
-            <Button href={href} color="primary" className="self-center mt-4 w-2/5">
+            <Button href={`/blog/${slug}`} color="primary" className="self-center mt-4 w-2/5 cursor-pointer">
               {t("En savoir plus")}
             </Button>
           </div>
