@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const ArticleCard = ({ article }) => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white p-4 rounded-none mb-4 w-full border border-gray-300">
       <div className="flex justify-between">
@@ -14,7 +16,7 @@ const ArticleCard = ({ article }) => {
       <p>{article.description}</p>
       <div className="mt-4">
         <Link href={`/article/${article.id}`} className="text-primary hover:underline">
-          En savoir plus ➔
+          {t("blog.knowMore")} ➔
         </Link>
       </div>
     </div>

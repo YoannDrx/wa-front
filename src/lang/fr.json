@@ -72,5 +72,28 @@
         "send": "Envoyer"
       }
     }
+  },
+  "blog": {
+    "articles": "Articles",
+    "authors": "Auteurs",
+    "categories": "Catégories",
+    "tags": "Tags",
+    "knowMore": "En savoir plus",
+    "filters": {
+      "searchByAuthor": "Rechercher par auteur",
+      "searchByCategory": "Rechercher par catégorie",
+      "searchByTag": "Rechercher par tag"
+    },
+    "sidebar": {
+      "filters": "Filtres",
+      "author": "Auteur",
+      "category": "Catégorie",
+      "tag": "Tag",
+      "applyFilters": "Filtrer"
+    },
+    "filterOption": {
+      "all": "Tous les {{type}}",
+      "delete": "Supprimer les filtres"
+    }
   }
 }

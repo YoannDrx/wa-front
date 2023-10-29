@@ -2,6 +2,7 @@ import ArticleCard from "@/components/ArticleCard";
 import PageJumbo from "@/components/PageJumbo";
 import Sidebar from "@/components/Sidebar";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const articles = [
   {
@@ -34,6 +35,7 @@ const articles = [
 ];
 
 export default function Blog() {
+  const { t } = useTranslation();
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
   const setFilter = (filters) => {
@@ -51,9 +53,9 @@ export default function Blog() {
 
   return (
     <div>
-      <PageJumbo titleKey="Articles" />
+      <PageJumbo titleKey={t("blog.articles")} />
       <div className="container mx-auto flex flex-col md:flex-row">
-        <div className="w-full md:w-64 p-4 mb-4 md:mb-0 md:ml-4 md:order-2" style={{ backgroundColor: "#E4EDF1" }}>
+        <div className="w-full md:w-64 p-4 md:ml-4 md:mb-4 md:order-2" style={{ backgroundColor: "#E4EDF1" }}>
           <Sidebar setFilter={setFilter} authors={authors} categories={categories} tags={tags} />
         </div>
         <div className="flex-grow md:order-1">
