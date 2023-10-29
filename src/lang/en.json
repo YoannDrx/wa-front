@@ -12,6 +12,9 @@
   "Carrière": "Career",
   "Blog": "Blog",
   "Contact": "Contact",
+  "Nous contacter": "Contact us",
+  "En savoir plus": "Learn more",
+  "Envoyer": "Send",
   "errorMessages": {
     "requiredName": "Please enter your name",
     "requiredEmail": "Please enter your email address",
