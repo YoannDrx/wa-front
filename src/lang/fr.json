@@ -1,4 +1,17 @@
 {
+  "/qui-sommes-nous": "/qui-sommes-nous",
+  "/partenaires": "/partenaires",
+  "/expertise": "/expertise",
+  "/carriere": "/carriere",
+  "/blog": "/blog",
+  "/contact": "/contact",
+  "Accueil": "Accueil",
+  "Qui sommes-nous": "Qui sommes-nous",
+  "Partenaires": "Partenaires",
+  "Expertise": "Expertise",
+  "Carrière": "Carrière",
+  "Blog": "Blog",
+  "Contact": "Contact",
   "errorMessages": {
     "requiredName": "Veuillez renseigner votre nom",
     "requiredEmail": "Veuillez renseigner votre adresse email",
@@ -39,6 +52,7 @@
   "home": {
     "votreConfiance": "Votre confiance nous honore",
     "presentation": "Présentation",
+    "heroSubtitle": "Un cabinet d'excellence dédié aux entreprises internationales",
     "further": "Plus loin",
     "smarter": "Plus intelligent",
     "swiftly": "Plus rapide",
@@ -67,7 +81,7 @@
     "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <bold>qui cumulent plus de 100 annéesd’expérience professionnelle</bold>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <bold>et besoins</bold> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
     "members": {
       "brunoWeil": {
-        "intro": "Actif depuis une quinzaine d'années en tant qu'avocat de sociétés de taille moyenne ou internationales présentes ou actives en France, Bruno Weil est votre interlocuteur privilégié au sein de notre cabinet pour toute question relative à la propriété intellectuelle, aux technologies de l'information ou aux NTC, son domaine de prédilection. A ce titre, il intervient en tant que conseil ou avocat devant les juridictions pour les cas de contrefaçon de brevet, de marque ou de droit d'auteur, ainsi que pour toute négociation de contrat de licence ou de transfert de savoir-faire. En sa qualité de conseil, il a représenté avec succès plusieurs grandes sociétés américaines ou allemandes cotées en bourse devant les tribunaux français, notamment dans des procès complexes de contrefaçon de brevets portant sur plusieurs millions d'euros. Ancien correspondant pour la France de l'éditeur KLUWER LAW INTERNATIONAL, rapporteur pour la section \"brevets\" de la base de données \"EU IP CASES\" publiée par KLUWER sous www.kluwereuipcases.com, il est également membre de plusieurs associations internationales traitant de la propriété intellectuelle et des nouvelles technologies, telles que Licensing Executive Society - LES - Allemagne, GRUR et ITECHLAW. Bruno Weil est également actif dans d'autres cas tels que la restructuration d'entreprises ou lors de reprises. Sa pratique quotidienne s'étend également aux procédures judiciaires, pour tout litige lié aux affaires. Son objectif principal consiste à élaborer avec succès la stratégie économique la plus saine pour faire prévaloir les intérêts de nos clients. Outre le français, il parle couramment l'allemand et l'anglais. Batteur et percussionniste amateur, il est marié et père de deux filles. Bruno a récemment publié un article sur le cadre juridique du secret des affaires en France : La protection du secret des affaires est renforcée en droit français (2019)."
+        "intro": "Actif depuis vingt-cinq ans en tant qu'avocat d’entreprises internationales de toutes tailles, présentes ou actives en France, Bruno Weil est votre interlocuteur privilégié au sein de notre cabinet pour toute question relative à la propriété intellectuelle, le droit du numérique, tech et data, son domaine de prédilection. A ce titre, il intervient en tant que conseil ou avocat devant les juridictions pour tout type de dossiers contentieux. En sa qualité de conseil, il a représenté avec succès plusieurs grandes sociétés américaines ou allemandes cotées en bourse devant les tribunaux français, notamment dans des procès complexes de contrefaçon de brevets, marques et droit d’auteur. Ancien correspondant pour la France de l'éditeur KLUWER LAW INTERNATIONAL, il est également membre de plusieurs associations internationales traitant de la propriété intellectuelle et des nouvelles technologies, telles que Licensing Executive Society - LES - Allemagne, GRUR et ITECHLAW. Bruno Weil est également actif dans d'autres domaines tels que la restructuration d'entreprises ou les rachats d'entreprises. Sa pratique quotidienne implique également tous types de litiges liés à l'entreprise. Son objectif principal consiste à élaborer avec succès la stratégie économique la plus efficace pour faire prévaloir les intérêts de nos clients.Outre le français, il parle couramment l'allemand et l'anglais. Batteur et percussionniste amateur, il est père de trois enfants."
       },
       "ericWeil": {
         "intro": ""
@@ -95,19 +109,28 @@
     "VOTRE CONFIANCE NOUS HONORE": "VOTRE CONFIANCE NOUS HONORE",
     "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises. L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques. Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client. Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client."
   },
-
-  "COMMENT NOUS TROUVER": "COMMENT NOUS TROUVER",
-  "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot. La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
-  "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
-  "Taxi (30 minutes)": "Taxi (30 minutes)",
-  "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
-  "Aéroport d'Orly ": "Aéroport d'Orly ",
-  "Taxi (40 minutes)": "Taxi (40 minutes)",
-  "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hôtels : De nombreux hôtels à proximité. Réservation possible.",
-  "Nom": "Nom",
-  "Email": "Email",
-  "Message": "Message",
-  "Écrivez ici votre message": "Écrivez ici votre message",
+  "contact": {
+    "informationPratique": "Information Pratique",
+    "commentNousTrouvez": "COMMENT NOUS TROUVER",
+    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot. La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
+    "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
+    "Taxi (30 minutes)": "Taxi (30 minutes)",
+    "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
+    "Aéroport d'Orly ": "Aéroport d'Orly ",
+    "Taxi (40 minutes)": "Taxi (40 minutes)",
+    "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hôtels : De nombreux hôtels à proximité. Réservation possible.",
+    "Nom": "Nom",
+    "Email": "Email",
+    "Message": "Message",
+    "Écrivez ici votre message": "Écrivez ici votre message",
+    "contactForm": {
+      "restonEnContact": "Restons en contact",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "placeholderMessage": "Écrivez ici votre message"
+    }
+  },
   "career": {
     "recrutement": "Recrutement",
     "image-description": "photo d'un groupe d'avocats au travail",

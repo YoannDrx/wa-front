@@ -1,47 +1,189 @@
 {
   "/qui-sommes-nous": "/who-we-are",
   "/partenaires": "/partners",
+  "/expertise": "/expertise",
   "/carriere": "/career",
-  "Qui sommes-nous": "Who we are",
+  "/blog": "/blog",
+  "/contact": "/contact",
+  "Accueil": "Welcome",
+  "Qui sommes-nous": "Who are we",
   "Partenaires": "Partners",
-  "Accueil": "Home",
-  "Un cabinet d'excellence dédié au conseil des entreprises internationales": "A boutique law firm dedicated to support international companies",
-  "Nous contacter": "Contact us",
-  "En savoir plus": "Read more",
-  "PRESENTATION": "PRESENTATION",
-  "home1": "WEIL & ASSOCIES is a law firm dedicated to the service of international companies since 1974.<nl/>Our firm is dedicated to assisting international companies,  small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defense of our clients before the courts and arbitral tribunals.<nl/>We think further, We work Smarter & We act Swiftly<nl/>We represent & advise clients on a domestic and international level from corporate and commercial transactions including mergers and acquisitions, joint ventures, technology transfers, litigation & arbitration, White collar crime, employment and labor law, to corporate governance & law.<nl/>Our team of about twenty people, focuses exclusively on your business needs to bring you excellent services & solutions in a more efficient & sustainable way.",
-  "Notre cabinet est membre d'un réseau international de cabinets d'avocats partageant sa culture d'excellence et d'efficacité. Nos avocats sont également admis à exercer devant des barreaux étrangers, notamment en Allemagne ou au barreau de New York. Outre le français et l'anglais, l'équipe travaille également en allemand, ce qui fait du cabinet un partenaire de haut niveau, expert dans les relations d'affaires transfrontalières entre la France et l'Allemagne.": "Our firm is a member of an international network of law firms sharing its culture of excellence and efficiency. Our lawyers are also admitted to practice before foreign bars, including Germany or the New York Bar in the United States. In addition to French and English, the team also works in German, making the firm a high-level partner with expertise in cross-border business relations between France and Germany.",
-  "NOTRE EXPERTISE": "OUR EXPERTISE",
-  "ourGoal": "<0>Our goal is very simple:</0> To provide successful businesses, individuals and entrepreneurs with high-level tailored services to solve their problems. The law is constantly evolving, along with related developments in your industry and the larger economy, may affect you and your business. That’s why we are making a point to always go further, work smarter and always act swiftly with your best interest in mind and greatest attention to detail.",
-  "DROIT SOCIAL & RESTRUCTURATION": "LABOR LAW & RESTRUCTURING",
-  "FUSIONS & ACQUISITIONS": "M & A",
-  "CORPORATE & RÉGLEMENTAIRE": "CORPORATE & REGULATORY",
-  "CONTENTIEUX, MÉDIATION & ARBITRAGE INTERNATIONAL": "LITIGATION, MEDIATION & INTERNATIONAL ARBITRATION",
-  "PROCÉDURES COLLECTIVES": "COLLECTIVE PROCEEDINGS",
-  "DROIT COMMERCIAL & CONCURRENCE": "COMMERCIAL LAW & COMPETITION",
-  "IP, DROIT DU NUMÉRIQUE, TECH & DATA": "IP/IT, DIGITAL, TECH & DATA LAW",
-  "DROIT PÉNAL DES AFFAIRES": "WHITE COLLAR CRIME",
-  "NOS ASSOCIÉS": "OUR PARTNERS",
-  "teamPresentation": "Our firm is made up of four experienced partners <0>with over 100 years'combined professional experience</0>. Each of them is fluent in English and German, and has an international legal profile and background. In addition to their specialist areas of expertise, each of our partners has a broad knowledge of business law, covering between them the full range of our clients'activities <0>and needs</0>. You will find below an individual presentation of each partner. We also have a team of senior associates and lawyers, all of whom have legal training or international experience.",
-  "firmPresentation": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies. Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
-  "NOUS SOMMES DEDIES A VOTRE SUCCES": "WE ARE DEDICATED TO YOUR SUCCESS",
-  "nous-sommes-dedies-a-votre-succes-description": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies. Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
-  "NOUS SOMMES INTERNATIONAUX": "WE ARE INTERNATIONAL",
-  "nous-sommes-internationnaux-description": "Business relationships of German and English speaking countries have always been a major part of our activity. Therefore, our firm has lawyers admitted at bars in France, Germany and the USA at the same time Our involvement in the advice to and representation of international clients implies that all lawyers write and speak fluently German, French and English. In the course of time, our activity conducted us to broaden our horizon and to represent companies from countries such as Japan, Korea and China.",
-  "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "FURTHER, SMARTER & SWIFTER",
-  "plus-loin-plus-intelligent-plus-rapide-description": "Even though all lawyers are specialised, we believe in an enrichment of the juristic creativity by a large field of experience in legal advice and defence.",
-  "VOTRE CONFIANCE NOUS HONORE": "YOUR TRUST IS OUR PRIDE",
-  "votre-confiance-nous-honore-description": "Our work is based on mutual trust with each and every client, international companies as well as small and medium-sized enterprises. Each client’s activity, products and professional environment are carefully taken into consideration as our goal is to provide our client with tailor made solutions which take due account of the client’s specific business interests. Thanks to the small size of our firm, we compose a team of dynamic lawyers who are acquainted to respond rapidly and with flexibility to the client’s needs. We shall never forget that the essence of our work, be it legal advice or advocacy, is to achieve an economically valuable result for our client.",
-  "COMMENT NOUS TROUVER": "HOW TO FIND US",
-  "info-contact": "Our offices are located at 26, Avenue de la Grande Armée, just a stone's throw from L'Etoile, in the heart of the business district. You can park your car just a few steps away in the public underground parking lots on Avenue Carnot and Porte Maillot. Metro station ARGENTINE (line 1) is nearby. Charles de Gaulle - Etoile RER station is a 5-minute walk away.",
-  "Aéroport Charles de Gaulle": "Charles de Gaulle Airport",
-  "Taxi (30 minutes)": "Taxi (30 minutes)",
-  "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Air France bus to L'ETOILE (30-minute journey and 5-minute walk)",
-  "Aéroport d'Orly ": "Orly Airport",
-  "Taxi (40 minutes)": "Taxi (40 minutes)",
-  "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hotels: Numerous hotels nearby. Reservations possible.",
-  "Nom": "Name",
-  "Email": "Email",
-  "Message": "Message",
-  "Écrivez ici votre message": "Write your message here"
+  "Expertise": "Expertise",
+  "Carrière": "Career",
+  "Blog": "Blog",
+  "Contact": "Contact",
+  "errorMessages": {
+    "requiredName": "Please enter your name",
+    "requiredEmail": "Please enter your email address",
+    "requiredSubject": "Please enter the subject of your message",
+    "invalidEmail": "Invalid email address",
+    "requiredMessage": "Please fill in your message"
+  },
+  "footer": {
+    "Pratique Juridique": "Legal practice",
+    "À propos de notre cabinet": "About our firm",
+    "Ressources": "Resources",
+    "Droit du travail & de l'emploi": "Labor law",
+    "Fusions & Acquisitions": "Mergers",
+    "Propriété intellectuelle / industrielle": "Intellectual/industrial property",
+    "Droit des sociétés": "Corporate law",
+    "Litige & Arbitrage": "Dispute",
+    "Droit commercial & de la concurrence": "Trade Law",
+    "Droit de la faillite": "Bankruptcy law",
+    "Délinquance financière": "Financial delinquency",
+    "Ce que nous faisons": "What we do",
+    "Notre histoire": "Our history",
+    "Notre équipe": "Our team",
+    "Partenaires": "Partners",
+    "Rejoignez-nous : Carrières": "Join us: Careers",
+    "Rejoignez-nous : Stagiaire juridique": "Join us: Legal Intern",
+    "Diversité & Inclusion": "Diversity",
+    "Pro bono": "Pro bono",
+    "Articles & Publications": "Items",
+    "Rapport sur la propriété intellectuelle 2022": "Intellectual Property Report 2022",
+    "Rapport sur le droit du travail 2022": "Labor Law Report 2022",
+    "Prévisions M&A 2022": "Forecast M",
+    "Réseau d'alliance Innangard": "Innangard Alliance Network",
+    "Prix & Reconnaissance": "Price",
+    "Rapport sur le droit des sociétés 2022": "Corporate Law Report 2022",
+    "Blog": "Blog",
+    "allRightsReserved": "2023 Weil & Associés. Legal information. All rights reserved."
+  },
+  "home": {
+    "votreConfiance": "Your trust is our pride",
+    "presentation": "Presentation",
+    "heroSubtitle": "A firm of excellence dedicated to international companies",
+    "further": "Further",
+    "smarter": "Smarter",
+    "swiftly": "Swiftly",
+    "home1": "WEIL & ASSOCIES is a law firm dedicated to the service of international companies since 1974.<nl/>Our firm is dedicated to assisting international companies,  small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defense of our clients before the courts and arbitral tribunals.<nl/>We think further, We work Smarter & We act Swiftly. <nl/> We represent & advise clients on a domestic and international level from corporate and commercial transactions including mergers and acquisitions, joint ventures, technology transfers, litigation & arbitration, White collar crime, employment and labor law, to corporate governance & law. Our team of about twenty people, focuses exclusively on your business needs to bring you excellent services & solutions in a more efficient & sustainable way.",
+    "home2": "Our firm is a member of an international network of law firms sharing its culture of excellence and efficiency. Our lawyers are also admitted to practice before foreign bars, including Germany or the New York Bar in the United States. <nl/>In addition to French and English, the team also works in German, making the firm a high-level partner with expertise in cross-border business relations between France and Germany.",
+    "articles": {
+      "art1": "Sexist discrimination in France",
+      "art2": "The French Court of Cassation",
+      "art3": "The new EU rules"
+    }
+  },
+  "expertise": {
+    "notreExpertise": "Our expertise",
+    "ourGoal": "<bold>Our goal is very simple:</bold> To provide successful businesses, individuals and entrepreneurs with high-level tailored services to solve their problems. The law is constantly evolving, along with related developments in your industry and the larger economy, may affect you and your business. That’s why we are making a point to always go further work smarter and always act swiftly with your best interest in mind and greatest attention to detail.",
+    "droitSocialrestructuration": "Labor law and restructuring",
+    "fusionAquisitions": "M & A",
+    "corporateReglement": "Corporate &amp; Regulatory",
+    "contentieux": "Litigation, mediation and international arbitration",
+    "procedureColl": "insolvency proceedings",
+    "droitCommercial": "Commercial and Competition Law",
+    "droitNumerique": "IP/IT, digital, tech and data law",
+    "droitpenal": "White collar crime"
+  },
+  "partenaire": {
+    "nosAssocies": "Our Partners",
+    "teamPresentation": "Our firm is made up of four experienced partners with <bold>over 100 years'combined professional experience</bold>. Each of them is fluent in English and German, and has an international legal profile and background. In addition to their specialist areas of expertise, each of our partners has a broad knowledge of business law, covering between them the full range of our clients'activities and needs.<nl/>You will find below an individual presentation of each partner. We also have a team of senior associates and lawyers, all of whom have legal training or international experience.",
+    "members": {
+      "brunoWeil": {
+        "intro": "Active for twenty-five years as a lawyer for international companies of all sizes, present or active in France, Bruno Weil is your privileged contact within our firm for any question relating to intellectual property, digital, tech and data law, his preferred field. In this capacity, he acts as counsel or advocate before the courts in all types of contentious cases. As counsel he has successfully represented several major US and German listed companies before the French courts, notably in complex patent trademark and copyright infringement cases. A former French correspondent for the publisher KLUWER LAW INTERNATIONAL, he is also a member of several international associations dealing with intellectual property and new technologies, such as the Licensing Executive Society - LES - Germany, GRUR and ITECHLAW. Bruno Weil is also active in other fields, such as corporate restructuring and takeovers. His day-to-day practice also involves all types of business-related litigation. His main aim is to successfully devise the most effective business strategy to ensure that our clients'interests prevail. In addition to French, he is fluent in German and English. An amateur drummer and percussionist, he is the father of three children."
+      },
+      "ericWeil": {
+        "intro": ""
+      },
+      "patriciaVincent": {
+        "intro": ""
+      },
+      "mathildeHouet": {
+        "intro": ""
+      },
+      "heinzWeil": {
+        "intro": ""
+      }
+    }
+  },
+  "whoWeAre": {
+    "presentation": "Presentation",
+    "firmPresentation": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies.<nl/>Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
+    "NOUS SOMMES DEDIES A VOTRE SUCCES": "WE ARE DEDICATED TO YOUR SUCCESS",
+    "nous-sommes-dedies-a-votre-succes-description": "Since its establishment in 1974 WEIL & ASSOCIES is a law firm dedicated to the service of international companies. Our firm is devoted to assist companies, international or small and medium-sized, in their commercial or industrial activities in France or abroad through proactive legal advice as well as by the defence of our clients before courts and arbitral tribunals.",
+    "NOUS SOMMES INTERNATIONAUX": "WE ARE INTERNATIONAL",
+    "nous-sommes-internationnaux-description": "Business relationships of German and English speaking countries have always been a major part of our activity. Therefore, our firm has lawyers admitted at bars in France, Germany and the USA at the same time. Our involvement in the advice to and representation of international clients implies that all lawyers write and speak fluently German, French and English. In the course of time, our activity conducted us to broaden our horizon and to represent companies from countries such as Japan, Korea and China.",
+    "PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE": "FARTER SMARTER SWIFTLY",
+    "plus-loin-plus-intelligent-plus-rapide-description": "Even though all lawyers are specialised, we believe in an enrichment of the juristic creativity by a large field of experience in legal advice and defence.",
+    "VOTRE CONFIANCE NOUS HONORE": "Your Trust is our Pride",
+    "votre-confiance-nous-honore-description": "Our work is based on mutual trust with each and every client, international companies as well as small and medium-sized enterprises. Each client’s activity, products and professional environment are carefully taken into consideration as our goal is to provide our client with tailor made solutions which take due account of the client’s specific business interests. Thanks to the small size of our firm, we compose a team of dynamic lawyers who are acquainted to respond rapidly and with flexibility to the client’s needs. We shall never forget that the essence of our work, be it legal advice or advocacy, is to achieve an economically valuable result for our client."
+  },
+  "contact": {
+    "informationPratique": "Practical information",
+    "commentNousTrouvez": "HOW TO FIND US",
+    "info-contact": "Our offices are located at 26, Avenue de la Grande Armée, just a stone's throw from L'Etoile, in the centre of the business district. You can park your car just a few steps away in the public underground car parks on Avenue Carnot and Porte Maillot. ARGENTINE metro station (line 1) is nearby. Charles de Gaulle - Etoile RER station is a 5-minute walk away.",
+    "Aéroport Charles de Gaulle": "Charles de Gaulle airport",
+    "Taxi (30 minutes)": "Taxi (30 minutes)",
+    "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "The Air France coach towards ETOILE (30 minutes journey and 5 minutes on foot)",
+    "Aéroport d'Orly ": "Orly Airport ",
+    "Taxi (40 minutes)": "Taxi (40 minutes)",
+    "Hôtels : De nombreux hôtels à proximité. Réservation possible.": "Hotels: Many hotels nearby. ",
+    "Nom": "Name",
+    "Email": "E-mail",
+    "Message": "Message",
+    "Écrivez ici votre message": "Write your message here",
+    "contactForm": {
+      "restonEnContact": "Keep in touch",
+      "name": "Name",
+      "email": "E-mail",
+      "message": "Message",
+      "placeholderMessage": "Write your message here"
+    }
+  },
+  "career": {
+    "recrutement": "Recruitment",
+    "image-description": "photo of a group of lawyers at work",
+    "talents": {
+      "title": "Talents",
+      "subtitle": "Our goal is to unlock the potential of all our employees",
+      "paragraph1": "We always welcome applications from young lawyers with a degree in international business law possibly coupled with professional experience, and who speak French, English and German fluently.",
+      "paragraph2": "Come work on interesting cases within an innovative and passionate team. "
+    },
+    "internship": {
+      "title": "Internships",
+      "subtitle": "Students and our internship program",
+      "paragraph1": "We always welcome applications from young lawyers with a degree in international business law possibly coupled with professional experience, and who speak French, English and German fluently.",
+      "paragraph2": "Come work on interesting cases within an innovative and passionate team. "
+    },
+    "admins-and-paralegals": {
+      "title": "Assistants and Paralegals",
+      "text": "Applications from assistants with a good knowledge of French, English and German are also welcome and highly appreciated.",
+      "contact": "You can also send us your application and CV by email to:"
+    },
+    "career-contact-form": {
+      "title": "THANKS",
+      "text": "to send us your application accompanied by your CV and a cover letter",
+      "placeholder": {
+        "name": "Name",
+        "email": "E-mail",
+        "subject": "Subject",
+        "message": "Looking for an internship? ",
+        "send": "Send"
+      }
+    }
+  },
+  "blog": {
+    "articles": "Articles",
+    "authors": "Authors",
+    "categories": "Categories",
+    "tags": "Tags",
+    "knowMore": "Learn more",
+    "filters": {
+      "searchByAuthor": "Search by author",
+      "searchByCategory": "Search by category",
+      "searchByTag": "Search by tag"
+    },
+    "sidebar": {
+      "filters": "Filters",
+      "author": "Author",
+      "category": "Category",
+      "tag": "Tag",
+      "applyFilters": "Filter"
+    },
+    "filterOption": {
+      "all": "All the {{type}}",
+      "delete": "Remove filters"
+    }
+  }
 }

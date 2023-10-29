@@ -12,7 +12,7 @@ const Jumbo = () => {
         <div className="flex flex-col xl:flex-row justify-between items-center pt-24 pb-36 gap-24">
           <div className="flex-1">
             <h1>{t("home.votreConfiance")}</h1>
-            <p>{t("Un cabinet d'excellence dédié au conseil des entreprises internationales")}</p>
+            <p>{t("home.heroSubtitle")}</p>
             <Button href={"/contact"} color="primary">
               {t("Nous contacter")}
             </Button>
