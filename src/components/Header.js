@@ -79,11 +79,17 @@ export default function Header({ children, light = false, ...args }) {
 
     const handleScroll = () => {
       let st = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (st > lastScrollTop && visible) {
+        setVisible(false);
+      }
+
       if (st > lastScrollTop) {
         setScrollDirection("slideUp");
       } else {
         setScrollDirection("slideDown");
       }
+
       lastScrollTop = st <= 0 ? 0 : st;
     };
 
@@ -92,7 +98,7 @@ export default function Header({ children, light = false, ...args }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [visible]);
 
   return (
     <Drawer
@@ -100,7 +106,7 @@ export default function Header({ children, light = false, ...args }) {
       open={visible}
       onClickOverlay={toggleVisible}
       side={
-        <Menu className={`w-80 bg-base-100 ${light ? "text-white" : "text-base-content"}`}>
+        <Menu className={`w-80 mt-[124px] bg-base-100 ${light ? "text-white" : "text-base-content"}`}>
           <MenuItems />
           <LangMenu />
         </Menu>
