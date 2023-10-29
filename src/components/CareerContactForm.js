@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import Button from "./Button";
 
 const CareerContactForm = () => {
   const { t } = useTranslation();
@@ -75,10 +76,10 @@ const CareerContactForm = () => {
           />
           {errors.message && <span className="text-xs text-red-500">{errors.message.message}</span>}
         </div>
-        <div className="mt-4">
-          <button type="submit" className="w-full p-2 bg-white text-primary rounded hover:bg-gray-300">
+        <div className="flex xs: justify-center md:justify-end mt-4">
+          <Button type="submit" className={"w-40 btn btn-outline bg-white font-bold"} color="primary">
             {t("Envoyer")}
-          </button>
+          </Button>
         </div>
       </form>
     </div>
