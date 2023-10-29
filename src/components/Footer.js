@@ -19,45 +19,43 @@ const Footer = () => {
             info@weil-paris.fr
           </div>
           <div className="leftblue">
-            <h3>{t("Pratique Juridique")}</h3>
-            <Link href="#">{t("Droit du travail & de l'emploi")}</Link>
-            <Link href="#">{t("Fusions & Acquisitions")}</Link>
-            <Link href="#">{t("Propriété intellectuelle / industrielle")}</Link>
-            <Link href="#">{t("Droit des sociétés")}</Link>
-            <Link href="#">{t("Litige & Arbitrage")}</Link>
-            <Link href="#">{t("Droit commercial & de la concurrence")}</Link>
-            <Link href="#">{t("Droit de la faillite")}</Link>
-            <Link href="#">{t("Délinquance financière")}</Link>
+            <h3>{t("footer.Pratique Juridique")}</h3>
+            <Link href="#">{t("footer.Droit du travail & de l'emploi")}</Link>
+            <Link href="#">{t("footer.Fusions & Acquisitions")}</Link>
+            <Link href="#">{t("footer.Propriété intellectuelle / industrielle")}</Link>
+            <Link href="#">{t("footer.Droit des sociétés")}</Link>
+            <Link href="#">{t("footer.Litige & Arbitrage")}</Link>
+            <Link href="#">{t("footer.Droit commercial & de la concurrence")}</Link>
+            <Link href="#">{t("footer.Droit de la faillite")}</Link>
+            <Link href="#">{t("footer.Délinquance financière")}</Link>
           </div>
 
           <div className="leftblue">
-            <h3>{t("À propos de notre cabinet")}</h3>
-            <Link href="#">{t("Ce que nous faisons")}</Link>
-            <Link href="#">{t("Notre histoire")}</Link>
-            <Link href="#">{t("Notre équipe")}</Link>
-            <Link href="#">{t("Partenaires")}</Link>
-            <Link href="#">{t("Rejoignez-nous : Carrières")}</Link>
-            <Link href="#">{t("Rejoignez-nous : Stagiaire juridique")}</Link>
-            <Link href="#">{t("Diversité & Inclusion")}</Link>
-            <Link href="#">{t("Pro bono")}</Link>
+            <h3>{t("footer.À propos de notre cabinet")}</h3>
+            <Link href="#">{t("footer.Ce que nous faisons")}</Link>
+            <Link href="#">{t("footer.Notre histoire")}</Link>
+            <Link href="#">{t("footer.Notre équipe")}</Link>
+            <Link href="#">{t("footer.Partenaires")}</Link>
+            <Link href="#">{t("footer.Rejoignez-nous : Carrières")}</Link>
+            <Link href="#">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
+            <Link href="#">{t("footer.Diversité & Inclusion")}</Link>
+            <Link href="#">{t("footer.Pro bono")}</Link>
           </div>
 
           <div className="leftblue">
-            <h3>{t("Ressources")}</h3>
-            <Link href="#">{t("Articles & Publications")}</Link>
-            <Link href="#">{t("Rapport sur la propriété intellectuelle 2022")}</Link>
-            <Link href="#">{t("Rapport sur le droit du travail 2022")}</Link>
-            <Link href="#">{t("Prévisions M&A 2022")}</Link>
-            <Link href="#">{t("Réseau d'alliance Innangard")}</Link>
-            <Link href="#">{t("Prix & Reconnaissance")}</Link>
-            <Link href="#">{t("Rapport sur le droit des sociétés 2022")}</Link>
-            <Link href="#">{t("Blog")}</Link>
+            <h3>{t("footer.Ressources")}</h3>
+            <Link href="#">{t("footer.Articles & Publications")}</Link>
+            <Link href="#">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
+            <Link href="#">{t("footer.Rapport sur le droit du travail 2022")}</Link>
+            <Link href="#">{t("footer.Prévisions M&A 2022")}</Link>
+            <Link href="#">{t("footer.Réseau d'alliance Innangard")}</Link>
+            <Link href="#">{t("footer.Prix & Reconnaissance")}</Link>
+            <Link href="#">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
+            <Link href="#">{t("footer.Blog")}</Link>
           </div>
         </footer>
       </div>
-      <div className="bg-[#113248] text-center text-white p-5">
-        2023 Weil & Associés. Legal Informations. All Rights Reserved.
-      </div>
+      <div className="bg-[#113248] text-center text-white p-5">{t("footer.allRightsReserved")}</div>
     </div>
   );
 };

@@ -14,7 +14,18 @@ export default function PageJumbo({ titleKey, textKey, backgroundColor }) {
         <h1 className="underblue">{t(titleKey)}</h1>
         {textKey && (
           <p>
-            <Trans i18nKey={textKey} components={[<span className="font-bold" key="0"></span>]} />
+            <Trans
+              i18nKey={textKey}
+              components={{
+                bold: <span className="font-bold" key="0" />,
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+              }}
+            />{" "}
           </p>
         )}
       </div>
