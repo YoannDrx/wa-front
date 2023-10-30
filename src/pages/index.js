@@ -7,7 +7,7 @@ const Jumbo = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="jumbo-background pt-[124px]">
+    <div className="jumbo-background">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row justify-between items-center pt-24 pb-36 gap-24">
           <div className="flex-1">
