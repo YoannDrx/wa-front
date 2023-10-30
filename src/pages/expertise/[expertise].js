@@ -40,7 +40,12 @@ export default function ExpertisePage({ expertise }) {
                   </>
                 ),
                 bold: <span className="font-bold" key="0" />,
-                highlight: <span className="bg-yellow-400" key="1" />,
+                highlight: (
+                  <span
+                    style={{ backgroundColor: "#E4EDF1", color: "#37749E", fontStyle: "italic", fontWeight: "bold" }}
+                    key="1"
+                  />
+                ),
               }}
             />
           </p>
@@ -58,7 +63,12 @@ export default function ExpertisePage({ expertise }) {
                   </>
                 ),
                 bold: <span className="font-bold" key="0" />,
-                highlight: <span style={{ backgroundColor: "#F8F8F8", color: "grey" }} key="1" />,
+                highlight: (
+                  <span
+                    style={{ backgroundColor: "#F8F8F8", color: "#37749E", fontStyle: "italic", fontWeight: "bold" }}
+                    key="1"
+                  />
+                ),
               }}
             />
           </p>
@@ -77,7 +87,7 @@ export default function ExpertisePage({ expertise }) {
                 </>
               ),
               bold: <span className="font-bold" key="0" />,
-              highlight: <span style={{ backgroundColor: "#37749E" }} key="1" />,
+              highlight: <span style={{ backgroundColor: "#37749E", fontStyle: "italic", fontWeight: "bold" }} key="1" />,
             }}
           />
         </p>
