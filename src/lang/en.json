@@ -71,14 +71,86 @@
   "expertise": {
     "notreExpertise": "Our expertise",
     "ourGoal": "<bold>Our goal is very simple:</bold> To provide successful businesses, individuals and entrepreneurs with high-level tailored services to solve their problems. The law is constantly evolving, along with related developments in your industry and the larger economy, may affect you and your business. That’s why we are making a point to always go further work smarter and always act swiftly with your best interest in mind and greatest attention to detail.",
-    "droitSocialrestructuration": "Labor law and restructuring",
-    "fusionAquisitions": "M & A",
-    "corporateReglement": "Corporate &amp; Regulatory",
-    "contentieux": "Litigation, mediation and international arbitration",
-    "procedureColl": "insolvency proceedings",
-    "droitCommercial": "Commercial and Competition Law",
-    "droitNumerique": "IP/IT, digital, tech and data law",
-    "droitpenal": "White collar crime"
+    "droitSocialrestructuration": {
+      "title": "Labor law and restructuring",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "fusionAquisitions": {
+      "title": "M & A",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "corporateReglement": {
+      "title": "Corporate &amp; Regulatory",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "contentieux": {
+      "title": "Litigation, mediation and international arbitration",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "procedureColl": {
+      "title": "insolvency proceedings",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitCommercial": {
+      "title": "Commercial and Competition Law",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitNumerique": {
+      "title": "IP/IT, digital, tech and data law",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitpenal": {
+      "title": "White collar crime",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    }
   },
   "partenaire": {
     "nosAssocies": "Our Partners",

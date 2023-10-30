@@ -71,14 +71,78 @@
   "expertise": {
     "notreExpertise": "Unser Erfahrungsschatz",
     "ourGoal": "<bold>Unser Ziel ist sehr einfach:</bold> Wir bieten erfolgreichen Unternehmen, Privatpersonen und Unternehmern maßgeschneiderte Dienstleistungen auf hohem Niveau zur Lösung ihrer Probleme. Das Recht entwickelt sich ständig weiter, und die damit verbundenen Entwicklungen in Ihrer Branche und der Wirtschaft insgesamt können sich auf Sie und Ihr Unternehmen auswirken. Deshalb sind wir bestrebt, immer weiterzugehen, intelligenter zu arbeiten und immer schnell zu handeln, wobei wir Ihr bestes Interesse im Auge haben und den Details größte Aufmerksamkeit schenken.",
-    "droitSocialrestructuration": "Arbeitsrecht und Umstrukturierungen",
-    "fusionAquisitions": "M & A",
-    "corporateReglement": "Corporate & Regulatory",
-    "contentieux": "Rechtsstreitigkeiten, Mediation und internationale Schiedsverfahren",
-    "procedureColl": "Insolvenzverfahren",
-    "droitCommercial": "Handels und Wettbewerbsrecht",
-    "droitNumerique": "IP/IT, Digital, Tech und Datenrecht",
-    "droitpenal": "Wirtschaftsstrafrecht"
+    "droitSocialrestructuration": {
+      "title": "Arbeitsrecht und Umstrukturierungen",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "fusionAquisitions": {
+      "title": "M & A",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "corporateReglement": {
+      "title": "Corporate & Regulatory",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "contentieux": {
+      "title": "Rechtsstreitigkeiten, Mediation und internationale Schiedsverfahren",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "procedureColl": {
+      "title": "Insolvenzverfahren",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitCommercial": {
+      "title": "Handels und Wettbewerbsrecht",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitNumerique": {
+      "title": "IP/IT, Digital, Tech und Datenrecht",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitpenal": {
+      "title": "Wirtschaftsstrafrecht",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    }
   },
   "partenaire": {
     "nosAssocies": "Unsere Partner",

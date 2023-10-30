@@ -71,14 +71,86 @@
   "expertise": {
     "notreExpertise": "Notre Expertise",
     "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
-    "droitSocialrestructuration": "Droit social & restructuration",
-    "fusionAquisitions": "Fusions & Acquisitions",
-    "corporateReglement": "Corporate & Règlementaire",
-    "contentieux": "Contentieux, médiation & arbitrage international",
-    "procedureColl": "Procédures collectives",
-    "droitCommercial": "Droit commercial & de la concurrence",
-    "droitNumerique": "IP, IT, droit du numérique, Tech & Data",
-    "droitpenal": "Droit pénal des affaires"
+    "droitSocialrestructuration": {
+      "title": "Droit social & restructuration",
+      "intro": "La période de restructuration d'une entreprise est un moment délicat, aussi bien pour les employeurs que pour les salariés. Dans ce contexte, il est crucial de connaître les enjeux juridiques et sociaux qui entourent des sujets aussi sensibles que le licenciement collectif, les droits des salariés en cas de fusion d'entreprises, et l'impact de ces changements sur les relations de travail. Ce guide vise à éclairer les différentes parties prenantes sur leurs droits et obligations, et à fournir des conseils pratiques pour naviguer au mieux dans cette période complexe. Entre obligations légales, sanctions possibles et protections des salariés, découvrez les facettes multiples du droit social en période de restructuration.",
+      "titleBloc1": "Les conséquences juridiques d'un licenciement collectif en période de restructuration",
+      "paragraph1": "Le licenciement collectif, en particulier lorsqu'il intervient en période de restructuration d'entreprise, est un phénomène majeur qui entraîne de multiples conséquences. Autorisée sous certaines conditions et strictement encadrée par la loi, cette pratique peut néanmoins avoir des répercussions juridiques importantes pour l'entreprise concernée. C'est dans ce cadre d'analyse que nous examinerons les conséquences juridiques d'un licenciement collectif en période de restructuration.<nl/>En premier lieu, il convient de rappeler que le licenciement collectif pour motif économique doit nécessairement être précédé par une phase de consultation des représentants du personnel. Le non-respect de cette obligation est susceptible d'entraîner l'annulation des licenciements en question. La mise en œuvre de cette procédure oblige également l'employeur à établir un 'plan de sauvegarde de l'emploi' (PSE) dont le contenu est strictement encadré par la loi. Si le PSE est jugé insuffisant ou mal exécuté, l'employeur peut s'exposer à des sanctions pénales.<nl/><highlight>Le non-respect des obligations inhérentes à la mise en œuvre d'un plan de sauvegarde de l'emploi peut entraîner la responsabilité de l'employeur et donner lieu à des sanctions.</highlight><nl/>En outre, conséquence directe du licenciement collectif, le paiement d'une indemnité de licenciement économique est dû par l'employeur à chacun des salariés concernés. Le non-paiement de cette indemnité est susceptible d'engendrer un contentieux prud'homal.<nl/>En somme, le licenciement collectif en période de restructuration engendre des conséquences juridiques potentiellement lourdes pour l'entreprise. Entre annulations de licenciements, sanctions pénales et contentieux prud'homal, l'employeur doit impérativement s'assurer du respect des obligations légales «pour prévenir les risques juridiques» associés.",
+      "titleBloc2": "Comprendre les droits des salariés lors d'une fusion d'entreprises",
+      "paragraph2": "Dans le contexte économique actuel, il est fréquent que des fusions d'entreprises se produisent, entraînant des transformations sur le marché du travail. Face à ces situations, les salariés se posent naturellement de nombreuses questions quant à la protection de leurs droits. Cet article vise à apporter un éclairage précis sur les implications d'une telle opération pour les salariés et sur les moyens dont ils disposent pour garantir leurs droits.<nl/>En premier lieu, il est important de préciser que le droit du travail français prévoit des dispositions spécifiques en cas de fusion d'entreprises. Elles ont pour objectif principal de protéger les salariés contre les licenciements abusifs ou les modifications non consenties de leurs contrats de travail. Durant ce processus, un principe essentiel est mis en avant : le respect des droits acquis par les salariés.<nl/><highlight>Selon l'article L1224-1 du Code du travail, en cas de modification dans la situation de l'employeur, notamment par succession, vente, fusion, transformation du fonds, mise en société, tous les contrats de travail en cours au jour de la modification subsistent entre le nouvel employeur et le personnel de l'entreprise.</highlight><nl/>Dans ce cadre, le salarié dispose de plusieurs recours. Premièrement, il a le droit d'être informé et consulté par le biais des représentants du personnel lors des différentes étapes de la fusion. Deuxièmement, le salarié peut refuser un changement dans les conditions de son contrat de travail (rémunération, temps de travail, lieu de travail). De plus, en cas de licenciement suite à la fusion, le salarié bénéficie d'un certain nombre de protections et de garanties, comme une indemnité de licenciement ou la priorité de réembauche.<nl/>Il est donc essentiel pour le salarié de connaître ses droits et de se faire accompagner par un professionnel du droit si nécessaire. Dans une situation de fusion d'entreprises, l'employé est en effet souvent confronté à des complexités juridiques et nécessite un conseil éclairé pour protéger efficacement ses intérêts.",
+      "titleBloc3": "L'impact des restructurations sur les relations de travail",
+      "paragraph3": "La reconfiguration des structures organisationnelles au sein des entreprises, ou communément appelée restructuration, engendre de profondes mutations dans le monde du travail. Cette transformation a tendance à altérer de manière significative les relations de travail. Cette analyse se propose d'examiner les différentes façons dont ces changements peuvent affecter la nature et la qualité de ces relations.<nl/>La première conséquence directe des restructurations est la redéfinition du rôle et des responsabilités des employés. Le changement des structures organisationnelles peut signifier l'élimination de certains postes, la fusion d'autres et parfois la création de nouveaux. Par conséquent, les employés peuvent se retrouver avec des tâches et des responsabilités qui diffèrent de leurs attributions initiales. Les relations professionnelles entre collègues peuvent en être affectés, un environnement de travail instable peut en résulter et la motivation des employés peut diminuer.<nl/><highlight>La restructuration peut déclencher un sentiment d’insécurité et d’anxiété chez les employés, engendrant un impact majeur sur le moral et la productivité.</highlight><nl/>En outre, les modifications structurelles entraînent souvent une redéfinition des processus de travail. Ces changements peuvent entraîner une diminution de la clarté des attentes des employés, une augmentation de la charge de travail et peuvent causer des tensions entre différents niveaux hiérarchiques de l’entreprise.<nl/>La communication interne pourrait également être affectée par la restructuration. Les canaux de communication précédemment établis peuvent être perturbés, générant confusion et malentendus. Il est donc crucial pour les entreprises de mettre en place des stratégies de communication efficaces pour naviguer à travers ce changement.<nl/>Pour résumer, il est essentiel de comprendre que la restructuration peut entraîner des changements significatifs dans les relations de travail. S'il est géré de manière appropriée, ces changements peuvent aussi représenter une opportunité pour renforcer l'esprit d'équipe, améliorer les compétences des employés et promouvoir une culture de travail plus efficace et productive."
+    },
+    "fusionAquisitions": {
+      "title": "Fusions & Acquisitions",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "corporateReglement": {
+      "title": "Corporate & Règlementaire",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "contentieux": {
+      "title": "Contentieux, médiation & arbitrage international",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "procedureColl": {
+      "title": "Procédures collectives",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitCommercial": {
+      "title": "Droit commercial & de la concurrence",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitNumerique": {
+      "title": "IP, IT, droit du numérique, Tech & Data",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    },
+    "droitpenal": {
+      "title": "Droit pénal des affaires",
+      "intro": "",
+      "titleBloc1": "",
+      "paragraph1": "",
+      "titleBloc2": "",
+      "paragraph2": "",
+      "titleBloc3": "",
+      "paragraph3": ""
+    }
   },
   "partenaire": {
     "nosAssocies": "Nos Associées",
