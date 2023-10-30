@@ -71,14 +71,14 @@
   "expertise": {
     "notreExpertise": "Notre Expertise",
     "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
-    "droitSocialrestructuration": "DROIT SOCIAL & RESTRUCTURATION",
-    "fusionAquisitions": "FUSION & ACQUISITION",
-    "corporateReglement": "CORPORATE & REGLEMENTAIRE",
-    "contentieux": "CONTENTIEUX, MEDIATION & ARBITRAGE INTERNATIONAL",
-    "procedureColl": "PROCEDURES COLLECTIVES",
-    "droitCommercial": "DROIT COMMERCIAL & CONCURRENCE",
-    "droitNumerique": "IP, DROIT DU NUMERIQUE, TECH & DATA",
-    "droitpenal": "DROIT PÉNAL DES AFFAIRES"
+    "droitSocialrestructuration": "Droit social & restructuration",
+    "fusionAquisitions": "Fusions & Acquisitions",
+    "corporateReglement": "Corporate & Règlementaire",
+    "contentieux": "Contentieux, médiation & arbitrage international",
+    "procedureColl": "Procédures collectives",
+    "droitCommercial": "Droit commercial & de la concurrence",
+    "droitNumerique": "IP, IT, droit du numérique, Tech & Data",
+    "droitpenal": "Droit pénal des affaires"
   },
   "partenaire": {
     "nosAssocies": "Nos Associées",

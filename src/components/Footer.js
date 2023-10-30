@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { expertiseItems } from "@/data/expertiseData";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -20,38 +21,35 @@ const Footer = () => {
           </div>
           <div className="leftblue">
             <h3>{t("footer.Pratique Juridique")}</h3>
-            <Link href="#">{t("footer.Droit du travail & de l'emploi")}</Link>
-            <Link href="#">{t("footer.Fusions & Acquisitions")}</Link>
-            <Link href="#">{t("footer.Propriété intellectuelle / industrielle")}</Link>
-            <Link href="#">{t("footer.Droit des sociétés")}</Link>
-            <Link href="#">{t("footer.Litige & Arbitrage")}</Link>
-            <Link href="#">{t("footer.Droit commercial & de la concurrence")}</Link>
-            <Link href="#">{t("footer.Droit de la faillite")}</Link>
-            <Link href="#">{t("footer.Délinquance financière")}</Link>
+            {expertiseItems.map((item) => (
+              <Link key={item.id} href={`/expertise/${item.id}`}>
+                {t(item.titleKey)}
+              </Link>
+            ))}
           </div>
 
           <div className="leftblue">
             <h3>{t("footer.À propos de notre cabinet")}</h3>
-            <Link href="#">{t("footer.Ce que nous faisons")}</Link>
-            <Link href="#">{t("footer.Notre histoire")}</Link>
-            <Link href="#">{t("footer.Notre équipe")}</Link>
+            <Link href="/qui-sommes-nous">{t("footer.Ce que nous faisons")}</Link>
+            <Link href="/qui-sommes-nous">{t("footer.Notre histoire")}</Link>
+            <Link href="/team/partenaires">{t("footer.Notre équipe")}</Link>
             <Link href="#">{t("footer.Partenaires")}</Link>
-            <Link href="#">{t("footer.Rejoignez-nous : Carrières")}</Link>
-            <Link href="#">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
+            <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
+            <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
             <Link href="#">{t("footer.Diversité & Inclusion")}</Link>
             <Link href="#">{t("footer.Pro bono")}</Link>
           </div>
 
           <div className="leftblue">
             <h3>{t("footer.Ressources")}</h3>
-            <Link href="#">{t("footer.Articles & Publications")}</Link>
-            <Link href="#">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
-            <Link href="#">{t("footer.Rapport sur le droit du travail 2022")}</Link>
-            <Link href="#">{t("footer.Prévisions M&A 2022")}</Link>
-            <Link href="#">{t("footer.Réseau d'alliance Innangard")}</Link>
-            <Link href="#">{t("footer.Prix & Reconnaissance")}</Link>
-            <Link href="#">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
-            <Link href="#">{t("footer.Blog")}</Link>
+            <Link href="/blog">{t("footer.Articles & Publications")}</Link>
+            <Link href="/blog">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
+            <Link href="/blog">{t("footer.Rapport sur le droit du travail 2022")}</Link>
+            <Link href="/blog">{t("footer.Prévisions M&A 2022")}</Link>
+            <Link href="/blog">{t("footer.Réseau d'alliance Innangard")}</Link>
+            <Link href="/blog">{t("footer.Prix & Reconnaissance")}</Link>
+            <Link href="/blog">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
+            <Link href="/blog">{t("footer.Blog")}</Link>
           </div>
         </footer>
       </div>

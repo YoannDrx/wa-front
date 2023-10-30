@@ -53,7 +53,7 @@ export default function WhoWeAre() {
         </section>
 
         <section className="relative my-16 h-[400px]">
-          <Image src="/assets/who-we-are/salle-de-conference.png" layout="fill" objectFit="cover" alt="Séparateur" />
+          <Image src="/assets/who-we-are/salle-de-conference.png" layout="fill" alt="Séparateur" />
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12">

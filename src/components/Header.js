@@ -100,7 +100,7 @@ export default function Header({ children, light = false, ...args }) {
             </div>
             <div className="flex-none px-2 mx-2">
               <Link href={"/"}>
-                <Image src={"/assets/logo.png"} alt={"Weil associés avocats"} width={168} height={68} />
+                <Image src={"/assets/logo.png"} alt={"Weil associés avocats"} width={168} height={67} priority />
               </Link>
             </div>
             <div className="flex-1 hidden lg:flex flex-row justify-between">
