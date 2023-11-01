@@ -4,14 +4,20 @@ import PageJumbo from "@/components/PageJumbo";
 
 export async function getStaticPaths() {
   const paths = expertiseItems.map((item) => ({
-    params: { expertise: item.id.toString() },
+    params: { expertise: item.slug },
   }));
 
-  return { paths, fallback: true };
+  console.log("Paths générés dans getStaticPaths: ", paths);
+
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
-  const expertise = expertiseItems.find((item) => item.id.toString() === params.expertise);
+  console.log("Paramètres reçus dans getStaticProps: ", params);
+
+  const expertise = expertiseItems.find((item) => item.slug === params.expertise);
+
+  console.log("Expertise trouvée dans getStaticProps: ", expertise);
 
   if (!expertise) {
     return { notFound: true };

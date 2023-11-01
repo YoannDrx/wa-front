@@ -1,6 +1,7 @@
 export const expertiseItems = [
   {
     id: 1,
+    slug: "expertise.droitSocialrestructuration.slug",
     image: "/assets/expertises/droit-social.png",
     titleKey: "expertise.droitSocialrestructuration.title",
     intro: "expertise.droitSocialrestructuration.intro",
@@ -13,6 +14,7 @@ export const expertiseItems = [
   },
   {
     id: 2,
+    slug: "expertise.fusionAquisitions.slug",
     image: "/assets/expertises/fusions-acquisitions.png",
     titleKey: "expertise.fusionAquisitions.title",
     intro: "expertise.fusionAquisitions.intro",
@@ -25,6 +27,7 @@ export const expertiseItems = [
   },
   {
     id: 3,
+    slug: "xpertise.corporateReglement.slug",
     image: "/assets/expertises/corporate.png",
     titleKey: "expertise.corporateReglement.title",
     intro: "expertise.corporateReglement.intro",
@@ -37,6 +40,7 @@ export const expertiseItems = [
   },
   {
     id: 4,
+    slug: "expertise.contentieux.slug",
     image: "/assets/expertises/contentieux.png",
     titleKey: "expertise.contentieux.title",
     intro: "expertise.contentieux.intro",
@@ -49,6 +53,7 @@ export const expertiseItems = [
   },
   {
     id: 5,
+    slug: "expertise.procedureColl.slug",
     image: "/assets/expertises/procedures-collectives.png",
     titleKey: "expertise.procedureColl.title",
     intro: "expertise.procedureColl.intro",
@@ -61,6 +66,7 @@ export const expertiseItems = [
   },
   {
     id: 6,
+    slug: "expertise.droitCommercial.slug",
     image: "/assets/expertises/droit-commercial.png",
     titleKey: "expertise.droitCommercial.title",
     intro: "expertise.droitCommercial.intro",
@@ -73,6 +79,7 @@ export const expertiseItems = [
   },
   {
     id: 7,
+    slug: "expertise.droitNumerique.slug",
     image: "/assets/expertises/ip-it.png",
     titleKey: "expertise.droitNumerique.title",
     intro: "expertise.droitNumerique.intro",
@@ -85,6 +92,7 @@ export const expertiseItems = [
   },
   {
     id: 8,
+    slug: "expertise.droitpenal.slug",
     image: "/assets/expertises/droit-penal.png",
     titleKey: "expertise.droitpenal.title",
     intro: "expertise.droitpenal.intro",
