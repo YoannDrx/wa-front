@@ -33,11 +33,9 @@ const Footer = () => {
             <Link href="/qui-sommes-nous">{t("footer.Ce que nous faisons")}</Link>
             <Link href="/qui-sommes-nous">{t("footer.Notre histoire")}</Link>
             <Link href="/team/partenaires">{t("footer.Notre équipe")}</Link>
-            <Link href="#">{t("footer.Partenaires")}</Link>
+            <Link href="/team/partenaires">{t("footer.Partenaires")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
-            <Link href="#">{t("footer.Diversité & Inclusion")}</Link>
-            <Link href="#">{t("footer.Pro bono")}</Link>
           </div>
 
           <div className="leftblue">
