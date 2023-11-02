@@ -20,7 +20,9 @@
     "requiredEmail": "Geben Sie bitte Ihre Email-Adresse ein",
     "requiredSubject": "Bitte geben Sie den Betreff Ihrer Nachricht ein",
     "invalidEmail": "Ungültige E-Mail-Adresse",
-    "requiredMessage": "Bitte füllen Sie Ihre Nachricht aus"
+    "requiredMessage": "Bitte füllen Sie Ihre Nachricht aus",
+    "requiredCV": "Bitte fügen Sie Ihren Lebenslauf bei (.pdf/.doc/.docx)",
+    "requiredLetter": "Bitte fügen Sie ein Anschreiben bei (.pdf/.doc/.docx)"
   },
   "footer": {
     "Pratique Juridique": "Rechtspraxis",
@@ -197,7 +199,9 @@
         "email": "Email",
         "subject": "Thema",
         "message": "Auf der Suche nach einem Praktikum? ",
-        "send": "Schicken"
+        "send": "Schicken",
+        "cv": "Lebenslauf",
+        "letter": "Anschreiben"
       }
     }
   },

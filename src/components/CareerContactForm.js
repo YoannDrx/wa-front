@@ -11,13 +11,22 @@ const CareerContactForm = () => {
   const invalidEmail = t("errorMessages.invalidEmail");
   const requiredSubject = t("errorMessages.requiredSubject");
   const requiredMessage = t("errorMessages.requiredMessage");
+  const requiredCV = t("errorMessages.requiredCV");
+  const requiredLetter = t("errorMessages.requiredLetter");
 
   const {
     handleSubmit,
     register,
     formState: { errors },
     reset,
+    setValue,
+    watch,
   } = useForm();
+
+  const uploadedCV = watch("cv");
+  const uploadedLetter = watch("letter");
+
+  console.log("log >>", uploadedCV, uploadedLetter);
 
   const onSubmit = async (data) => {
     try {
@@ -27,6 +36,10 @@ const CareerContactForm = () => {
     } catch (error) {
       console.log("Erreur lors de l'envoi du formulaire :", error);
     }
+  };
+
+  const removeFile = (fieldName) => {
+    setValue(fieldName, null);
   };
 
   return (
@@ -68,13 +81,39 @@ const CareerContactForm = () => {
           {errors.subject && <span className="text-xs text-red-500">{errors.subject.message}</span>}
         </div>
         <div className="mb-4">
-          <textarea
-            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
-            rows="4"
-            placeholder={t("career.career-contact-form.placeholder.message")}
-            {...register("message", { required: requiredMessage })}
-          />
-          {errors.message && <span className="text-xs text-red-500">{errors.message.message}</span>}
+          <label className="block text-white mb-2">{t("career.career-contact-form.placeholder.cv")}</label>
+          <div className="flex items-center">
+            <input
+              className="w-full p-2 text-black bg-white focus:border-2 focus:border-gray-800"
+              type="file"
+              accept=".pdf,.doc,.docx"
+              {...register("cv", { required: requiredCV })}
+            />
+            {uploadedCV && uploadedCV.length > 0 && (
+              <button type="button" className="ml-2 text-red-500 hover:text-red-600" onClick={() => removeFile("cv")}>
+                {t("Supprimer")}
+              </button>
+            )}
+          </div>
+          {errors.cv && <span className="text-xs text-red-500">{errors.cv.message}</span>}
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-white mb-2">{t("career.career-contact-form.placeholder.letter")}</label>
+          <div className="flex items-center">
+            <input
+              className="w-full p-2 text-black bg-white focus:border-2 focus:border-gray-800"
+              type="file"
+              accept=".pdf,.doc,.docx"
+              {...register("letter", { required: requiredLetter })}
+            />
+            {uploadedLetter && uploadedLetter.length > 0 && (
+              <button type="button" className="ml-2 text-red-500 hover:text-red-600" onClick={() => removeFile("letter")}>
+                {t("Supprimer")}
+              </button>
+            )}
+          </div>
+          {errors.letter && <span className="text-xs text-red-500">{errors.letter.message}</span>}
         </div>
         <div className="flex xs: justify-center md:justify-end mt-4">
           <Button type="submit" className={"w-40 btn btn-outline bg-white font-bold"} color="primary">

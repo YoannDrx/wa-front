@@ -20,7 +20,9 @@
     "requiredEmail": "Please enter your email address",
     "requiredSubject": "Please enter the subject of your message",
     "invalidEmail": "Invalid email address",
-    "requiredMessage": "Please fill in your message"
+    "requiredMessage": "Please fill in your message",
+    "requiredCV": "Please attach your CV (.pdf/.doc/.docx)",
+    "requiredLetter": "Please attach your cover letter (.pdf/.doc/.docx)"
   },
   "footer": {
     "Pratique Juridique": "Legal practice",
@@ -197,7 +199,9 @@
         "email": "E-mail",
         "subject": "Subject",
         "message": "Looking for an internship? ",
-        "send": "Send"
+        "send": "Send",
+        "cv": "CV",
+        "letter": "Cover letter"
       }
     }
   },
