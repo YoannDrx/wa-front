@@ -151,3 +151,7 @@ h3 {
 .menu li > *.underblueNav {
   background-color: white;
 }
+
+.menu li > *:not(ul):not(.menu-title):not(details):active {
+  background-color: transparent;
+}
