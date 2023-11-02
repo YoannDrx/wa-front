@@ -12,7 +12,7 @@ const ArticleCard = ({ article }) => {
         </div>
         <div className="text-sm text-gray-600">{article.categories.join(", ")}</div>
       </div>
-      <div className="text-sm text-gray-600 mb-2">{article.tags.join(", ")}</div>
+
       <p>{article.description}</p>
       <div className="mt-4">
         <Link href={`/article/${article.id}`} className="text-primary hover:underline">
