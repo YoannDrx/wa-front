@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 const JumboBlogPost = ({ imageHref, author, date, category }) => {
   const { t } = useTranslation();
   return (
-    <div className="relative w-full h-[400px] bg-cover bg-center" style={{ backgroundImage: `url(${imageHref})` }}>
+    <div className="relative w-full h-[400px] bg-cover bg-center z-[-10]" style={{ backgroundImage: `url(${imageHref})` }}>
       <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent">
         <div className="text-white p-8 pl-4 flex justify-start">
           <div className="mr-8">

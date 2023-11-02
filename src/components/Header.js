@@ -15,7 +15,7 @@ const LangMenu = () => {
 
   return (
     <Dropdown className="p-0" hover vertical="bottom">
-      <Dropdown.Toggle button={false} className="py-2 px-4">
+      <Dropdown.Toggle button={false} className="py-2 px-4 z-50">
         {readableLocale(router.locale)}
       </Dropdown.Toggle>
       <Dropdown.Menu>

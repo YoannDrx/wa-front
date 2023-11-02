@@ -14,7 +14,7 @@ export default function Expertise() {
       <div className="container py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {expertiseItems.map((item, index) => (
-            <Link href={`/expertise/${t(item.slug)}`} key={index}>
+            <Link href={`/expertise/${t(item.id)}`} key={index}>
               <ExpertiseCard image={item.image} title={t(item.titleKey)} />
             </Link>
           ))}
