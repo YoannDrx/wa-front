@@ -32,14 +32,7 @@ export default function ExpertisePage({ expertise }) {
           <div className="border border-black p-2 w-[300px] h-[300px] flex items-center justify-center relative group overflow-hidden">
             <div style={{ backgroundColor: "#E4EDF1" }} className="absolute w-[90%] h-[90%] rounded-full opacity-50"></div>
             <div className="w-full h-full relative z-10 p-2 flex items-center justify-center">
-              <Image
-                src={expertise.image}
-                alt={t(expertise.titleKey)}
-                className="object-contain  "
-                layout="fixed"
-                width={280}
-                height={280}
-              />
+              <Image src={expertise.image} alt={t(expertise.titleKey)} width={280} height={280} />
             </div>
           </div>
         </div>
