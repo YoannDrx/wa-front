@@ -37,13 +37,34 @@ function Home() {
           <div className="flex-1">
             <div className="flex gap-2 overflow-x-auto">
               <div className="max-w-full">
-                <Image src={"/assets/home/berlin.jpg"} width={200} height={200} alt="Avocat Berlin" />
+                <Image
+                  src={"/assets/home/berlin.jpg"}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-[200px] h-auto"
+                  alt="Avocat Berlin"
+                />
               </div>
               <div className="max-w-full">
-                <Image src={"/assets/home/paris.jpg"} width={200} height={200} alt="Avocat Paris" />
+                <Image
+                  src={"/assets/home/paris.jpg"}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-[200px] h-auto"
+                  alt="Avocat Paris"
+                />
               </div>
               <div className="max-w-full">
-                <Image src={"/assets/home/nyc.jpg"} width={200} height={200} alt="Avocat New York City" />
+                <Image
+                  src={"/assets/home/nyc.jpg"}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-[200px] h-auto"
+                  alt="Avocat New York City"
+                />
               </div>
             </div>
           </div>
