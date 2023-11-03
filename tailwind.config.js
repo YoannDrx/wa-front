@@ -32,6 +32,7 @@ module.exports = {
           error: "#E84855",
           "base-100": "#ffffff",
           "primary-content": "#ffffff",
+          lightBlue: "#E4EDF1",
         },
       },
       "light",

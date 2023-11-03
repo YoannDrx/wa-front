@@ -10,97 +10,97 @@ export default function WhoWeAre() {
 
   return (
     <div className="container mx-auto">
-      <PageJumbo titleKey="whoWeAre.presentation" textKey="whoWeAre.firmPresentation" />
-      <div className="py-20">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-primary p-8 text-white">
-            <h2 className="text-2xl font-semibold mb-4">
-              <Trans i18nKey="whoWeAre.NOUS SOMMES DEDIES A VOTRE SUCCES" />
-            </h2>
-            <p>
-              <Trans
-                i18nKey="whoWeAre.nous-sommes-dedies-a-votre-succes-description"
-                components={{
-                  nl: (
-                    <>
-                      <br />
-                      <br />
-                    </>
-                  ),
-                }}
-              />
-            </p>
-          </div>
+      <PageJumbo titleKey={t("whoWeAre.presentation")} textKey={t("whoWeAre.firmPresentation")} />
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Bloc 1 */}
+        <div className="bg-primary p-8 text-white">
+          <h2 className="mb-4 break-words">
+            <Trans i18nKey="whoWeAre.NOUS SOMMES DEDIES A VOTRE SUCCES" />
+          </h2>
+          <p>
+            <Trans
+              i18nKey="whoWeAre.nous-sommes-dedies-a-votre-succes-description"
+              components={{
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+              }}
+            />
+          </p>
+        </div>
+        {/* Bloc 2 */}
+        <div className="bg-white p-8 text-black border border-primary">
+          <h2 className="text-primary mb-4 break-words">
+            <Trans i18nKey="whoWeAre.NOUS SOMMES INTERNATIONAUX" />
+          </h2>
+          <p>
+            <Trans
+              i18nKey="whoWeAre.nous-sommes-internationnaux-description"
+              components={{
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+              }}
+            />
+          </p>
+        </div>
+      </section>
 
-          <div className="bg-white p-8 text-black">
-            <h2 className="text-2xl font-semibold mb-4">
-              <Trans i18nKey="whoWeAre.NOUS SOMMES INTERNATIONAUX" />
-            </h2>
-            <p>
-              <Trans
-                i18nKey="whoWeAre.nous-sommes-internationnaux-description"
-                components={{
-                  nl: (
-                    <>
-                      <br />
-                      <br />
-                    </>
-                  ),
-                }}
-              />
-            </p>
-          </div>
-        </section>
+      <Image
+        src="/assets/who-we-are/salle-de-conference.png"
+        alt="Séparateur"
+        width={0}
+        height={0}
+        className="w-full h-auto"
+        sizes="100vw"
+      />
 
-        <Image
-          src="/assets/who-we-are/salle-de-conference.png"
-          alt="Séparateur"
-          width={0}
-          height={0}
-          className="w-full h-auto"
-          sizes="100vw"
-        />
-
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-gray-200 p-8 text-black">
-            <h2 className="text-2xl font-semibold mb-4">
-              <Trans i18nKey="whoWeAre.PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE" />
-            </h2>
-            <p>
-              <Trans
-                i18nKey="whoWeAre.plus-loin-plus-intelligent-plus-rapide-description"
-                components={{
-                  nl: (
-                    <>
-                      <br />
-                      <br />
-                    </>
-                  ),
-                }}
-              />
-            </p>
-          </div>
-
-          <div className="bg-black p-8 text-white">
-            <h2 className="text-2xl font-semibold mb-4">
-              <Trans i18nKey="whoWeAre.VOTRE CONFIANCE NOUS HONORE" />
-            </h2>
-            <p>
-              <Trans
-                i18nKey="whoWeAre.votre-confiance-nous-honore-description"
-                components={{
-                  nl: (
-                    <>
-                      <br />
-                      <br />
-                    </>
-                  ),
-                }}
-              />
-            </p>
-          </div>
-        </section>
-      </div>
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Bloc 3 */}
+        <div className="bg-gray-200 p-8 text-black">
+          <h2 className="mb-4">
+            <Trans i18nKey="whoWeAre.PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE" />
+          </h2>
+          <p>
+            <Trans
+              i18nKey="whoWeAre.plus-loin-plus-intelligent-plus-rapide-description"
+              components={{
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+              }}
+            />
+          </p>
+        </div>
+        {/* Bloc 4 */}
+        <div className="bg-black p-8 text-white">
+          <h2 className="mb-4">
+            <Trans i18nKey="whoWeAre.VOTRE CONFIANCE NOUS HONORE" />
+          </h2>
+          <p>
+            <Trans
+              i18nKey="whoWeAre.votre-confiance-nous-honore-description"
+              components={{
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+              }}
+            />
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

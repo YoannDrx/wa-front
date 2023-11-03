@@ -27,9 +27,9 @@ const ContactForm = () => {
   const requiredMessage = t("errorMessages.requiredMessage");
 
   return (
-    <div className="w-full py-10 flex justify-center">
-      <div className="w-full md:w-2/3 sm:w-2/3 lg:w-1/2">
-        <h2 className="text-xl font-bold underblue text-white text-center mb-5">{t("contact.contactForm.restonEnContact")}</h2>
+    <div className="py-10 flex justify-center">
+      <div className="md:w-2/3">
+        <h3 className="underblue text-white text-center mb-5">{t("contact.contactForm.restonEnContact")}</h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label className="block text-neutral-200 text-xs font-bold mb-2" htmlFor="name">

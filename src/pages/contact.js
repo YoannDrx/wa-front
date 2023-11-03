@@ -9,11 +9,11 @@ export default function Contact() {
   return (
     <div>
       <div className="container mx-auto">
-        <PageJumbo titleKey="contact.informationPratique" textKey="" />
-        <div className="md:flex py-20">
-          <div className="w-full md:w-1/2 px-5">
-            <h2 className="text-xl font-bold text-primary">{t("contact.commentNousTrouvez")} ?</h2>
-            <p className="text-md leading-normal">
+        <PageJumbo titleKey={t("contact.informationPratique")} />
+        <div className="xl:flex  py-12">
+          <div className="w-full lg:w-1/2 px-5">
+            <h3 className="text-primary mb-4">{t("contact.commentNousTrouvez")} ?</h3>
+            <p>
               <Trans
                 i18nKey="contact.info-contact"
                 components={{
@@ -27,14 +27,14 @@ export default function Contact() {
               />
             </p>
 
-            <p className="text-md leading-normal">
+            <p>
               <span className="font-bold">{t("contact.Aéroport Charles de Gaulle")} :</span>
               <br />
               {t("contact.Taxi (30 minutes)")}
               <br />
               {t("contact.Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
             </p>
-            <p className="text-md leading-normal">
+            <p>
               <span className="font-bold">{t("contact.Aéroport d'Orly ")}:</span>
               <br />
               {t("contact.Taxi (40 minutes)")}
@@ -42,8 +42,15 @@ export default function Contact() {
               {t("contact.Hôtels : De nombreux hôtels à proximité. Réservation possible.")}
             </p>
           </div>
-          <div className="w-full md:w-1/2 px-5">
-            <Image src="/assets/contact/map.png" alt="map" width={0} height={0} sizes="100vw" className="w-[400px] h-auto" />
+          <div className="w-full sm:w-1/2">
+            <Image
+              src="/assets/contact/arc-de-triomphe.jpg"
+              alt="map"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto "
+            />
           </div>
         </div>
       </div>

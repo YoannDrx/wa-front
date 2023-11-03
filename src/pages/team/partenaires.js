@@ -41,8 +41,8 @@ export default function Partners() {
 
   return (
     <div className="container mx-auto">
-      <PageJumbo titleKey="partenaire.nosAssocies" textKey="partenaire.teamPresentation" backgroundColor="#E4EDF1" />
-      <div className="container py-20">
+      <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} backgroundColor="#E4EDF1" />
+      <div className="py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {teamMembers.map((member, index) => (
             <TeamCard

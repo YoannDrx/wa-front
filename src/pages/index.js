@@ -36,36 +36,30 @@ function Home() {
         <div className="flex flex-col xl:flex-row justify-between items-center gap-24">
           <div className="flex-1">
             <div className="flex gap-2 overflow-x-auto">
-              <div className="max-w-full">
-                <Image
-                  src={"/assets/home/berlin.jpg"}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-[200px] h-auto"
-                  alt="Avocat Berlin"
-                />
-              </div>
-              <div className="max-w-full">
-                <Image
-                  src={"/assets/home/paris.jpg"}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-[200px] h-auto"
-                  alt="Avocat Paris"
-                />
-              </div>
-              <div className="max-w-full">
-                <Image
-                  src={"/assets/home/nyc.jpg"}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-[200px] h-auto"
-                  alt="Avocat New York City"
-                />
-              </div>
+              <Image
+                src={"/assets/home/berlin.jpg"}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[200px] h-auto"
+                alt="Avocat Berlin"
+              />
+              <Image
+                src={"/assets/home/paris.jpg"}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[200px] h-auto"
+                alt="Avocat Paris"
+              />
+              <Image
+                src={"/assets/home/nyc.jpg"}
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[200px] h-auto"
+                alt="Avocat New York City"
+              />
             </div>
           </div>
           <div className="flex-1">
@@ -84,7 +78,7 @@ function Home() {
                   }}
                 />
               </p>
-              <Button href={"/qui-sommes-nous"} className="rounded-none mt-4" color="primary">
+              <Button href={"/qui-sommes-nous"} className="mt-4" color="primary">
                 {t("En savoir plus")}
               </Button>
             </div>
@@ -96,12 +90,12 @@ function Home() {
           <div className="flex flex-col lg:flex-row xl:flex-row justify-between items-center">
             <div className="lg:pl-24 ">
               <div>
-                <h2 className="">{t("home.further")}.</h2>
-                <h2 className="">{t("home.smarter")}.</h2>
+                <h2>{t("home.further")}.</h2>
+                <h2>{t("home.smarter")}.</h2>
               </div>
               <h2 className="text-primary">{t("home.swiftly")}.</h2>
             </div>
-            <div className=" lg:pl-24">
+            <div className="lg:pl-24">
               <Trans
                 i18nKey="home.home2"
                 components={{
@@ -121,7 +115,6 @@ function Home() {
         <h2 className="text-center underblue">{t("home.articles.title")}</h2>
         <div className="flex flex-wrap gap-4 justify-center">
           <ArticleHomeCard
-            className="min-w-[256px]"
             title={t("home.articles.art1")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
@@ -130,7 +123,6 @@ function Home() {
             }
           />
           <ArticleHomeCard
-            className="min-w-[256px]"
             title={t("home.articles.art2")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
@@ -139,7 +131,6 @@ function Home() {
             }
           />
           <ArticleHomeCard
-            className="min-w-[256px]"
             title={t("home.articles.art3")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"

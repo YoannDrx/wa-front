@@ -10,8 +10,8 @@ export default function Expertise() {
 
   return (
     <div className="container mx-auto">
-      <PageJumbo titleKey="expertise.notreExpertise" textKey={t("expertise.ourGoal")} />
-      <div className="container py-20">
+      <PageJumbo titleKey={t("expertise.notreExpertise")} textKey={t("expertise.ourGoal")} />
+      <div className="py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {expertiseItems.map((item, index) => (
             <Link href={`/expertise/${t(item.id)}`} key={index}>

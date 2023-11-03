@@ -42,8 +42,8 @@ const CareerContactForm = () => {
 
   return (
     <div className="bg-primary p-8 ">
-      <h2 className="text-2xl text-neutral mb-1">{t("career.career-contact-form.title")}</h2>
-      <h3 className="text-sm text-white">{t("career.career-contact-form.text")}</h3>
+      <h2 className="mb-1">{t("career.career-contact-form.title")}</h2>
+      <p className="text-white">{t("career.career-contact-form.text")}</p>
       <form className="mt-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <input

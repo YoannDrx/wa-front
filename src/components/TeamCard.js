@@ -8,13 +8,13 @@ export default function TeamCard({ image, name, references, description }) {
   return (
     <div className="bg-white shadow-lg relative group">
       <Link href={`/team/${name}`}>
-        <Image src={image} alt={`${name}`} className="w-full " width={200} height={500} />
+        <Image src={image} alt={`${name}`} width={0} height={0} sizes="100vw" className="w-full h-auto" />
         <div className="text-center">
-          <h2 className="text-sm underblue mt-2">{name}</h2>
-          <h3 className="text-xs p-2">{references}</h3>
-          <p className="text-xs text-gray-500">{description}</p>
+          <h3 className="underblue mt-2">{name}</h3>
+          <p className="font-bold">{references}</p>
+          <p className="text-gray-500">{description}</p>
         </div>
-        {/* Overlay */}
+        {/* Overlay Hover */}
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
           <button className="text-white font-bold">{t("partenaire.seeProfile")} →</button>
         </div>
