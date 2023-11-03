@@ -43,7 +43,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="w-full md:w-1/2 px-5">
-            <Image src="/assets/contact/map.png" alt="map" width={400} height={400} />
+            <Image src="/assets/contact/map.png" alt="map" width={0} height={0} sizes="100vw" className="w-[400px] h-auto" />
           </div>
         </div>
       </div>

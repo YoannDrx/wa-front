@@ -48,9 +48,9 @@ export default function Blog() {
   const categories = Array.from(new Set(articles.flatMap((article) => article.categories)));
 
   return (
-    <div>
+    <div className="container mx-auto">
       <PageJumbo titleKey={t("blog.articles")} />
-      <div className="container mx-auto flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-64 p-4 md:mr-4 md:mb-4 mb-4 md:order-1" style={{ backgroundColor: "#E4EDF1" }}>
           <Sidebar setFilter={setFilter} authors={authors} categories={categories} />
         </div>

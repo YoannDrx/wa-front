@@ -26,8 +26,6 @@ const CareerContactForm = () => {
   const uploadedCV = watch("cv");
   const uploadedLetter = watch("letter");
 
-  console.log("log >>", uploadedCV, uploadedLetter);
-
   const onSubmit = async (data) => {
     try {
       // TODO : emailjs ?

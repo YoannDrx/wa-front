@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { useTranslation, Trans } from "react-i18next"; // Importer Trans
+import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 
 export default function WhoWeAre() {
@@ -9,7 +9,7 @@ export default function WhoWeAre() {
   useEffect(() => {}, [i18n.language]);
 
   return (
-    <div className="container mx-auto px-4 md:px-8">
+    <div className="container mx-auto">
       <PageJumbo titleKey="whoWeAre.presentation" textKey="whoWeAre.firmPresentation" />
       <div className="py-20">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12">

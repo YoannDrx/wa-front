@@ -13,8 +13,15 @@ export default function Career() {
       <div className="container py-20">
         {/* Bloc 1 */}
         <div className="flex flex-wrap md:flex-nowrap items-center pb-20">
-          <div className="w-full md:w-1/2 flex justify-center mb-4 md:mb-0">
-            <Image src="/assets/career/career1.jpg" alt={t("career.image-description")} width={500} height={300} />
+          <div className="w-full lg:w-1/2 flex xs:justify-center mb-4 md:mb-0">
+            <Image
+              src="/assets/career/career1.jpg"
+              alt={t("career.image-description")}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-[500px] h-auto"
+            />
           </div>
           <div className="w-full md:w-1/2 pl-4">
             <h2 className="text-4xl font-bold text-primary">{t("career.talents.title")}</h2>
@@ -31,8 +38,15 @@ export default function Career() {
             <p className="mt-4">{t("career.internship.paragraph1")}</p>
             <p className="mt-4">{t("career.internship.paragraph2")}</p>
           </div>
-          <div className="w-full md:w-1/2">
-            <Image src="/assets/career/career2.jpg" alt={t("internship.imageDescription")} width={500} height={300} />
+          <div className="w-full lg:w-1/2 xs:justify-center">
+            <Image
+              src="/assets/career/career2.jpg"
+              alt={t("internship.imageDescription")}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-[500px] h-auto"
+            />
           </div>
         </div>
         {/* Bloc 3 */}
