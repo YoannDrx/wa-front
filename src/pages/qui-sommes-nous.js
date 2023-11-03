@@ -14,7 +14,7 @@ export default function WhoWeAre() {
       <div className="py-20">
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-primary p-8 text-white">
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               <Trans i18nKey="whoWeAre.NOUS SOMMES DEDIES A VOTRE SUCCES" />
             </h2>
             <p>
@@ -33,7 +33,7 @@ export default function WhoWeAre() {
           </div>
 
           <div className="bg-white p-8 text-black">
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               <Trans i18nKey="whoWeAre.NOUS SOMMES INTERNATIONAUX" />
             </h2>
             <p>
@@ -52,20 +52,18 @@ export default function WhoWeAre() {
           </div>
         </section>
 
-        <section className="relative my-16 h-[400px] fill">
-          <Image
-            src="/assets/who-we-are/salle-de-conference.png"
-            alt="Séparateur"
-            width={0}
-            height={0}
-            className="w-full h-auto"
-            sizes="100vw"
-          />
-        </section>
+        <Image
+          src="/assets/who-we-are/salle-de-conference.png"
+          alt="Séparateur"
+          width={0}
+          height={0}
+          className="w-full h-auto"
+          sizes="100vw"
+        />
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-gray-200 p-8 text-black">
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               <Trans i18nKey="whoWeAre.PLUS LOIN PLUS INTELLIGENT PLUS RAPIDE" />
             </h2>
             <p>
@@ -84,7 +82,7 @@ export default function WhoWeAre() {
           </div>
 
           <div className="bg-black p-8 text-white">
-            <h2 className="text-3xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               <Trans i18nKey="whoWeAre.VOTRE CONFIANCE NOUS HONORE" />
             </h2>
             <p>
