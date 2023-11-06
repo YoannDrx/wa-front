@@ -25,14 +25,14 @@ export default function New() {
     const router = useRouter();
 
     const onLogin = () => {
-        router.push('/new/article')
+        router.push('/admin/article')
     }
 
     useEffect(() => {
         (async () => {
             const session = await supabase.auth.getSession();
             if (session.data.session) {
-                //onLogin();
+                onLogin();
             }
         })()
     }, [])
