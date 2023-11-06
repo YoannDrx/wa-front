@@ -1,10 +1,14 @@
+import {useState} from 'react'
+
 export default function UK(params) {
+  const [id, setId] = useState('id-' + Math.random().toString(36).substr(2, 9));
+
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
-      <mask id="circleFlagsUk0">
+      <mask id={id}>
         <circle cx="256" cy="256" r="256" fill="#fff" />
       </mask>
-      <g mask="url(#circleFlagsUk0)">
+      <g mask={`url(#${id})`}>
         <path
           fill="#eee"
           d="m0 0l8 22l-8 23v23l32 54l-32 54v32l32 48l-32 48v32l32 54l-32 54v68l22-8l23 8h23l54-32l54 32h32l48-32l48 32h32l54-32l54 32h68l-8-22l8-23v-23l-32-54l32-54v-32l-32-48l32-48v-32l-32-54l32-54V0l-22 8l-23-8h-23l-54 32l-54-32h-32l-48 32l-48-32h-32l-54 32L68 0H0z"

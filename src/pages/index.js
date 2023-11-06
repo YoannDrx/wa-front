@@ -35,7 +35,7 @@ function Home() {
       <div className="container py-20">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-24">
           <div className="flex-1">
-            <div className="flex gap-2 overflow-x-auto">
+            <div className="flex gap-2">
               <Image
                 src={"/assets/home/berlin.jpg"}
                 width={0}
