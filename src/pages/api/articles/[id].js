@@ -1,35 +1,12 @@
+import { apiAuthCheck } from '@/utils/apiAuthCheck';
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient('https://ovnsgrllmcmvhjqxkdga.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92bnNncmxsbWNtdmhqcXhrZGdhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5OTI3OTYzNywiZXhwIjoyMDE0ODU1NjM3fQ.FUaj167g_UmIlYRQ0xCN-Dd8nrw1bR2N-gdF0mXjzuE')
 
-//TODO check session
-
-async function checkAuth(req) {
-    const token = req.headers.token;
-
-    if (!token) {
-        return null;
-    }
-
-    const { data: user, error } = await supabase.auth.api.getUser(token);
-
-    if (error) {
-        console.error('Error fetching user', error);
-        return null;
-    }
-
-    return user;
-}
 export default async function handler(req, res) {
     const { id } = req.query;
 
-    const user = await checkAuth(req);
-
-    // If there's no user, return a 401 Unauthorized response
-    if (!user) {
-      return res.status(401).json({ error: 'Unauthorized' });
-    }
-  
+    await apiAuthCheck(supabase, req)
 
     switch (req.method) {
         case 'GET':

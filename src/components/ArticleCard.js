@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { localizedArticle } from "../../utils/articles";
+import { localizedArticle } from "../utils/articles";
 import { useRouter } from "next/router";
 
 const ArticleCard = ({ article }) => {

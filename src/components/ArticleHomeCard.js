@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
-import { useIsMobile } from "../../utils/useIsMobile";
+import { useIsMobile } from "../utils/useIsMobile";
 import { useArticleCardContext } from "../../contexts/ArticleCardContext";
 import { useTranslation } from "react-i18next";
 

@@ -18,7 +18,7 @@ const Jumbo = () => {
             </Button>
           </div>
           <div className="flex-1">
-            <video src="/assets/home/cabinet.mp4" />
+            <video src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted />
           </div>
         </div>
       </div>

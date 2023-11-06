@@ -6,6 +6,18 @@ const supabaseUrl = 'https://ovnsgrllmcmvhjqxkdga.supabase.co';
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92bnNncmxsbWNtdmhqcXhrZGdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkyNzk2MzcsImV4cCI6MjAxNDg1NTYzN30.BzufAu0K8RNkj2NB0wkAfMHV1Cza2tE40nsyhsfEWtU';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+supabase.auth.onAuthStateChange((event, session) => { // writes the cookies to a cookie on our own domain. required because cookie gets set to supabase domain by default
+    if (event === 'SIGNED_OUT' || event === 'USER_DELETED') {
+      // delete cookies on sign out
+      const expires = new Date(0).toUTCString()
+      document.cookie = `my-access-token=; path=/; expires=${expires}; SameSite=Lax; secure`
+      document.cookie = `my-refresh-token=; path=/; expires=${expires}; SameSite=Lax; secure`
+    } else if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
+      const maxAge = 100 * 365 * 24 * 60 * 60 // 100 years, never expires
+      document.cookie = `my-access-token=${session.access_token}; path=/; max-age=${maxAge}; SameSite=Lax; secure`
+      document.cookie = `my-refresh-token=${session.refresh_token}; path=/; max-age=${maxAge}; SameSite=Lax; secure`
+    }
+  })
 
 export default function New() {
     const [email, setEmail] = useState('');
@@ -20,7 +32,7 @@ export default function New() {
         (async () => {
             const session = await supabase.auth.getSession();
             if (session.data.session) {
-                onLogin();
+                //onLogin();
             }
         })()
     }, [])
