@@ -8,6 +8,7 @@ import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { CardProvider } from "../../contexts/ArticleCardContext";
+import axios from "axios";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -30,6 +31,8 @@ i18n
       escapeValue: false, // react already safes from xss
     },
   });
+
+  axios.defaults.baseURL = 'http://localhost:3000'
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();

@@ -1,37 +1,17 @@
 import ArticleCard from "@/components/ArticleCard";
 import PageJumbo from "@/components/PageJumbo";
 import Sidebar from "@/components/Sidebar";
+import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const articles = [
-  {
-    id: 1,
-    title: "DISCRIMINATION SEXISTE EN FRANCE",
-    author: "Mathilde Houet Weil",
-    description:
-      "Le Code du travail français, créé au début des années 70, énumère tous les motifs de discrimination interdits par le droit de l’UE : origine, sexe, préférence sexuelle, âge, situation familiale, grossesse, citoyenneté, race, convictions politiques ou religieuses, l’apparence physique, le nom de famille, les problèmes de santé ou les handicaps.",
-    categories: ["Droit du travail", "Discrimination"],
-  },
-  {
-    id: 2,
-    title: "PROTECTION DES DONNÉES ET DE LA VIE PRIVÉE SUR LE LIEU DE TRAVAIL",
-    author: "Mathilde Houet Weil",
-    description:
-      "Le droit à la vie privée est un domaine de droit très développé en Europe. Les Européens sont parfaitement conscients des dangers associés à l’utilisation incontrôlée des informations personnelles, comme ils l’ont appris de leurs expériences de la Seconde Guerre mondiale – gouvernements fascistes, et post-War - régimes communistes, où la divulgation de la race, l’ethnicité ou les opinions politiques ont mené à des dénonciations secrètes qui ont causé la persécution et l’assassinat de nombreuses personnes.",
-    categories: ["Droit à la vie privée", "Droit européen"],
-  },
-  {
-    id: 3,
-    title: "EDDE SUMMER",
-    author: "Mathilde Houet Weil",
-    description:
-      "La France, où la liberté individuelle est très prisée, est un bastion de la vie privée au travail. l’État de droit français trouve son appui dans l’article 8 de la Convention européenne des droits de l’homme, qui prévoit le droit au respect de sa vie privée, de sa vie familiale, de son domicile et de sa correspondance, soumis uniquement à des restrictions jugées strictement nécessaires dans une société démocratique. En outre, l’article 9 du Code civil prévoit que toute personne a droit au respect de sa vie privée. Ces deux dispositions s’appliquent aux salariés sur le lieu de travail et pendant le temps de travail. Le droit à la vie privée de l’employé s’étend aux conversations et aux communications qui ont lieu au travail ou dans les systèmes de travail",
-    categories: ["Droit à la vie privée", "Droit français"],
-  },
-];
+export async function getStaticProps({ params }) {
+  const articles = (await axios.get('/api/articles')).data
 
-export default function Blog() {
+  return { props: { articles } };
+}
+
+export default function Blog({articles}) {
   const { t } = useTranslation();
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
@@ -45,14 +25,13 @@ export default function Blog() {
   };
 
   const authors = Array.from(new Set(articles.map((article) => article.author)));
-  const categories = Array.from(new Set(articles.flatMap((article) => article.categories)));
 
   return (
     <div className="container mx-auto">
       <PageJumbo titleKey={t("blog.articles")} />
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-64 p-4 md:mr-4 md:mb-4 mb-4 md:order-1" style={{ backgroundColor: "#E4EDF1" }}>
-          <Sidebar setFilter={setFilter} authors={authors} categories={categories} />
+          <Sidebar setFilter={setFilter} authors={authors} categories={[]} />
         </div>
         <div className="flex-grow md:order-1">
           {filteredArticles.map((article) => (

@@ -29,8 +29,6 @@ export async function getStaticPaths() {
 }
 
 export default function ExpertisePage({ expertise }) {
-  console.log('Page props:', expertise);
-
   const { t } = useTranslation();
 
   return (

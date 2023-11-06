@@ -10,7 +10,7 @@ const ArticleCard = ({ article }) => {
           <h2 className="text-2xl font-bold text-primary">{article.title}</h2>
           <p className="text-sm text-gray-600">{article.author}</p>
         </div>
-        <div className="text-sm text-gray-600">{article.categories.join(", ")}</div>
+        <div className="text-sm text-gray-600">{article.categories?.join(", ")}</div>
       </div>
 
       <p>{article.description}</p>
