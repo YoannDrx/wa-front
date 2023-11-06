@@ -4,7 +4,6 @@ import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 
 export async function getStaticProps({ params }) {
-  console.log(`2628 `, params);
   const expertise = expertiseItems.find((item) => item.id.toString() === params.expertise);
 
   if (!expertise) {
@@ -15,11 +14,16 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  console.log(`3833 `, 546645);
-  const paths = expertiseItems.map((item) => ({
+  // paths are apparently needed for every locale.
+  const paths = [
+    ...expertiseItems.map((item) => ({
     params: { expertise: item.id.toString() },
-  }));
-  console.log(`4017 `, paths);
+  })),...expertiseItems.map((item) => ({
+    params: { expertise: item.id.toString() }, locale: 'de'
+  })),...expertiseItems.map((item) => ({
+    params: { expertise: item.id.toString() }, locale: 'en'
+  })),
+];
 
   return { paths, fallback: false };
 }
