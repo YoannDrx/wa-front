@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { localizedArticle } from "../../utils/articles";
+import { useRouter } from "next/router";
 
 const ArticleCard = ({ article }) => {
+  const router = useRouter()
   const { t } = useTranslation();
+
+  article = localizedArticle(article, router.locale)
+
   return (
     <div className="bg-white p-4 rounded-none mb-4 w-full border border-gray-300">
       <div className="flex justify-between">
@@ -15,7 +21,7 @@ const ArticleCard = ({ article }) => {
 
       <p>{article.description}</p>
       <div className="mt-4">
-        <Link href={`/news/${article.id}`} className="text-primary hover:underline">
+        <Link href={article.link} target='_blank' className="text-primary hover:underline">
           {t("blog.knowMore")} ➔
         </Link>
       </div>

@@ -10,21 +10,14 @@ export default async function handler(
     res
 ) {
     try {
-
-        // uri postgresql://postgres:hqp7SycBbOpwv2nX@db.ovnsgrllmcmvhjqxkdga.supabase.co:5432/postgres 
-        // pw hqp7SycBbOpwv2nX
+        /*const { body, query, method } = req
+        const { locale='fr' } = body*/
 
         const { data, error } = await supabase
             .from('articles')
             .select()
 
-
         res.status(200).json(data)
-
-        return;
-        const users = await User.findAll()
-
-        res.status(200).json({ ok: users })
     } catch (error) {
         res.status(400).json({ ok: false })
     }
