@@ -1,7 +1,8 @@
 {
   "/qui-sommes-nous": "/wer-sind-wir",
-  "/partenaires": "/partner",
+  "/team/partenaires": "/team/partner",
   "/expertise": "/sachverstand",
+  "/expertise/:expertise": "/sachverstand/:expertise",
   "/carriere": "/krriere",
   "/blog": "/blog",
   "/contact": "/kontakt",
