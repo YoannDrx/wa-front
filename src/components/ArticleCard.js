@@ -15,7 +15,7 @@ const ArticleCard = ({ article }) => {
 
       <p>{article.description}</p>
       <div className="mt-4">
-        <Link href={`/article/${article.id}`} className="text-primary hover:underline">
+        <Link href={`/news/${article.id}`} className="text-primary hover:underline">
           {t("blog.knowMore")} ➔
         </Link>
       </div>

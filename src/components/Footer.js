@@ -40,14 +40,14 @@ const Footer = () => {
 
           <div className="leftblue">
             <h3>{t("footer.Ressources")}</h3>
-            <Link href="/blog">{t("footer.Articles & Publications")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur le droit du travail 2022")}</Link>
-            <Link href="/blog">{t("footer.Prévisions M&A 2022")}</Link>
-            <Link href="/blog">{t("footer.Réseau d'alliance Innangard")}</Link>
-            <Link href="/blog">{t("footer.Prix & Reconnaissance")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
-            <Link href="/blog">{t("footer.Blog")}</Link>
+            <Link href="/news">{t("footer.Articles & Publications")}</Link>
+            <Link href="/news">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
+            <Link href="/news">{t("footer.Rapport sur le droit du travail 2022")}</Link>
+            <Link href="/news">{t("footer.Prévisions M&A 2022")}</Link>
+            <Link href="/news">{t("footer.Réseau d'alliance Innangard")}</Link>
+            <Link href="/news">{t("footer.Prix & Reconnaissance")}</Link>
+            <Link href="/news">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
+            <Link href="/news">{t("footer.Blog")}</Link>
           </div>
         </footer>
       </div>

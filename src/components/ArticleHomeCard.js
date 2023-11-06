@@ -54,7 +54,7 @@ export default function ArticleHomeCard({ backgroundImage, date, title, slug }) 
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam asperiores iste totam vero earum aliquid ducimus
               vel dolor delectus distinctio et, facere quos illum temporibus recusandae illo pariatur, ad labore.
             </div>
-            <Button href={`/blog/${slug}`} color="primary" className="self-center mt-4 w-2/5 cursor-pointer">
+            <Button href={`/news/${slug}`} color="primary" className="self-center mt-4 w-2/5 cursor-pointer">
               {t("En savoir plus")}
             </Button>
           </div>

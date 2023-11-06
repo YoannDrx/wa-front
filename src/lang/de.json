@@ -4,7 +4,6 @@
   "/expertise": "/sachverstand",
   "/expertise/:expertise": "/sachverstand/:expertise",
   "/carriere": "/krriere",
-  "/blog": "/blog",
   "/contact": "/kontakt",
   "Accueil": "Willkommen",
   "Qui sommes-nous": "Wer sind wir",
