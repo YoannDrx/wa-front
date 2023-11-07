@@ -21,7 +21,7 @@ export default function Articles({ articles }) {
             <Button color='primary' href={`/admin/article`}>Ajouter un article</Button>
         </div>
         {articles.map((article) => (
-            <div key={article.id} className="flex flex-col gap-4 border p-4">
+            <div key={article.id} className="flex flex-col gap-4 border p-4 mb-4">
                 <div className="flex justify-between">
                     #{article.id}
                     <div>
