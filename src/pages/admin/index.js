@@ -25,7 +25,7 @@ export default function New() {
     const router = useRouter();
 
     const onLogin = () => {
-        router.push('/admin/article')
+        router.push('/admin/articles')
     }
 
     useEffect(() => {
