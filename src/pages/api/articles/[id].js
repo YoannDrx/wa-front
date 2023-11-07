@@ -33,7 +33,7 @@ export default async function handler(req, res) {
 
         case 'DELETE':
             try {
-                const { data, error } = await supabase.from('articles').delete().match({ id });
+                const { data, error } = await supabase.from('articles').delete().eq('id', id);
 
                 if (error) throw error;
 
@@ -41,7 +41,6 @@ export default async function handler(req, res) {
             } catch (error) {
                 return res.status(400).json({ error: error.message });
             }
-
         default:
             res.setHeader('Allow', ['GET', 'PUT', 'DELETE']);
             return res.status(405).end(`Method ${req.method} Not Allowed`);

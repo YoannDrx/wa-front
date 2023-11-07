@@ -22,7 +22,7 @@ export default function NewArticle(params) {
         const formProps = Object.fromEntries(formData);
 
         console.log(`3148 `, formProps);
-        let {data, error} = await axios.post('/api/articles', formProps)
+        let {data, error} = await axios.post('/articles', formProps)
     }
 
 
