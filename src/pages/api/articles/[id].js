@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
         case 'PUT':
             try {
-                const { data, error } = await supabase.from('articles').update(req.body).match({ id });
+                const { data, error } = await supabase.from('articles').update(req.body).eq('id', id).single();
 
                 if (error) throw error;
 

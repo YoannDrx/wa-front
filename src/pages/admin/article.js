@@ -5,24 +5,19 @@ import DE from "@/components/lang/DE";
 import { Input, Textarea } from "react-daisyui";
 import Button from "@/components/Button";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function NewArticle(params) {
-
-    // TODO send new
-
-    // TODO LIST
-
-    //TODO edit
-
-    // TODO delete
-
+    const router = useRouter()
     const submit = async (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
         const formProps = Object.fromEntries(formData);
 
-        console.log(`3148 `, formProps);
         let {data, error} = await axios.post('/articles', formProps)
+        if(!error){
+            router.push('/admin/articles')
+        }
     }
 
 
@@ -30,10 +25,6 @@ export default function NewArticle(params) {
         <h1>Nouvel article</h1>
 
         <form className="flex flex-col gap-6" onSubmit={submit}>
-            <div>
-                <label htmlFor="author" className="flex text-2xl gap-2 items-center">Auteur</label>
-                <Input id="author" name="author" className="w-full" />
-            </div>
             <div>
                 <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center"><FR /> Titre</label>
                 <Input id="title_fr" name="title_fr" className="w-full" />
@@ -58,6 +49,10 @@ export default function NewArticle(params) {
             <div>
                 <label htmlFor="description_de" className="flex text-2xl gap-2 items-center"><DE /> Description</label>
                 <Textarea id="description_de" name="description_de" className="w-full" />
+            </div>
+            <div>
+                <label htmlFor="author" className="flex text-2xl gap-2 items-center">Auteur</label>
+                <Input id="author" name="author" className="w-full" />
             </div>
             <div>
                 <label htmlFor="link" className="flex text-2xl gap-2 items-center">Lien</label>
