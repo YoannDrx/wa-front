@@ -51,28 +51,28 @@ export default function ArticleEdit() {
 
         <form className="flex flex-col gap-6" onSubmit={submit}>
             <div>
-                <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center"><FR /> Titre</label>
+                <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center"><FR id={3398541422121} /> Titre</label>
                 <Input {...bbRegister("title_fr")} className="w-full" />
             </div>
             <div>
-                <label htmlFor="title_en" className="flex text-2xl gap-2 items-center"><UK /> Title</label>
+                <label htmlFor="title_en" className="flex text-2xl gap-2 items-center"><UK id={339854142452} /> Title</label>
                 <Input {...bbRegister("title_en")} className="w-full" />
             </div>
             <div>
-                <label htmlFor="title_de" className="flex text-2xl gap-2 items-center"><DE /> Titre</label>
+                <label htmlFor="title_de" className="flex text-2xl gap-2 items-center"><DE id={339854142653} /> Titre</label>
                 <Input {...bbRegister("title_de")} className="w-full" />
             </div>
 
             <div>
-                <label htmlFor="description_fr" className="flex text-2xl gap-2 items-center"><FR /> Description</label>
+                <label htmlFor="description_fr" className="flex text-2xl gap-2 items-center"><FR id={3398541424574} /> Description</label>
                 <Textarea {...bbRegister("description_fr")} className="w-full" />
             </div>
             <div>
-                <label htmlFor="description_en" className="flex text-2xl gap-2 items-center"><UK /> Description</label>
+                <label htmlFor="description_en" className="flex text-2xl gap-2 items-center"><UK id={38101848985} /> Description</label>
                 <Textarea {...bbRegister("description_en")} className="w-full" />
             </div>
             <div>
-                <label htmlFor="description_de" className="flex text-2xl gap-2 items-center"><DE /> Description</label>
+                <label htmlFor="description_de" className="flex text-2xl gap-2 items-center"><DE id={33985414289896} /> Description</label>
                 <Textarea {...bbRegister("description_de")} className="w-full" />
             </div>
             <div>

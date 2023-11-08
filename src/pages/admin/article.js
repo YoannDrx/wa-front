@@ -26,28 +26,28 @@ export default function NewArticle(params) {
 
         <form className="flex flex-col gap-6" onSubmit={submit}>
             <div>
-                <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center"><FR /> Titre</label>
+                <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center"><FR id={3588875139811}  /> Titre</label>
                 <Input id="title_fr" name="title_fr" className="w-full" />
             </div>
             <div>
-                <label htmlFor="title_en" className="flex text-2xl gap-2 items-center"><UK /> Title</label>
+                <label htmlFor="title_en" className="flex text-2xl gap-2 items-center"><UK id={3588847139812}  /> Title</label>
                 <Input id="title_en" name="title_en" className="w-full" />
             </div>
             <div>
-                <label htmlFor="title_de" className="flex text-2xl gap-2 items-center"><DE /> Titre</label>
+                <label htmlFor="title_de" className="flex text-2xl gap-2 items-center"><DE id={3588887139813}  /> Titre</label>
                 <Input id="title_de" name="title_de" className="w-full" />
             </div>
 
             <div>
-                <label htmlFor="description_fr" className="flex text-2xl gap-2 items-center"><FR /> Description</label>
+                <label htmlFor="description_fr" className="flex text-2xl gap-2 items-center"><FR id={35888139814}  /> Description</label>
                 <Textarea id="description_fr" name="description_fr" className="w-full" />
             </div>
             <div>
-                <label htmlFor="description_en" className="flex text-2xl gap-2 items-center"><UK /> Description</label>
+                <label htmlFor="description_en" className="flex text-2xl gap-2 items-center"><UK id={35888139815} /> Description</label>
                 <Textarea id="description_en" name="description_en" className="w-full" />
             </div>
             <div>
-                <label htmlFor="description_de" className="flex text-2xl gap-2 items-center"><DE /> Description</label>
+                <label htmlFor="description_de" className="flex text-2xl gap-2 items-center"><DE id={35888139816}  /> Description</label>
                 <Textarea id="description_de" name="description_de" className="w-full" />
             </div>
             <div>

@@ -27,13 +27,13 @@ const LangMenu = () => {
       </Dropdown.Toggle>
       <Dropdown.Menu className="z-50">
         <Link href={actualPathname(t(router.pathname, { lng: "fr" }), router.query)} locale="fr" className="p-2 gap-2 flex">
-          <FR /> Français
+          <FR id={354816541}  /> Français
         </Link>
         <Link href={actualPathname(t(router.pathname, { lng: "en" }), router.query)} locale="en" className="p-2 gap-2 flex">
-          <UK /> English
+          <UK id={35481645622} /> English
         </Link>
         <Link href={actualPathname(t(router.pathname, { lng: "de" }), router.query)} locale="de" className="p-2 gap-2 flex">
-          <DE /> Deutsch
+          <DE id={354816683}  /> Deutsch
         </Link>
       </Dropdown.Menu>
     </Dropdown>

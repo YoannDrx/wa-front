@@ -1,8 +1,4 @@
-import {useState} from 'react'
-
-export default function DE(params) {
-  const [id, setId] = useState('id-' + Math.random().toString(36).substr(2, 9));
-
+export default function DE({id}) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
       <mask id={id}>

@@ -7,25 +7,25 @@ export const readableLocale = (locale) => {
     case "fr":
       return (
         <div className="gap-2 flex">
-          <FR /> Français
+          <FR id={39658475391358480} /> Français
         </div>
       );
     case "en":
       return (
         <div className="gap-2 flex">
-          <UK /> English
+          <UK id={39658475391} /> English
         </div>
       );
     case "de":
       return (
         <div className="gap-2 flex">
-          <DE /> Deutsch
+          <DE id={39658145472} /> Deutsch
         </div>
       );
     default:
       return (
         <div className="gap-2 flex">
-          <FR /> Français
+          <FR id={39678358473} /> Français
         </div>
       );
   }
