@@ -1,7 +1,20 @@
 import ArticleHomeCard from "@/components/ArticleHomeCard";
 import Button from "@/components/Button";
+import axios from "axios";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "react-i18next";
+
+export async function getStaticProps() {
+  try {
+    const response = await axios.get("/articles");
+    const articles = response.data.slice(0, 3);
+    return { props: { articles } };
+  } catch (error) {
+    console.error("Error fetching articles:", error);
+    return { props: { articles: [] } };
+  }
+}
 
 const Jumbo = () => {
   const { t } = useTranslation();
@@ -26,8 +39,11 @@ const Jumbo = () => {
   );
 };
 
-function Home() {
+function Home({ articles }) {
   const { t } = useTranslation();
+  const router = useRouter();
+
+  console.log("articles >>", articles);
 
   return (
     <div>
@@ -114,7 +130,25 @@ function Home() {
       <div className="container py-20">
         <h2 className="text-center underblue">{t("home.articles.title")}</h2>
         <div className="flex flex-wrap gap-4 justify-center">
-          <ArticleHomeCard
+          {articles.map((article, index) => {
+            // Choisissez l'image de fond en fonction de l'index de l'article
+            let backgroundImage = "";
+            if (index === 0) backgroundImage = "/assets/home/discrimination-sexiste.jpg";
+            if (index === 1) backgroundImage = "/assets/home/protection-donnees.jpg";
+            if (index === 2) backgroundImage = "/assets/home/liberte-indiv.jpg";
+
+            return (
+              <ArticleHomeCard
+                key={index}
+                title={article[`title_${router.locale}`]}
+                backgroundImage={backgroundImage} // Ici, vous passez le chemin de l'image sélectionnée
+                date={article.created_at}
+                link={article.link}
+                description={article[`description_${router.locale}`]}
+              />
+            );
+          })}
+          {/* <ArticleHomeCard
             title={t("home.articles.art1")}
             backgroundImage="/assets/home/article1.png"
             date="01.01.2023"
@@ -137,7 +171,7 @@ function Home() {
             slug={
               "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
             }
-          />
+          /> */}
         </div>
       </div>
     </div>

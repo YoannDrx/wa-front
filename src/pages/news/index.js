@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export async function getStaticProps({ params, locale }) {
+export async function getStaticProps() {
   const articles = (await axios.get("/articles")).data;
   return { props: { articles } };
 }
