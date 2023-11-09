@@ -6,11 +6,11 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export async function getStaticProps({ params, locale }) {
-  const articles = (await axios.get('/articles')).data
+  const articles = (await axios.get("/articles")).data;
   return { props: { articles } };
 }
 
-export default function Blog({articles}) {
+export default function Blog({ articles }) {
   const { t } = useTranslation();
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
