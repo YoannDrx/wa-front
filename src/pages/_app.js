@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
+import { ArticlesProvider } from "../../contexts/ArticlesContext";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -32,7 +33,7 @@ i18n
     },
   });
 
-  axios.defaults.baseURL = 'http://localhost:3000/api'
+axios.defaults.baseURL = "http://localhost:3000/api";
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
@@ -47,5 +48,9 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       return <Layout>{page}</Layout>;
     };
 
-  return <CardProvider>{renderWithLayout(<Component {...pageProps} />)}</CardProvider>;
+  return (
+    <CardProvider>
+      <ArticlesProvider>{renderWithLayout(<Component {...pageProps} />)}</ArticlesProvider>
+    </CardProvider>
+  );
 }

@@ -4,16 +4,18 @@ import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { Trans, useTranslation } from "react-i18next";
+import { useArticlesContext } from "../../contexts/ArticlesContext";
+import { useEffect } from "react";
 
 export async function getStaticProps() {
+  let articles = [];
   try {
     const response = await axios.get("/articles");
-    const articles = response.data.slice(0, 3);
-    return { props: { articles } };
+    articles = response.data;
   } catch (error) {
     console.error("Error fetching articles:", error);
-    return { props: { articles: [] } };
   }
+  return { props: { articles } };
 }
 
 const Jumbo = () => {
@@ -42,8 +44,13 @@ const Jumbo = () => {
 function Home({ articles }) {
   const { t } = useTranslation();
   const router = useRouter();
+  const { setArticles } = useArticlesContext();
 
-  console.log("articles >>", articles);
+  const firstThreeArticles = articles.slice(0, 3);
+
+  useEffect(() => {
+    setArticles(articles);
+  }, [articles, setArticles]);
 
   return (
     <div>
@@ -130,8 +137,7 @@ function Home({ articles }) {
       <div className="container py-20">
         <h2 className="text-center underblue">{t("home.articles.title")}</h2>
         <div className="flex flex-wrap gap-4 justify-center">
-          {articles.map((article, index) => {
-            // Choisissez l'image de fond en fonction de l'index de l'article
+          {firstThreeArticles.map((article, index) => {
             let backgroundImage = "";
             if (index === 0) backgroundImage = "/assets/home/discrimination-sexiste.jpg";
             if (index === 1) backgroundImage = "/assets/home/protection-donnees.jpg";
@@ -141,37 +147,13 @@ function Home({ articles }) {
               <ArticleHomeCard
                 key={index}
                 title={article[`title_${router.locale}`]}
-                backgroundImage={backgroundImage} // Ici, vous passez le chemin de l'image sélectionnée
+                backgroundImage={backgroundImage}
                 date={article.created_at}
                 link={article.link}
                 description={article[`description_${router.locale}`]}
               />
             );
           })}
-          {/* <ArticleHomeCard
-            title={t("home.articles.art1")}
-            backgroundImage="/assets/home/article1.png"
-            date="01.01.2023"
-            slug={
-              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
-            }
-          />
-          <ArticleHomeCard
-            title={t("home.articles.art2")}
-            backgroundImage="/assets/home/article1.png"
-            date="01.01.2023"
-            slug={
-              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
-            }
-          />
-          <ArticleHomeCard
-            title={t("home.articles.art3")}
-            backgroundImage="/assets/home/article1.png"
-            date="01.01.2023"
-            slug={
-              "THE-PROTECTION-OF-TRADE-SECRECY-IS-STRENGTHENED-UNDER-FRENCH-LAW?fbclid=IwAR3rmT9QRDYtgcXDVWshtYRcxohgHEYWJomAaTPX-FY3cfwD4WIFGrvWVFs"
-            }
-          /> */}
         </div>
       </div>
     </div>
