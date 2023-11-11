@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { teamData } from "@/data/teamData";
 import { Trans } from "react-i18next";
+import { t } from "i18next";
 
 const Member = () => {
   const router = useRouter();
@@ -16,6 +17,7 @@ const Member = () => {
     return <div>Membre non trouvé</div>;
   }
 
+  console.log("memberData.key >>", memberData.key);
   return (
     <div>
       <PageJumbo titleKey={memberData.name} />
@@ -25,7 +27,7 @@ const Member = () => {
             <Image src={memberData.image} alt={`${memberData.name}`} width={600} height={1200} layout="responsive" />
             <div className="bg-gray-800 text-gray-300 w-full flex justify-center flex-col items-left">
               <div className="mx-8">
-                <h4 className="leftblue mt-4 text-2xl">Contact</h4>
+                <h4 className="leftblue mt-4 text-2xl">{t("partenaire.contact")}</h4>
                 <div className="my-4">
                   <div className="flex items-center">
                     <FaEnvelope className="mr-2" /> {memberData.email}
@@ -44,19 +46,19 @@ const Member = () => {
           <div className="bg-gray-200 py-4 px-4">
             <div className="flex flex-col md:flex-row justify-around">
               <div>
-                <h4 className="font-bold square-blue">Areas of responsibility</h4>
+                <h4 className="font-bold square-blue">{t("partenaire.areaOfResponsibility")}</h4>
                 <ul className="ml-4 mt-1">
-                  <li>IP – IT</li>
-                  <li>Litigation and Arbitration</li>
-                  <li>Corporate Law</li>
+                  {memberData[`responsability_${router.locale}`].map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
               <div className="mt-4 md:mt-0">
-                <h4 className="font-bold square-blue">Languages</h4>
+                <h4 className="font-bold square-blue">{t("partenaire.languages")}</h4>
                 <ul className="ml-4 mt-1">
-                  <li>French</li>
-                  <li>German</li>
-                  <li>English</li>
+                  {memberData[`languages_${router.locale}`].map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
