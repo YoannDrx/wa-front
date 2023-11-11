@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { t } from "i18next";
 import { teamData } from "@/data/teamData";
+import { Trans } from "react-i18next";
 
 const Member = () => {
   const router = useRouter();
@@ -62,14 +62,23 @@ const Member = () => {
             </div>
           </div>
           <p className="mt-8">
-            {t(memberData.description)
-              .split("\n")
-              .map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
+            <Trans
+              i18nKey={memberData.description}
+              components={{
+                nl: (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                ),
+                bold: <span className="font-bold" key="0" />,
+                highlight: <span style={{ backgroundColor: "#E4EDF1" }} key="1" />,
+                a: <a key="2" />,
+                leftblue: <span className="leftblue" key="2" />,
+                blue: <span className="font-bold" style={{ color: "#37749E" }} key="3" />,
+                square: <span className="square-blue" key="4" />,
+              }}
+            />
           </p>
         </div>
       </div>
