@@ -65,7 +65,7 @@ const Member = () => {
           </div>
           <p className="mt-8">
             <Trans
-              i18nKey={memberData.description}
+              i18nKey={`partenaire.members.${memberData.key}.intro`}
               components={{
                 nl: (
                   <>
