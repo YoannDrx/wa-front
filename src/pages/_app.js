@@ -33,7 +33,7 @@ i18n
     },
   });
 
-axios.defaults.baseURL = "http://localhost:3000/api";
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
