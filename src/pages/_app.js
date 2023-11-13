@@ -11,7 +11,7 @@ import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
 
-axios.defaults.baseURL = "https://ovnsgrllmcmvhjqxkdga.supabase.co/api";
+axios.defaults.baseURL = "https://ovnsgrllmcmvhjqxkdga.supabase.co/rest/v1";
 
 // axios.defaults.baseURL = "http://localhost:3000/api";
 
