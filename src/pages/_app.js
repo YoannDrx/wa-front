@@ -11,6 +11,8 @@ import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
 
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
@@ -32,8 +34,6 @@ i18n
       escapeValue: false, // react already safes from xss
     },
   });
-
-axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
