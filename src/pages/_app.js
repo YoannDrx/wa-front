@@ -11,7 +11,9 @@ import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
 
-axios.defaults.baseURL = "https://ovnsgrllmcmvhjqxkdga.supabase.co";
+// axios.defaults.baseURL = "https://ovnsgrllmcmvhjqxkdga.supabase.co";
+
+axios.defaults.baseURL = "http://localhost:3000/api";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
