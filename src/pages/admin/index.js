@@ -7,7 +7,8 @@ const supabaseUrl = "https://ovnsgrllmcmvhjqxkdga.supabase.co";
 const supabaseAnonKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92bnNncmxsbWNtdmhqcXhrZGdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTkyNzk2MzcsImV4cCI6MjAxNDg1NTYzN30.BzufAu0K8RNkj2NB0wkAfMHV1Cza2tE40nsyhsfEWtU";
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 supabase.auth.onAuthStateChange((event, session) => {
   // writes the cookies to a cookie on our own domain. required because cookie gets set to supabase domain by default
   if (event === "SIGNED_OUT" || event === "USER_DELETED") {
