@@ -6,8 +6,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export async function getStaticProps() {
-  return { props: { articles:[] } }; //TODOREMOVE
-
   const articles = (await axios.get("/articles")).data;
   return { props: { articles } };
 }
