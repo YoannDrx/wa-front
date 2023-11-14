@@ -12,7 +12,7 @@ export default function Expertise() {
     <div className="container mx-auto">
       <PageJumbo titleKey={t("expertise.notreExpertise")} textKey={t("expertise.ourGoal")} />
       <div className="py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
           {expertiseItems.map((item, index) => (
             <Link href={`/expertise/${t(item.id)}`} key={index}>
               <ExpertiseCard image={item.image} title={t(item.titleKey)} />

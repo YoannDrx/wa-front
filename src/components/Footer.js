@@ -2,9 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { expertiseItems } from "@/data/expertiseData";
+import { useArticlesContext } from "../../contexts/ArticlesContext";
+import { useRouter } from "next/router";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const { articles } = useArticlesContext();
+  const router = useRouter();
+
+  const formatTitle = (title) => {
+    if (!title) return "";
+    return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+  };
+
   return (
     <div>
       <div className={"bg-[#1C3D54]"}>
@@ -40,14 +50,11 @@ const Footer = () => {
 
           <div className="leftblue">
             <h3>{t("footer.Ressources")}</h3>
-            <Link href="/blog">{t("footer.Articles & Publications")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur la propriété intellectuelle 2022")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur le droit du travail 2022")}</Link>
-            <Link href="/blog">{t("footer.Prévisions M&A 2022")}</Link>
-            <Link href="/blog">{t("footer.Réseau d'alliance Innangard")}</Link>
-            <Link href="/blog">{t("footer.Prix & Reconnaissance")}</Link>
-            <Link href="/blog">{t("footer.Rapport sur le droit des sociétés 2022")}</Link>
-            <Link href="/blog">{t("footer.Blog")}</Link>
+            {articles.slice(3, 13).map((article) => (
+              <Link key={article.id} href={article.link}>
+                {formatTitle(article[`title_${router.locale}`])}
+              </Link>
+            ))}
           </div>
         </footer>
       </div>

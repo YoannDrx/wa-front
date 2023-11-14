@@ -9,7 +9,7 @@ export default function WhoWeAre() {
   useEffect(() => {}, [i18n.language]);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto pb-12">
       <PageJumbo titleKey={t("whoWeAre.presentation")} textKey={t("whoWeAre.firmPresentation")} />
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Bloc 1 */}
@@ -53,7 +53,7 @@ export default function WhoWeAre() {
       </section>
 
       <Image
-        src="/assets/who-we-are/salle-de-conference.png"
+        src="/assets/who-we-are/Salle-de-conference.png"
         alt="Séparateur"
         width={0}
         height={0}

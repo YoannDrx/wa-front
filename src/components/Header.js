@@ -9,24 +9,31 @@ import FR from "@/components/lang/FR";
 import UK from "@/components/lang/UK";
 import DE from "@/components/lang/DE";
 
+const actualPathname = (pathname, query) => {
+  const actualPath = pathname.replace(/\[([^\]]+)\]/g, (_, paramName) => query[paramName] || '');
+
+  return actualPath
+}
+
 const LangMenu = () => {
   const router = useRouter();
+
   const { t } = useTranslation();
 
   return (
     <Dropdown className="p-0" hover vertical="bottom">
-      <Dropdown.Toggle button={false} className="py-2 px-4 z-50">
+      <Dropdown.Toggle button={false} className="px-4 z-50">
         {readableLocale(router.locale)}
       </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Link href={t(router.pathname, { lng: "fr" })} locale="fr" className="p-2 gap-2 flex">
-          <FR /> Français
+      <Dropdown.Menu className="z-50">
+        <Link href={actualPathname(t(router.pathname, { lng: "fr" }), router.query)} locale="fr" className="p-2 gap-2 flex">
+          <FR id={354816541}  /> Français
         </Link>
-        <Link href={t(router.pathname, { lng: "en" })} locale="en" className="p-2 gap-2 flex">
-          <UK /> English
+        <Link href={actualPathname(t(router.pathname, { lng: "en" }), router.query)} locale="en" className="p-2 gap-2 flex">
+          <UK id={35481645622} /> English
         </Link>
-        <Link href={t(router.pathname, { lng: "de" })} locale="de" className="p-2 gap-2 flex">
-          <DE /> Deutsch
+        <Link href={actualPathname(t(router.pathname, { lng: "de" }), router.query)} locale="de" className="p-2 gap-2 flex">
+          <DE id={354816683}  /> Deutsch
         </Link>
       </Dropdown.Menu>
     </Dropdown>
@@ -36,9 +43,10 @@ const LangMenu = () => {
 const MenuItemLink = ({ href, label }) => {
   const router = useRouter();
   const { t } = useTranslation();
+
   return (
     <Menu.Item>
-      <Link href={href} className={`font-semibold text-lg ${router.pathname === href ? "underblueNav" : ""}`}>
+      <Link href={t(href)} className={`font-semibold text-lg ${router.pathname === href ? "underblueNav" : ""}`}>
         {t(label)}
       </Link>
     </Menu.Item>
@@ -53,7 +61,7 @@ const MenuItems = () => {
     { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
     { href: "/carriere", label: "Carriere" },
-    { href: "/blog", label: "Blog" },
+    { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
   ];
 

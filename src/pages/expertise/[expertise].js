@@ -14,9 +14,16 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = expertiseItems.map((item) => ({
+  // paths are apparently needed for every locale.
+  const paths = [
+    ...expertiseItems.map((item) => ({
     params: { expertise: item.id.toString() },
-  }));
+  })),...expertiseItems.map((item) => ({
+    params: { expertise: item.id.toString() }, locale: 'de'
+  })),...expertiseItems.map((item) => ({
+    params: { expertise: item.id.toString() }, locale: 'en'
+  })),
+];
 
   return { paths, fallback: false };
 }

@@ -12,7 +12,7 @@ export default function Career() {
       <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} />
       <div className="container py-12">
         {/* Bloc 1 */}
-        <div className="flex flex-wrap md:flex-nowrap sm:pb-12">
+        <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8">
           <div className="w-full xs:w-1/2 flex xs:justify-center mb-4 md:mb-0">
             <Image
               src="/assets/career/career1.jpg"
@@ -31,7 +31,7 @@ export default function Career() {
           </div>
         </div>
         {/* Bloc 2 */}
-        <div className="flex flex-wrap  md:flex-nowrap">
+        <div className="flex flex-wrap  md:flex-nowrap  gap-8">
           <div className="w-full xs:w-1/2 ">
             <h2 className="font-bold text-primary text-center">{t("career.internship.title")}</h2>
             <h3>{t("career.internship.subtitle")}</h3>
@@ -50,7 +50,7 @@ export default function Career() {
           </div>
         </div>
         {/* Bloc 3 */}
-        <div className="flex flex-wrap md:flex-nowrap items-center mt-20">
+        <div className="flex flex-wrap md:flex-nowrap items-center mt-20  gap-8">
           <div className="w-full md:w-1/2 mb-4 md:mb-0 order-2 md:order-1">
             <CareerContactForm />
           </div>

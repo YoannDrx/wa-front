@@ -3,9 +3,9 @@ import Button from "./Button";
 import FilterOption from "./FilterOption";
 import { useTranslation } from "react-i18next";
 
-const Sidebar = ({ setFilter, authors, categories }) => {
+const Sidebar = ({ setFilter, authors }) => {
   const { t } = useTranslation();
-  const [filters, setFilters] = useState({ author: "", category: "" });
+  const [filters, setFilters] = useState({ author: "" });
 
   const applyFilters = () => {
     setFilter(filters);
@@ -17,10 +17,9 @@ const Sidebar = ({ setFilter, authors, categories }) => {
 
   const clearFilters = () => {
     setFilters({ author: "", category: "" });
-    setFilter({ author: "", category: "" });
   };
 
-  const hasFilter = filters.author || filters.category;
+  const hasFilter = filters.author;
 
   return (
     <div className="mb-4 rounded-none">
@@ -30,12 +29,6 @@ const Sidebar = ({ setFilter, authors, categories }) => {
         options={authors}
         selected={filters.author}
         onChange={handleChange("author")}
-      />
-      <FilterOption
-        title={t("blog.sidebar.category")}
-        options={categories}
-        selected={filters.category}
-        onChange={handleChange("category")}
       />
       <Button onClick={applyFilters} className="w-full mt-4" color="primary">
         {t("blog.sidebar.applyFilters")}
