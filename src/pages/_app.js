@@ -11,9 +11,7 @@ import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
 
-// axios.defaults.baseURL = "https://ovnsgrllmcmvhjqxkdga.supabase.co/rest/v1";
-
-axios.defaults.baseURL = "http://localhost:3000/api";
+axios.defaults.baseURL = process?.env?.NODE_ENV === 'development'?"http://localhost:3000/api" : "https://wa-front.vercel.app";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next

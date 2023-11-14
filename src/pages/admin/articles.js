@@ -2,6 +2,8 @@ import Button from "@/components/Button";
 import axios from "axios";
 
 export async function getStaticProps({ params, locale }) {
+    return { props: { articles:[] } }; //TODOREMOVE
+
     const articles = (await axios.get('/articles')).data
     return { props: { articles } };
 }
