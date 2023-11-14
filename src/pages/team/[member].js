@@ -1,23 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { teamData } from "@/data/teamData";
-import { Trans } from "react-i18next";
-import { t } from "i18next";
+import { Trans, useTranslation } from "react-i18next";
+
+const toCamelCase = (str) => {
+  return str.replace(/-([a-z])/g, function (g) {
+    return g[1].toUpperCase();
+  });
+};
 
 const Member = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const { member } = router.query;
 
-  const memberData = teamData.find((m) => m.id === member) || {};
+  const memberKey = toCamelCase(member);
+  const memberData = t(`partenaire.members.${memberKey}`, { returnObjects: true });
 
-  if (!memberData.name) {
+  if (!memberData || !memberData.name) {
     return <div>Membre non trouvé</div>;
   }
 
-  console.log("memberData.key >>", memberData.key);
   return (
     <div>
       <PageJumbo titleKey={memberData.name} />
@@ -48,7 +53,7 @@ const Member = () => {
               <div>
                 <h4 className="font-bold square-blue">{t("partenaire.areaOfResponsibility")}</h4>
                 <ul className="ml-4 mt-1">
-                  {memberData[`responsability_${router.locale}`].map((item, index) => (
+                  {memberData.responsability.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
@@ -56,7 +61,7 @@ const Member = () => {
               <div className="mt-4 md:mt-0">
                 <h4 className="font-bold square-blue">{t("partenaire.languages")}</h4>
                 <ul className="ml-4 mt-1">
-                  {memberData[`languages_${router.locale}`].map((item, index) => (
+                  {memberData.languages.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
@@ -65,7 +70,7 @@ const Member = () => {
           </div>
           <p className="mt-8">
             <Trans
-              i18nKey={`partenaire.members.${memberData.key}.intro`}
+              i18nKey={memberData.intro}
               components={{
                 nl: (
                   <>
