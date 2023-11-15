@@ -10,8 +10,9 @@ import { useEffect } from "react";
 import { CardProvider } from "../../contexts/ArticleCardContext";
 import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
+import Head from "next/head";
 
-axios.defaults.baseURL = process?.env?.NODE_ENV === 'development'?"http://localhost:3000/api" : "https://wa-front.vercel.app/api";
+axios.defaults.baseURL = process?.env?.NODE_ENV === 'development' ? "http://localhost:3000/api" : "https://wa-front.vercel.app/api";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -49,8 +50,14 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     };
 
   return (
-    <CardProvider>
-      <ArticlesProvider>{renderWithLayout(<Component {...pageProps} />)}</ArticlesProvider>
-    </CardProvider>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <CardProvider>
+        <ArticlesProvider>{renderWithLayout(<Component {...pageProps} />)}</ArticlesProvider>
+      </CardProvider>
+    </>
+
   );
 }
