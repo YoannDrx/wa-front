@@ -10,10 +10,10 @@ import UK from "@/components/lang/UK";
 import DE from "@/components/lang/DE";
 
 const actualPathname = (pathname, query) => {
-  const actualPath = pathname.replace(/\[([^\]]+)\]/g, (_, paramName) => query[paramName] || '');
+  const actualPath = pathname.replace(/\[([^\]]+)\]/g, (_, paramName) => query[paramName] || "");
 
-  return actualPath
-}
+  return actualPath;
+};
 
 const LangMenu = () => {
   const router = useRouter();
@@ -27,13 +27,13 @@ const LangMenu = () => {
       </Dropdown.Toggle>
       <Dropdown.Menu className="z-50">
         <Link href={actualPathname(t(router.pathname, { lng: "fr" }), router.query)} locale="fr" className="p-2 gap-2 flex">
-          <FR id={354816541}  /> Français
+          <FR id={354816541} /> Français
         </Link>
         <Link href={actualPathname(t(router.pathname, { lng: "en" }), router.query)} locale="en" className="p-2 gap-2 flex">
           <UK id={35481645622} /> English
         </Link>
         <Link href={actualPathname(t(router.pathname, { lng: "de" }), router.query)} locale="de" className="p-2 gap-2 flex">
-          <DE id={354816683}  /> Deutsch
+          <DE id={354816683} /> Deutsch
         </Link>
       </Dropdown.Menu>
     </Dropdown>
@@ -55,22 +55,32 @@ const MenuItemLink = ({ href, label }) => {
 
 const MenuItems = () => {
   const { t } = useTranslation();
-  const menuData = [
+  const menuDataFirstRow = [
     { href: "/", label: "Accueil" },
     { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
     { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
+  ];
+
+  const menuDataSecondRow = [
     { href: "/carriere", label: "Carriere" },
     { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <>
-      {menuData.map((item, index) => (
-        <MenuItemLink key={index} {...item} />
-      ))}
-    </>
+    <div className="flex flex-col items-center xl:flex-row xl:justify-between">
+      <div className="flex justify-center gap-4">
+        {menuDataFirstRow.map((item, index) => (
+          <MenuItemLink key={index} {...item} />
+        ))}
+      </div>
+      <div className="flex justify-center gap-4 mt-4 xl:ml-4 xl:mt-0">
+        {menuDataSecondRow.map((item, index) => (
+          <MenuItemLink key={index} {...item} />
+        ))}
+      </div>
+    </div>
   );
 };
 

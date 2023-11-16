@@ -8,12 +8,12 @@ export default function Career() {
   const { t } = useTranslation();
 
   return (
-    <div className="container mx-auto">
+    <div>
       <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} />
-      <div className="container py-12">
+      <div className="container pb-12">
         {/* Bloc 1 */}
         <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8">
-          <div className="w-full xs:w-1/2 flex xs:justify-center mb-4 md:mb-0">
+          <div className=" xs:w-1/2 flex xs:justify-center mb-4 md:mb-0">
             <Image
               src="/assets/career/career1.jpg"
               alt={t("career.image-description")}
