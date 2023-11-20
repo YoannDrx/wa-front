@@ -1,10 +1,11 @@
 import { Trans, useTranslation } from "react-i18next";
-import { expertiseItems } from "@/data/expertiseData";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
+import fr from "../../lang/fr.json";
 
-export async function getStaticProps({ params }) {
-  const expertise = expertiseItems.find((item) => item.id.toString() === params.expertise);
+export async function getStaticProps({ params, locale }) {
+  const translations = require(`../../lang/${locale}.json`);
+  const expertise = translations.expertise.expertiseList.find((item) => item.slug === params.expertise);
 
   if (!expertise) {
     return { notFound: true };
@@ -13,27 +14,67 @@ export async function getStaticProps({ params }) {
   return { props: { expertise } };
 }
 
+// export async function getStaticPaths() {
+//   // paths are apparently needed for every locale.
+//   const frItems = require("../../lang/fr.json").expertise.expertiseList;
+//   const deItems = require("../../lang/de.json").expertise.expertiseList;
+//   const enItems = require("../../lang/en.json").expertise.expertiseList;
+
+//   const paths = [
+//     ...frItems.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//     })),
+//     ...deItems.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//       locale: "de",
+//     })),
+//     ...enItems.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//       locale: "en",
+//     })),
+//   ];
+
+//   return { paths, fallback: false };
+// }
+
 export async function getStaticPaths() {
-  // paths are apparently needed for every locale.
+  const frItems = require("../../lang/fr.json").expertise.expertiseList;
+  const deItems = require("../../lang/de.json").expertise.expertiseList;
+  const enItems = require("../../lang/en.json").expertise.expertiseList;
+
   const paths = [
-    ...expertiseItems.map((item) => ({
-    params: { expertise: item.id.toString() },
-  })),...expertiseItems.map((item) => ({
-    params: { expertise: item.id.toString() }, locale: 'de'
-  })),...expertiseItems.map((item) => ({
-    params: { expertise: item.id.toString() }, locale: 'en'
-  })),
-];
+    ...frItems.map((item) => ({ params: { expertise: item.slug }, locale: "fr" })),
+    ...deItems.map((item) => ({ params: { expertise: item.slug }, locale: "de" })),
+    ...enItems.map((item) => ({ params: { expertise: item.slug }, locale: "en" })),
+  ];
 
   return { paths, fallback: false };
 }
+
+// export async function getStaticPaths() {
+//   // paths are apparently needed for every locale.
+//   const paths = [
+//     ...expertise.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//     })),
+//     ...expertise.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//       locale: "de",
+//     })),
+//     ...expertise.map((item) => ({
+//       params: { expertise: item.slug.toString() },
+//       locale: "en",
+//     })),
+//   ];
+//   return { paths, fallback: false };
+// }
 
 export default function ExpertisePage({ expertise }) {
   const { t } = useTranslation();
 
   return (
     <div className="container mx-auto px-4">
-      <PageJumbo titleKey={t(expertise.titleKey)} textKey={t(expertise.intro)} />
+      <PageJumbo titleKey={t(expertise.title)} textKey={t(expertise.intro)} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
         <div className="flex flex-col items-center relative w-full h-full">
           <div className="border border-black p-2 w-[300px] h-[300px] flex items-center justify-center relative group overflow-hidden">
