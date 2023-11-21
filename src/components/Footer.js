@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { expertiseItems } from "@/data/expertiseData";
 import { useArticlesContext } from "../../contexts/ArticlesContext";
 import { useRouter } from "next/router";
+import fr from "../lang/fr.json";
 
 const Footer = () => {
   const { t } = useTranslation();
   const { articles } = useArticlesContext();
   const router = useRouter();
+
+  const expertiseItems = fr.expertise.expertiseList;
 
   const formatTitle = (title) => {
     if (!title) return "";

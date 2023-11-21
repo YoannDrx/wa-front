@@ -74,7 +74,7 @@
     "ourGoal": "<bold>Our goal is very simple:</bold> To provide successful businesses, individuals and entrepreneurs with high-level tailored services to solve their problems. The law is constantly evolving, along with related developments in your industry and the larger economy, may affect you and your business. That’s why we are making a point to always go further work smarter and always act swiftly with your best interest in mind and greatest attention to detail.",
     "expertiseList": [
       {
-        "id": 1,
+        "id": "1",
         "slug": "labor-law-and-restructuring",
         "title": "Labor law and restructuring",
         "image": "/assets/expertises/droit-social.png",
@@ -82,7 +82,7 @@
         "paragraph1": "<square>We assist</square> HR managers of multinational groups in complex and sensitive cross-border restructuring operations, in particular workforce reductions, site closures or company transfers.<nl/><square>We intervene</square> also in areas such as the integration of codes of good conduct and internal regulations, the negotiation of collective agreements on participation, profit-sharing or flexible working time, discrimination, termination of employment contracts and individual disputes or <nl/><square>Our Firm</square> Finally, for more than twenty years, has been advising the employer side in the context of the annual negotiation of a sectoral collective agreement.<nl/><bold>For any questions relating to subjects of interest in the field of labor law, you can contact our partner directly. <highlight><a href='/team/MATHILDE%20HOUET-WEIL' rel='noopener noreferrer'>Mathilde WEIL</a></highlight>.</bold>"
       },
       {
-        "id": 2,
+        "id": "2",
         "slug": "mergers-and-acquisitions",
         "title": "Mergers & Acquisitions",
         "image": "/assets/expertises/fusions-acquisitions.png",
@@ -90,7 +90,7 @@
         "paragraph1": "We support our clients, French or foreign companies, in all phases of an operation, from the legal audit, the preparation and organization of data rooms, the development of a strategy specific to each file, the conduct of negotiations until <nl/>Our perfect command of German and English, in addition to French, allows us to advise our clients and draft all legal documents and contracts in these three languages.<nl/>The multidisciplinary nature of the Firm allows us to quickly mobilize our various specialists, in order to quickly provide our clients with all the answers to the legal issues that may arise during an operation.<nl/>Post-operation legal monitoring: Once the Merger operation has been completed<nl/><bold>Some recent significant examples:</bold><nl/><square>Acquisition</square> for a Swiss group, one of the leaders in the sale of perfumes, cosmetic products and luxury products, of a French company specializing in the manufacturing and packaging of such products<nl/><square>Acquisitions</square> for a German group of servicing and maintenance companies in the nuclear field<nl/><square>Acquisitions</square> for an American group of companies specializing in cloud computing<nl/><square>Branch transfer</square> of activity and goodwill in the pharmaceutical field.<nl/><bold>For any questions relating to subjects of interest in the areas of Mergers <highlight><a href='/team/PATRICIA%20VINCENT' rel='noopener noreferrer'>Patricia VINCENT</a></highlight>.</bold>"
       },
       {
-        "id": 3,
+        "id": "3",
         "slug": "corporate-and-regulatory",
         "title": "Corporate & Regulatory",
         "image": "/assets/expertises/corporate.png",
@@ -98,7 +98,7 @@
         "paragraph1": "From their incorporation to their deregistration, our team monitors the legal secretariat of all types of companies, commercial and civil, whether in the context of day-to-day operations (such as holding shareholder meetings, <nl/><blue>Weil</blue> currently manages the legal secretariat of around a hundred companies of all sizes, mainly belonging to international groups.<nl/>Beyond advisory activity, our Firm assists and represents its clients in all contentious matters relating to corporate law (disputes between shareholders, with directors and corporate officers, liability actions, etc.).<nl/><bold>For any questions relating to matters relating to company law, you can contact our partner directly. <highlight><a href='/team/PATRICIA%20VINCENT' rel='noopener noreferrer'>Patricia VINCENT</a></highlight>.</bold>"
       },
       {
-        "id": 4,
+        "id": "4",
         "slug": "litigation-mediation-and-international-arbitration",
         "title": "Litigation, mediation and international arbitration",
         "image": "/assets/expertises/contentieux.png",
@@ -106,7 +106,7 @@
         "paragraph1": "In this role, transparency towards the client is a determining element to avoid any unexpected or unforeseen results. <nl/><square>The first step</square> For us, it always consists of an in-depth analysis of the file in order to propose the strategy financially best suited to the challenges of each file, based on our assessment of the solidity of the file.<nl/><square>With experience</square> of internal and international litigation since 1974, our Firm is equipped with solid reflexes which allow it to appeal to lines of argument using the subtleties of the procedure, sometimes making it possible to put an end to a case without even having to address the merits <nl/><square>In some cases</square> more media, we have experience of using the media as an additional weapon in the management of the procedure.<nl/><square>Finally</square>, we never forget, and at all stages of the procedure, that our clients' business is not to litigate and that litigation always constitutes a source of internal nuisance. "
       },
       {
-        "id": 5,
+        "id": "5",
         "slug": "insolvency-proceedings",
         "title": "Insolvency proceedings",
         "image": "/assets/expertises/procedures-collectives.png",
@@ -115,7 +115,7 @@
         "paragraph1": "<square>The reactivity</square> and experience in insolvency law are key factors in the success of these operations.<nl/><square>Our Firm</square> is equipped with a <highlight>long experience</highlight> in these areas, allowing us to appreciate the most appropriate options offered by the law for companies in difficulty. "
       },
       {
-        "id": 6,
+        "id": "6",
         "slug": "commercial-and-competition-law",
         "title": "Commercial and Competition Law",
         "image": "/assets/expertises/droit-commercial.png",
@@ -123,7 +123,7 @@
         "paragraph1": "<bold>In particular, in terms of:</bold><nl/><square>commercial negotiating</square>, pricing transparency and restrictive practices<nl/><square>exclusive distribution</square> and selective distribution<nl/><square>consumer law</square>, advertisement<nl/><square>competition law</square>, cartels, abuse of dominant position and abuse of economic dependence<nl/><square>legal procedures</square> common before civil and criminal courts<nl/><square>DGCCRF investigations</square> and procedures before the Competition Authority and community authorities.<nl/><nl/><bold>Some recent significant missions:</bold><nl/><square>assistance</square> of a leading company in the context of the analysis of anti-competitive practices in the postal market<nl/><square>assistance</square> and representation before the French and European courts of a manufacturer of consumer products<nl/><square>advice</square> for the development of a selective distribution network in the luxury sector, drafting of contracts and General Conditions of Sale<nl/><square>review</square> advertising campaigns and promotional operations for the marketing of electrical hand tools sold in DIY supermarkets<nl/><square>review</square> labeling of garbage bags and food films sold in general supermarkets<nl/><square>exam</square> range discount agreements for several major players in the pharmaceutical sector<nl/><square>elaboration</square> regulatory compliance programs for several players in the automotive sector<nl/><square>assistance</square> and representation of a leading pharmaceutical player in the context of the anti-gift law."
       },
       {
-        "id": 7,
+        "id": "7",
         "slug": "ip-it-digital-tech-and-data-law",
         "title": "IP/IT, digital, tech and data law",
         "image": "/assets/expertises/ip-it.png",
@@ -131,7 +131,7 @@
         "paragraph1": "Here are some recent examples:<nl/><square><blue>General industrial property law:</blue></square> we support our clients during company sale or buyout operations, either by preparing the PI/IT part of the dataroom or by carrying out the legal audit during the due diligence phase; <nl/><square><blue>Copyright:</blue></square> we represent our clients in infringement proceedings before French courts, e.g. <nl/><square><blue>Patent law:</blue></square> we represent our clients during the preparatory phase (planning and execution of counterfeit seizures on French territory) and during counterfeiting and unfair competition trials before the French courts, for example on request. <nl/><square><blue>New technologies and IT law:</blue></square> we regularly intervene before courts or specialized arbitration courts for our clients in cases of domain name piracy, e.g. <nl/><bold>For any questions relating to subjects relating to the areas of intellectual property law and new technologies, please contact our partner directly <highlight><a href='/team/BRUNO%20WEIL' rel='noopener noreferrer'>Bruno WEIL</a></highlight> who is responsible for these areas.</bold>"
       },
       {
-        "id": 8,
+        "id": "8",
         "slug": "white-collar-crime",
         "title": "White collar crime",
         "image": "/assets/expertises/droit-penal.png",

@@ -1,11 +1,10 @@
 import { Trans, useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
-import fr from "../../lang/fr.json";
 
 export async function getStaticProps({ params, locale }) {
-  const translations = require(`../../lang/${locale}.json`);
-  const expertise = translations.expertise.expertiseList.find((item) => item.slug === params.expertise);
+  const translations = require(`../../../lang/${locale}.json`);
+  const expertise = translations.expertise.expertiseList.find((item) => item.id.toString() === params.id);
 
   if (!expertise) {
     return { notFound: true };
@@ -14,60 +13,19 @@ export async function getStaticProps({ params, locale }) {
   return { props: { expertise } };
 }
 
-// export async function getStaticPaths() {
-//   // paths are apparently needed for every locale.
-//   const frItems = require("../../lang/fr.json").expertise.expertiseList;
-//   const deItems = require("../../lang/de.json").expertise.expertiseList;
-//   const enItems = require("../../lang/en.json").expertise.expertiseList;
-
-//   const paths = [
-//     ...frItems.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//     })),
-//     ...deItems.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//       locale: "de",
-//     })),
-//     ...enItems.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//       locale: "en",
-//     })),
-//   ];
-
-//   return { paths, fallback: false };
-// }
-
 export async function getStaticPaths() {
-  const frItems = require("../../lang/fr.json").expertise.expertiseList;
-  const deItems = require("../../lang/de.json").expertise.expertiseList;
-  const enItems = require("../../lang/en.json").expertise.expertiseList;
+  const frItems = require("../../../lang/fr.json").expertise.expertiseList;
+  const deItems = require("../../../lang/de.json").expertise.expertiseList;
+  const enItems = require("../../../lang/en.json").expertise.expertiseList;
 
   const paths = [
-    ...frItems.map((item) => ({ params: { expertise: item.slug }, locale: "fr" })),
-    ...deItems.map((item) => ({ params: { expertise: item.slug }, locale: "de" })),
-    ...enItems.map((item) => ({ params: { expertise: item.slug }, locale: "en" })),
+    ...frItems.map((item) => ({ params: { slug: item.slug, id: item.id.toString() }, locale: "fr" })),
+    ...deItems.map((item) => ({ params: { slug: item.slug, id: item.id.toString() }, locale: "de" })),
+    ...enItems.map((item) => ({ params: { slug: item.slug, id: item.id.toString() }, locale: "en" })),
   ];
 
-  return { paths, fallback: false };
+  return { paths, fallback: "blocking" };
 }
-
-// export async function getStaticPaths() {
-//   // paths are apparently needed for every locale.
-//   const paths = [
-//     ...expertise.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//     })),
-//     ...expertise.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//       locale: "de",
-//     })),
-//     ...expertise.map((item) => ({
-//       params: { expertise: item.slug.toString() },
-//       locale: "en",
-//     })),
-//   ];
-//   return { paths, fallback: false };
-// }
 
 export default function ExpertisePage({ expertise }) {
   const { t } = useTranslation();
