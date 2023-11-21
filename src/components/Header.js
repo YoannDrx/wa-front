@@ -55,32 +55,22 @@ const MenuItemLink = ({ href, label }) => {
 
 const MenuItems = () => {
   const { t } = useTranslation();
-  const menuDataFirstRow = [
+  const menuData = [
     { href: "/", label: "Accueil" },
     { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
     { href: "/team/partenaires", label: "Partenaires" },
     { href: "/expertise", label: "Expertise" },
-  ];
-
-  const menuDataSecondRow = [
     { href: "/carriere", label: "Carriere" },
     { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <div className="flex flex-col items-center xl:flex-row xl:justify-between">
-      <div className="flex justify-center gap-4">
-        {menuDataFirstRow.map((item, index) => (
-          <MenuItemLink key={index} {...item} />
-        ))}
-      </div>
-      <div className="flex justify-center gap-4 mt-4 xl:ml-4 xl:mt-0">
-        {menuDataSecondRow.map((item, index) => (
-          <MenuItemLink key={index} {...item} />
-        ))}
-      </div>
-    </div>
+    <>
+      {menuData.map((item, index) => (
+        <MenuItemLink key={index} {...item} />
+      ))}
+    </>
   );
 };
 

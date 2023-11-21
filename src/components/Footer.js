@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { expertiseItems } from "@/data/expertiseData";
 import { useArticlesContext } from "../../contexts/ArticlesContext";
 import { useRouter } from "next/router";
 
@@ -9,6 +8,8 @@ const Footer = () => {
   const { t } = useTranslation();
   const { articles } = useArticlesContext();
   const router = useRouter();
+
+  const expertiseItems = t("expertise.expertiseList", { returnObjects: true });
 
   const formatTitle = (title) => {
     if (!title) return "";
@@ -33,7 +34,7 @@ const Footer = () => {
             <h3>{t("footer.Pratique Juridique")}</h3>
             {expertiseItems.map((item) => (
               <Link key={item.id} href={`/expertise/${item.id}`}>
-                {t(item.titleKey)}
+                {t(item.title)}
               </Link>
             ))}
           </div>
