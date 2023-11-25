@@ -23,19 +23,20 @@ export default function Contact() {
                       <br />
                     </>
                   ),
+                  bold: <span className="font-bold" key="0" />,
                 }}
               />
             </p>
 
             <p>
-              <span className="font-bold">{t("contact.Aéroport Charles de Gaulle")} :</span>
+              <span className="font-bold square-blue">{t("contact.Aéroport Charles de Gaulle")} :</span>
               <br />
               {t("contact.Taxi (30 minutes)")}
               <br />
               {t("contact.Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
             </p>
             <p>
-              <span className="font-bold">{t("contact.Aéroport d'Orly ")}:</span>
+              <span className="font-bold square-blue">{t("contact.Aéroport d'Orly ")}:</span>
               <br />
               {t("contact.Taxi (40 minutes)")}
               <br />

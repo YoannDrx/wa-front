@@ -141,8 +141,8 @@
     ]
   },
   "partenaire": {
-    "nosAssocies": "Nos Associées",
-    "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <bold>qui cumulent plus de 100 annéesd’expérience professionnelle</bold>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <bold>et besoins</bold> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
+    "nosAssocies": "Nos Associés",
+    "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <bold>qui cumulent plus de 100 années d’expérience professionnelle</bold>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <bold>et besoins</bold> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
     "seeProfile": "Voir le profil",
     "areaOfResponsibility": "Domaines de compétence",
     "languages": "Langues",
@@ -238,7 +238,7 @@
   "contact": {
     "informationPratique": "Information Pratique",
     "commentNousTrouvez": "COMMENT NOUS TROUVER",
-    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. <nl/>Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot.<nl/>La station de Métro ARGENTINE (ligne 1) est proche. La station du RER Charles de Gaulle - Etoile se trouve à 5 minutes à pied.",
+    "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée à deux pas de L'Etoile.Ils sont situés au centre du quartier des affaires. <nl/>Vous pouvez garer votre voiture à quelques pas dans les parkings publics souterrains de l'Avenue Carnot et de la Porte Maillot.<nl/>La station de <bold>Métro ARGENTINE</bold> (ligne 1) est proche. La station du <bold>RER Charles de Gaulle Etoile</bold> se trouve à 5 minutes à pied.",
     "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
     "Taxi (30 minutes)": "Taxi (30 minutes)",
     "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)": "Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)",
@@ -258,7 +258,7 @@
     }
   },
   "career": {
-    "intro": "Nous sommes activement à la recherche d'un collaborateur d'une collaboratrice ayant au moins 3 années d'expérience professionnelle, maitrisant l'allemand et l'anglais, pour une collaboration libérale en droit sociale.<nl/>Nous sommes régulièrement intéressés par des candidatures de jeunes avocats et avocates ayant une formation en droit international des affaires, le cas échéant précédée d'une expérience professionnelle, ainsi qu'une bonne maîtrise du français, de l'anglais et de l'allemand.",
+    "intro": "Nous sommes activement à la recherche d'un collaborateur d'une collaboratrice ayant au moins 3 années d'expérience professionnelle, maitrisant l'allemand et l'anglais, pour une collaboration libérale en droit social.<nl/>Nous sommes régulièrement intéressés par des candidatures de jeunes avocats et avocates ayant une formation en droit international des affaires, le cas échéant précédée d'une expérience professionnelle, ainsi qu'une bonne maîtrise du français, de l'anglais et de l'allemand.",
     "recrutement": "Recrutement",
     "image-description": "photo d'un groupe d'avocats au travail",
     "talents": {
