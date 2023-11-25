@@ -36,11 +36,11 @@ export default function Contact() {
               {t("contact.Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
             </p>
             <p>
-              <span className="font-bold square-blue">{t("contact.Aéroport d'Orly ")}:</span>
+              <span className="font-bold square-blue">{t("contact.Aéroport d'Orly")}:</span>
               <br />
               {t("contact.Taxi (40 minutes)")}
               <br />
-              {t("contact.Hôtels : De nombreux hôtels à proximité. Réservation possible.")}
+              {t("contact.De nombreux hôtels à proximité. Réservation possible")}
             </p>
           </div>
           <div className="w-full sm:w-1/2">
