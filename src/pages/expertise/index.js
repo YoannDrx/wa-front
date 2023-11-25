@@ -3,14 +3,9 @@ import { useTranslation } from "react-i18next";
 import ExpertiseCard from "@/components/ExpertiseCard";
 import PageJumbo from "@/components/PageJumbo";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function Expertise() {
   const { t } = useTranslation();
-  const router = useRouter();
-  const { id } = router.query;
-
-  console.log("id >>", id);
 
   const expertiseItems = t("expertise.expertiseList", { returnObjects: true });
 
