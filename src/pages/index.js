@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { Trans, useTranslation } from "react-i18next";
 import { useArticlesContext } from "../../contexts/ArticlesContext";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export async function getStaticProps() {
   let articles = [];
@@ -20,6 +20,13 @@ export async function getStaticProps() {
 
 const Jumbo = () => {
   const { t } = useTranslation();
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.6;
+    }
+  }, []);
 
   return (
     <div className="jumbo-background">
@@ -33,7 +40,7 @@ const Jumbo = () => {
             </Button>
           </div>
           <div className="flex-1">
-            <video src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted />
+            <video ref={videoRef} src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted />
           </div>
         </div>
       </div>
