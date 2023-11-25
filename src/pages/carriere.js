@@ -12,8 +12,8 @@ export default function Career() {
       <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} />
       <div className="container pb-12">
         {/* Bloc 1 */}
-        <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8">
-          <div className=" xs:w-1/2 flex xs:justify-center mb-4 md:mb-0">
+        <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8 justify-center">
+          <div className="  flex xs:justify-center mb-4 md:mb-0">
             <Image
               src="/assets/career/career1.jpg"
               alt={t("career.image-description")}
@@ -31,16 +31,16 @@ export default function Career() {
           </div>
         </div>
         {/* Bloc 2 */}
-        <div className="flex flex-wrap  md:flex-nowrap  gap-8">
-          <div className="w-full xs:w-1/2 ">
+        <div className="flex flex-wrap md:flex-nowrap  md:flex-nowrap  gap-8 justify-center">
+          <div className="w-full  ">
             <h2 className="font-bold text-primary text-center mb-8">{t("career.internship.title")}</h2>
             <h3 className="mb-4">{t("career.internship.subtitle")}</h3>
             <p>{t("career.internship.paragraph1")}</p>
             <p>{t("career.internship.paragraph2")}</p>
           </div>
-          <div className="w-full xs:w-1/2 xs:justify-center">
+          <div className="flex xs:justify-center mb-4 md:mb-0">
             <Image
-              src="/assets/career/career2.jpg"
+              src="/assets/career/career4.jpg"
               alt={t("internship.imageDescription")}
               width={0}
               height={0}
