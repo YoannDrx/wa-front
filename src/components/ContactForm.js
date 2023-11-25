@@ -28,7 +28,7 @@ const ContactForm = () => {
 
   return (
     <div className="py-10 flex justify-center">
-      <div className="md:w-2/3">
+      <div className="md:w-2/3 sm:w-2/3 xs:w-2/3">
         <h3 className="underblue text-white text-center mb-5">{t("contact.contactForm.restonEnContact")}</h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">

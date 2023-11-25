@@ -24,8 +24,8 @@ export default function Career() {
             />
           </div>
           <div className="w-full md:pl-4">
-            <h2 className="font-bold text-primary text-center">{t("career.talents.title")}</h2>
-            <h3>{t("career.talents.subtitle")}</h3>
+            <h2 className="font-bold text-primary text-center mb-8">{t("career.talents.title")}</h2>
+            <h3 className="mb-4">{t("career.talents.subtitle")}</h3>
             <p>{t("career.talents.paragraph1")}</p>
             <p>{t("career.talents.paragraph2")}</p>
           </div>
@@ -33,8 +33,8 @@ export default function Career() {
         {/* Bloc 2 */}
         <div className="flex flex-wrap  md:flex-nowrap  gap-8">
           <div className="w-full xs:w-1/2 ">
-            <h2 className="font-bold text-primary text-center">{t("career.internship.title")}</h2>
-            <h3>{t("career.internship.subtitle")}</h3>
+            <h2 className="font-bold text-primary text-center mb-8">{t("career.internship.title")}</h2>
+            <h3 className="mb-4">{t("career.internship.subtitle")}</h3>
             <p>{t("career.internship.paragraph1")}</p>
             <p>{t("career.internship.paragraph2")}</p>
           </div>

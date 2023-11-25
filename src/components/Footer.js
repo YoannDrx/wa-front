@@ -26,7 +26,7 @@ const Footer = () => {
             <br />
             75017 PARIS FRANCE
             <br />
-            01 44 15 98 98 / 01 44 15 98 99
+            01 44 15 98 98
             <br />
             info@weil-paris.fr
           </div>
