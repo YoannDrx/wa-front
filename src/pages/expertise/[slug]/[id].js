@@ -42,7 +42,7 @@ export default function ExpertisePage({ expertise }) {
             </div>
           </div>
         </div>
-        <div className="text-md leading-7 space-y-5">
+        <div className="text-md leading-7 space-y-5 md:ml-4">
           <p>
             <Trans
               i18nKey={expertise.paragraph1}
@@ -67,3 +67,49 @@ export default function ExpertisePage({ expertise }) {
     </div>
   );
 }
+
+// Avec flottement de l'image :
+
+// export default function ExpertisePage({ expertise }) {
+//   const { t } = useTranslation();
+
+//   return (
+//     <div className="container mx-auto px-4">
+//       <PageJumbo titleKey={t(expertise.title)} textKey={t(expertise.intro)} />
+//       <div className="my-12">
+//         {/* Image avec style de flottement */}
+//         <div className="float-left mr-4 mb-4">
+//           <div className="border border-black p-2 w-[400px] h-[400px] flex items-center justify-center relative group overflow-hidden">
+//             <div style={{ backgroundColor: "#E4EDF1" }} className="absolute w-[90%] h-[90%] rounded-full opacity-50"></div>
+//             <div className="w-full h-full relative z-10 p-2 flex items-center justify-center">
+//               <Image src={expertise.image} alt={t(expertise.titleKey)} width={280} height={280} />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Texte s'enroulant autour de l'image */}
+//         <div className="text-md leading-7 space-y-5">
+//           <p>
+//             <Trans
+//               i18nKey={expertise.paragraph1}
+//               components={{
+//                 nl: (
+//                   <>
+//                     <br />
+//                     <br />
+//                   </>
+//                 ),
+//                 bold: <span className="font-bold" key="0" />,
+//                 highlight: <span style={{ backgroundColor: "#E4EDF1" }} key="1" />,
+//                 a: <a key="2" />,
+//                 leftblue: <span className="leftblue" key="2" />,
+//                 blue: <span className="font-bold" style={{ color: "#37749E" }} key="3" />,
+//                 square: <span className="square-blue" key="4" />,
+//               }}
+//             />{" "}
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

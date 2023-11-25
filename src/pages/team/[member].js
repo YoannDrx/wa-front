@@ -7,7 +7,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 const toCamelCase = (str) => {
   if (!str) {
-    return ""
+    return "";
   }
   return str.replace(/-([a-z])/g, function (g) {
     return g[1].toUpperCase();

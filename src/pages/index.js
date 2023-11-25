@@ -95,7 +95,7 @@ function Home({ articles }) {
           <div className="flex-1">
             <h2 className="text-center underblue">{t("home.presentation")}</h2>
             <div className="flex flex-col items-center justify-center">
-              <p>
+              <p className="px-4">
                 <Trans
                   i18nKey="home.home1"
                   components={{

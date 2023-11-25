@@ -9,7 +9,7 @@ export default function PageJumbo({ titleKey, textKey, backgroundColor }) {
   };
 
   return (
-    <div className="container text-center py-12 px-2" style={containerStyle}>
+    <div className="container text-center py-12 px-4" style={containerStyle}>
       <h1 className="underblue">{t(titleKey)}</h1>
       {textKey && (
         <Trans

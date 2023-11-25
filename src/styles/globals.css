@@ -163,3 +163,9 @@ h3 {
 .menu li > *:not(ul):not(.menu-title):not(details):active {
   background-color: transparent;
 }
+
+@media (max-width: 640px) {
+  .container {
+    max-width: none;
+  }
+}
