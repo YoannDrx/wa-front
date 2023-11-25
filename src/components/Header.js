@@ -60,7 +60,7 @@ const MenuItems = () => {
     { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
     { href: "/team/partenaires", label: "Nos associés" },
     { href: "/expertise", label: "Expertise" },
-    { href: "/carriere", label: "Carriere" },
+    { href: "/carriere", label: "Carrière" },
     { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
   ];
