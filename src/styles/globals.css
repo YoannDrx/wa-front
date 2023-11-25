@@ -149,10 +149,14 @@ h3 {
   background-color: #37749e;
 }
 
+.menu {
+  justify-content: center;
+}
+
 .menu li > *:hover {
-  background-color: white;
   &:hover {
-    background-color: white;
+    background-color: transparent;
+    border-bottom: #37749e 2px solid;
   }
 }
 

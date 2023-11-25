@@ -87,7 +87,7 @@ export default function Header({ children, light = false, ...args }) {
       open={visible}
       onClickOverlay={toggleVisible}
       side={
-        <Menu className={` bg-base-100  ${light ? "text-white" : "text-base-content"}`}>
+        <Menu className={`bg-base-100  ${light ? "text-white" : "text-base-content"}`}>
           <MenuItems />
           <LangMenu />
         </Menu>
