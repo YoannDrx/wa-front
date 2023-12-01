@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import { Trans, initReactI18next, useTranslation } from "react-i18next";
 import en from "@/lang/en";
 import de from "@/lang/de";
 import fr from "@/lang/fr";
@@ -41,6 +41,7 @@ i18n
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter();
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Vérifier si le cookie de consentement existe
@@ -75,7 +76,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         overlay={true}
         expires={150}
         acceptOnScroll={true}
-        buttonText={"J'accepte"}
+        buttonText={t("cookieConsent.acceptButton")}
         buttonStyle={{
           backgroundColor: "#4B6F44",
           color: "white",
@@ -88,7 +89,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           margin: "5px",
         }}
         enableDeclineButton={true}
-        declineButtonText={"Continuer sans accepter"}
+        declineButtonText={t("cookieConsent.declineButton")}
         declineButtonStyle={{
           backgroundColor: "#A43820",
           color: "white",
@@ -103,7 +104,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         onDecline={() => {
           window.close();
         }}>
-        <p>
+        {/* <p>
           Nous utilisons des cookies pour améliorer l'expérience utilisateur.
           <br />
           En poursuivant votre navigation sur ce site, vous acceptez notre utilisation des cookies conformément à notre{" "}
@@ -116,7 +117,22 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             Politique de Confidentialité
           </Link>
           .
-        </p>
+        </p> */}
+        <Trans
+          i18nKey="cookieConsent.message"
+          components={{
+            1: <Link href={t("cookieConsent.policyCookiesLinkHref")} style={{ color: "#F1D302" }} />,
+            3: <Link href={t("cookieConsent.privacyPolicyLinkHref")} style={{ color: "#F1D302" }} />,
+            nl: (
+              <>
+                <br />
+                <br />
+              </>
+            ),
+            br: <br />,
+            bold: <span className="font-bold" key="2" />,
+          }}
+        />
       </CookieConsent>
     </>
   );

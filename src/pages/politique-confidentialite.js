@@ -49,7 +49,7 @@ export default function PolitiqueConfidentialite() {
 
   return (
     <div>
-      <PageJumbo titleKey={t("privacyPolicy.title")} textKey={t("intro à trouver")} />
+      <PageJumbo titleKey={t("privacyPolicy.title")} textKey={t("privacyPolicy.intro")} />
       <div className="container pb-12">
         {policySections.map((sectionKey, index) => (
           <div className="mt-8" key={index}>

@@ -48,8 +48,8 @@ const Footer = () => {
             <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
             <Link href="/politique-confidentialite">{t("privacyPolicy.title")}</Link>
-            <Link href="/politique-cookies">{t("footer.politiqueCookies")}</Link>
-            <Link href="/mentions-legales">{t("footer.mentionsLegales")}</Link>
+            <Link href="/politique-cookies">{t("cookiesPolicy.title")}</Link>
+            <Link href="/mentions-legales">{t("legalMentions.title")}</Link>
           </div>
 
           <div className="leftblue">
