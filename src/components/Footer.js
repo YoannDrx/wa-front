@@ -47,8 +47,9 @@ const Footer = () => {
             <Link href="/team/partenaires">{t("footer.Partenaires")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
-            <Link href="/politique-confidentialite">{t("footer.politiqueConfidentialite")}</Link>
+            <Link href="/politique-confidentialite">{t("privacyPolicy.title")}</Link>
             <Link href="/politique-cookies">{t("footer.politiqueCookies")}</Link>
+            <Link href="/mentions-legales">{t("footer.mentionsLegales")}</Link>
           </div>
 
           <div className="leftblue">
