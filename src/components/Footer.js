@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="leftblue">
             <h3>{t("footer.Pratique Juridique")}</h3>
             {expertiseItems.map((item) => (
-              <Link key={item.id} href={`/expertise/${item.id}`}>
+              <Link key={item.id} href={`/expertise/${t(`${item.slug}`)}/${item.id}`}>
                 {t(item.title)}
               </Link>
             ))}

@@ -71,7 +71,7 @@
   },
   "expertise": {
     "notreExpertise": "Notre Expertise",
-    "ourGoal": "<bold>Notre objectif est très simple :</bold> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés à votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et avec le plus grand souci du détail.",
+    "ourGoal": "<blue>Notre objectif est très simple :</blue> Fournir aux entreprises, aux <blue>particuliers</blue> et aux <blue>entrepreneurs</blue> des services sur mesure et de haut niveau pour résoudre leurs problèmes. Le droit est en constante évolution, de même que les développements liés à votre secteur d'activité et à l'économie en général, qui peuvent vous affecter, vous et votre entreprise. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et <blue>avec le plus grand souci du détail</blue>.",
     "expertiseList": [
       {
         "id": "1",
@@ -142,7 +142,7 @@
   },
   "partenaire": {
     "nosAssocies": "Nos Associés",
-    "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <bold>qui cumulent plus de 100 années d’expérience professionnelle</bold>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, chacun de nos associés possède une connaissance étendue du droit des affaires, couvrant à eux quatre l'ensemble des activités <bold>et besoins</bold> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
+    "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <blue>qui cumulent plus de 100 années d’expérience professionnelle</blue>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, <blue>chacun de nos associés possède une connaissance étendue du droit des affaires</blue>, couvrant à eux quatre l'ensemble des activités <blue>et besoins</blue> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
     "seeProfile": "Voir le profil",
     "areaOfResponsibility": "Domaines de compétence",
     "languages": "Langues",
@@ -214,7 +214,7 @@
   },
   "whoWeAre": {
     "presentation": "Présentation",
-    "firmPresentation": "Créé en 1974, WEIL & ASSOCIES a rapidement acquis une réputation d'excellence dans le domaine du droit des entreprises à l'échelle mondiale. <nl/>Au cœur de notre mission : une expertise juridique pointue qui favorise l'innovation et la croissance de nos clients, qu'ils soient des entreprises multinationales ou des PME. <nl/>Notre équipe polyvalente est particulièrement réputée pour sa réactivité et son sens du détail, garantissant ainsi une représentation efficace devant les tribunaux et les institutions arbitrales.",
+    "firmPresentation": "Créé en 1974, <blue>Weil & Associés</blue> a rapidement acquis une réputation d'excellence dans le domaine du droit des entreprises à l'échelle mondiale. <nl/>Au cœur de notre mission : <blue>une expertise juridique</blue> pointue qui favorise l'innovation et la croissance de nos clients, qu'ils soient des entreprises multinationales ou des PME. <nl/>Notre équipe polyvalente est particulièrement <blue>réputée pour sa réactivité et son sens du détail</blue>, garantissant ainsi une représentation efficace devant les tribunaux et les institutions arbitrales.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "NOUS SOMMES DEDIES A VOTRE SUCCES",
     "nous-sommes-dedies-a-votre-succes-description": "Depuis sa création en 1974, WEIL & ASSOCIES est un cabinet d'avocats au service des entreprises internationales.<nl/>Notre cabinet a pour vocation d'assister les entreprises, internationales ou petites et moyennes, dans leurs activités commerciales ou industrielles en France ou à l'étranger par des conseils juridiques proactifs ainsi que par la défense de nos clients devant les tribunaux et les instances arbitrales.",
     "NOUS SOMMES INTERNATIONAUX": "NOUS SOMMES INTERNATIONAUX",
@@ -247,7 +247,7 @@
     }
   },
   "career": {
-    "intro": "Nous sommes activement à la recherche d'un collaborateur ou d'une collaboratrice ayant au moins 3 années d'expérience professionnelle, maitrisant l'anglais, pour une collaboration libérale en droit social.<nl/>Nous sommes régulièrement intéressés par des candidatures de jeunes avocats et avocates ayant une formation en droit international des affaires, le cas échéant précédée d'une expérience professionnelle, ainsi qu'une bonne maîtrise du français, de l'anglais et de l'allemand.",
+    "intro": "Nous sommes <blue>activement à la recherche d'un collaborateur ou d'une collaboratrice</blue> ayant au moins 3 années d'expérience professionnelle, maitrisant l'anglais, pour une collaboration libérale en droit social.<nl/>Nous sommes régulièrement intéressés par des candidatures de jeunes avocats et avocates ayant une <blue>formation en droit international des affaires</blue>, le cas échéant précédée d'une expérience professionnelle, ainsi qu'une bonne maîtrise du français, de l'anglais et de l'allemand.",
     "recrutement": "Recrutement",
     "image-description": "photo d'un groupe d'avocats au travail",
     "talents": {
