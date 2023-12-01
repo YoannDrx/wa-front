@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="leftblue">
             <h3>{t("footer.Pratique Juridique")}</h3>
             {expertiseItems.map((item) => (
-              <Link key={item.id} href={`/expertise/${item.id}`}>
+              <Link key={item.id} href={`/expertise/${t(`${item.slug}`)}/${item.id}`}>
                 {t(item.title)}
               </Link>
             ))}
@@ -47,6 +47,9 @@ const Footer = () => {
             <Link href="/team/partenaires">{t("footer.Partenaires")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
             <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
+            <Link href="/politique-confidentialite">{t("privacyPolicy.title")}</Link>
+            <Link href="/politique-cookies">{t("cookiesPolicy.title")}</Link>
+            <Link href="/mentions-legales">{t("legalMentions.title")}</Link>
           </div>
 
           <div className="leftblue">
