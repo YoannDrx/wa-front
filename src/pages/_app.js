@@ -98,24 +98,11 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           cursor: "pointer",
           fontWeight: "bold",
           margin: "15px",
+          textDecoration: "underline",
         }}
         onDecline={() => {
           window.close();
         }}>
-        {/* <p>
-          Nous utilisons des cookies pour améliorer l'expérience utilisateur.
-          <br />
-          En poursuivant votre navigation sur ce site, vous acceptez notre utilisation des cookies conformément à notre{" "}
-          <Link href="/politique-cookies" style={{ color: "#F1D302" }}>
-            Politique de Cookies
-          </Link>
-          . <br />
-          Pour plus d'informations, veuillez consulter notre{" "}
-          <Link href="/politique-confidentialite" style={{ color: "#F1D302" }}>
-            Politique de Confidentialité
-          </Link>
-          .
-        </p> */}
         <Trans
           i18nKey="cookieConsent.message"
           components={{
