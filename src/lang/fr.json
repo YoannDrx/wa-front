@@ -4,6 +4,9 @@
   "/expertise": "/expertise",
   "/carriere": "/carriere",
   "/contact": "/contact",
+  "/politique-confidentialite": "/politique-confidentialite",
+  "/politique-cookies": "/politique-cookies",
+  "/mentions-legales": "/mentions-legales",
   "Accueil": "Accueil",
   "Qui sommes-nous": "Qui sommes-nous",
   "Nos associés": "Nos associés",
@@ -349,7 +352,7 @@
   },
 
   "cookieConsent": {
-    "message": "Pour offrir une expérience optimale, notre site utilise des cookies qui aident à améliorer la performance et la personnalisation de notre service.<br/>En cliquant sur 'J'accepte', vous consentez à l'utilisation de ces cookies.<br/>Vous pouvez en savoir plus sur nos pratiques en matière de cookies en consultant notre <1>Politique de Cookies</1> et ajuster vos préférences à tout moment. Pour plus de détails sur le traitement de vos données personnelles, veuillez consulter notre <3>Politique de Confidentialité</3>.",
+    "message": "Pour offrir une expérience optimale, notre site utilise des cookies qui aident à améliorer la performance et la personnalisation de notre service. En cliquant sur 'J'accepte', vous consentez à l'utilisation de ces cookies.<br/>Vous pouvez en savoir plus sur nos pratiques en matière de cookies en consultant notre <1>Politique de Cookies</1> et ajuster vos préférences à tout moment. Pour plus de détails sur le traitement de vos données personnelles, veuillez consulter notre <3>Politique de Confidentialité</3>.",
     "acceptButton": "J'accepte",
     "declineButton": "Continuer sans accepter",
     "policyCookiesLink": "Politique de Cookies",

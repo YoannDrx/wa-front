@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="leftblue">
             <h3>{t("footer.Pratique Juridique")}</h3>
             {expertiseItems.map((item) => (
-              <Link key={item.id} href={`/expertise/${t(`${item.slug}`)}/${item.id}`}>
+              <Link key={item.id} href={t(`/expertise/${item.slug}/${item.id}`)}>
                 {t(item.title)}
               </Link>
             ))}
@@ -41,15 +41,15 @@ const Footer = () => {
 
           <div className="leftblue">
             <h3>{t("footer.À propos de notre cabinet")}</h3>
-            <Link href="/qui-sommes-nous">{t("footer.Ce que nous faisons")}</Link>
-            <Link href="/qui-sommes-nous">{t("footer.Notre histoire")}</Link>
-            <Link href="/team/partenaires">{t("footer.Notre équipe")}</Link>
-            <Link href="/team/partenaires">{t("footer.Partenaires")}</Link>
-            <Link href="/carriere">{t("footer.Rejoignez-nous : Carrières")}</Link>
-            <Link href="/carriere">{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
+            <Link href={t("/qui-sommes-nous")}>{t("footer.Ce que nous faisons")}</Link>
+            <Link href={t("/qui-sommes-nous")}>{t("footer.Notre histoire")}</Link>
+            <Link href={t("/team/partenaires")}>{t("footer.Notre équipe")}</Link>
+            <Link href={t("/team/partenaires")}>{t("footer.Partenaires")}</Link>
+            <Link href={t("/carriere")}>{t("footer.Rejoignez-nous : Carrières")}</Link>
+            <Link href={t("/carriere")}>{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
             <Link href={t("/politique-confidentialite")}>{t("privacyPolicy.title")}</Link>
-            <Link href="/politique-cookies">{t("cookiesPolicy.title")}</Link>
-            <Link href="/mentions-legales">{t("legalMentions.title")}</Link>
+            <Link href={t("/politique-cookies")}>{t("cookiesPolicy.title")}</Link>
+            <Link href={t("/mentions-legales")}>{t("legalMentions.title")}</Link>
           </div>
 
           <div className="leftblue">

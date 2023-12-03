@@ -71,35 +71,33 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       </CardProvider>
       <CookieConsent
         location="bottom"
-        style={{ background: "#37749E", width: "100%" }}
+        style={{ background: "#37749E", width: "100%", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
         buttonWrapperClasses="flex flex-col xs:flex-row sm:flex-col 2xl:flex-row"
         overlay={true}
         expires={150}
         acceptOnScroll={true}
         buttonText={t("cookieConsent.acceptButton")}
         buttonStyle={{
-          backgroundColor: "#4B6F44",
-          color: "white",
+          backgroundColor: "#E4EDF1",
+          color: "#37749E",
           fontSize: "16px",
           padding: "10px 20px",
-          borderRadius: "5px",
           border: "none",
           cursor: "pointer",
           fontWeight: "bold",
-          margin: "5px",
+          margin: "15px",
         }}
         enableDeclineButton={true}
         declineButtonText={t("cookieConsent.declineButton")}
         declineButtonStyle={{
-          backgroundColor: "#A43820",
+          backgroundColor: "#37749E",
           color: "white",
-          fontSize: "16px",
+          fontSize: "14px",
           padding: "10px 20px",
-          borderRadius: "5px",
           border: "none",
           cursor: "pointer",
           fontWeight: "bold",
-          margin: "5px",
+          margin: "15px",
         }}
         onDecline={() => {
           window.close();
@@ -121,8 +119,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <Trans
           i18nKey="cookieConsent.message"
           components={{
-            1: <Link href={t("cookieConsent.policyCookiesLinkHref")} style={{ color: "#F1D302" }} />,
-            3: <Link href={t("cookieConsent.privacyPolicyLinkHref")} style={{ color: "#F1D302" }} />,
+            1: <Link href={t("cookieConsent.policyCookiesLinkHref")} style={{ color: "lightgreen" }} />,
+            3: <Link href={t("cookieConsent.privacyPolicyLinkHref")} style={{ color: "lightgreen" }} />,
             nl: (
               <>
                 <br />
