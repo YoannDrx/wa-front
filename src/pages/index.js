@@ -147,7 +147,10 @@ function Home({ articles }) {
           </div>
         </div>
       </div>
-      <div className="container py-20">
+
+      {/* Articles Section */}
+
+      {/* <div className="container py-20">
         <h2 className="text-center underblue">{t("home.articles.title")}</h2>
         <div className="flex flex-wrap gap-4 justify-center">
           {firstThreeArticles.map((article, index) => {
@@ -167,6 +170,31 @@ function Home({ articles }) {
               />
             );
           })}
+        </div>
+      </div> */}
+
+      {/* End Articles Section */}
+
+      <div className="container py-20">
+        <h2 className="text-center underblue">{t("Nous sommes membres des organisations & réseaux suivants :")}</h2>
+        <div className="flex justify-center items-center">
+          <Image
+            src={"/assets/home/logo-innangard.png"}
+            alt={"logo-innangard"}
+            className="w-full h-full"
+            width={0}
+            height={0}
+            sizes="100vw"
+          />
+          <Image
+            src={"/assets/home/logo-ir-global.png"}
+            alt={"logo-ir-global"}
+            className="w-full h-full"
+            style={{ transform: "scale(0.6)" }}
+            width={0}
+            height={0}
+            sizes="100vw"
+          />
         </div>
       </div>
     </div>
