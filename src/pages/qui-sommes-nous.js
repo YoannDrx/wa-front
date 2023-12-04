@@ -28,6 +28,11 @@ export default function WhoWeAre() {
                       <br />
                     </>
                   ),
+                  bold: <span className="font-bold" key="0" />,
+                  highlight: <span style={{ backgroundColor: "#E4EDF1" }} key="1" />,
+                  a: <a key="2" />,
+                  leftblue: <span className="leftblue" key="2" />,
+                  blue: <span className="font-bold" style={{ color: "#37749E" }} key="3" />,
                 }}
               />
             </p>

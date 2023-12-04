@@ -26,7 +26,7 @@ const Footer = () => {
             <br />
             75017 PARIS FRANCE
             <br />
-            01 44 15 98 98
+            +33 (0)1 44 15 98 98
             <br />
             info@weil-paris.fr
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
 
           <div className="leftblue">
             <h3>{t("footer.Ressources")}</h3>
-            {articles.slice(3, 13).map((article) => (
+            {articles.slice(0, 5).map((article) => (
               <Link key={article.id} href={article.link}>
                 {formatTitle(article[`title_${router.locale}`])}
               </Link>

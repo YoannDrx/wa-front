@@ -23,7 +23,7 @@ const Member = () => {
   const memberData = t(`partenaire.members.${memberKey}`, { returnObjects: true });
 
   if (!memberData || !memberData.name) {
-    return <div>Membre non trouvé</div>;
+    return <div />;
   }
 
   return (

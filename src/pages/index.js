@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { Trans, useTranslation } from "react-i18next";
 import { useArticlesContext } from "../../contexts/ArticlesContext";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export async function getStaticProps() {
   let articles = [];
@@ -176,25 +177,31 @@ function Home({ articles }) {
       {/* End Articles Section */}
 
       <div className="container py-20">
-        <h2 className="text-center underblue">{t("Nous sommes membres des organisations & réseaux suivants :")}</h2>
-        <div className="flex justify-center items-center">
-          <Image
-            src={"/assets/home/logo-innangard.png"}
-            alt={"logo-innangard"}
-            className="w-full h-full"
-            width={0}
-            height={0}
-            sizes="100vw"
-          />
-          <Image
-            src={"/assets/home/logo-ir-global.png"}
-            alt={"logo-ir-global"}
-            className="w-full h-full"
-            style={{ transform: "scale(0.6)" }}
-            width={0}
-            height={0}
-            sizes="100vw"
-          />
+        <h2 className="text-center underblue">{t("home.organisation")}</h2>
+        <div className="flex justify-evenly items-center">
+          <Link
+            href="https://www.innangard.global/"
+            target="_blank"
+            className="hover:shadow-lg p-8 transition-shadow duration-300">
+            <Image
+              src={"/assets/home/logo-innangard.png"}
+              alt={"logo-innangard"}
+              className="w-72 h-auto"
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </Link>
+          <Link href="https://irglobal.com/" target="_blank" className="hover:shadow-lg p-8  transition-shadow duration-300">
+            <Image
+              src={"/assets/home/logo-ir-global.png"}
+              alt={"logo-ir-global"}
+              className="w-52 h-auto"
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -54,8 +54,8 @@ export default function ExpertisePage({ expertise }) {
                   </>
                 ),
                 bold: <span className="font-bold" key="0" />,
-                highlight: <span style={{ backgroundColor: "#E4EDF1" }} key="1" />,
-                a: <a key="2" />,
+                highlight: <span style={{ backgroundColor: "#37749E", color: "white" }} key="1" />,
+                a: <a key="2" style={{ backgroundColor: "#37749E", color: "white", padding: "3px" }} />,
                 leftblue: <span className="leftblue" key="2" />,
                 blue: <span className="font-bold" style={{ color: "#37749E" }} key="3" />,
                 square: <span className="square-blue" key="4" />,

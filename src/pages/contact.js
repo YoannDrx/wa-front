@@ -32,15 +32,16 @@ export default function Contact() {
               <span className="font-bold square-blue">{t("contact.Aéroport Charles de Gaulle")} :</span>
               <br />
               {t("contact.Taxi (30 minutes)")}
-              <br />
-              {t("contact.Le car Air France en direction de l'ETOILE (30 minutes de trajet et 5 minutes à pied)")}
             </p>
             <p>
               <span className="font-bold square-blue">{t("contact.Aéroport d'Orly")}:</span>
               <br />
               {t("contact.Taxi (40 minutes)")}
+            </p>
+            <p>
+              <span className="font-bold square-blue">{t("contact.Hotel")}:</span>
               <br />
-              {t("contact.De nombreux hôtels à proximité. Réservation possible")}
+              {t("contact.reservation")}
             </p>
           </div>
           <div className="w-full sm:w-1/2">
@@ -57,21 +58,16 @@ export default function Contact() {
       </div>
 
       <footer className="flex flex-col-reverse md:flex-row w-full bg-[#2E2E2E]">
-        <div className="w-full md:w-1/2">
-          <ContactForm />
-        </div>
-        <div className="w-full md:w-1/2">
-          <iframe
-            className="w-full h-[600px]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6176.75251270067!2d2.2850211641604816!3d48.87446167385674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fed65b1cda3%3A0xd519c95bdb319908!2s26%20Av.%20de%20la%20Grande%20Arm%C3%A9e%2C%2075017%20Paris!5e0!3m2!1sen!2sfr!4v1698349495020!5m2!1sen!2sfr"
-            width="800"
-            height="600"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            style={{ border: "0", filter: "grayscale(100%)" }}
-          />
-        </div>
+        <iframe
+          className="w-full h-[600px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350.389569082013!2d2.2847212605780385!3d48.874604053500796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fed65b1cda3%3A0xd519c95bdb319908!2s26%20Av.%20de%20la%20Grande%20Arm%C3%A9e%2C%2075017%20Paris!5e0!3m2!1sen!2sfr!4v1701725900445!5m2!1sen!2sfr"
+          width=""
+          height="600"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          style={{ border: "0" }}
+        />
       </footer>
     </div>
   );

@@ -9,13 +9,12 @@ export default function Career() {
 
   return (
     <div>
-      <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} />
-      <div className="container pb-12">
+      <div className="container pb-12 pt-24">
         {/* Bloc 1 */}
         <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8 justify-center">
           <div className="  flex xs:justify-center mb-4 md:mb-0">
             <Image
-              src="/assets/career/career1.jpg"
+              src="/assets/career/career5.jpg"
               alt={t("career.image-description")}
               width={0}
               height={0}
@@ -27,7 +26,6 @@ export default function Career() {
             <h2 className="font-bold text-primary text-center mb-8">{t("career.talents.title")}</h2>
             <h3 className="mb-4">{t("career.talents.subtitle")}</h3>
             <p>{t("career.talents.paragraph1")}</p>
-            <p>{t("career.talents.paragraph2")}</p>
           </div>
         </div>
         {/* Bloc 2 */}
@@ -40,7 +38,7 @@ export default function Career() {
           </div>
           <div className="flex xs:justify-center mb-4 md:mb-0">
             <Image
-              src="/assets/career/career4.jpg"
+              src="/assets/career/career6.jpg"
               alt={t("internship.imageDescription")}
               width={0}
               height={0}
@@ -55,8 +53,6 @@ export default function Career() {
             <CareerContactForm />
           </div>
           <div className="w-full text-center md:w-1/2 pl-4 order-1 md:order-2">
-            <h2 className="text-primary">{t("career.admins-and-paralegals.title")}</h2>
-            <p>{t("career.admins-and-paralegals.text")}</p>
             <p>
               {t("career.admins-and-paralegals.contact")}
               <span>
