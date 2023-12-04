@@ -12,7 +12,7 @@ export default function WhoWeAre() {
     <div>
       <PageJumbo titleKey={t("whoWeAre.presentation")} textKey={t("whoWeAre.firmPresentation")} />
       <div className="container pb-12">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
           {/* Bloc 1 */}
           <div className="bg-primary p-8 text-white">
             <h2 className="mb-4 break-words">
@@ -57,15 +57,6 @@ export default function WhoWeAre() {
             </p>
           </div>
         </section>
-
-        <Image
-          src="/assets/who-we-are/Salle-de-conference.png"
-          alt="Séparateur"
-          width={0}
-          height={0}
-          className="w-full h-auto"
-          sizes="100vw"
-        />
 
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* Bloc 3 */}
