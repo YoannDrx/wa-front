@@ -173,3 +173,7 @@ h3 {
     max-width: none;
   }
 }
+
+.menu :where(li:not(.menu-title)>:not(ul):not(details):not(.menu-title)), .menu :where(li:not(.menu-title)>details>summary:not(.menu-title)){
+  padding: 0.5rem 0.6rem;
+}
