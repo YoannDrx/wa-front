@@ -108,17 +108,16 @@ export default function Header({ children, light = false, ...args }) {
             </div>
             <div className="flex-none px-2 mx-2">
               <Link href={"/"}>
-                <Image
-                  src={"/assets/logo_white.png"}
-                  alt={"logo weil & associés"}
+              <Image
+                  src={"/assets/logo.png"}
+                  alt={"Weil associés avocats"}
                   width="0"
                   height="0"
                   sizes="100vw"
-                  className="w-[105px] h-auto invert"
+                  className="w-[130px] h-auto"
                   placeholder="blur"
-                  blurDataURL={"/assets/logo_white.png"}
+                  blurDataURL={"/assets/logo.png"}
                 />
-
               </Link>
             </div>
             <div className="flex-1 hidden lg:flex flex-row justify-between">
