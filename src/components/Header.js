@@ -114,7 +114,7 @@ export default function Header({ children, light = false, ...args }) {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  className="w-[168px] h-auto invert"
+                  className="w-[105px] h-auto invert"
                   placeholder="blur"
                   blurDataURL={"/assets/logo_white.png"}
                 />
