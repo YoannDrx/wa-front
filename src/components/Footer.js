@@ -1,20 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { useArticlesContext } from "../../contexts/ArticlesContext";
-import { useRouter } from "next/router";
 
 const Footer = () => {
   const { t } = useTranslation();
-  const { articles } = useArticlesContext();
-  const router = useRouter();
 
   const expertiseItems = t("expertise.expertiseList", { returnObjects: true });
-
-  const formatTitle = (title) => {
-    if (!title) return "";
-    return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
-  };
 
   return (
     <div>
@@ -45,20 +36,15 @@ const Footer = () => {
             <Link href={t("/qui-sommes-nous")}>{t("footer.Notre histoire")}</Link>
             <Link href={t("/team/partenaires")}>{t("footer.Notre équipe")}</Link>
             <Link href={t("/team/partenaires")}>{t("footer.Partenaires")}</Link>
-            <Link href={t("/carriere")}>{t("footer.Rejoignez-nous : Carrières")}</Link>
-            <Link href={t("/carriere")}>{t("footer.Rejoignez-nous : Stagiaire juridique")}</Link>
-            <Link href={t("/politique-confidentialite")}>{t("privacyPolicy.title")}</Link>
-            <Link href={t("/politique-cookies")}>{t("cookiesPolicy.title")}</Link>
-            <Link href={t("/mentions-legales")}>{t("legalMentions.title")}</Link>
+            <Link href={t("/carriere")}>{t("footer.Carrieres")}</Link>
+            <Link href={t("/carriere")}>{t("footer.StagiaireJuridique")}</Link>
           </div>
 
           <div className="leftblue">
-            <h3>{t("footer.Ressources")}</h3>
-            {articles.slice(0, 5).map((article) => (
-              <Link key={article.id} href={article.link}>
-                {formatTitle(article[`title_${router.locale}`])}
-              </Link>
-            ))}
+            <h3>{t("footer.NosPolitiques")}</h3>
+            <Link href={t("/politique-confidentialite")}>{t("privacyPolicy.title")}</Link>
+            <Link href={t("/politique-cookies")}>{t("cookiesPolicy.title")}</Link>
+            <Link href={t("/mentions-legales")}>{t("legalMentions.title")}</Link>
           </div>
         </footer>
       </div>
