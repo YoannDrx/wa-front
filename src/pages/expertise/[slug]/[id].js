@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
+import Head from "next/head";
 
 export async function getStaticProps({ params, locale }) {
   const translations = require(`../../../lang/${locale}.json`);
@@ -32,6 +33,16 @@ export default function ExpertisePage({ expertise }) {
 
   return (
     <div className="container mx-auto px-4">
+      <Head>
+        <title>{t(expertise.title)}</title>
+        <meta
+          name="description"
+          content={t("expertise.metaDescription", {
+            title: t(expertise.title),
+          })}
+        />
+      </Head>
+
       <PageJumbo titleKey={t(expertise.title)} textKey={t(expertise.intro)} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
         <div className="flex flex-col items-center relative w-full h-full">

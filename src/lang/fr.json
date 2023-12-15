@@ -58,6 +58,7 @@
     "allRightsReserved": "2023 Weil & Associés. Informations légales. Tous droits réservés."
   },
   "home": {
+    "pageDescriptionSEO": "Bienvenue chez Weil & Associés : découvrez notre approche experte en matière juridique et notre engagement envers l'excellence et l'innovation. Visitez notre site pour en savoir plus.",
     "votreConfiance": "YOUR TRUST IS OUR PRIDE",
     "presentation": "Présentation",
     "heroSubtitle": "Un cabinet d'excellence dédié aux entreprises internationales",
@@ -75,6 +76,8 @@
     "organisation": "Nous sommes membres des organisations & réseaux suivants :"
   },
   "expertise": {
+    "metaDescription": "Découvrez notre expertise en {{title}} chez Weil & Associés.",
+    "pageDescriptionSEO": "Découvrez nos domaines d'expertise chez Weil & Associés. Notre équipe offre des solutions juridiques spécialisées dans divers secteurs pour répondre à vos besoins.",
     "notreExpertise": "Notre Expertise",
     "ourGoal": "<blue>Notre objectif est très simple :</blue> Fournir aux entreprises, aux particuliers et aux entrepreneurs des services sur mesure et de haut niveau pour résoudre leurs problèmes. C'est pourquoi nous nous efforçons d'aller toujours plus loin, de travailler plus intelligemment et d'agir rapidement dans votre intérêt et <blue>avec le plus grand souci du détail</blue>.",
     "expertiseList": [
@@ -146,6 +149,7 @@
     ]
   },
   "partenaire": {
+    "pageDescriptionSEO": "Rencontrez les partenaires de Weil & Associés, une équipe d'experts juridiques dédiés à fournir des solutions innovantes et personnalisées à nos clients.",
     "nosAssocies": "Nos Associés",
     "teamPresentation": "Notre cabinet est composé de quatre associés expérimentés, <blue>qui cumulent plus de 100 années d’expérience professionnelle</blue>. Chacun d’entre eux parlent couramment l'anglais et l'allemand, et a un profil et une formation juridique internationale. Outre leur domaine de compétence spécialisé, <blue>chacun de nos associés possède une connaissance étendue du droit des affaires</blue>, couvrant à eux quatre l'ensemble des activités <blue>et besoins</blue> de nos clients.<nl/>Vous trouverez ci-dessous une présentation individuelle de chaque associé. Nous disposons également d'une équipe de collaborateurs confirmés et de juristes qui ont tous une formation juridique ou une expérience internationale.",
     "seeProfile": "Voir le profil",
@@ -221,6 +225,7 @@
     }
   },
   "whoWeAre": {
+    "pageDescriptionSEO": "Découvrez Weil & Associés : notre cabinet d'avocats expert en conseil juridique, dédié à offrir des solutions innovantes et sur mesure pour chaque client. Rencontrez notre équipe et explorez notre approche unique.",
     "presentation": "Présentation",
     "firmPresentation": "Créé en 1974, <blue>Weil & Associés</blue> a rapidement acquis une réputation d'excellence dans le domaine du droit des entreprises.<nl/>Au cœur de notre mission : <blue>une expertise juridique</blue> pointue qui favorise l'innovation et la croissance de nos clients, qu'ils soient des entreprises multinationales ou des PME. <nl/>Notre équipe polyvalente est particulièrement <blue>réputée pour sa réactivité et son sens du détail</blue>, garantissant ainsi une représentation efficace devant les tribunaux et les institutions arbitrales.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "NOUS SOMMES DEDIES A VOTRE SUCCES",
@@ -233,6 +238,7 @@
     "votre-confiance-nous-honore-description": "Notre travail est basé sur la confiance mutuelle avec chacun de nos clients, qu'il s'agisse de sociétés internationales ou de petites et moyennes entreprises.<nl/>L'activité, les produits et l'environnement professionnel de chaque client sont soigneusement pris en considération car notre objectif est de fournir à nos clients des solutions sur mesure qui tiennent compte de leurs intérêts commerciaux spécifiques.<nl/>Grâce à la petite taille de notre cabinet, nous composons une équipe d'avocats dynamiques qui savent répondre rapidement et avec souplesse aux besoins du client.<nl/>Nous n'oublierons jamais que l'essence de notre travail, qu'il s'agisse de conseil juridique ou de plaidoyer, est de parvenir à un résultat économiquement valable pour notre client."
   },
   "contact": {
+    "pageDescriptionSEO": "Contactez Weil & Associés pour des conseils juridiques experts. Trouvez nos coordonnées, plan d'accès et formulaire de contact pour toutes vos questions juridiques.",
     "informationPratique": "Informations Pratiques",
     "commentNousTrouvez": "COMMENT NOUS TROUVER",
     "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée, Paris 17e, à deux pas de L'Etoile. <nl/>Des parkings souterrains sont accessibles facilement sur l'avenue Carnot et l'avenue Foch.<nl/>La station de <bold>Métro ARGENTINE</bold> (ligne 1) est proche. La station du <bold>RER Charles de Gaulle Etoile</bold> se trouve à 5 minutes à pied.",
@@ -248,6 +254,7 @@
     "Écrivez ici votre message": "Écrivez ici votre message"
   },
   "career": {
+    "pageDescriptionSEO": "Rejoignez l'équipe de Weil & Associés et contribuez à notre succès. Découvrez nos opportunités de carrière, stages et postes pour talents juridiques.",
     "intro": "Nous sommes <blue>activement à la recherche d'un collaborateur ou d'une collaboratrice</blue> ayant au moins 3 années d'expérience professionnelle, maitrisant l'anglais, pour une collaboration libérale en droit social.<nl/>Nous sommes régulièrement intéressés par des candidatures de jeunes avocats et avocates ayant une <blue>formation en droit international des affaires</blue>, le cas échéant précédée d'une expérience professionnelle, ainsi qu'une bonne maîtrise du français, de l'anglais et de l'allemand.",
     "recrutement": "Recrutement",
     "image-description": "photo d'un groupe d'avocats au travail",
@@ -280,6 +287,7 @@
     }
   },
   "blog": {
+    "pageDescriptionSEO": "Explorez le blog de Weil & Associés pour des insights et analyses approfondies sur des sujets juridiques clés. Restez informé avec nos articles d'experts.",
     "articles": "Articles",
     "authors": "Auteurs",
     "categories": "Catégories",
@@ -309,6 +317,7 @@
     "category": "Catégorie"
   },
   "privacyPolicy": {
+    "pageDescriptionSEO": "Lisez la politique de confidentialité de Weil & Associés pour comprendre comment nous protégeons et gérons vos données personnelles. Notre engagement envers la sécurité et la transparence.",
     "title": "Politique de confidentialité",
     "intro": "Nous accordons une grande importance à la protection de <blue>votre vie privée</blue> et de vos <blue>données personnelles</blue>. Dans cet esprit, notre politique de confidentialité vise à vous informer de manière claire et transparente sur la manière dont nous collectons, utilisons, traitons et protégeons les informations personnelles que vous nous confiez lors de l'utilisation de notre site.<nl/>Nous nous engageons à <blue>respecter les réglementations</blue> en vigueur en matière de protection des données, notamment le Règlement Général sur la Protection des Données (RGPD) de l'Union européenne. Cette politique a pour but de vous aider à comprendre quelles données nous collectons, pourquoi nous les collectons, et comment vous pouvez exercer vos droits.<nl/>Votre confiance est essentielle pour nous, et nous nous engageons à assurer la <blue>sécurité</blue> et la <blue>confidentialité</blue> de vos données personnelles. En naviguant sur notre site, vous acceptez les pratiques décrites dans cette politique de confidentialité.",
     "definition": "<h3><square></square>Definition</h3><br/><strong>Client :</strong> Tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le site www.weil-paris.fr.<br /><strong>Éditeur :</strong> Weil & Associés, propriétaire du site www.weil-paris.fr.<br /><strong>Contenu :</strong> Ensemble des éléments constituants l’information présente sur le site, notamment textes, images, vidéos.<br /><strong>Informations clients :</strong> Ci-après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par Weil & Associés pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyse et de statistique.<br /><strong>Utilisateur :</strong> Internaute utilisant le site susnommé et qui, de fait, génère des données potentiellement exploitables par Weil & Associés, sous réserve d’un accord préalable ou consentement logique.<br /><strong>Informations personnelles :</strong> « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978). Les termes « données personnelles », « personne concernée », « sous-traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)",
@@ -330,6 +339,7 @@
     "applicable-law": "<h3><square>9</square> Droit applicable et attribution de juridiction</h3><br/>Tout litige en relation avec l’utilisation du site <a href='https://www.weil-paris.fr'>www.weil-paris.fr</a> est soumis au droit Français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Paris."
   },
   "cookiesPolicy": {
+    "pageDescriptionSEO": "Découvrez la politique des cookies de Weil & Associés : comment nous utilisons les cookies pour améliorer votre expérience et comment gérer vos préférences. Lisez notre guide pour plus d'informations.",
     "title": "Politique de gestion des Cookies",
     "intro": "Chez <blue>Weil & Associés</blue>, nous utilisons des cookies pour <blue>améliorer votre expérience</blue> sur notre site et respecter votre vie privée. Dans un souci de transparence et de respect de votre vie privée, nous tenons à vous informer clairement sur l'utilisation des cookies sur notre site web.<nl/>Cette page vous guide sur la manière dont nous utilisons les cookies et comment vous pouvez gérer vos préférences. Nous nous engageons à <blue>protéger vos données personnelles</blue> et à <blue>respecter toutes les réglementations pertinentes</blue>.",
     "whatAreCookies": "<h3><square>1</square> Qu’est-ce que les cookies ?</h3><br/><p>Selon la définition donnée par la CNIL: «un « cookie » est une suite d’informations, généralement de petite taille et identifié par un nom, qui peut être transmis à votre navigateur par un site web sur lequel vous vous connectez.<br />Votre navigateur web le conservera pendant une certaine durée, et le renverra au serveur web chaque fois que vous vous y reconnecterez».</p><p>Les cookies ont de multiples usages : ils vous permettent d’enregistrer vos préférences de navigation, de naviguer aisément d’une page à l’autre, d’enregistrer votre identifiant de connexion etc.</p><strong>Les cookies peuvent être catégorisés en fonction de leur objectif :<nl/></strong><p><strong>Les cookies nécessaires au service</strong>: il s’agit de cookies indispensables au fonctionnement de notre service, notamment en ce qui concerne l'envoi et la réception d'informations via les différents formulaires de contact présents sur le site.</p><p><strong>Les cookies de statistiques de visites anonymes</strong>: ce sont les cookies qui permettent de récolter de manière agrégée, et donc anonyme, des informations concernant la navigation des utilisateurs. Les cookies Google Analytics en font partie.</p><p><strong>Les cookies d’analyses tierces</strong>: ces cookies permettent à notre site d’enregistrer vos préférences de navigation et améliorent donc votre expérience d’utilisation.</p><p><strong>Les cookies publicitaires</strong>: ce sont les cookies qui permettent de vous montrer les publicités les plus adaptées à vos intérêts. Ils permettent également de ne pas afficher une même publicité plusieurs fois et de mesurer l’efficacité de la campagne publicitaire.</p>",
@@ -339,6 +349,7 @@
     "contactUs": "<h3><square>5</square> Nous contacter</h3><br/><p>Nous vous rappelons que vous avez le droit d’introduire une réclamation auprès de l’autorité de contrôle, la Commission Nationale de l’Informatique et des Libertés (CNIL).</p><p>La désignation d’un Délégué à la Protection des Données témoigne de l’attachement de Weil & Associés à la protection, la sécurité et la confidentialité des Données Personnelles de ses clients. Si vous avez des questions concernant la présente politique de cookies ou les activités de traitement des données mises en œuvre par Weil & Associés, ou si vous souhaitez exercer l’un de vos droits en vertu du RGPD, veuillez contacter :</p><ul><li><blue>Par courrier :</blue><nl/></li><ul><li>Weil & Associés</li><li>26 Avenue de la Grande Armée</li><li>75017 Paris, France</li></ul><li>Par email :</li><ul><li><a href='mailto:info@weil-paris.fr'>info@weil-paris.fr</a></li></ul></ul>"
   },
   "legalMentions": {
+    "pageDescriptionSEO": "Consultez les mentions légales de Weil & Associés pour des informations détaillées sur notre identité juridique, notre établissement et autres informations importantes.",
     "title": "Mentions Légales",
     "intro": "En vertu de l'article 6 de la loi n°2004-575 du 21 juin 2004 pour la <blue>confiance dans l'économie numérique</blue>, il est précisé aux utilisateurs du site Internet Weil & Associés - https://www.weil-paris.fr/ -  l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.<nl/>Ce site a pour objet de <blue>fournir des informations concernant l'ensemble des activités de notre cabinet</blue>. Weil & Associés s’efforce de fournir sur le site <blue><a href='https://weil-paris.fr/'>https://weil-paris.fr/</a></blue> des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.<nl/>Toutes les informations proposées sur le site <a href='https://weil-paris.fr/'>https://weil-paris.fr/</a> sont données à titre indicatif, sont non exhaustives, et sont susceptibles d'évoluer. Elles sont données sous réserve de modifications ayant été apportées depuis leur mise en ligne.",
     "juridicalInfo": "<h3><square>1.</square> Renseignements Juridiques</h3><br/><ul><li><strong>Date de création de l'entreprise :</strong> 12-04-1994</li><li><strong>Forme juridique :</strong> Société de fait entre personnes physiques</li><li><strong>Noms commerciaux :</strong> Weil & Associés</li><li><strong>Adresse postale :</strong> 26 AV DE LA GRANDE ARMEE 75017 PARIS</li><li><strong>SIREN :</strong> 394705750</li><li><strong>SIRET (siège) :</strong> 39470575000021</li><li><strong>Numéro TVA Intracommunautaire :</strong> FR44394705750</li><li><strong>Activité (Code NAF ou APE) :</strong> Activités juridiques (6910Z)</li><li><strong>Convention collective :</strong> Notariat (IDCC 2205)</li><li><strong>Taille de l'entreprise :</strong> 3 à 5 salariés</li><li></li><strong>Hébergeur :</strong> Siège social : 2 rue Kellermann - 59100 Roubaix - France. OVH SAS est une filiale de la société OVH Groupe SA, société immatriculée au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix.<li><strong>Responsable de publication :</strong> Bruno Weil – <a href='mailto:weil@weil-paris.fr'>bweil@weil-paris.fr</a> </li><li><strong>Webmaster : </strong> Société YODEV – <a href='mailto:yoann.andrieux@gmail.com'>yoann.andrieux@gmail.com</a></li> </ul>",
@@ -354,5 +365,20 @@
     "policyCookiesLinkHref": "/politique-cookies",
     "privacyPolicyLink": "Politique de Confidentialité",
     "privacyPolicyLinkHref": "/politique-confidentialite"
+  },
+  "admin": {
+    "pageDescriptionSEO": "Page de connexion administrateur pour Weil & Associés. Accès restreint aux utilisateurs autorisés.",
+    "adminArticles": {
+      "title": "Articles",
+      "pageDescriptionSEO": "Page d'administration pour gérer les articles de Weil & Associés. Accès restreint pour la modification et la suppression des articles."
+    },
+    "newArticle": {
+      "title": "Nouvel article",
+      "pageDescriptionSEO": "Page de création d'un nouvel article pour Weil & Associés. Accès restreint pour les administrateurs pour ajouter du contenu au site."
+    },
+    "editArticle": {
+      "title": "Modifier l'article",
+      "pageDescriptionSEO": "Page de modification de l'article pour les administrateurs de Weil & Associés. Permet la mise à jour du contenu des articles publiés."
+    }
   }
 }

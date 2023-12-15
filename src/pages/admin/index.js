@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { useRouter } from "next/router";
 import Button from "@/components/Button";
+import Head from "next/head";
+import { useTranslation } from "react-i18next";
 
 const supabase = createClient(
   "https://ovnsgrllmcmvhjqxkdga.supabase.co",
@@ -26,6 +28,7 @@ export default function New() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const { t } = useTranslation();
 
   const onLogin = () => {
     router.push("/admin/articles");
@@ -55,6 +58,11 @@ export default function New() {
     <div
       className="flex justify-center items-center h-screen bg-cover"
       style={{ backgroundImage: "url('/assets/home/rectangle29.png')" }}>
+      <Head>
+        <title>Admin</title>
+        <meta name="description" content={t("admin.pageDescriptionSEO")} />
+      </Head>
+
       <div className="card w-96 bg-base-100 shadow-xl rounded-none">
         <div className="card-body">
           <h2 className="card-title justify-center">Admin Login</h2>

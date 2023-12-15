@@ -61,6 +61,7 @@
     "legalMentionsContent": "<p>The present website <a href='https://weil-paris.fr/'>https://weil-paris.fr/</a> is published by:<br /><br /><strong>Editor:</strong> Weil & Associés, A partnership of natural persons.<br /><strong>Postal Address:</strong> 26 Avenue de la Grande Armée, 75017 Paris, France.<br /><strong>Phone:</strong> [Phone number]<br /><strong>SIREN:</strong> 394 705 750<br /><strong>SIRET Number (head office):</strong> 394 705 750 00021<br /><strong>Intracommunity VAT Number:</strong> FR44394705750<br /><strong>Date of Creation:</strong> 12-04-1994<br /><strong>Legal Form:</strong> A partnership of natural persons since 12-04-1994.<br /><strong>Activity (NAF or APE Code):</strong> Legal activities (6910Z)<br /><strong>Collective Agreement:</strong> Notariat (IDCC 2205)<br /><strong>Company Size:</strong> 3 to 5 employees<br /><strong>Publication Manager:</strong> [Name of the manager] – [Manager's email address]<br /><strong>Data Protection Officer:</strong> [Name of the officer] – [Officer's phone number]<br /><strong>Webmaster:</strong> [Name of the webmaster] – [Webmaster's email address]<br /><strong>Host:</strong> [Name of the host] – [Host's postal address] – Phone: [Host's phone number]<br />In accordance with Article 6 of the Law No. 2004-575 of June 21, 2004 for confidence in the digital economy, it is specified to the users of the website the identity of the various stakeholders in the context of its implementation and follow-up.<br /><br />This site aims to provide information about all the activities of the company. Weil & Associés strives to provide on the site <a href='https://weil-paris.fr/'>https://weil-paris.fr/</a> as precise information as possible. However, it cannot be held responsible for omissions, inaccuracies, and deficiencies in the update, whether by it or the third parties who provide this information.<br /><br />All the information offered on the site www.weiletassocies-avocats.fr is given for information purposes, is not exhaustive, and is likely to evolve. They are given subject to modifications having been made since they were put online.</p>"
   },
   "home": {
+    "pageDescriptionSEO": "Welcome to Weil & Associés: Discover our expert legal approach and commitment to excellence and innovation. Visit our site to learn more.",
     "votreConfiance": "Your trust is our pride",
     "presentation": "Presentation",
     "heroSubtitle": "A firm of excellence dedicated to international companies",
@@ -78,6 +79,8 @@
     "organisation": "We are members of the following organisations & networks :"
   },
   "expertise": {
+    "metaDescription": "Discover our expertise in {{title}} at Weil & Associés.",
+    "pageDescriptionSEO": "Explore our areas of expertise at Weil & Associés. Our team provides specialized legal solutions across various sectors to meet your needs.",
     "notreExpertise": "Our expertise",
     "ourGoal": "<blue>Our goal is very simple:</blue>To provide companies, individuals and entrepreneurs with tailor-made, high-level services to solve their problems. That's why we always strive to go further, work smarter and act quickly in your best interests and <blue>with the utmost attention to detail</blue>.",
     "expertiseList": [
@@ -149,6 +152,7 @@
     ]
   },
   "partenaire": {
+    "pageDescriptionSEO": "Meet the partners of Weil & Associés, a team of legal experts dedicated to providing innovative and tailored solutions to our clients.",
     "nosAssocies": "Our Partners",
     "teamPresentation": "Our firm is made up of four experienced partners with <blue>over 100 years' combined professional experience</blue>. Each of them is fluent in English and German, and has an international legal profile and background. In addition to their specialist areas of expertise, <blue>each of our partners has a broad knowledge of business law</blue>, covering between them the full range of our clients' <blue>activities and needs</blue>.<nl/>You will find below an individual presentation of each partner. We also have a team of senior parteners and lawyers, all of whom have legal training or international experience.",
     "seeProfile": "View profile",
@@ -222,6 +226,7 @@
     }
   },
   "whoWeAre": {
+    "pageDescriptionSEO": "Explore Weil & Associés: our law firm specializes in legal advice, committed to providing innovative and tailored solutions for every client. Meet our team and discover our unique approach.",
     "presentation": "Presentation",
     "firmPresentation": "Founded in 1974, <blue>Weil & Associés</blue> has rapidly earned a reputation for excellence in corporate law. <nl/>At the heart of our mission: cutting-edge <blue>legal expertise</blue> that fosters innovation and growth for our clients, whether they are multinational companies or SMEs. <nl/>Our versatile team is particularly <blue>renowned for its responsiveness and attention to detail</blue>, ensuring effective representation before courts and arbitral institutions.",
     "NOUS SOMMES DEDIES A VOTRE SUCCES": "WE ARE DEDICATED TO YOUR SUCCESS",
@@ -234,6 +239,7 @@
     "votre-confiance-nous-honore-description": "Our work is based on mutual trust with each and every client, international companies as well as small and medium-sized enterprises.<nl/>Each client’s activity, products and professional environment are carefully taken into consideration as our goal is to provide our client with tailor made solutions which take due account of the client’s specific business interests.<nl/>Thanks to the small size of our firm, we compose a team of dynamic lawyers who are acquainted to respond rapidly and with flexibility to the client’s needs.<nl/>We shall never forget that the essence of our work, be it legal advice or advocacy, is to achieve an economically valuable result for our client."
   },
   "contact": {
+    "pageDescriptionSEO": "Contact Weil & Associés for expert legal advice. Find our contact details, location map, and contact form for all your legal inquiries.",
     "informationPratique": "Practical information",
     "commentNousTrouvez": "HOW TO FIND US",
     "info-contact": "Our offices are located at 26, Avenue de la Grande Armée, Paris 17e, a stone's throw from L'Etoile. <nl/>Underground parking is easily accessible on Avenue Carnot and Avenue Foch.<nl/>The <bold>Métro ARGENTINE</bold> station (line 1) is nearby. The <bold>RER Charles de Gaulle Etoile</bold> station is a 5-minute walk away.",
@@ -249,6 +255,7 @@
     "Écrivez ici votre message": "Write your message here"
   },
   "career": {
+    "pageDescriptionSEO": "Join the team at Weil & Associés and contribute to our success. Explore our career opportunities, internships, and positions for legal talents.",
     "intro": "We are actively seeking a partner with at least 3 years' professional experience, fluent in English, for a freelance collaboration in employment law.<nl/>We are regularly interested in applications from young lawyers with a background in international business law, if necessary preceded by professional experience, as well as a good command of French, English and German.",
     "recrutement": "Recruitment",
     "image-description": "photo of a group of lawyers at work",
@@ -281,6 +288,7 @@
     }
   },
   "blog": {
+    "pageDescriptionSEO": "Explore Weil & Associés' blog for in-depth insights and analysis on key legal topics. Stay informed with our expert articles.",
     "articles": "Articles",
     "authors": "Authors",
     "categories": "Categories",
@@ -310,6 +318,7 @@
     "category": "Category"
   },
   "privacyPolicy": {
+    "pageDescriptionSEO": "Read Weil & Associés' privacy policy to understand how we protect and manage your personal data. Our commitment to security and transparency.",
     "title": "Privacy Policy",
     "intro": "We attach great importance to the protection of <blue>your private life</blue> and your <blue>personal data</blue>. <nl/>We are committed to <blue>comply with regulations</blue> in force regarding data protection, in particular the General Data Protection Regulation (GDPR) of the European Union. <nl/>Your trust is essential to us, and we are committed to ensuring the <blue>security</blue> and the <blue>confidentiality</blue> of your personal data. ",
     "definition": "<h3><square></square>Definition</h3><br/><strong>Customer :</strong> Any professional or capable natural person within the meaning of articles 1123 et seq. of the Civil Code, or legal entity, who visits the site www.weil-paris.fr.<br /><strong>Editor:</strong> Weil & Associés, owner of the site www.weil-paris.fr.<br /><strong>Content :</strong> All the elements constituting the information present on the site, in particular texts, images, videos.<br /><strong>Customer information:</strong> Hereinafter referred to as “Information(s)” which correspond to all personal data likely to be held by Weil & Associés for the management of your account, customer relationship management and for analysis and purposes. <br /><strong>User :</strong> Internet user using the above-mentioned site and who, in fact, generates data potentially usable by Weil & Associés, subject to prior agreement or logical consent.<br /><strong>Personal informations :</strong> “Information which allows, in any form whatsoever, directly or indirectly, the identification of the natural persons to whom it applies” (article 4 of law no. 78-17 of January 6, 1978). ",
@@ -331,6 +340,7 @@
     "applicable-law": "<h3><square>9</square> Applicable law and attribution of jurisdiction</h3><br/>Any dispute relating to the use of the site <a href='https://www.weil-paris.fr'>www.weil-paris.fr</a> is subject to French law. "
   },
   "cookiesPolicy": {
+    "pageDescriptionSEO": "Learn about Weil & Associés' cookie policy: how we use cookies to enhance your experience and how to manage your preferences. Read our guide for more information.",
     "title": "Cookie management policy",
     "intro": "At <blue>Weil & Assocciés</blue>, we use cookies to <blue>improve your experience</blue> on our site and respect your privacy. <nl/>This page guides you on how we use cookies and how you can manage your preferences <blue>protect your personal data</blue> to <blue>comply with all relevant regulations</blue>.",
     "whatAreCookies": "<h3><square>1</square> What are cookies?</h3><br/><p>According to the definition given by the CNIL: “a “cookie” is a series of information, generally small and identified by a name, which can be transmitted to your browser by a website to which you connect.<br />Your web browser will store it for a certain period of time, and send it back to the web server each time you reconnect.</p><p>Cookies have multiple uses: they allow you to save your browsing preferences, navigate easily from one page to another, save your connection ID, etc.</p><strong>Cookies can be categorized based on their purpose:<nl/></strong><p><strong>Cookies necessary for the service</strong>: these are cookies essential for the operation of our service, in particular with regard to sending and receiving information via the various contact forms present on the site.</p><p><strong>Anonymous visit statistics cookies</strong>: these are cookies which make it possible to collect in an aggregated, and therefore anonymous, manner information concerning user navigation. </p><p><strong>Third-party analysis cookies</strong>: these cookies allow our site to record your browsing preferences and therefore improve your user experience.</p><p><strong>Advertising cookies</strong>: these are cookies that allow us to show you the advertisements most suited to your interests. </p>",
@@ -340,6 +350,7 @@
     "contactUs": "<h3><square>5</square> Contact us</h3><br/><p>We remind you that you have the right to lodge a complaint with the supervisory authority, the Commission Nationale de l’Informatique et des Libertés (CNIL).</p><p>The appointment of a Data Protection Officer demonstrates Weil & Associés commitment to the protection, security and confidentiality of its customers's Personal Data.If you have any questions about this Cookie Policy or the data processing activities implemented by Weil & Associés, or if you wish to exercise any of your rights under the GDPR, please contact:</p><ul><li><blue>By mail :</blue><nl/></li><ul><li>Weil & Associés</li><li>26 Avenue de la Grande Armée</li><li>75017 Paris, France</li></ul><li>By email :</li><ul><li><a href='mailto:info@weil-paris.fr'>info@weil-paris.fr</a></li></ul></ul>"
   },
   "legalMentions": {
+    "pageDescriptionSEO": "View the legal mentions of Weil & Associés for detailed information about our legal identity, establishments, and other important details.",
     "title": "Legal Notice",
     "intro": "Under article 6 of law n°2004-575 of June 21, 2004 for the <blue>confidence in the digital economy</blue>, users of the Weil website are informed about the identity of the various parties involved in its implementation and follow-up.<nl/>The purpose of this site is to provide information concerning all of the company's activities. <blue>Weil & Associés</blue> endeavors to provide information on the https://weil-paris.fr/ website that is as accurate as possible. However, <blue>Weil & Associés</blue> cannot be held responsible for any omissions, inaccuracies or failure to update information, whether caused by <blue>Weil & Associés</blue> or by third-party partners supplying such information.<nl/>All the information offered on the site <a href='https://weil-paris.fr/'>https://weil-paris.fr/</a> are given for information purposes only, are not exhaustive, and are subject to change.",
     "juridicalInfo": "<h3><square>1.</square> Legal information</h3><br/><ul><li><strong>Company creation date:</strong> 04-12-1994</li><li><strong>Legal status :</strong> De facto partnership between natural persons</li><li><strong>Trade names:</strong> Weil & Associés</li><li><strong>Address :</strong> 26 AV DE LA GRANDE ARMEE 75017 PARIS</li><li><strong>SIREN:</strong> 394705750</li><li><strong>SIRET (seat):</strong> 39470575000021</li><li><strong>VAT number :</strong> FR44394705750</li><li><strong>Activity (NAF or APE code):</strong> Legal activities (6910Z)</li><li><strong>Collective agreement :</strong> Notary (IDCC 2205)</li><li><strong>Size of the company :</strong> 3 to 5 employees</li><li></li><strong>Host :</strong> Head office: 2 rue Kellermann - 59100 Roubaix - France. <li><strong>Publication manager:</strong> Bruno Weil – <a href='mailto:weil@weil-paris.fr'>bweil@weil-paris.fr</a> </li><li><strong>Webmaster: </strong> YODEV Company – <a href='mailto:yoann.andrieux@gmail.com'>yoann.andrieux@gmail.com</a></li> </ul>",
@@ -354,5 +365,20 @@
     "policyCookiesLinkHref": "/politique-cookies",
     "privacyPolicyLink": "Politique de Confidentialité",
     "privacyPolicyLinkHref": "/politique-confidentialite"
+  },
+  "admin": {
+    "pageDescriptionSEO": "Admin login page for Weil & Associés. Restricted access to authorized users only.",
+    "adminArticles": {
+      "title": "Articles",
+      "pageDescriptionSEO": "Admin page for managing Weil & Associés articles. Restricted access for editing and deleting articles."
+    },
+    "newArticle": {
+      "title": "New article",
+      "pageDescriptionSEO": "New article creation page for Weil & Associés. Restricted access for administrators to add content to the site."
+    },
+    "editArticle": {
+      "title": "Modify article",
+      "pageDescriptionSEO": "Article editing page for Weil & Associés administrators. Enables updating of published article content."
+    }
   }
 }

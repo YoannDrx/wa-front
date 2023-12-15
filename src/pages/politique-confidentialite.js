@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
+import Head from "next/head";
 
 export default function PolitiqueConfidentialite() {
   const { i18n } = useTranslation();
@@ -49,6 +50,10 @@ export default function PolitiqueConfidentialite() {
 
   return (
     <div>
+      <Head>
+        <title>{t("privacyPolicy.title")}</title>
+        <meta name="description" content={t("privacyPolicy.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("privacyPolicy.title")} textKey={t("privacyPolicy.intro")} />
       <div className="container pb-12">
         {policySections.map((sectionKey, index) => (

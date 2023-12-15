@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import PageJumbo from "@/components/PageJumbo";
 import { useTranslation } from "react-i18next";
 import CareerContactForm from "@/components/CareerContactForm";
+import Head from "next/head";
 
 export default function Career() {
   const { t } = useTranslation();
 
   return (
     <div>
+      <Head>
+        <title>{t("Carrière")}</title>
+        <meta name="description" content={t("career.pageDescriptionSEO")} />
+      </Head>
       <div className="container pb-12 pt-24">
         {/* Bloc 1 */}
         <div className="flex flex-wrap md:flex-nowrap sm:pb-12 gap-8 justify-center">

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
+import Head from "next/head";
 export default function MentionsLegales() {
   const { t } = useTranslation();
   useEffect(() => {}, []);
@@ -38,8 +39,11 @@ export default function MentionsLegales() {
 
   return (
     <div>
+      <Head>
+        <title>{t("legalMentions.title")}</title>
+        <meta name="description" content={t("legalMentions.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("legalMentions.title")} textKey={"legalMentions.intro"} />
-
       <div className="container pb-12">
         {legalSections.map((sectionKey, index) => (
           <div className="mt-8" key={index}>

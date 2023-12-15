@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
+import Head from "next/head";
 
 export default function WhoWeAre() {
   const { i18n } = useTranslation();
@@ -10,6 +11,10 @@ export default function WhoWeAre() {
 
   return (
     <div>
+      <Head>
+        <title>{t("Qui sommes-nous")}</title>
+        <meta name="description" content={t("whoWeAre.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("whoWeAre.presentation")} textKey={t("whoWeAre.firmPresentation")} />
       <div className="container pb-12">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">

@@ -7,6 +7,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { useArticlesContext } from "../../contexts/ArticlesContext";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 export async function getStaticProps() {
   let articles = [];
@@ -62,6 +63,10 @@ function Home({ articles }) {
 
   return (
     <div>
+      <Head>
+        <title>{t("Accueil")}</title>
+        <meta name="description" content={t("home.pageDescriptionSEO")} />
+      </Head>
       <Jumbo />
       <div className="container py-20">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-24">

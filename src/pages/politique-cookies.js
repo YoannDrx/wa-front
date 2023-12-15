@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
+import Head from "next/head";
 
 export default function PolitiqueCookies() {
   const { i18n } = useTranslation();
@@ -47,6 +48,10 @@ export default function PolitiqueCookies() {
 
   return (
     <div>
+      <Head>
+        <title>{t("cookiesPolicy.title")}</title>
+        <meta name="description" content={t("cookiesPolicy.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("cookiesPolicy.title")} textKey={t("cookiesPolicy.intro")} />
 
       <div className="container pb-12">

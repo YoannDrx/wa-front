@@ -3,11 +3,16 @@ import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import { Trans, useTranslation } from "react-i18next";
+import Head from "next/head";
 
 export default function Contact() {
   const { t } = useTranslation();
   return (
     <div>
+      <Head>
+        <title>{t("Contact")}</title>
+        <meta name="description" content={t("contact.pageDescriptionSEO")} />
+      </Head>
       <div className="container mx-auto">
         <PageJumbo titleKey={t("contact.informationPratique")} />
         <div className="xl:flex  py-12">

@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import TeamCard from "@/components/TeamCard";
+import Head from "next/head";
 
 export default function Partners() {
   const { t } = useTranslation();
@@ -11,6 +12,10 @@ export default function Partners() {
 
   return (
     <div className="container mx-auto">
+      <Head>
+        <title>{t("Nos associés")}</title>
+        <meta name="description" content={t("partenaire.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} backgroundColor="#E4EDF1" />
       <div className="py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

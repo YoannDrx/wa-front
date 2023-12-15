@@ -4,6 +4,7 @@ import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { Trans, useTranslation } from "react-i18next";
+import Head from "next/head";
 
 const toCamelCase = (str) => {
   if (!str) {
@@ -28,6 +29,13 @@ const Member = () => {
 
   return (
     <div>
+      <Head>
+        <title>{memberData.name}</title>
+        <meta
+          name="description"
+          content={`${memberData.name}, ${memberData.title} - En savoir plus sur les compétences et l'expérience de notre partenaire chez Weil & Associés.`}
+        />
+      </Head>
       <PageJumbo titleKey={memberData.name} />
       <div className="container py-12 flex flex-col md:flex-row gap-8">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start mb-4 md:mb-0">

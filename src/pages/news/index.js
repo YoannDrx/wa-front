@@ -2,6 +2,7 @@ import ArticleCard from "@/components/ArticleCard";
 import PageJumbo from "@/components/PageJumbo";
 import Sidebar from "@/components/Sidebar";
 import axios from "axios";
+import Head from "next/head";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -27,6 +28,10 @@ export default function Blog({ articles }) {
 
   return (
     <div className="container mx-auto">
+      <Head>
+        <title>{t("Blog")}</title>
+        <meta name="description" content={t("blog.pageDescriptionSEO")} />
+      </Head>
       <PageJumbo titleKey={t("blog.articles")} />
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-64 p-4 md:mr-4 md:mb-4 mb-4 md:order-1" style={{ backgroundColor: "#E4EDF1" }}>
