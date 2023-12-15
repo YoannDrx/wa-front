@@ -44,12 +44,14 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Vérifier si le cookie de consentement existe
     const consentCookie = document.cookie.split("; ").find((row) => row.startsWith("CookieConsent="));
-
     if (consentCookie) {
-      // Si le cookie existe, le réinitialiser
-      document.cookie = "CookieConsent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      const consentValue = consentCookie.split("=")[1];
+      if (consentValue === "accepted") {
+        // Full access
+      } else if (consentValue === "declined") {
+        // No access
+      }
     }
 
     i18n.changeLanguage(router.locale);
@@ -100,8 +102,11 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           margin: "15px",
           textDecoration: "underline",
         }}
+        onAccept={() => {
+          document.cookie = "CookieConsent=accepted; max-age=31536000; path=/; samesite=lax"; // 1 an
+        }}
         onDecline={() => {
-          window.close();
+          document.cookie = "CookieConsent=declined; max-age=31536000; path=/; samesite=lax"; // 1 an
         }}>
         <Trans
           i18nKey="cookieConsent.message"
