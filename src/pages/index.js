@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Head from "next/head";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let articles = [];
   try {
     const response = await axios.get("/articles");

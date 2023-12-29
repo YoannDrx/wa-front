@@ -6,7 +6,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const articles = (await axios.get("/articles")).data;
   return { props: { articles } };
 }

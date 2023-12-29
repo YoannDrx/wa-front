@@ -3,7 +3,7 @@ import axios from "axios";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
 
-export async function getStaticProps({ params, locale }) {
+export async function getServerSideProps({ params, locale }) {
   const articles = (await axios.get("/articles")).data;
   return { props: { articles } };
 }
