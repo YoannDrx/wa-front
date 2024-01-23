@@ -153,7 +153,7 @@ h3 {
   justify-content: center;
 }
 
-.menu li > *{
+.menu li > * {
   border-radius: 0;
 }
 
@@ -163,7 +163,7 @@ h3 {
     border-bottom: #37749e 6px solid;
   }
 }
-.menu li > *:not(.underblueNav){
+.menu li > *:not(.underblueNav) {
   border-bottom: transparent 6px solid;
 }
 
@@ -181,6 +181,7 @@ h3 {
   }
 }
 
-.menu :where(li:not(.menu-title)>:not(ul):not(details):not(.menu-title)), .menu :where(li:not(.menu-title)>details>summary:not(.menu-title)){
+.menu :where(li:not(.menu-title) > :not(ul):not(details):not(.menu-title)),
+.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
   padding: 0.5rem 0.6rem;
 }
