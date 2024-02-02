@@ -3,6 +3,10 @@ import Button from "@/components/Button";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 
+const SERVICE_ID = "";
+const TEMPLATE_ID = "";
+const USER_ID = "";
+
 const ContactForm = () => {
   const { t } = useTranslation();
   const {
@@ -14,8 +18,20 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      console.log("Form Data:", data);
-      // TODO : emailjs ?
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      };
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.error("FAILED...", err);
+        }
+      );
+
       reset();
     } catch (error) {
       console.log("Erreur lors de l'envoi du formulaire :", error);
