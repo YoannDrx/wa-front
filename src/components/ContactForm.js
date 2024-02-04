@@ -2,10 +2,7 @@ import React from "react";
 import Button from "@/components/Button";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
-
-const SERVICE_ID = "";
-const TEMPLATE_ID = "";
-const USER_ID = "";
+import axios from 'axios';
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -16,23 +13,24 @@ const ContactForm = () => {
     reset,
   } = useForm();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const templateParams = {
+      /*const templateParams = {
         name: data.name,
         email: data.email,
         message: data.message,
-      };
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.error("FAILED...", err);
-        }
-      );
+      };*/
+      axios
+      .post("/contacts", e.target)
+      .then((response) => {
+        //setArticles(response.data);
+      })
+      .catch((error) => {
+        console.error("Error dsqdfg:", error);
+      });
 
-      reset();
+      // reset();
     } catch (error) {
       console.log("Erreur lors de l'envoi du formulaire :", error);
     }
@@ -46,7 +44,7 @@ const ContactForm = () => {
     <div className="py-10 flex justify-center">
       <div className="md:w-2/3 sm:w-2/3 xs:w-2/3">
         <h3 className="underblue text-white text-center mb-5">{t("contact.contactForm.restonEnContact")}</h3>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={onSubmit} id="contact-form">
           <div className="mb-4">
             <label className="block text-neutral-200 text-xs font-bold mb-2" htmlFor="name">
               {t("contact.contactForm.name")}
@@ -85,6 +83,7 @@ const ContactForm = () => {
               rows="4"></textarea>
             {errors.message && <span className="text-xs text-red-500">{errors.message.message}</span>}
           </div>
+          <input type='file' name='cv-file' />
           <div className="flex justify-end">
             <Button type="submit" className={"w-40"} color="primary">
               {t("Envoyer")}
