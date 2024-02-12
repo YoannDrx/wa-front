@@ -15,7 +15,7 @@ import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
 
 axios.defaults.baseURL =
-  process?.env?.NODE_ENV === "development" ? "http://localhost:3000/api" : "https://weil-paris.fr/api";
+  process?.env?.NODE_ENV === "development" ? "http://localhost:3000/api" : "https://www.weil-paris.fr/api";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
