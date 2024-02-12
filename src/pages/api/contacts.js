@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         break;
       case "POST":
         const form = new IncomingForm();
-        
+
         form.parse(req, (err, fields, files) => {
             if (err) {
               console.log(`5324 `, err);
@@ -38,7 +38,7 @@ export default async function handler(req, res) {
               
               const mailOptions = {
                 from: 'contact@weil-paris.fr',
-                to: 'zzz@yopmail.com',
+                to: 'bweil@weil-paris.fr',
                 subject: 'Nouveau message depuis le site',
                 text: `${email} ${name} ${message}`,
                 attachments: [
