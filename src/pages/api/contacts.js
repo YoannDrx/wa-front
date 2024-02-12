@@ -39,7 +39,7 @@ export default async function handler(req, res) {
 
               const mailOptions = {
                 from: 'contact@weil-paris.fr',
-                to: 'contact@weil-paris.fr',
+                to: 'benj.broche@gmail.com',
                 subject: 'Nouveau message depuis le site',
                 text: `${email} ${name} ${message}`,
                 attachments: [
