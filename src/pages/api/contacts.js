@@ -15,16 +15,15 @@ export default async function handler(req, res) {
         break;
       case "POST":
         const form = new IncomingForm();
-
+        
         form.parse(req, (err, fields, files) => {
             if (err) {
+              console.log(`5324 `, err);
                 res.status(500).json({ ok: false });
                 return;
               }
 
-              const { email, name, message } = fields;
-              const file = files['cv-file'][0];
-        
+              const { email, name, message } = fields;        
 
               const transporter = nodemailer.createTransport({
                 host: 'ssl0.ovh.net',
@@ -36,19 +35,20 @@ export default async function handler(req, res) {
                 }
               });
 
-
+              
               const mailOptions = {
                 from: 'contact@weil-paris.fr',
-                to: 'zzbbtt@yopmail.com',
+                to: 'zzz@yopmail.com',
                 subject: 'Nouveau message depuis le site',
                 text: `${email} ${name} ${message}`,
                 attachments: [
-                  {
-                    filename: file.originalFilename,
-                    path: file.filepath,
-                  }
+                  ...Object.keys(files).map(fileKey=>({
+                    filename: files[fileKey][0].originalFilename,
+                    path: files[fileKey][0].filepath,
+                  }))
                 ]
               };
+
 
               transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {

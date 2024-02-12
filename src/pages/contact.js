@@ -15,7 +15,6 @@ export default function Contact() {
       </Head>
       <div className="container mx-auto">
         <PageJumbo titleKey={t("contact.informationPratique")} />
-        <ContactForm />
         <div className="xl:flex  py-12">
           <div className="w-full lg:w-1/2 px-5">
             <h3 className="text-primary mb-4">{t("contact.commentNousTrouvez")} ?</h3>

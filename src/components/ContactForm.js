@@ -16,21 +16,14 @@ const ContactForm = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      /*const templateParams = {
-        name: data.name,
-        email: data.email,
-        message: data.message,
-      };*/
       axios
       .post("/contacts", e.target)
       .then((response) => {
-        //setArticles(response.data);
       })
       .catch((error) => {
         console.error("Error dsqdfg:", error);
       });
 
-      // reset();
     } catch (error) {
       console.log("Erreur lors de l'envoi du formulaire :", error);
     }

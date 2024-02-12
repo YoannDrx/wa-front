@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
+import axios from "axios";
 
 const CareerContactForm = () => {
   const { t } = useTranslation();
@@ -26,11 +27,16 @@ const CareerContactForm = () => {
   const uploadedCV = watch("cv");
   const uploadedLetter = watch("letter");
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
     try {
-      // TODO : emailjs ?
-      console.log(data);
-      reset();
+      axios
+      .post("/contacts", e.target)
+      .then((response) => {
+      })
+      .catch((error) => {
+        console.error("Error dsqdfg:", error);
+      });
     } catch (error) {
       console.log("Erreur lors de l'envoi du formulaire :", error);
     }
@@ -44,7 +50,7 @@ const CareerContactForm = () => {
     <div className="bg-primary p-8 ">
       <h2 className="mb-1">{t("career.career-contact-form.title")}</h2>
       <p className="text-white">{t("career.career-contact-form.text")}</p>
-      <form className="mt-4" onSubmit={handleSubmit(onSubmit)}>
+      <form className="mt-4" onSubmit={onSubmit} id="contact-form">
         <div className="mb-4">
           <input
             className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
@@ -74,9 +80,9 @@ const CareerContactForm = () => {
             className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
             type="text"
             placeholder={t("career.career-contact-form.placeholder.subject")}
-            {...register("subject", { required: requiredSubject })}
+            {...register("message", { required: requiredSubject })}
           />
-          {errors.subject && <span className="text-xs text-red-500">{errors.subject.message}</span>}
+          {errors.message && <span className="text-xs text-red-500">{errors.subject.message}</span>}
         </div>
         <div className="mb-4">
           <label className="block text-white mb-2">{t("career.career-contact-form.placeholder.cv")}</label>
