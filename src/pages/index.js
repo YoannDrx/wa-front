@@ -41,8 +41,9 @@ const Jumbo = () => {
               {t("Nous contacter")}
             </Button>
           </div>
-          <div className="flex-1">
-            <video ref={videoRef} src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted />
+          <div className="flex-1 relative">
+            {/* <video ref={videoRef} src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted /> */}
+            <Image src="/assets/home/cabinet.gif" width={0} height={0} alt="" className="w-full h-auto " />
           </div>
         </div>
       </div>
