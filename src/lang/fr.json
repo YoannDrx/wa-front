@@ -221,6 +221,24 @@
         ],
 
         "languages": ["Français", "Anglais", "Allemand"]
+      },
+      "francoisPenillard": {
+        "id": "francois-penillard",
+        "title": "Avocat (2019)",
+        "references": ["LL.M. (Mainz)"],
+        "name": "François PENILLARD",
+        "email": "fpenillard@weil-paris.fr",
+        "phone": "+33 (0)1 44 15 98 98",
+        "image": "/assets/team/francois-penillard.jpg",
+        "intro": "François intervient en droit des sociétés (opérations courantes et complexes), fusions-acquisitions, contentieux commercial et droit pénal des affaires. Il accompagne entreprises, dirigeants et actionnaires dans leurs enjeux les plus stratégiques : structuration d'opérations, gouvernance, gestion de crise, litiges complexes ou encore responsabilité pénale des acteurs économiques.<nl/>Après plusieurs expériences internationales, François a rejoint Weil & Associés en 2019 et été nommé associé en 2025. Son parcours universitaire binational – Master 2 et LL.M. en droit des affaires – lui permet d'évoluer avec aisance dans des environnements multiculturels et transnationaux.<nl/>Trilingue (français, anglais, allemand) et membre de plusieurs réseaux juridiques internationaux, sa double formation, combinée à une pratique quotidienne avec l'international, fait de lui un interlocuteur privilégié pour les groupes transfrontaliers, notamment dans des contextes sensibles ou à forts enjeux.<nl/>Porté par une approche rigoureuse et engagée, François cultive une vision du droit comme outil d'anticipation, de puissance et de clarté, dans un monde en constante transformation. Il s'intéresse de près aux mutations économiques, géopolitiques et technologiques — et en particulier à l'intelligence artificielle et à ses implications juridiques.",
+        "responsability": [
+          "Droit des sociétés et restructuration",
+          "Fusions & acquisitions",
+          "Contentieux commercial",
+          "Droit pénal des affaires",
+          "Litige entre associés"
+        ],
+        "languages": ["Français", "Anglais", "Allemand"]
       }
     }
   },
