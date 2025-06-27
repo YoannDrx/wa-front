@@ -223,6 +223,24 @@
           "Recht der internationalen Mobilität"
         ],
         "languages": ["Französisch", "Englisch", "Deutsch"]
+      },
+      "francoisPenillard": {
+        "id": "francois-penillard",
+        "title": "Rechtsanwalt (2019)",
+        "references": ["LL.M. (Mainz)"],
+        "name": "François PENILLARD",
+        "email": "fpenillard@weil-paris.fr",
+        "phone": "+33 (0)1 44 15 98 98",
+        "image": "/assets/team/francois-penillard.jpg",
+        "intro": "François ist in den Bereichen Gesellschaftsrecht (laufende und komplexe Transaktionen), Fusionen und Übernahmen, Handelsstreitigkeiten und Wirtschaftsstrafrecht tätig. Er begleitet Unternehmen, Geschäftsführer und Aktionäre bei ihren strategisch wichtigsten Herausforderungen: Strukturierung von Transaktionen, Governance, Krisenmanagement, komplexe Rechtsstreitigkeiten oder auch strafrechtliche Haftung von Wirtschaftsakteuren.<nl/>Nach mehreren internationalen Stationen kam François 2019 zu Weil & Associés und wurde 2025 zum Partner ernannt. Dank seines binationalen akademischen Werdegangs – Master 2 und LL.M. in Wirtschaftsrecht – ist er in der Lage, sich in multikulturellen und transnationalen Umgebungen mühelos zurechtzufinden.<nl/>Als dreisprachiger (Französisch, Englisch, Deutsch) und Mitglied mehrerer internationaler Rechtsnetzwerke ist er dank seiner doppelten Ausbildung und seiner täglichen internationalen Praxis ein bevorzugter Ansprechpartner für grenzüberschreitende Konzerne, insbesondere in sensiblen oder komplexen Kontexten.<nl/>Mit seinem rigorosen und engagierten Ansatz versteht François das Recht als Instrument der Vorausschau, der Stärke und der Klarheit in einer sich ständig verändernden Welt. Er interessiert sich besonders für wirtschaftliche, geopolitische und technologische Veränderungen – insbesondere für künstliche Intelligenz und ihre rechtlichen Implikationen.",
+        "responsability": [
+          "Gesellschaftsrecht und Umstrukturierung",
+          "Mergers und Acquisitions",
+          "Handelsrecht",
+          "Wirtschaftsstrafrecht",
+          "Gesellschafterstreitigkeiten"
+        ],
+        "languages": ["Französisch", "Englisch", "Deutsch"]
       }
     }
   },
