@@ -222,6 +222,24 @@
           "International Mobility Law"
         ],
         "languages": ["French", "English", "German"]
+      },
+      "francoisPenillard": {
+        "id": "francois-penillard",
+        "title": "Lawyer (2019)",
+        "references": ["LL.M. (Mainz)"],
+        "name": "François PENILLARD",
+        "email": "fpenillard@weil-paris.fr",
+        "phone": "+33 (0)1 44 15 98 98",
+        "image": "/assets/team/francois-penillard.jpg",
+        "intro": "François practices corporate law (day-to-day and complex transactions), mergers and acquisitions, commercial litigation, and criminal business law. He advises companies, executives, and shareholders on their most strategic issues, including transaction structuring, governance, crisis management, complex litigation, and criminal liability of economic actors.<nl/>After gaining international experience, François joined Weil & Associés in 2019 and was appointed partner in 2025. His dual academic background—a Master's degree and LL.M. in business law—enables him to work comfortably in multicultural and transnational environments.<nl/>Trilingual (French, English, German) and a member of several international legal networks, his dual training, combined with his daily international practice, makes him a privileged contact for cross-border groups, particularly in sensitive or high-stakes contexts.<nl/>Driven by a rigorous and committed approach, François cultivates a vision of law as a tool for anticipation, power, and clarity in a constantly changing world. He is closely interested in economic, geopolitical, and technological changes—particularly artificial intelligence and its legal implications.",
+        "responsability": [
+          "Corporate law and restructuring",
+          "Mergers and acquisitions",
+          "Commercial litigation",
+          "Criminal business law",
+          "Disputes between partners"
+        ],
+        "languages": ["French", "English", "German"]
       }
     }
   },
