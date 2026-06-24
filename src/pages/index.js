@@ -37,9 +37,18 @@ const Jumbo = () => {
           <div className="flex-1">
             <h1>{t("home.votreConfiance")}</h1>
             <p>{t("home.heroSubtitle")}</p>
-            <Button href={"/contact"} color="primary">
-              {t("Nous contacter")}
-            </Button>
+            <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+              <Button href={"/contact"} color="primary">
+                {t("Nous contacter")}
+              </Button>
+              <Image
+                src="/assets/home/best-law-firms-france-2026.png"
+                width={1921}
+                height={2246}
+                alt="Best Law Firms France 2026"
+                className="h-auto w-32 sm:w-40"
+              />
+            </div>
           </div>
           <div className="flex-1 relative">
             {/* <video ref={videoRef} src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted /> */}
