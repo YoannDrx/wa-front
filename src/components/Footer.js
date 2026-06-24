@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   const expertiseItems = t("expertise.expertiseList", { returnObjects: true });
 
@@ -48,7 +49,9 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className="bg-[#113248] text-center text-white p-5">{t("footer.allRightsReserved")}</div>
+      <div className="bg-[#113248] text-center text-white p-5">
+        {t("footer.allRightsReserved", { year: currentYear })}
+      </div>
     </div>
   );
 };

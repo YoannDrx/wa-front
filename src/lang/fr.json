@@ -55,7 +55,7 @@
     "Prix & Reconnaissance": "Prix & Reconnaissance",
     "Rapport sur le droit des sociétés 2022": "Rapport sur le droit des sociétés 2022",
     "Blog": "Blog",
-    "allRightsReserved": "2023 Weil & Associés. Informations légales. Tous droits réservés."
+    "allRightsReserved": "{{year}} Weil & Associés. Informations légales. Tous droits réservés."
   },
   "home": {
     "pageDescriptionSEO": "Bienvenue chez Weil & Associés : découvrez notre approche experte en matière juridique et notre engagement envers l'excellence et l'innovation. Visitez notre site pour en savoir plus.",
