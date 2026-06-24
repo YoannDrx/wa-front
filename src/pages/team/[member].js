@@ -15,6 +15,17 @@ const toCamelCase = (str) => {
   });
 };
 
+const recognitionLogos = {
+  brunoWeil: {
+    src: "/assets/team/best-lawyers-bruno-weil-2027.png",
+    alt: "Bruno Weil recognized by Best Lawyers 2027",
+  },
+  mathildeHouetWeil: {
+    src: "/assets/team/best-lawyers-mathilde-houet-weil-2027.png",
+    alt: "Mathilde Houet Weil recognized by Best Lawyers 2027",
+  },
+};
+
 const Member = () => {
   const { t } = useTranslation();
   const router = useRouter();
@@ -22,6 +33,7 @@ const Member = () => {
 
   const memberKey = toCamelCase(member);
   const memberData = t(`partenaire.members.${memberKey}`, { returnObjects: true });
+  const recognitionLogo = recognitionLogos[memberKey];
 
   if (!memberData || !memberData.name) {
     return <div />;
@@ -57,6 +69,18 @@ const Member = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 text-left">
+          {recognitionLogo && (
+            <div className="mb-6 flex justify-end">
+              <Image
+                src={recognitionLogo.src}
+                alt={recognitionLogo.alt}
+                width={3000}
+                height={908}
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="h-auto w-full max-w-md"
+              />
+            </div>
+          )}
           <h2 className="text-primary mb-1">{memberData.title}</h2>
           <p className="text-xs text-gray-500">{memberData.label}</p>
           <div className="bg-gray-200 py-4 px-4">
