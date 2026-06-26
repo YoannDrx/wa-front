@@ -11,16 +11,12 @@ const getRequiredEnv = (key) => {
 };
 
 const getSupabaseUrl = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_URL");
-const getSupabaseAnonKey = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY");
+const getSupabaseApiKey = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_KEY");
 
-export const createSupabaseBrowserClient = () => createClient(getSupabaseUrl(), getSupabaseAnonKey());
+export const createSupabaseBrowserClient = () => createClient(getSupabaseUrl(), getSupabaseApiKey());
 
-export const createSupabaseAuthClient = () => createClient(getSupabaseUrl(), getSupabaseAnonKey());
+export const createSupabaseAuthClient = () => createClient(getSupabaseUrl(), getSupabaseApiKey());
 
-export const createSupabaseAdminClient = () => createClient(getSupabaseUrl(), getRequiredEnv("SUPABASE_SERVICE_ROLE_KEY"));
+export const createSupabaseAdminClient = () => createClient(getSupabaseUrl(), getSupabaseApiKey());
 
-export const createSupabaseServerClient = () => {
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-  return createClient(getSupabaseUrl(), serviceRoleKey || getSupabaseAnonKey());
-};
+export const createSupabaseServerClient = () => createClient(getSupabaseUrl(), getSupabaseApiKey());

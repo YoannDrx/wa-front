@@ -62,19 +62,20 @@ export default async function handler(req, res) {
     const name = getFieldValue(fields, "name");
     const subject = getFieldValue(fields, "subject") || "Nouveau message depuis le site";
     const message = getFieldValue(fields, "message");
+    const smtpUser = getRequiredEnv("SMTP_USER");
 
     const transporter = nodemailer.createTransport({
       host: getRequiredEnv("SMTP_HOST"),
       port: Number(getRequiredEnv("SMTP_PORT")),
       secure: Number(getRequiredEnv("SMTP_PORT")) === 465,
       auth: {
-        user: getRequiredEnv("SMTP_USER"),
+        user: smtpUser,
         pass: getRequiredEnv("SMTP_PASSWORD"),
       },
     });
 
     await transporter.sendMail({
-      from: getRequiredEnv("CONTACT_FROM_EMAIL"),
+      from: smtpUser,
       to: getRequiredEnv("CONTACT_TO_EMAIL"),
       replyTo: email || undefined,
       subject,
