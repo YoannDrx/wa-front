@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { useState, useEffect, useCallback } from "react";
+import { createSupabaseBrowserClient } from "@/services/supabase";
 import { useRouter } from "next/router";
 import Button from "@/components/Button";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
 
-const supabase = createClient(
-  "https://ovnsgrllmcmvhjqxkdga.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92bnNncmxsbWNtdmhqcXhrZGdhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5OTI3OTYzNywiZXhwIjoyMDE0ODU1NjM3fQ.FUaj167g_UmIlYRQ0xCN-Dd8nrw1bR2N-gdF0mXjzuE"
-);
+const supabase = createSupabaseBrowserClient();
 
 supabase.auth.onAuthStateChange((event, session) => {
   // writes the cookies to a cookie on our own domain. required because cookie gets set to supabase domain by default
@@ -30,9 +27,9 @@ export default function New() {
   const router = useRouter();
   const { t } = useTranslation();
 
-  const onLogin = () => {
+  const onLogin = useCallback(() => {
     router.push("/admin/articles");
-  };
+  }, [router]);
 
   useEffect(() => {
     (async () => {
@@ -41,7 +38,7 @@ export default function New() {
         onLogin();
       }
     })();
-  }, []);
+  }, [onLogin]);
 
   const handleLogin = async () => {
     const { error } = await supabase.auth.signInWithPassword({ email, password });

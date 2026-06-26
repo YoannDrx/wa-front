@@ -1,135 +1,248 @@
 import Image from "next/image";
-import { Button, Drawer, Dropdown, Menu, Navbar } from "react-daisyui";
-import { useState } from "react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
-import { readableLocale } from "../services/i18n";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useTranslation } from "react-i18next";
+import DE from "@/components/lang/DE";
 import FR from "@/components/lang/FR";
 import UK from "@/components/lang/UK";
-import DE from "@/components/lang/DE";
+import { readableLocale } from "../services/i18n";
 
-const actualPathname = (pathname, query) => {
-  const actualPath = pathname.replace(/\[([^\]]+)\]/g, (_, paramName) => query[paramName] || "");
+const menuData = [
+  { href: "/", label: "Accueil" },
+  { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
+  { href: "/team/partenaires", label: "Nos associés" },
+  { href: "/expertise", label: "Expertise" },
+  { href: "/carriere", label: "Carrière" },
+  { href: "/news", label: "News" },
+  { href: "/contact", label: "Contact" },
+];
 
-  return actualPath;
+const languages = [
+  { locale: "fr", label: "Français", icon: FR },
+  { locale: "en", label: "English", icon: UK },
+  { locale: "de", label: "Deutsch", icon: DE },
+];
+
+const actualPathname = (pathname, query) => pathname.replace(/\[([^\]]+)\]/g, (_, paramName) => query[paramName] || "");
+
+const getLocalizedHref = ({ locale, pathname, query, t }) => actualPathname(t(pathname, { lng: locale }), query);
+
+const HeaderLogo = () => (
+  <Link href="/" className="inline-flex shrink-0 items-center" aria-label="Weil & Associés - Accueil">
+    <Image
+      src="/assets/logo.png"
+      alt="Weil associés avocats"
+      width={162}
+      height={70}
+      sizes="162px"
+      className="h-auto w-[132px] md:w-[150px]"
+      priority
+    />
+  </Link>
+);
+
+const MenuItemLink = ({ href, label, onNavigate, mobile = false }) => {
+  const router = useRouter();
+  const { t } = useTranslation();
+  const isActive = router.pathname === href;
+
+  return (
+    <Link
+      href={t(href)}
+      onClick={onNavigate}
+      className={[
+        "relative font-semibold transition-colors duration-200",
+        mobile ? "text-3xl text-white hover:text-light-blue" : "text-[15px] text-neutral hover:text-primary",
+        isActive
+          ? mobile
+            ? "text-light-blue after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-full after:bg-light-blue"
+            : "text-primary after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-full after:bg-primary"
+          : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}>
+      {t(label)}
+    </Link>
+  );
 };
 
-const LangMenu = () => {
+const LanguageLinks = ({ mobile = false, onNavigate }) => {
   const router = useRouter();
-
   const { t } = useTranslation();
 
   return (
-    <Dropdown className="p-0" hover vertical="bottom">
-      <Dropdown.Toggle button={false} className="px-4 z-50">
+    <div className={mobile ? "mt-10 flex flex-wrap gap-3" : "flex flex-col gap-1 p-2"}>
+      {languages.map(({ locale, label, icon: Icon }) => (
+        <Link
+          key={locale}
+          href={getLocalizedHref({ locale, pathname: router.pathname, query: router.query, t })}
+          locale={locale}
+          onClick={onNavigate}
+          className={[
+            "inline-flex items-center gap-2 transition-colors",
+            mobile
+              ? "border border-white/30 px-4 py-3 text-sm text-white hover:border-white hover:bg-white hover:text-primary"
+              : "px-3 py-2 text-sm text-neutral hover:bg-light-blue hover:text-primary",
+            router.locale === locale ? "font-bold" : "",
+          ]
+            .filter(Boolean)
+            .join(" ")}>
+          <Icon id={`lang-${locale}`} />
+          {label}
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+const DesktopLanguageMenu = () => {
+  const router = useRouter();
+
+  return (
+    <details className="group relative">
+      <summary className="flex cursor-pointer list-none items-center gap-2 px-3 py-2 text-sm font-semibold text-neutral transition-colors hover:text-primary">
         {readableLocale(router.locale)}
-      </Dropdown.Toggle>
-      <Dropdown.Menu className="z-50">
-        <Link href={actualPathname(t(router.pathname, { lng: "fr" }), router.query)} locale="fr" className="p-2 gap-2 flex">
-          <FR id={354816541} /> Français
-        </Link>
-        <Link href={actualPathname(t(router.pathname, { lng: "en" }), router.query)} locale="en" className="p-2 gap-2 flex">
-          <UK id={35481645622} /> English
-        </Link>
-        <Link href={actualPathname(t(router.pathname, { lng: "de" }), router.query)} locale="de" className="p-2 gap-2 flex">
-          <DE id={354816683} /> Deutsch
-        </Link>
-      </Dropdown.Menu>
-    </Dropdown>
+        <span aria-hidden="true" className="text-xs transition-transform group-open:rotate-180">
+          ▾
+        </span>
+      </summary>
+      <div className="absolute right-0 top-full z-40 mt-2 min-w-44 border border-light-blue bg-white shadow-xl">
+        <LanguageLinks />
+      </div>
+    </details>
   );
 };
 
-const MenuItemLink = ({ href, label }) => {
-  const router = useRouter();
-  const { t } = useTranslation();
+const MobileOverlay = ({ open, onClose }) => {
+  const shouldReduceMotion = useReducedMotion();
+  const overlayTransition = shouldReduceMotion ? { duration: 0 } : { duration: 0.25, ease: "easeOut" };
+  const itemTransition = shouldReduceMotion ? { duration: 0 } : { duration: 0.35, ease: "easeOut" };
 
   return (
-    <Menu.Item>
-      <Link href={t(href)} className={`font-semibold text-lg ${router.pathname === href ? "underblueNav" : ""}`}>
-        {t(label)}
-      </Link>
-    </Menu.Item>
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          id="mobile-navigation"
+          className="fixed inset-0 z-50 overflow-y-auto bg-wa-deep text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={overlayTransition}>
+          <div className="container flex min-h-dvh flex-col py-6">
+            <div className="flex items-center justify-between">
+              <Link href="/" onClick={onClose} className="inline-flex" aria-label="Weil & Associés - Accueil">
+                <Image src="/assets/logo_white.png" alt="Weil associés avocats" width={168} height={67} className="h-auto w-36" />
+              </Link>
+              <button
+                type="button"
+                onClick={onClose}
+                className="inline-flex h-12 w-12 items-center justify-center border border-white/40 text-white transition-colors hover:bg-white hover:text-primary"
+                aria-label="Fermer le menu">
+                <span aria-hidden="true" className="text-3xl leading-none">
+                  ×
+                </span>
+              </button>
+            </div>
+
+            <nav aria-label="Navigation mobile" className="flex flex-1 flex-col justify-center py-12">
+              <motion.div
+                className="flex flex-col gap-7"
+                initial="closed"
+                animate="open"
+                variants={{
+                  open: { transition: { staggerChildren: shouldReduceMotion ? 0 : 0.045 } },
+                  closed: {},
+                }}>
+                {menuData.map((item) => (
+                  <motion.div
+                    key={item.href}
+                    variants={{
+                      closed: { opacity: 0, y: shouldReduceMotion ? 0 : 14 },
+                      open: { opacity: 1, y: 0, transition: itemTransition },
+                    }}>
+                    <MenuItemLink {...item} mobile onNavigate={onClose} />
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              <LanguageLinks mobile onNavigate={onClose} />
+            </nav>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
-const MenuItems = () => {
-  const { t } = useTranslation();
-  const menuData = [
-    { href: "/", label: "Accueil" },
-    { href: "/qui-sommes-nous", label: "Qui sommes-nous" },
-    { href: "/team/partenaires", label: "Nos associés" },
-    { href: "/expertise", label: "Expertise" },
-    { href: "/carriere", label: "Carrière" },
-    { href: "/news", label: "News" },
-    { href: "/contact", label: "Contact" },
-  ];
+export default function Header({ children, light = false }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+
+  const closeMenu = () => setIsMenuOpen(false);
+  const toggleMenu = () => setIsMenuOpen((current) => !current);
+
+  useEffect(() => {
+    if (!isMenuOpen) return undefined;
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", closeMenu);
+
+    return () => {
+      router.events.off("routeChangeStart", closeMenu);
+    };
+  }, [router.events]);
 
   return (
     <>
-      {menuData.map((item, index) => (
-        <MenuItemLink key={index} {...item} />
-      ))}
-    </>
-  );
-};
+      <header className={`border-b border-light-blue bg-white/95 ${light ? "text-white" : "text-base-content"}`}>
+        <div className="container flex min-h-20 items-center justify-between gap-6 py-3">
+          <HeaderLogo />
 
-export default function Header({ children, light = false, ...args }) {
-  const [visible, setVisible] = useState(false);
+          <nav aria-label="Navigation principale" className="hidden flex-1 items-center justify-end gap-6 lg:flex">
+            <div className="flex items-center gap-5">
+              {menuData.map((item) => (
+                <MenuItemLink key={item.href} {...item} />
+              ))}
+            </div>
+            <DesktopLanguageMenu />
+          </nav>
 
-  const toggleVisible = () => {
-    setVisible(!visible);
-  };
-
-  return (
-    <Drawer
-      {...args}
-      open={visible}
-      onClickOverlay={toggleVisible}
-      side={
-        <Menu className={`bg-base-100  ${light ? "text-white" : "text-base-content"}`}>
-          <MenuItems />
-          <LangMenu />
-        </Menu>
-      }>
-      <div>
-        <div>
-          <Navbar className={`container ${light ? "text-white" : "text-base-content"}`}>
-            <div className="flex-none lg:hidden">
-              <Button shape="square" color="ghost" onClick={toggleVisible}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="inline-block w-6 h-6 stroke-current">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </Button>
-            </div>
-            <div className="flex-none px-2 mx-2">
-              <Link href={"/"}>
-              <Image
-                  src={"/assets/logo.png"}
-                  alt={"Weil associés avocats"}
-                  width="0"
-                  height="0"
-                  sizes="100vw"
-                  className="w-[130px] h-auto"
-                  placeholder="blur"
-                  blurDataURL={"/assets/logo.png"}
-                />
-              </Link>
-            </div>
-            <div className="flex-1 hidden lg:flex flex-row justify-between">
-              <Menu horizontal={true}>
-                <MenuItems />
-              </Menu>
-              <LangMenu />
-            </div>
-          </Navbar>
+          <button
+            type="button"
+            onClick={toggleMenu}
+            className="inline-flex h-12 w-12 items-center justify-center border border-primary text-primary transition-colors hover:bg-primary hover:text-white lg:hidden"
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation">
+            <span className="sr-only">{isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}</span>
+            <span aria-hidden="true" className="flex w-6 flex-col gap-1.5">
+              <span className="h-0.5 w-full bg-current" />
+              <span className="h-0.5 w-full bg-current" />
+              <span className="h-0.5 w-full bg-current" />
+            </span>
+          </button>
         </div>
-      </div>
+      </header>
+
+      <MobileOverlay open={isMenuOpen} onClose={closeMenu} />
       {children}
-    </Drawer>
+    </>
   );
 }

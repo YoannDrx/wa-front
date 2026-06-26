@@ -1,6 +1,6 @@
 import ArticleHomeCard from "@/components/ArticleHomeCard";
 import Button from "@/components/Button";
-import axios from "axios";
+import { apiClient } from "@/services/apiClient";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { Trans, useTranslation } from "react-i18next";
@@ -12,7 +12,7 @@ import Head from "next/head";
 export async function getServerSideProps() {
   let articles = [];
   try {
-    const response = await axios.get("/articles");
+    const response = await apiClient.get("/articles");
     articles = response.data;
   } catch (error) {
     console.error("Error fetching articles:", error);
@@ -33,11 +33,11 @@ const Jumbo = () => {
   return (
     <div className="jumbo-background">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row justify-between items-center pt-24 pb-36 gap-24">
+        <div className="flex flex-col items-center justify-between gap-12 py-16 md:py-24 xl:flex-row xl:gap-24">
           <div className="flex-1">
-            <h1>{t("home.votreConfiance")}</h1>
-            <p>{t("home.heroSubtitle")}</p>
-            <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+            <h1 className="max-w-3xl">{t("home.votreConfiance")}</h1>
+            <p className="max-w-2xl text-lg text-white/90">{t("home.heroSubtitle")}</p>
+            <div className="flex flex-col items-start gap-6 pt-2 sm:flex-row sm:items-center">
               <Button href={"/contact"} color="primary">
                 {t("Nous contacter")}
               </Button>
@@ -46,18 +46,20 @@ const Jumbo = () => {
                 width={1921}
                 height={2246}
                 alt="Best Law Firms France 2026"
-                className="h-auto w-32 sm:w-40"
+                className="h-auto w-28 sm:w-36"
+                priority
               />
             </div>
           </div>
-          <div className="flex-1 relative">
+          <div className="relative w-full flex-1 overflow-hidden shadow-2xl ring-1 ring-white/10">
             {/* <video ref={videoRef} src="/assets/home/cabinet.mp4" controls={false} loop autoPlay muted /> */}
             <Image
               src="/assets/home/cabinet.gif"
-              width={0}
-              height={0}
+              width={784}
+              height={440}
               alt="video Paris Berlin New-York"
-              className="w-full h-auto "
+              className="h-auto w-full"
+              priority
             />
           </div>
         </div>
@@ -84,32 +86,32 @@ function Home({ articles }) {
         <meta name="description" content={t("home.pageDescriptionSEO")} />
       </Head>
       <Jumbo />
-      <div className="container py-20">
-        <div className="flex flex-col xl:flex-row justify-between items-center gap-24">
+      <div className="container py-16 md:py-20">
+        <div className="flex flex-col items-center justify-between gap-12 xl:flex-row xl:gap-24">
           <div className="flex-1">
-            <div className="flex gap-2">
+            <div className="grid w-full grid-cols-3 gap-2">
               <Image
                 src={"/assets/home/berlin.jpg"}
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-[200px] h-auto"
+                width={203}
+                height={531}
+                sizes="(min-width: 1280px) 200px, 30vw"
+                className="h-auto w-full object-cover"
                 alt="Avocat Berlin"
               />
               <Image
                 src={"/assets/home/paris.jpg"}
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-[200px] h-auto"
+                width={203}
+                height={531}
+                sizes="(min-width: 1280px) 200px, 30vw"
+                className="h-auto w-full object-cover"
                 alt="Avocat Paris"
               />
               <Image
                 src={"/assets/home/nyc.jpg"}
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-[200px] h-auto"
+                width={202}
+                height={531}
+                sizes="(min-width: 1280px) 200px, 30vw"
+                className="h-auto w-full object-cover"
                 alt="Avocat New York City"
               />
             </div>
@@ -117,7 +119,7 @@ function Home({ articles }) {
           <div className="flex-1">
             <h2 className="text-center underblue">{t("home.presentation")}</h2>
             <div className="flex flex-col items-center justify-center">
-              <p className="px-4">
+              <p className="px-0 leading-7 text-neutral/90 md:px-4">
                 <Trans
                   i18nKey="home.home1"
                   components={{
@@ -144,16 +146,16 @@ function Home({ articles }) {
         </div>
       </div>
       <div className="bg-[url('/assets/home/rectangle29.png')] bg-cover">
-        <div className="container py-10">
-          <div className="flex flex-col lg:flex-row xl:flex-row justify-between items-center">
-            <div className="lg:pl-24 ">
+        <div className="container py-14 md:py-16">
+          <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
+            <div className="lg:pl-24">
               <div>
                 <h2>{t("home.further")}.</h2>
                 <h2>{t("home.smarter")}.</h2>
               </div>
               <h2 className="text-primary">{t("home.swiftly")}.</h2>
             </div>
-            <div className="lg:pl-24">
+            <div className="max-w-2xl leading-7 lg:pl-24">
               <Trans
                 i18nKey="home.home2"
                 components={{
@@ -197,30 +199,35 @@ function Home({ articles }) {
 
       {/* End Articles Section */}
 
-      <div className="container py-20">
+      <div className="container py-16 md:py-20">
         <h2 className="text-center underblue">{t("home.organisation")}</h2>
-        <div className="flex justify-evenly items-center">
+        <div className="flex flex-col items-center justify-evenly gap-6 sm:flex-row">
           <Link
             href="https://www.innangard.global/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:shadow-lg p-8 transition-shadow duration-300">
             <Image
               src={"/assets/home/logo-innangard.png"}
               alt={"logo-innangard"}
               className="w-72 h-auto"
-              width={0}
-              height={0}
-              sizes="100vw"
+              width={676}
+              height={200}
+              sizes="288px"
             />
           </Link>
-          <Link href="https://irglobal.com/" target="_blank" className="hover:shadow-lg p-8  transition-shadow duration-300">
+          <Link
+            href="https://irglobal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:shadow-lg p-8 transition-shadow duration-300">
             <Image
               src={"/assets/home/logo-ir-global.png"}
               alt={"logo-ir-global"}
               className="w-52 h-auto"
-              width={0}
-              height={0}
-              sizes="100vw"
+              width={349}
+              height={170}
+              sizes="208px"
             />
           </Link>
         </div>

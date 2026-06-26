@@ -49,11 +49,19 @@ const Member = () => {
         />
       </Head>
       <PageJumbo titleKey={memberData.name} />
-      <div className="container py-12 flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start mb-4 md:mb-0">
-          <div className="relative w-full">
-            <Image src={memberData.image} alt={`${memberData.name}`} width={600} height={1200} layout="responsive" />
-            <div className="bg-gray-800 text-gray-300 w-full flex justify-center flex-col items-left">
+      <div className="container grid gap-8 py-12 md:grid-cols-2">
+        <div className="mb-4 flex w-full flex-col items-center md:mb-0 md:items-start">
+          <div className="w-full overflow-hidden shadow-lg">
+            <div className="relative aspect-[2/3] w-full">
+              <Image
+                src={memberData.image}
+                alt={`${memberData.name}`}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="flex w-full flex-col justify-center bg-gray-800 text-gray-300">
               <div className="mx-8">
                 <h4 className="leftblue mt-4 text-2xl">{t("partenaire.contact")}</h4>
                 <div className="my-4">
@@ -68,7 +76,7 @@ const Member = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 text-left">
+        <div className="w-full text-left">
           {recognitionLogo && (
             <div className="mb-6 flex justify-end">
               <Image

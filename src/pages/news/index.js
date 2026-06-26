@@ -1,13 +1,13 @@
 import ArticleCard from "@/components/ArticleCard";
 import PageJumbo from "@/components/PageJumbo";
 import Sidebar from "@/components/Sidebar";
-import axios from "axios";
+import { apiClient } from "@/services/apiClient";
 import Head from "next/head";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export async function getServerSideProps() {
-  const articles = (await axios.get("/articles")).data;
+  const articles = (await apiClient.get("/articles")).data;
   return { props: { articles } };
 }
 

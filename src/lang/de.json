@@ -27,6 +27,12 @@
     "requiredCV": "Bitte fügen Sie Ihren Lebenslauf bei (.pdf/.doc/.docx)",
     "requiredLetter": "Bitte fügen Sie ein Anschreiben bei (.pdf/.doc/.docx)"
   },
+  "formStatus": {
+    "sending": "Wird gesendet...",
+    "success": "Ihre Nachricht wurde gesendet.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail.",
+    "optionalAttachment": "Optionale Anlage"
+  },
   "footer": {
     "Pratique Juridique": "Rechtspraxis",
     "À propos de notre cabinet": "ÜBER UNS",
@@ -262,6 +268,13 @@
     "informationPratique": "Praktische Information",
     "commentNousTrouvez": "So finden Sie uns",
     "info-contact": "Unsere Büros befinden sich in der 26, Avenue de la Grande Armée, Paris 17e, nur wenige Schritte vom L'Etoile entfernt. Tiefgaragen sind auf der Avenue Carnot und der Avenue Foch leicht zugänglich.<nl/>Die Metrostation ARGENTINE (Linie 1) befindet sich in der Nähe. Die <bold>RER-Station Charles de Gaulle Etoile</bold> ist nur 5 Minuten zu Fuß entfernt.",
+    "contactForm": {
+      "restonEnContact": "Kontakt aufnehmen",
+      "name": "Name",
+      "email": "Email",
+      "message": "Nachricht",
+      "placeholderMessage": "Schreiben Sie hier Ihre Nachricht"
+    },
     "Aéroport Charles de Gaulle": "Flughafen Charles de Gaulle",
     "Taxi (30 minutes)": "Taxi (45 Minuten)",
     "Aéroport d'Orly": "Flughafen Orly ",
