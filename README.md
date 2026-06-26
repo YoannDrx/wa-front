@@ -16,19 +16,12 @@ The project runs on Next.js Pages Router. Keep dependency upgrades on a dedicate
 
 ## Environment variables
 
-Copy `.env.example` to `.env.local` and fill the required values:
+Copy `.env.example` to `.env.local` and fill the required values. The project uses two categories of variables:
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `SUPABASE_SERVICE_ROLE_KEY`
-- `SMTP_HOST`
-- `SMTP_PORT`
-- `SMTP_USER`
-- `SMTP_PASSWORD`
-- `CONTACT_FROM_EMAIL`
-- `CONTACT_TO_EMAIL`
+- Public (`NEXT_PUBLIC_*`, deliberately included in the browser bundle): `NEXT_PUBLIC_API_URL`, `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+- Server only (contact form and article administration): `SUPABASE_SERVICE_ROLE_KEY`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`.
 
-Security note: if a private key or SMTP password was previously committed or shared, rotate it in the provider dashboard before deploying.
+On Vercel, system environment variables are enabled. The application therefore uses `VERCEL_URL` for server-side calls to its own `/api` routes. A legacy `NEXT_PUBLIC_API_URL` pointing to Supabase is ignored server-side, preventing those calls from being sent to Supabase by mistake.
 
 ## i18n
 To add a new language : 
