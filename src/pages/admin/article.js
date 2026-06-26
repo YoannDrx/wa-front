@@ -2,9 +2,8 @@ import FR from "@/components/lang/FR";
 import UK from "@/components/lang/UK";
 import DE from "@/components/lang/DE";
 
-import { Input, Textarea } from "react-daisyui";
 import Button from "@/components/Button";
-import axios from "axios";
+import { apiClient } from "@/services/apiClient";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
@@ -18,11 +17,13 @@ export default function NewArticle(params) {
     const formData = new FormData(e.target);
     const formProps = Object.fromEntries(formData);
 
-    let { data, error } = await axios.post("/articles", formProps);
+    let { data, error } = await apiClient.post("/articles", formProps);
     if (!error) {
       router.push("/admin/articles");
     }
   };
+
+  const fieldClassName = "w-full border border-gray-300 bg-white p-3 focus:border-primary focus:outline-none";
 
   return (
     <div className="container py-12">
@@ -37,50 +38,50 @@ export default function NewArticle(params) {
           <label htmlFor="title_fr" className="flex text-2xl gap-2 items-center">
             <FR id={3588875139811} /> Titre
           </label>
-          <Input id="title_fr" name="title_fr" className="w-full" />
+          <input id="title_fr" name="title_fr" className={fieldClassName} />
         </div>
         <div>
           <label htmlFor="title_en" className="flex text-2xl gap-2 items-center">
             <UK id={3588847139812} /> Title
           </label>
-          <Input id="title_en" name="title_en" className="w-full" />
+          <input id="title_en" name="title_en" className={fieldClassName} />
         </div>
         <div>
           <label htmlFor="title_de" className="flex text-2xl gap-2 items-center">
             <DE id={3588887139813} /> Titre
           </label>
-          <Input id="title_de" name="title_de" className="w-full" />
+          <input id="title_de" name="title_de" className={fieldClassName} />
         </div>
 
         <div>
           <label htmlFor="description_fr" className="flex text-2xl gap-2 items-center">
             <FR id={35888139814} /> Description
           </label>
-          <Textarea id="description_fr" name="description_fr" className="w-full" />
+          <textarea id="description_fr" name="description_fr" className={fieldClassName} rows={4} />
         </div>
         <div>
           <label htmlFor="description_en" className="flex text-2xl gap-2 items-center">
             <UK id={35888139815} /> Description
           </label>
-          <Textarea id="description_en" name="description_en" className="w-full" />
+          <textarea id="description_en" name="description_en" className={fieldClassName} rows={4} />
         </div>
         <div>
           <label htmlFor="description_de" className="flex text-2xl gap-2 items-center">
             <DE id={35888139816} /> Description
           </label>
-          <Textarea id="description_de" name="description_de" className="w-full" />
+          <textarea id="description_de" name="description_de" className={fieldClassName} rows={4} />
         </div>
         <div>
           <label htmlFor="author" className="flex text-2xl gap-2 items-center">
             Auteur
           </label>
-          <Input id="author" name="author" className="w-full" />
+          <input id="author" name="author" className={fieldClassName} />
         </div>
         <div>
           <label htmlFor="link" className="flex text-2xl gap-2 items-center">
             Lien
           </label>
-          <Input id="link" name="link" className="w-full" />
+          <input id="link" name="link" className={fieldClassName} />
         </div>
 
         <div className="flex justify-end mt-4">
