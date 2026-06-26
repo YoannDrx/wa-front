@@ -9,10 +9,10 @@ export default function PageJumbo({ titleKey, textKey, backgroundColor }) {
   };
 
   return (
-    <div className="container text-center py-12 px-4" style={containerStyle}>
+    <div className="container px-4 py-12 text-center md:py-16" style={containerStyle}>
       <h1 className="underblue">{t(titleKey)}</h1>
       {textKey && (
-        <div className="border border-2 border-primary p-4">
+        <div className="mx-auto max-w-5xl border-2 border-primary bg-white/70 p-5 leading-7 md:p-8">
           <Trans
             i18nKey={textKey}
             components={{

@@ -3,18 +3,18 @@ import React from "react";
 
 export default function ExpertiseCard({ image, title }) {
   return (
-    <div className="flex flex-col items-center relative">
-      <p className="text-center font-bold w-[250px]  mb-4 h-16">{title}</p>
-      <div className="border border-black p-2 w-[200px] h-[200px] flex items-center justify-center relative group overflow-hidden">
-        <div style={{ backgroundColor: "#E4EDF1" }} className="absolute w-[90%] h-[90%] rounded-full opacity-50"></div>
-        <div className="w-full h-full relative p-2 flex items-center justify-center transition-all duration-300">
+    <div className="group relative flex h-full flex-col items-center border border-black/10 bg-white p-6 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <p className="mb-5 flex min-h-16 items-center justify-center font-bold">{title}</p>
+      <div className="relative flex h-[190px] w-[190px] items-center justify-center overflow-hidden border border-black/20 p-4">
+        <div className="absolute h-[88%] w-[88%] rounded-full bg-light-blue opacity-80" />
+        <div className="relative flex h-full w-full items-center justify-center transition-all duration-300">
           <Image
             src={image}
             alt={title}
-            className="w-[200px] h-auto object-contain transition-all duration-300 transform group-hover:scale-110 group-hover:object-cover"
-            width={0}
-            height={0}
-            sizes="100vw"
+            className="h-auto max-h-full w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-110"
+            width={225}
+            height={212}
+            sizes="190px"
           />
         </div>
       </div>

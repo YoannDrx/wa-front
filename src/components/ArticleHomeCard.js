@@ -30,10 +30,9 @@ export default function ArticleHomeCard({ backgroundImage, date, title, link, de
       <Image
         src={backgroundImage}
         alt="Article Background"
-        className="absolute w-full h-full object-cover"
-        width={0}
-        height={0}
-        sizes="100vw"
+        className="object-cover"
+        fill
+        sizes="320px"
       />
       <div
         className={`absolute bottom-0 left-0 w-full h-1/4 bg-black bg-opacity-80 transition-all duration-500 ${

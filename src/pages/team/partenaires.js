@@ -18,7 +18,7 @@ export default function Partners() {
       </Head>
       <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} backgroundColor="#E4EDF1" />
       <div className="py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {teamMemberKeys.map((key, index) => {
             const member = teamMembers[key];
             return (
