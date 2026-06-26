@@ -26,6 +26,12 @@
     "requiredCV": "Veuillez joindre votre CV (.pdf/.doc/.docx)",
     "requiredLetter": "Veuillez joindre votre lettre de motivation (.pdf/.doc/.docx)"
   },
+  "formStatus": {
+    "sending": "Envoi en cours...",
+    "success": "Votre message a bien été envoyé.",
+    "error": "Une erreur est survenue. Merci de réessayer ou de nous contacter par email.",
+    "optionalAttachment": "Pièce jointe facultative"
+  },
   "footer": {
     "Pratique Juridique": "Pratique juridique",
     "À propos de notre cabinet": "À propos de notre cabinet",
@@ -260,6 +266,13 @@
     "informationPratique": "Informations Pratiques",
     "commentNousTrouvez": "COMMENT NOUS TROUVER",
     "info-contact": "Nos bureaux se trouvent au 26, Avenue de la Grande Armée, Paris 17e, à deux pas de L'Etoile. <nl/>Des parkings souterrains sont accessibles facilement sur l'avenue Carnot et l'avenue Foch.<nl/>La station de <bold>Métro ARGENTINE</bold> (ligne 1) est proche. La station du <bold>RER Charles de Gaulle Etoile</bold> se trouve à 5 minutes à pied.",
+    "contactForm": {
+      "restonEnContact": "Restons en contact",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "placeholderMessage": "Écrivez ici votre message"
+    },
     "Aéroport Charles de Gaulle": "Aéroport Charles de Gaulle",
     "Taxi (30 minutes)": "Taxi ou Uber (45 minutes)",
     "Aéroport d'Orly": "Aéroport d'Orly ",

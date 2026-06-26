@@ -8,14 +8,10 @@ import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { CardProvider } from "../../contexts/ArticleCardContext";
-import axios from "axios";
 import { ArticlesProvider } from "../../contexts/ArticlesContext";
 import Head from "next/head";
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
-
-axios.defaults.baseURL =
-  process?.env?.NODE_ENV === "development" ? "http://localhost:3000/api" : "https://www.weil-paris.fr/api";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -31,7 +27,6 @@ i18n
         translation: fr,
       },
     },
-    lng: "en", // if you're using a language detector, do not define the lng option
     fallbackLng: "fr",
 
     interpolation: {

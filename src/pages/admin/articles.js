@@ -1,10 +1,10 @@
 import Button from "@/components/Button";
-import axios from "axios";
+import { apiClient } from "@/services/apiClient";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
 
 export async function getServerSideProps({ params, locale }) {
-  const articles = (await axios.get("/articles")).data;
+  const articles = (await apiClient.get("/articles")).data;
   return { props: { articles } };
 }
 
@@ -19,7 +19,7 @@ export default function Articles({ articles }) {
 
   const deleteArticle = (id) => async () => {
     if (confirm(`Supprimer l'article ${id} ?`)) {
-      await axios.delete(`/articles/${id}`);
+      await apiClient.delete(`/articles/${id}`);
     }
   };
 

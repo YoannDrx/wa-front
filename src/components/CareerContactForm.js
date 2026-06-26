@@ -1,127 +1,135 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import { apiClient } from "@/services/apiClient";
+import { useState } from "react";
+import { useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
-import axios from "axios";
+
+const fieldClassName = "w-full border border-white/30 bg-white p-3 text-black focus:border-neutral focus:outline-none";
+
+const appendFiles = (formData, key, files) => {
+  Array.from(files || []).forEach((file) => {
+    formData.append(key, file);
+  });
+};
 
 const CareerContactForm = () => {
   const { t } = useTranslation();
-
-  const requiredName = t("errorMessages.requiredName");
-  const requiredEmail = t("errorMessages.requiredEmail");
-  const invalidEmail = t("errorMessages.invalidEmail");
-  const requiredSubject = t("errorMessages.requiredSubject");
-  const requiredMessage = t("errorMessages.requiredMessage");
-  const requiredCV = t("errorMessages.requiredCV");
-  const requiredLetter = t("errorMessages.requiredLetter");
-
+  const [status, setStatus] = useState("idle");
   const {
     handleSubmit,
     register,
     formState: { errors },
     reset,
-    setValue,
-    watch,
+    control,
   } = useForm();
 
-  const uploadedCV = watch("cv");
-  const uploadedLetter = watch("letter");
+  const uploadedCV = useWatch({ control, name: "cv" });
+  const uploadedLetter = useWatch({ control, name: "letter" });
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
+  const onSubmit = async (values) => {
+    setStatus("sending");
+
     try {
-      axios
-      .post("/contacts", e.target)
-      .then((response) => {
-      })
-      .catch((error) => {
-        console.error("Error dsqdfg:", error);
-      });
+      const formData = new FormData();
+      formData.append("name", values.name);
+      formData.append("email", values.email);
+      formData.append("subject", values.subject);
+      formData.append("message", values.message || values.subject);
+      appendFiles(formData, "cv", values.cv);
+      appendFiles(formData, "letter", values.letter);
+
+      await apiClient.post("/contacts", formData);
+      reset();
+      setStatus("success");
     } catch (error) {
-      console.log("Erreur lors de l'envoi du formulaire :", error);
+      console.error("Error sending career form:", error);
+      setStatus("error");
     }
   };
 
-  const removeFile = (fieldName) => {
-    setValue(fieldName, null);
-  };
-
   return (
-    <div className="bg-primary p-8 ">
-      <h2 className="mb-1">{t("career.career-contact-form.title")}</h2>
-      <p className="text-white">{t("career.career-contact-form.text")}</p>
-      <form className="mt-4" onSubmit={onSubmit} id="contact-form">
-        <div className="mb-4">
+    <div className="bg-primary p-6 text-white md:p-8">
+      <h2 className="mb-2">{t("career.career-contact-form.title")}</h2>
+      <p className="text-white/90">{t("career.career-contact-form.text")}</p>
+      <form className="mt-6 space-y-5" onSubmit={handleSubmit(onSubmit)} id="career-contact-form">
+        <div>
           <input
-            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
+            className={fieldClassName}
             type="text"
+            autoComplete="name"
             placeholder={t("career.career-contact-form.placeholder.name")}
-            {...register("name", { required: requiredName })}
+            {...register("name", { required: t("errorMessages.requiredName") })}
           />
-          {errors.name && <span className="text-xs text-red-500">{errors.name.message}</span>}
+          {errors.name && <span className="mt-2 block text-xs text-red-100">{errors.name.message}</span>}
         </div>
-        <div className="mb-4">
+
+        <div>
           <input
-            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
+            className={fieldClassName}
             type="email"
+            autoComplete="email"
             placeholder={t("career.career-contact-form.placeholder.email")}
             {...register("email", {
-              required: requiredEmail,
+              required: t("errorMessages.requiredEmail"),
               pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                message: invalidEmail,
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: t("errorMessages.invalidEmail"),
               },
             })}
           />
-          {errors.email && <span className="text-xs text-red-500">{errors.email.message}</span>}
-        </div>
-        <div className="mb-4">
-          <input
-            className="w-full p-2  text-black bg-white focus:border-2 focus:border-gray-800"
-            type="text"
-            placeholder={t("career.career-contact-form.placeholder.subject")}
-            {...register("message", { required: requiredSubject })}
-          />
-          {errors.message && <span className="text-xs text-red-500">{errors.subject.message}</span>}
-        </div>
-        <div className="mb-4">
-          <label className="block text-white mb-2">{t("career.career-contact-form.placeholder.cv")}</label>
-          <div className="flex items-center">
-            <input
-              className="w-full p-2 text-black bg-white focus:border-2 focus:border-gray-800"
-              type="file"
-              accept=".pdf,.doc,.docx"
-              {...register("cv", { required: requiredCV })}
-            />
-            {uploadedCV && uploadedCV.length > 0 && (
-              <button type="button" className="ml-2 text-red-500 hover:text-red-600" onClick={() => removeFile("cv")}>
-                {t("Supprimer")}
-              </button>
-            )}
-          </div>
-          {errors.cv && <span className="text-xs text-red-500">{errors.cv.message}</span>}
+          {errors.email && <span className="mt-2 block text-xs text-red-100">{errors.email.message}</span>}
         </div>
 
-        <div className="mb-4">
-          <label className="block text-white mb-2">{t("career.career-contact-form.placeholder.letter")}</label>
-          <div className="flex items-center">
-            <input
-              className="w-full p-2 text-black bg-white focus:border-2 focus:border-gray-800"
-              type="file"
-              accept=".pdf,.doc,.docx"
-              {...register("letter", { required: requiredLetter })}
-            />
-            {uploadedLetter && uploadedLetter.length > 0 && (
-              <button type="button" className="ml-2 text-red-500 hover:text-red-600" onClick={() => removeFile("letter")}>
-                {t("Supprimer")}
-              </button>
-            )}
-          </div>
-          {errors.letter && <span className="text-xs text-red-500">{errors.letter.message}</span>}
+        <div>
+          <input
+            className={fieldClassName}
+            type="text"
+            placeholder={t("career.career-contact-form.placeholder.subject")}
+            {...register("subject", { required: t("errorMessages.requiredSubject") })}
+          />
+          {errors.subject && <span className="mt-2 block text-xs text-red-100">{errors.subject.message}</span>}
         </div>
-        <div className="flex xs: justify-center md:justify-end mt-4">
-          <Button type="submit" className={"w-40 btn btn-outline bg-white font-bold"} color="primary">
-            {t("Envoyer")}
+
+        <div>
+          <textarea
+            className={fieldClassName}
+            rows={5}
+            placeholder={t("career.career-contact-form.placeholder.message")}
+            {...register("message", { required: t("errorMessages.requiredMessage") })}
+          />
+          {errors.message && <span className="mt-2 block text-xs text-red-100">{errors.message.message}</span>}
+        </div>
+
+        <div>
+          <label className="mb-2 block text-white">{t("career.career-contact-form.placeholder.cv")}</label>
+          <input
+            className="w-full border border-white/30 bg-white p-3 text-sm text-black file:mr-4 file:border-0 file:bg-primary file:px-4 file:py-2 file:text-white"
+            type="file"
+            accept=".pdf,.doc,.docx"
+            {...register("cv", { required: t("errorMessages.requiredCV") })}
+          />
+          {uploadedCV?.length > 0 && <span className="mt-2 block text-xs text-white/80">{uploadedCV[0].name}</span>}
+          {errors.cv && <span className="mt-2 block text-xs text-red-100">{errors.cv.message}</span>}
+        </div>
+
+        <div>
+          <label className="mb-2 block text-white">{t("career.career-contact-form.placeholder.letter")}</label>
+          <input
+            className="w-full border border-white/30 bg-white p-3 text-sm text-black file:mr-4 file:border-0 file:bg-primary file:px-4 file:py-2 file:text-white"
+            type="file"
+            accept=".pdf,.doc,.docx"
+            {...register("letter", { required: t("errorMessages.requiredLetter") })}
+          />
+          {uploadedLetter?.length > 0 && <span className="mt-2 block text-xs text-white/80">{uploadedLetter[0].name}</span>}
+          {errors.letter && <span className="mt-2 block text-xs text-red-100">{errors.letter.message}</span>}
+        </div>
+
+        {status === "success" && <p className="mb-0 text-sm text-green-100">{t("formStatus.success")}</p>}
+        {status === "error" && <p className="mb-0 text-sm text-red-100">{t("formStatus.error")}</p>}
+
+        <div className="flex justify-center md:justify-end">
+          <Button type="submit" className="min-w-40 bg-white font-bold text-primary hover:bg-light-blue" color="ghost" disabled={status === "sending"}>
+            {status === "sending" ? t("formStatus.sending") : t("Envoyer")}
           </Button>
         </div>
       </form>

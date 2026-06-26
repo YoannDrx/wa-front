@@ -1,15 +1,11 @@
 import { apiAuthCheck } from "@/utils/apiAuthCheck";
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  "https://ovnsgrllmcmvhjqxkdga.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im92bnNncmxsbWNtdmhqcXhrZGdhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5OTI3OTYzNywiZXhwIjoyMDE0ODU1NjM3fQ.FUaj167g_UmIlYRQ0xCN-Dd8nrw1bR2N-gdF0mXjzuE"
-);
+import { createSupabaseAdminClient, createSupabaseAuthClient } from "@/services/supabase";
 
 export default async function handler(req, res) {
   const { id } = req.query;
 
-  await apiAuthCheck(supabase, req);
+  await apiAuthCheck(createSupabaseAuthClient(), req);
+  const supabase = createSupabaseAdminClient();
 
   switch (req.method) {
     case "GET":

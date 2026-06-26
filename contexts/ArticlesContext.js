@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
-import axios from "axios";
+import { apiClient } from "@/services/apiClient";
 
 const ArticlesContext = createContext();
 
@@ -11,7 +11,7 @@ export function ArticlesProvider({ children }) {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    axios
+    apiClient
       .get("/articles")
       .then((response) => {
         setArticles(response.data);
