@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M116 72H396V440H116V72Z" fill="#FFFFFF"/>
+  <path d="M116 72H278L206 440H116V72Z" fill="#37749E"/>
+  <path d="M116 72H396V440H116V72Z" stroke="#37749E" stroke-width="32" stroke-linejoin="miter"/>
+  <path d="M278 72L206 440" stroke="#37749E" stroke-width="20" stroke-linecap="square"/>
+</svg>

@@ -2,7 +2,7 @@
 
 ## Maintenance
 
-Recommended local runtime:
+Recommended local runtime: Node 24 LTS (`.nvmrc`).
 
 ```bash
 nvm use
