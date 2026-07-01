@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Button from "@/components/Button";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const supabase = createSupabaseBrowserClient();
 
@@ -53,42 +54,45 @@ export default function New() {
 
   return (
     <div
-      className="flex justify-center items-center h-screen bg-cover"
+      className="flex min-h-screen items-center justify-center bg-cover px-4"
       style={{ backgroundImage: "url('/assets/home/rectangle29.png')" }}>
       <Head>
         <title>Admin</title>
         <meta name="description" content={t("admin.pageDescriptionSEO")} />
       </Head>
 
-      <div className="card w-96 bg-base-100 shadow-xl rounded-none">
-        <div className="card-body">
-          <h2 className="card-title justify-center">Admin Login</h2>
-          <div className="form-control">
+      <div className="w-full max-w-md border border-primary/15 bg-white p-8 shadow-[0_28px_80px_rgba(17,50,72,0.16)]">
+        <div className="mb-8 flex justify-center">
+          <Image src="/assets/logo.png" alt="Weil associés avocats" width={162} height={70} className="h-auto w-36" priority />
+        </div>
+        <div>
+          <h2 className="mb-8 text-center">Admin Login</h2>
+          <div className="mb-5">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
             <input
               type="email"
               placeholder="Email"
-              className="input input-bordered"
+              className="wa-form-field border-primary/20"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="form-control">
+          <div className="mb-7">
             <label className="label">
               <span className="label-text">Password</span>
             </label>
             <input
               type="password"
               placeholder="Password"
-              className="input input-bordered"
+              className="wa-form-field border-primary/20"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div className="mt-6 flex justify-center">
-            <Button className="btn btn-primary" onClick={handleLogin}>
+          <div className="flex justify-center">
+            <Button onClick={handleLogin} size="lg" className="min-w-36">
               Login
             </Button>
           </div>
@@ -97,3 +101,7 @@ export default function New() {
     </div>
   );
 }
+
+New.getLayout = function getLayout(page) {
+  return page;
+};
