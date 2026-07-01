@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Head from "next/head";
+import AnimatedSection from "@/components/AnimatedSection";
 export default function MentionsLegales() {
   const { t } = useTranslation();
   useEffect(() => {}, []);
@@ -43,12 +44,14 @@ export default function MentionsLegales() {
         <title>{t("legalMentions.title")}</title>
         <meta name="description" content={t("legalMentions.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("legalMentions.title")} textKey={"legalMentions.intro"} />
-      <div className="container pb-12">
+      <div className="container">
+        <PageJumbo titleKey={t("legalMentions.title")} textKey={"legalMentions.intro"} />
+      </div>
+      <div className="container max-w-5xl pb-14">
         {legalSections.map((sectionKey, index) => (
-          <div className="mt-8" key={index}>
+          <AnimatedSection className="wa-prose mt-8 overflow-x-auto" key={index}>
             <Trans i18nKey={sectionKey} components={transComponents} />
-          </div>
+          </AnimatedSection>
         ))}
       </div>
     </div>

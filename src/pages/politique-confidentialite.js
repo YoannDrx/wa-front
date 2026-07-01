@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Head from "next/head";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export default function PolitiqueConfidentialite() {
   const { i18n } = useTranslation();
@@ -54,12 +55,14 @@ export default function PolitiqueConfidentialite() {
         <title>{t("privacyPolicy.title")}</title>
         <meta name="description" content={t("privacyPolicy.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("privacyPolicy.title")} textKey={t("privacyPolicy.intro")} />
-      <div className="container pb-12">
+      <div className="container">
+        <PageJumbo titleKey={t("privacyPolicy.title")} textKey={t("privacyPolicy.intro")} />
+      </div>
+      <div className="container max-w-5xl pb-14">
         {policySections.map((sectionKey, index) => (
-          <div className="mt-8" key={index}>
+          <AnimatedSection className="wa-prose mt-8 overflow-x-auto" key={index}>
             <Trans i18nKey={sectionKey} components={transComponents} />
-          </div>
+          </AnimatedSection>
         ))}
       </div>
     </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslation, Trans } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Head from "next/head";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export default function PolitiqueCookies() {
   const { i18n } = useTranslation();
@@ -52,13 +53,15 @@ export default function PolitiqueCookies() {
         <title>{t("cookiesPolicy.title")}</title>
         <meta name="description" content={t("cookiesPolicy.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("cookiesPolicy.title")} textKey={t("cookiesPolicy.intro")} />
+      <div className="container">
+        <PageJumbo titleKey={t("cookiesPolicy.title")} textKey={t("cookiesPolicy.intro")} />
+      </div>
 
-      <div className="container pb-12">
+      <div className="container max-w-5xl pb-14">
         {cookiesSections.map((sectionKey, index) => (
-          <div className="mt-8" key={index}>
+          <AnimatedSection className="wa-prose mt-8 overflow-x-auto" key={index}>
             <Trans i18nKey={sectionKey} components={transComponents} />
-          </div>
+          </AnimatedSection>
         ))}
       </div>
     </div>

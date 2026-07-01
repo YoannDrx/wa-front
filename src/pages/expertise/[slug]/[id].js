@@ -2,6 +2,8 @@ import { Trans, useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import Image from "next/image";
 import Head from "next/head";
+import AnimatedSection from "@/components/AnimatedSection";
+import ParallaxMedia from "@/components/ParallaxMedia";
 
 export async function getStaticProps({ params, locale }) {
   const translations = require(`../../../lang/${locale}.json`);
@@ -43,17 +45,19 @@ export default function ExpertisePage({ expertise }) {
         />
       </Head>
 
-      <PageJumbo titleKey={t(expertise.title)} textKey={t(expertise.intro)} />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-        <div className="flex flex-col items-center relative w-full h-full">
-          <div className="border border-black p-2 w-[300px] h-[300px] flex items-center justify-center relative group overflow-hidden">
-            <div style={{ backgroundColor: "#E4EDF1" }} className="absolute w-[90%] h-[90%] rounded-full opacity-50"></div>
-            <div className="w-full h-full relative z-10 p-2 flex items-center justify-center">
-              <Image src={expertise.image} alt={t(expertise.titleKey)} width={280} height={280} />
+      <PageJumbo titleKey={t(expertise.title)} textKey={t(expertise.intro)} backgroundColor="#F7FAFB" />
+      <div className="my-12 grid grid-cols-1 gap-8 md:grid-cols-[0.74fr_1.26fr] md:items-start">
+        <AnimatedSection direction="left" className="relative flex h-full w-full flex-col items-center">
+          <ParallaxMedia className="relative flex aspect-square w-full max-w-[420px] items-center justify-center overflow-hidden rounded-[6px] border border-primary/15 bg-wa-porcelain p-6 shadow-[0_24px_70px_rgba(17,50,72,0.1)]" distance={24}>
+            <div className="wa-blueprint absolute inset-0 opacity-70" />
+            <div className="absolute h-[76%] w-[76%] rounded-full border border-primary/15 bg-light-blue/70" />
+            <div className="relative z-10 flex h-full w-full items-center justify-center p-4">
+              <Image src={expertise.image} alt={t(expertise.title)} width={300} height={300} className="h-auto max-h-full w-auto max-w-full drop-shadow-[0_24px_30px_rgba(17,50,72,0.18)]" />
             </div>
-          </div>
-        </div>
-        <div className="text-md leading-7 space-y-5 md:ml-4">
+          </ParallaxMedia>
+        </AnimatedSection>
+        <AnimatedSection direction="right" className="wa-shell min-w-0 p-6 md:p-9">
+          <div className="wa-prose space-y-5">
           <p>
             <Trans
               i18nKey={expertise.paragraph1}
@@ -73,7 +77,8 @@ export default function ExpertisePage({ expertise }) {
               }}
             />
           </p>
-        </div>
+          </div>
+        </AnimatedSection>
       </div>
     </div>
   );
