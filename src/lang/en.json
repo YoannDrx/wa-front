@@ -321,6 +321,7 @@
   "blog": {
     "pageDescriptionSEO": "Explore Weil & Associés' blog for in-depth insights and analysis on key legal topics. Stay informed with our expert articles.",
     "articles": "Articles",
+    "empty": "No articles for now.",
     "authors": "Authors",
     "categories": "Categories",
     "tags": "Tags",
