@@ -1,8 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 
-const getRequiredEnv = (key) => {
-  const value = process.env[key];
-
+const getRequiredEnv = (key, value) => {
   if (!value) {
     throw new Error(`Missing required environment variable: ${key}`);
   }
@@ -10,8 +8,8 @@ const getRequiredEnv = (key) => {
   return value;
 };
 
-const getSupabaseUrl = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_URL");
-const getSupabaseApiKey = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_KEY");
+const getSupabaseUrl = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_URL", process.env.NEXT_PUBLIC_SUPABASE_URL);
+const getSupabaseApiKey = () => getRequiredEnv("NEXT_PUBLIC_SUPABASE_KEY", process.env.NEXT_PUBLIC_SUPABASE_KEY);
 
 export const createSupabaseBrowserClient = () => createClient(getSupabaseUrl(), getSupabaseApiKey());
 
