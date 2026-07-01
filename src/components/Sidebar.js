@@ -11,32 +11,34 @@ const Sidebar = ({ setFilter, authors }) => {
     setFilter(filters);
   };
 
-  const handleChange = (field) => (e) => {
-    setFilters({ ...filters, [field]: e.target.value });
+  const handleChange = (field) => (value) => {
+    setFilters({ ...filters, [field]: value });
   };
 
   const clearFilters = () => {
-    setFilters({ author: "", category: "" });
+    const nextFilters = { author: "", category: "" };
+    setFilters(nextFilters);
+    setFilter(nextFilters);
   };
 
   const hasFilter = filters.author;
 
   return (
-    <div className="mb-4 rounded-none">
-      <h2 className="text-lg font-bold mb-4">{t("blog.sidebar.filters")}</h2>
+    <div className="rounded-none">
+      <h2 className="mb-5 text-lg font-bold">{t("blog.sidebar.filters")}</h2>
       <FilterOption
         title={t("blog.sidebar.author")}
         options={authors}
         selected={filters.author}
         onChange={handleChange("author")}
       />
-      <Button onClick={applyFilters} className="w-full mt-4" color="primary">
+      <Button onClick={applyFilters} className="mt-4 w-full" color="primary">
         {t("blog.sidebar.applyFilters")}
       </Button>
       {hasFilter && (
-        <div className="text-red-600 cursor-pointer mt-2 flex items-center" onClick={clearFilters}>
-          <span className="mr-2 text-xs">✕</span> <span className="text-xs">{t("blog.filterOption.delete")}</span>
-        </div>
+        <button type="button" className="mt-3 flex items-center text-xs font-bold text-accent underline underline-offset-4" onClick={clearFilters}>
+          <span className="mr-2">✕</span> {t("blog.filterOption.delete")}
+        </button>
       )}
     </div>
   );
