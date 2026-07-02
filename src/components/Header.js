@@ -4,11 +4,10 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaCheck, FaChevronDown } from "react-icons/fa";
 import DE from "@/components/lang/DE";
 import FR from "@/components/lang/FR";
 import UK from "@/components/lang/UK";
-import { readableLocale } from "../services/i18n";
 
 const menuData = [
   { href: "/", label: "Accueil" },
@@ -96,12 +95,12 @@ const MobileMenuItem = ({ href, label, index, onNavigate }) => {
   );
 };
 
-const LanguageLinks = ({ mobile = false, onNavigate }) => {
+const LanguageLinks = ({ mobile = false, onNavigate, variant = "desktop" }) => {
   const router = useRouter();
   const { t } = useTranslation();
 
   return (
-    <div className={mobile ? "mt-10 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap" : "flex flex-col gap-1 p-2"}>
+    <div className={mobile ? "mt-10 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap" : "flex flex-col gap-1"}>
       {languages.map(({ locale, label, icon: Icon }) => (
         <Link
           key={locale}
@@ -109,16 +108,17 @@ const LanguageLinks = ({ mobile = false, onNavigate }) => {
           locale={locale}
           onClick={onNavigate}
           className={[
-            "inline-flex items-center gap-2 transition-colors",
+            "inline-flex items-center gap-2 transition duration-200",
             mobile
               ? "min-h-12 border border-white/30 px-4 py-3 text-sm text-white hover:border-white hover:bg-white hover:text-primary"
-              : "px-3 py-2 text-sm text-neutral hover:bg-light-blue hover:text-primary",
-            router.locale === locale ? "font-bold" : "",
+              : "group w-full rounded-[4px] px-3 py-2.5 text-sm text-neutral hover:bg-light-blue/70 hover:text-primary",
+            router.locale === locale ? (mobile ? "font-bold" : "bg-light-blue/55 font-bold text-primary") : "",
           ]
             .filter(Boolean)
             .join(" ")}>
-          <Icon id={`lang-${locale}`} />
-          {label}
+          <Icon id={`lang-${variant}-${locale}`} />
+          <span className="flex-1">{label}</span>
+          {!mobile && router.locale === locale && <FaCheck aria-hidden="true" className="text-[11px] text-primary" />}
         </Link>
       ))}
     </div>
@@ -127,19 +127,81 @@ const LanguageLinks = ({ mobile = false, onNavigate }) => {
 
 const DesktopLanguageMenu = () => {
   const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
+  const shouldReduceMotion = useReducedMotion();
+  const activeLanguage = languages.find((language) => language.locale === router.locale) || languages[0];
+  const ActiveIcon = activeLanguage.icon;
+
+  useEffect(() => {
+    if (!open) return undefined;
+
+    const onPointerDown = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("pointerdown", onPointerDown);
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  useEffect(() => {
+    const closeLanguageMenu = () => setOpen(false);
+
+    router.events.on("routeChangeStart", closeLanguageMenu);
+
+    return () => {
+      router.events.off("routeChangeStart", closeLanguageMenu);
+    };
+  }, [router.events]);
 
   return (
-    <details className="group relative">
-      <summary className="flex cursor-pointer list-none items-center gap-2 px-3 py-2 text-sm font-semibold text-neutral transition-colors hover:text-primary">
-        {readableLocale(router.locale)}
-        <span aria-hidden="true" className="text-xs transition-transform group-open:rotate-180">
-          ▾
-        </span>
-      </summary>
-      <div className="absolute right-0 top-full z-40 mt-3 min-w-44 border border-light-blue bg-white shadow-[0_18px_45px_rgba(17,50,72,0.14)]">
-        <LanguageLinks />
-      </div>
-    </details>
+    <div className="relative" ref={menuRef}>
+      <button
+        type="button"
+        className={[
+          "group inline-flex items-center gap-2 rounded-[4px] border border-primary/10 bg-white/70 px-3 py-2 text-sm font-semibold text-neutral shadow-[0_10px_26px_rgba(17,50,72,0.05)] transition duration-200",
+          "hover:border-primary/25 hover:bg-light-blue/65 hover:text-primary hover:shadow-[0_16px_36px_rgba(17,50,72,0.12)]",
+          open ? "border-primary/25 bg-light-blue/70 text-primary" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        aria-label="Changer de langue"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={() => setOpen((current) => !current)}>
+        <ActiveIcon id={`lang-current-${activeLanguage.locale}`} />
+        <span>{activeLanguage.label}</span>
+        <FaChevronDown aria-hidden="true" className={["text-[11px] transition-transform duration-200", open ? "rotate-180" : ""].join(" ")} />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            className="absolute right-0 top-full z-40 mt-3 min-w-48 overflow-hidden rounded-[6px] border border-primary/15 bg-white p-2 shadow-[0_24px_70px_rgba(17,50,72,0.18)]"
+            initial={{ opacity: 0, y: shouldReduceMotion ? 0 : -8, scale: shouldReduceMotion ? 1 : 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: shouldReduceMotion ? 0 : -6, scale: shouldReduceMotion ? 1 : 0.98 }}
+            transition={{ duration: shouldReduceMotion ? 0.01 : 0.18, ease: "easeOut" }}
+            role="menu">
+            <div className="pointer-events-none absolute inset-x-3 top-0 h-px bg-primary/20" aria-hidden="true" />
+            <LanguageLinks onNavigate={() => setOpen(false)} variant="desktop-menu" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 

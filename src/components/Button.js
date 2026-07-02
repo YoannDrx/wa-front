@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const colorClasses = {
   primary: "border-primary bg-primary text-white hover:bg-wa-navy hover:border-wa-navy",
-  secondary: "border-secondary bg-secondary text-neutral hover:border-primary hover:bg-white",
+  secondary: "border-secondary bg-secondary text-wa-deep hover:border-primary hover:bg-white",
   accent: "border-accent bg-accent text-white hover:bg-white hover:text-accent",
   error: "border-error bg-error text-white hover:bg-white hover:text-error",
   ghost: "border-transparent bg-transparent text-primary hover:border-primary hover:bg-light-blue",

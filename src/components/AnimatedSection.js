@@ -17,6 +17,7 @@ export default function AnimatedSection({
   once = true,
   as = "div",
   duration = 0.82,
+  ...props
 }) {
   const shouldReduceMotion = useReducedMotion();
   const Component = as;
@@ -24,6 +25,7 @@ export default function AnimatedSection({
 
   return (
     <Component
+      {...props}
       className={["overflow-x-clip", className].filter(Boolean).join(" ")}>
       <motion.div
         className="h-full w-full"

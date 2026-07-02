@@ -13,7 +13,24 @@ const Footer = () => {
       <div className="bg-[#1C3D54]">
         <footer className="container grid gap-10 py-12 text-white md:grid-cols-2 lg:grid-cols-4">
           <div className="leading-7 text-white/90">
-            <Image src={"/assets/logo_white.png"} width={168} height={67} alt={"logo weil & associés"} />
+            <Link href="/" className="group relative inline-flex h-[76px] w-[178px] items-center" aria-label="Weil & Associés - Accueil">
+              <span className="absolute -inset-2 rounded-[6px] bg-white/0 transition duration-300 group-hover:bg-white/95 group-hover:shadow-[0_18px_48px_rgba(0,0,0,0.2)]" />
+              <Image
+                src="/assets/logo_white.png"
+                width={168}
+                height={67}
+                alt="logo weil & associés"
+                className="relative h-auto w-[168px] transition duration-300 group-hover:opacity-0 group-hover:scale-[0.98]"
+              />
+              <Image
+                src="/assets/logo.png"
+                width={225}
+                height={97}
+                alt=""
+                aria-hidden="true"
+                className="absolute left-0 top-1/2 h-auto w-[162px] -translate-y-1/2 opacity-0 transition duration-300 group-hover:opacity-100 group-hover:scale-[1.02]"
+              />
+            </Link>
             <div className="mt-5">
               26 Avenue de La Grande Armée
               <br />
