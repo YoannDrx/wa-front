@@ -17,7 +17,7 @@ export default function Expertise() {
         <title>{t("Expertise")}</title>
         <meta name="description" content={t("expertise.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("expertise.notreExpertise")} textKey={t("expertise.ourGoal")} backgroundColor="#F7FAFB" />
+      <PageJumbo titleKey={t("expertise.notreExpertise")} textKey={t("expertise.ourGoal")} />
       <div className="pb-14">
         <RevealGroup className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4" childClassName="h-full">
           {expertiseItems.map((item, index) => (

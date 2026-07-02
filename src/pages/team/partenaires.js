@@ -17,7 +17,7 @@ export default function Partners() {
         <title>{t("Nos associés")}</title>
         <meta name="description" content={t("partenaire.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} backgroundColor="#E4EDF1" />
+      <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} />
       <div className="pb-14">
         <RevealGroup className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4" childClassName="h-full">
           {teamMemberKeys.map((key, index) => {

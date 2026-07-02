@@ -52,10 +52,10 @@ const Member = () => {
       <div className="container">
         <PageJumbo titleKey={memberData.name} />
       </div>
-      <div className="container grid gap-10 pb-14 md:grid-cols-[0.88fr_1.12fr]">
-        <AnimatedSection direction="left" className="mb-4 flex w-full flex-col items-center md:sticky md:top-28 md:mb-0 md:self-start">
-          <div className="w-full overflow-hidden rounded-[6px] shadow-[0_24px_70px_rgba(17,50,72,0.16)]">
-            <div className="relative aspect-[4/5] w-full max-h-[780px] md:aspect-[2/3]">
+      <div className="container grid gap-10 pb-14 md:grid-cols-[minmax(280px,420px)_1fr] lg:grid-cols-[420px_1fr]">
+        <AnimatedSection direction="left" className="mb-4 flex w-full flex-col items-center md:sticky md:top-28 md:mb-0 md:max-h-[calc(100svh-7rem)] md:self-start">
+          <div className="w-full max-w-[420px] overflow-hidden rounded-[6px] shadow-[0_24px_70px_rgba(17,50,72,0.16)]">
+            <div className="relative aspect-[4/5] w-full md:aspect-auto md:h-[min(52svh,520px)]">
               <Image
                 src={memberData.image}
                 alt={`${memberData.name}`}
@@ -66,9 +66,9 @@ const Member = () => {
               />
             </div>
             <div className="flex w-full flex-col justify-center bg-wa-deep text-gray-200">
-              <div className="mx-8 py-6">
-                <h4 className="leftblue text-2xl">{t("partenaire.contact")}</h4>
-                <div className="mt-5 space-y-3">
+              <div className="mx-6 py-5">
+                <h4 className="leftblue text-xl">{t("partenaire.contact")}</h4>
+                <div className="mt-4 space-y-3 text-sm">
                   <div className="flex items-center break-all">
                     <FaEnvelope className="mr-2" /> {memberData.email}
                   </div>
