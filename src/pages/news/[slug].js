@@ -40,7 +40,7 @@ const BlogPage = ({ article, externalHref }) => {
         <title>{article.title}</title>
         <meta name="description" content={article.description} />
       </Head>
-      <PageJumbo titleKey={article.title} backgroundColor="#F7FAFB" />
+      <PageJumbo titleKey={article.title} />
       <div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-start">
         <AnimatedSection direction="left" className="wa-shell p-6 md:p-9">
           {article.author && <p className="wa-eyebrow mb-5">{article.author}</p>}

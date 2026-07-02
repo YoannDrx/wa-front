@@ -33,7 +33,7 @@ export default function Blog({ articles }) {
         <title>{t("Blog")}</title>
         <meta name="description" content={t("blog.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("blog.articles")} backgroundColor="#F7FAFB" />
+      <PageJumbo titleKey={t("blog.articles")} />
       <div className="grid gap-6 pb-14 lg:grid-cols-[280px_1fr]">
         <AnimatedSection direction="left" className="wa-surface h-fit p-5 lg:sticky lg:top-28">
           <Sidebar setFilter={setFilter} authors={authors} categories={[]} />
