@@ -6,9 +6,33 @@ import Head from "next/head";
 import AnimatedSection from "@/components/AnimatedSection";
 import PageJumbo from "@/components/PageJumbo";
 import ParallaxMedia from "@/components/ParallaxMedia";
+import { FaEnvelope, FaFileAlt, FaShieldAlt } from "react-icons/fa";
+
+const applicationCopyByLocale = {
+  fr: {
+    title: "Candidature spontanée",
+    text: "Transmettez-nous les éléments utiles via le formulaire, ou écrivez directement au cabinet si votre dossier est déjà prêt.",
+    emailLabel: "Écrire au cabinet",
+    points: ["CV et lettre de motivation", "Étude confidentielle du profil", "Retour selon les besoins du cabinet"],
+  },
+  en: {
+    title: "Open application",
+    text: "Send the relevant details through the form, or contact the firm directly if your application is already prepared.",
+    emailLabel: "Email the firm",
+    points: ["CV and cover letter", "Confidential profile review", "Reply according to firm needs"],
+  },
+  de: {
+    title: "Initiativbewerbung",
+    text: "Senden Sie uns die relevanten Unterlagen über das Formular oder schreiben Sie der Kanzlei direkt, wenn Ihre Bewerbung bereits vorbereitet ist.",
+    emailLabel: "Kanzlei kontaktieren",
+    points: ["Lebenslauf und Anschreiben", "Vertrauliche Prüfung des Profils", "Rückmeldung je nach Bedarf der Kanzlei"],
+  },
+};
 
 export default function Career() {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
+  const locale = i18n.language?.split("-")[0] || "fr";
+  const applicationCopy = applicationCopyByLocale[locale] || applicationCopyByLocale.fr;
 
   return (
     <div>
@@ -17,7 +41,7 @@ export default function Career() {
         <meta name="description" content={t("career.pageDescriptionSEO")} />
       </Head>
       <div className="container">
-        <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} backgroundColor="#F7FAFB" />
+        <PageJumbo titleKey={t("career.recrutement")} textKey={t("career.intro")} />
       </div>
       <div className="container pb-16">
         <div className="grid gap-8 pb-14 md:grid-cols-2 md:items-center">
@@ -65,21 +89,40 @@ export default function Career() {
           </AnimatedSection>
         </div>
 
-        <div className="mt-16 grid items-center gap-8 overflow-hidden rounded-[6px] bg-wa-ink p-4 md:mt-20 md:grid-cols-[1.08fr_0.92fr] md:p-8">
+        <div className="relative mt-16 grid items-stretch gap-8 overflow-hidden rounded-[6px] bg-wa-ink p-4 md:mt-20 md:grid-cols-[1.08fr_0.92fr] md:p-8">
+          <div className="wa-blueprint absolute inset-0 opacity-[0.08]" aria-hidden="true" />
           <AnimatedSection direction="left" className="order-2 mb-4 w-full md:order-1 md:mb-0">
             <CareerContactForm />
           </AnimatedSection>
-          <AnimatedSection direction="right" className="order-1 w-full text-white md:order-2 md:pl-4">
-            <div className="rounded-[6px] border border-white/15 bg-white/[0.06] p-7 md:p-9">
-              <h2 className="text-white">{t("career.career-contact-form.title")}</h2>
-              <p className="mb-0 text-white/80">
-              {t("career.admins-and-paralegals.contact")}
-              <span>
-                <a href="mailto:info@weil-paris.fr" className="text-light-blue underline underline-offset-4">
-                  info@weil-paris.fr
+          <AnimatedSection direction="right" className="relative order-1 flex w-full text-white md:order-2 md:pl-4">
+            <div className="flex w-full flex-col justify-between rounded-[6px] border border-white/15 bg-white/[0.06] p-7 md:p-9">
+              <div>
+                <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-[4px] bg-light-blue text-wa-deep">
+                  <FaEnvelope aria-hidden="true" />
+                </span>
+                <h2 className="text-white">{applicationCopy.title}</h2>
+                <p className="text-white/80">{applicationCopy.text}</p>
+                <a
+                  href="mailto:info@weil-paris.fr"
+                  className="inline-flex items-center gap-2 rounded-[4px] border border-white/20 px-4 py-3 font-bold text-light-blue transition hover:border-light-blue hover:bg-light-blue hover:text-wa-deep">
+                  <FaEnvelope aria-hidden="true" />
+                  {applicationCopy.emailLabel}
                 </a>
-              </span>
-              </p>
+              </div>
+
+              <div className="mt-8 grid gap-3">
+                {applicationCopy.points.map((point, index) => {
+                  const Icon = index === 0 ? FaFileAlt : FaShieldAlt;
+                  return (
+                    <div key={point} className="flex items-center gap-3 border-t border-white/12 pt-3 first:border-t-0 first:pt-0">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[4px] bg-white/10 text-light-blue">
+                        <Icon aria-hidden="true" />
+                      </span>
+                      <span className="text-sm font-bold text-white/85">{point}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </AnimatedSection>
         </div>

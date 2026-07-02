@@ -12,7 +12,7 @@ const appendFiles = (formData, key, files) => {
 
 const fieldClassName = "wa-form-field-dark";
 
-const ContactForm = () => {
+const ContactForm = ({ className = "" }) => {
   const { t } = useTranslation();
   const [status, setStatus] = useState("idle");
   const {
@@ -43,7 +43,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="relative flex min-w-0 justify-center overflow-hidden rounded-[6px] border border-white/[0.12] bg-white/[0.06] px-4 py-10 shadow-[0_28px_80px_rgba(0,0,0,0.16)] md:px-8 md:py-14">
+    <div
+      className={[
+        "relative flex min-w-0 justify-center overflow-hidden rounded-[6px] border border-white/[0.12] bg-white/[0.06] px-4 py-10 shadow-[0_28px_80px_rgba(0,0,0,0.16)] md:px-8 md:py-14",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}>
       <div className="wa-blueprint absolute inset-0 opacity-[0.06]" aria-hidden="true" />
       <div className="relative min-w-0 w-full max-w-2xl">
         <h3 className="underblue mb-10 text-center text-white">{t("contact.contactForm.restonEnContact")}</h3>

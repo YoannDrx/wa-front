@@ -76,10 +76,10 @@ export default function Contact() {
       </div>
 
       <section className="bg-wa-ink py-10 md:py-16">
-        <div className="container grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-          <AnimatedSection direction="left" className="overflow-hidden rounded-[6px] border border-white/10">
+        <div className="container grid items-stretch gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <AnimatedSection direction="left" className="h-full overflow-hidden rounded-[6px] border border-white/10 bg-wa-deep">
             <iframe
-              className="h-[420px] min-w-0 w-full lg:h-[640px]"
+              className="block h-[420px] min-w-0 w-full lg:h-full lg:min-h-[640px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350.389569082013!2d2.2847212605780385!3d48.874604053500796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fed65b1cda3%3A0xd519c95bdb319908!2s26%20Av.%20de%20la%20Grande%20Arm%C3%A9e%2C%2075017%20Paris!5e0!3m2!1sen!2sfr!4v1701725900445!5m2!1sen!2sfr"
               allowFullScreen=""
               loading="lazy"
@@ -87,8 +87,8 @@ export default function Contact() {
               style={{ border: "0" }}
             />
           </AnimatedSection>
-          <AnimatedSection direction="right">
-            <ContactForm />
+          <AnimatedSection direction="right" className="h-full">
+            <ContactForm className="h-full" />
           </AnimatedSection>
         </div>
       </section>
