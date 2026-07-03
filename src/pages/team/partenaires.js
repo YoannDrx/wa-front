@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import PageJumbo from "@/components/PageJumbo";
 import TeamCard from "@/components/TeamCard";
 import Head from "next/head";
+import RevealGroup from "@/components/RevealGroup";
 
 export default function Partners() {
   const { t } = useTranslation();
@@ -16,9 +17,9 @@ export default function Partners() {
         <title>{t("Nos associés")}</title>
         <meta name="description" content={t("partenaire.pageDescriptionSEO")} />
       </Head>
-      <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} backgroundColor="#E4EDF1" />
-      <div className="py-12">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <PageJumbo titleKey={t("partenaire.nosAssocies")} textKey={t("partenaire.teamPresentation")} />
+      <div className="pb-14">
+        <RevealGroup className="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4" childClassName="h-full">
           {teamMemberKeys.map((key, index) => {
             const member = teamMembers[key];
             return (
@@ -32,7 +33,7 @@ export default function Partners() {
               />
             );
           })}
-        </div>
+        </RevealGroup>
       </div>
     </div>
   );

@@ -70,34 +70,37 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       </CardProvider>
       <CookieConsent
         location="bottom"
-        style={{ background: "#37749E", width: "100%", boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)" }}
-        buttonWrapperClasses="flex flex-col xs:flex-row sm:flex-col 2xl:flex-row"
+        containerClasses="cookie-consent-banner"
+        contentClasses="cookie-consent-content"
+        buttonWrapperClasses="cookie-consent-actions"
         overlay={true}
         expires={150}
         acceptOnScroll={true}
         buttonText={t("cookieConsent.acceptButton")}
         buttonStyle={{
           backgroundColor: "#E4EDF1",
-          color: "#37749E",
+          color: "#113248",
           fontSize: "16px",
-          padding: "10px 20px",
+          padding: "12px 22px",
           border: "none",
           cursor: "pointer",
           fontWeight: "bold",
-          margin: "15px",
+          margin: "0",
+          minWidth: "150px",
         }}
         enableDeclineButton={true}
         declineButtonText={t("cookieConsent.declineButton")}
         declineButtonStyle={{
-          backgroundColor: "#37749E",
+          backgroundColor: "transparent",
           color: "white",
           fontSize: "14px",
-          padding: "10px 20px",
+          padding: "12px 0",
           border: "none",
           cursor: "pointer",
           fontWeight: "bold",
-          margin: "15px",
+          margin: "0",
           textDecoration: "underline",
+          textUnderlineOffset: "4px",
         }}
         onAccept={() => {
           document.cookie = "CookieConsent=accepted; max-age=31536000; path=/; samesite=lax"; // 1 an
@@ -108,8 +111,8 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <Trans
           i18nKey="cookieConsent.message"
           components={{
-            1: <Link href={t("cookieConsent.policyCookiesLinkHref")} style={{ color: "lightgreen" }} />,
-            3: <Link href={t("cookieConsent.privacyPolicyLinkHref")} style={{ color: "lightgreen" }} />,
+            1: <Link href={t("cookieConsent.policyCookiesLinkHref")} className="cookie-consent-link" />,
+            3: <Link href={t("cookieConsent.privacyPolicyLinkHref")} className="cookie-consent-link" />,
             nl: (
               <>
                 <br />

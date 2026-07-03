@@ -10,10 +10,9 @@ const appendFiles = (formData, key, files) => {
   });
 };
 
-const fieldClassName =
-  "w-full border border-gray-600 bg-[#2E2E2E] px-3 py-3 text-white placeholder:text-gray-500 focus:border-primary focus:outline-none";
+const fieldClassName = "wa-form-field-dark";
 
-const ContactForm = () => {
+const ContactForm = ({ className = "" }) => {
   const { t } = useTranslation();
   const [status, setStatus] = useState("idle");
   const {
@@ -44,10 +43,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex min-w-0 justify-center overflow-hidden px-4 py-10">
-      <div className="min-w-0 w-full max-w-xl">
-        <h3 className="underblue mb-8 text-center text-white">{t("contact.contactForm.restonEnContact")}</h3>
-        <form onSubmit={handleSubmit(onSubmit)} id="contact-form" className="space-y-5">
+    <div
+      className={[
+        "relative flex min-w-0 justify-center overflow-hidden rounded-[6px] border border-white/[0.12] bg-white/[0.06] px-4 py-10 shadow-[0_28px_80px_rgba(0,0,0,0.16)] md:px-8 md:py-14",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}>
+      <div className="wa-blueprint absolute inset-0 opacity-[0.06]" aria-hidden="true" />
+      <div className="relative min-w-0 w-full max-w-2xl">
+        <h3 className="underblue mb-10 text-center text-white">{t("contact.contactForm.restonEnContact")}</h3>
+        <form onSubmit={handleSubmit(onSubmit)} id="contact-form" className="space-y-6">
           <div>
             <label className="mb-2 block text-xs font-bold text-neutral-200" htmlFor="name">
               {t("contact.contactForm.name")}
@@ -117,7 +123,7 @@ const ContactForm = () => {
             </label>
             <input
               {...register("attachment")}
-              className="w-full border border-gray-600 bg-[#2E2E2E] px-3 py-3 text-sm text-white file:mr-4 file:border-0 file:bg-white file:px-4 file:py-2 file:text-primary"
+              className="w-full rounded-[4px] border border-white/25 bg-white/[0.08] px-4 py-3 text-sm text-white file:mr-4 file:rounded-[3px] file:border-0 file:bg-white file:px-4 file:py-2 file:font-bold file:text-primary"
               id="attachment"
               type="file"
             />
@@ -127,7 +133,7 @@ const ContactForm = () => {
           {status === "error" && <p className="mb-0 text-sm text-red-200">{t("formStatus.error")}</p>}
 
           <div className="flex justify-end">
-            <Button type="submit" className="min-w-40" color="primary" disabled={status === "sending"}>
+            <Button type="submit" className="min-w-44" color="primary" size="lg" disabled={status === "sending"}>
               {status === "sending" ? t("formStatus.sending") : t("Envoyer")}
             </Button>
           </div>

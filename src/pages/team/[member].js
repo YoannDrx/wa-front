@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { Trans, useTranslation } from "react-i18next";
 import Head from "next/head";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const toCamelCase = (str) => {
   if (!str) {
@@ -48,24 +49,27 @@ const Member = () => {
           content={`${memberData.name}, ${memberData.title} - En savoir plus sur les compétences et l'expérience de notre partenaire chez Weil & Associés.`}
         />
       </Head>
-      <PageJumbo titleKey={memberData.name} />
-      <div className="container grid gap-8 py-12 md:grid-cols-2">
-        <div className="mb-4 flex w-full flex-col items-center md:mb-0 md:items-start">
-          <div className="w-full overflow-hidden shadow-lg">
-            <div className="relative aspect-[2/3] w-full">
+      <div className="container">
+        <PageJumbo titleKey={memberData.name} />
+      </div>
+      <div className="container grid gap-10 pb-14 md:grid-cols-[minmax(280px,420px)_1fr] lg:grid-cols-[420px_1fr]">
+        <AnimatedSection direction="left" className="mb-4 flex w-full flex-col items-center md:sticky md:top-28 md:mb-0 md:max-h-[calc(100svh-7rem)] md:self-start">
+          <div className="w-full max-w-[420px] overflow-hidden rounded-[6px] shadow-[0_24px_70px_rgba(17,50,72,0.16)]">
+            <div className="relative aspect-[4/5] w-full md:aspect-auto md:h-[min(52svh,520px)]">
               <Image
                 src={memberData.image}
                 alt={`${memberData.name}`}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover object-top"
+                priority
               />
             </div>
-            <div className="flex w-full flex-col justify-center bg-gray-800 text-gray-300">
-              <div className="mx-8">
-                <h4 className="leftblue mt-4 text-2xl">{t("partenaire.contact")}</h4>
-                <div className="my-4">
-                  <div className="flex items-center">
+            <div className="flex w-full flex-col justify-center bg-wa-deep text-gray-200">
+              <div className="mx-6 py-5">
+                <h4 className="leftblue text-xl">{t("partenaire.contact")}</h4>
+                <div className="mt-4 space-y-3 text-sm">
+                  <div className="flex items-center break-all">
                     <FaEnvelope className="mr-2" /> {memberData.email}
                   </div>
                   <div className="flex items-center mt-2">
@@ -75,24 +79,24 @@ const Member = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full text-left">
+        </AnimatedSection>
+        <AnimatedSection direction="right" className="w-full text-left">
           {recognitionLogo && (
-            <div className="mb-6 flex justify-end">
+            <div className="mb-7 flex justify-start md:justify-end">
               <Image
                 src={recognitionLogo.src}
                 alt={recognitionLogo.alt}
                 width={3000}
                 height={908}
-                sizes="(min-width: 768px) 40vw, 100vw"
-                className="h-auto w-full max-w-md"
+                sizes="(min-width: 768px) 320px, 220px"
+                className="h-auto w-52 sm:w-64 md:w-full md:max-w-[340px]"
               />
             </div>
           )}
           <h2 className="text-primary mb-1">{memberData.title}</h2>
           <p className="text-xs text-gray-500">{memberData.label}</p>
-          <div className="bg-gray-200 py-4 px-4">
-            <div className="flex flex-col md:flex-row justify-around">
+          <div className="wa-surface mt-6 px-5 py-5">
+            <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <h4 className="font-bold square-blue">{t("partenaire.areaOfResponsibility")}</h4>
                 <ul className="ml-4 mt-1">
@@ -111,7 +115,7 @@ const Member = () => {
               </div>
             </div>
           </div>
-          <p className="mt-8">
+          <p className="wa-prose mt-8">
             <Trans
               i18nKey={memberData.intro}
               components={{
@@ -130,7 +134,7 @@ const Member = () => {
               }}
             />
           </p>
-        </div>
+        </AnimatedSection>
       </div>
     </div>
   );

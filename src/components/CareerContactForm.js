@@ -3,8 +3,11 @@ import { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
+import { FaFileUpload } from "react-icons/fa";
 
-const fieldClassName = "w-full border border-white/30 bg-white p-3 text-black focus:border-neutral focus:outline-none";
+const fieldClassName = "wa-form-field";
+const fileClassName =
+  "w-full rounded-[4px] border border-primary/20 bg-light-blue/45 p-3 text-sm text-neutral file:mr-4 file:rounded-[3px] file:border-0 file:bg-primary file:px-4 file:py-2 file:font-bold file:text-white file:transition hover:file:bg-wa-navy";
 
 const appendFiles = (formData, key, files) => {
   Array.from(files || []).forEach((file) => {
@@ -48,10 +51,12 @@ const CareerContactForm = () => {
   };
 
   return (
-    <div className="bg-primary p-6 text-white md:p-8">
-      <h2 className="mb-2">{t("career.career-contact-form.title")}</h2>
-      <p className="text-white/90">{t("career.career-contact-form.text")}</p>
-      <form className="mt-6 space-y-5" onSubmit={handleSubmit(onSubmit)} id="career-contact-form">
+    <div className="relative overflow-hidden rounded-[6px] border border-white/20 bg-white p-6 text-neutral shadow-[0_24px_60px_rgba(0,0,0,0.16)] md:p-8">
+      <div className="wa-blueprint absolute inset-0 opacity-60" aria-hidden="true" />
+      <div className="relative">
+      <h2 className="mb-2 text-primary">{t("career.career-contact-form.title")}</h2>
+      <p className="text-neutral/75">{t("career.career-contact-form.text")}</p>
+      <form className="mt-7 space-y-5" onSubmit={handleSubmit(onSubmit)} id="career-contact-form">
         <div>
           <input
             className={fieldClassName}
@@ -60,7 +65,7 @@ const CareerContactForm = () => {
             placeholder={t("career.career-contact-form.placeholder.name")}
             {...register("name", { required: t("errorMessages.requiredName") })}
           />
-          {errors.name && <span className="mt-2 block text-xs text-red-100">{errors.name.message}</span>}
+          {errors.name && <span className="mt-2 block text-xs text-error">{errors.name.message}</span>}
         </div>
 
         <div>
@@ -77,7 +82,7 @@ const CareerContactForm = () => {
               },
             })}
           />
-          {errors.email && <span className="mt-2 block text-xs text-red-100">{errors.email.message}</span>}
+          {errors.email && <span className="mt-2 block text-xs text-error">{errors.email.message}</span>}
         </div>
 
         <div>
@@ -87,7 +92,7 @@ const CareerContactForm = () => {
             placeholder={t("career.career-contact-form.placeholder.subject")}
             {...register("subject", { required: t("errorMessages.requiredSubject") })}
           />
-          {errors.subject && <span className="mt-2 block text-xs text-red-100">{errors.subject.message}</span>}
+          {errors.subject && <span className="mt-2 block text-xs text-error">{errors.subject.message}</span>}
         </div>
 
         <div>
@@ -97,42 +102,52 @@ const CareerContactForm = () => {
             placeholder={t("career.career-contact-form.placeholder.message")}
             {...register("message", { required: t("errorMessages.requiredMessage") })}
           />
-          {errors.message && <span className="mt-2 block text-xs text-red-100">{errors.message.message}</span>}
+          {errors.message && <span className="mt-2 block text-xs text-error">{errors.message.message}</span>}
         </div>
 
         <div>
-          <label className="mb-2 block text-white">{t("career.career-contact-form.placeholder.cv")}</label>
+          <label className="mb-2 flex items-center gap-2 font-bold text-primary">
+            <FaFileUpload aria-hidden="true" /> {t("career.career-contact-form.placeholder.cv")}
+          </label>
           <input
-            className="w-full border border-white/30 bg-white p-3 text-sm text-black file:mr-4 file:border-0 file:bg-primary file:px-4 file:py-2 file:text-white"
+            className={fileClassName}
             type="file"
             accept=".pdf,.doc,.docx"
             {...register("cv", { required: t("errorMessages.requiredCV") })}
           />
-          {uploadedCV?.length > 0 && <span className="mt-2 block text-xs text-white/80">{uploadedCV[0].name}</span>}
-          {errors.cv && <span className="mt-2 block text-xs text-red-100">{errors.cv.message}</span>}
+          {uploadedCV?.length > 0 && <span className="mt-2 block text-xs text-neutral/65">{uploadedCV[0].name}</span>}
+          {errors.cv && <span className="mt-2 block text-xs text-error">{errors.cv.message}</span>}
         </div>
 
         <div>
-          <label className="mb-2 block text-white">{t("career.career-contact-form.placeholder.letter")}</label>
+          <label className="mb-2 flex items-center gap-2 font-bold text-primary">
+            <FaFileUpload aria-hidden="true" /> {t("career.career-contact-form.placeholder.letter")}
+          </label>
           <input
-            className="w-full border border-white/30 bg-white p-3 text-sm text-black file:mr-4 file:border-0 file:bg-primary file:px-4 file:py-2 file:text-white"
+            className={fileClassName}
             type="file"
             accept=".pdf,.doc,.docx"
             {...register("letter", { required: t("errorMessages.requiredLetter") })}
           />
-          {uploadedLetter?.length > 0 && <span className="mt-2 block text-xs text-white/80">{uploadedLetter[0].name}</span>}
-          {errors.letter && <span className="mt-2 block text-xs text-red-100">{errors.letter.message}</span>}
+          {uploadedLetter?.length > 0 && <span className="mt-2 block text-xs text-neutral/65">{uploadedLetter[0].name}</span>}
+          {errors.letter && <span className="mt-2 block text-xs text-error">{errors.letter.message}</span>}
         </div>
 
-        {status === "success" && <p className="mb-0 text-sm text-green-100">{t("formStatus.success")}</p>}
-        {status === "error" && <p className="mb-0 text-sm text-red-100">{t("formStatus.error")}</p>}
+        {status === "success" && <p className="mb-0 text-sm text-green-700">{t("formStatus.success")}</p>}
+        {status === "error" && <p className="mb-0 text-sm text-error">{t("formStatus.error")}</p>}
 
         <div className="flex justify-center md:justify-end">
-          <Button type="submit" className="min-w-40 bg-white font-bold text-primary hover:bg-light-blue" color="ghost" disabled={status === "sending"}>
+          <Button
+            type="submit"
+            className="min-w-44"
+            color="primary"
+            size="lg"
+            disabled={status === "sending"}>
             {status === "sending" ? t("formStatus.sending") : t("Envoyer")}
           </Button>
         </div>
       </form>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { apiClient } from "@/services/apiClient";
 import Head from "next/head";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import AnimatedSection from "@/components/AnimatedSection";
 
 export async function getServerSideProps() {
   const articles = (await apiClient.get("/articles")).data;
@@ -33,14 +34,22 @@ export default function Blog({ articles }) {
         <meta name="description" content={t("blog.pageDescriptionSEO")} />
       </Head>
       <PageJumbo titleKey={t("blog.articles")} />
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-64 p-4 md:mr-4 md:mb-4 mb-4 md:order-1" style={{ backgroundColor: "#E4EDF1" }}>
+      <div className="grid gap-6 pb-14 lg:grid-cols-[280px_1fr]">
+        <AnimatedSection direction="left" className="wa-surface h-fit p-5 lg:sticky lg:top-28">
           <Sidebar setFilter={setFilter} authors={authors} categories={[]} />
-        </div>
-        <div className="flex-grow md:order-1">
-          {filteredArticles.map((article) => (
-            <ArticleCard key={article.id} article={article} />
-          ))}
+        </AnimatedSection>
+        <div className="min-w-0">
+          {filteredArticles.length > 0 ? (
+            <div className="flex flex-col">
+              {filteredArticles.map((article) => (
+                <ArticleCard key={article.id} article={article} />
+              ))}
+            </div>
+          ) : (
+            <AnimatedSection className="wa-shell p-7 text-center md:p-10">
+              <p className="mb-0 text-[17px] font-semibold text-neutral/75">{t("blog.empty")}</p>
+            </AnimatedSection>
+          )}
         </div>
       </div>
     </div>

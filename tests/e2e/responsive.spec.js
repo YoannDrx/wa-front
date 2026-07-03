@@ -7,10 +7,15 @@ const publicPages = [
   "/expertise",
   "/carriere",
   "/contact",
+  "/news",
   "/mentions-legales",
+  "/politique-cookies",
   "/team/bruno-weil",
   "/team/mathilde-houet-weil",
   "/team/eric-weil",
+  "/expertise/droit-social/1",
+  "/admin",
+  "/admin/articles",
 ];
 
 const acceptCookieBanner = async (page) => {
@@ -69,5 +74,51 @@ test.describe("mobile navigation", () => {
     await mobileNavigation.getByRole("link", { name: "Contact", exact: true }).click();
     await expect(page).toHaveURL(/\/contact$/);
     await expect(page.locator("#mobile-navigation")).toBeHidden();
+  });
+});
+
+test.describe("header behavior", () => {
+  test("hides on scroll down and reappears on scroll up", async ({ page }) => {
+    await acceptCookieBanner(page);
+    await page.goto("/");
+
+    const header = page.locator("header").first();
+    await expect(header).toBeVisible();
+
+    await page.evaluate(() => window.scrollTo(0, 900));
+    await page.waitForTimeout(450);
+    const hiddenBox = await header.evaluate((element) => {
+      const box = element.getBoundingClientRect();
+      return { top: box.top, bottom: box.bottom };
+    });
+    expect(hiddenBox.bottom).toBeLessThanOrEqual(1);
+
+    await page.evaluate(() => window.scrollTo(0, 200));
+    await page.waitForTimeout(450);
+    const visibleBox = await header.evaluate((element) => {
+      const box = element.getBoundingClientRect();
+      return { top: box.top, bottom: box.bottom };
+    });
+    expect(visibleBox.top).toBeGreaterThanOrEqual(-1);
+  });
+});
+
+test.describe("articles filters", () => {
+  test("uses custom author dropdown and filters by selected author", async ({ page }) => {
+    await acceptCookieBanner(page);
+    await page.goto("/news");
+
+    await expect(page.locator("select")).toHaveCount(0);
+
+    await page.getByRole("button", { name: /Tous les auteurs/i }).click();
+    const listbox = page.getByRole("listbox");
+    await expect(listbox).toBeVisible();
+
+    const authorOption = listbox.getByRole("option").nth(1);
+    const authorName = (await authorOption.innerText()).trim();
+    await authorOption.click();
+    await page.getByRole("button", { name: "Filtrer" }).click();
+
+    await expect(page.getByText(authorName).first()).toBeVisible();
   });
 });

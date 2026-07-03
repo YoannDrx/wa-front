@@ -2,10 +2,9 @@
 
 ## Maintenance
 
-Recommended local runtime: Node 24 LTS (`.nvmrc`).
+Use Node.js 20.9 or newer. The project does not enforce an exact local Node version.
 
 ```bash
-nvm use
 yarn install
 yarn lint
 yarn build
