@@ -11,20 +11,17 @@ import { FaEnvelope, FaFileAlt, FaShieldAlt } from "react-icons/fa";
 const applicationCopyByLocale = {
   fr: {
     title: "Candidature spontanée",
-    text: "Transmettez-nous les éléments utiles via le formulaire, ou écrivez directement au cabinet si votre dossier est déjà prêt.",
-    emailLabel: "Écrire au cabinet",
+    text: "Utilisez le formulaire pour nous transmettre votre candidature. Chaque profil est étudié avec confidentialité, selon les besoins du cabinet.",
     points: ["CV et lettre de motivation", "Étude confidentielle du profil", "Retour selon les besoins du cabinet"],
   },
   en: {
     title: "Open application",
-    text: "Send the relevant details through the form, or contact the firm directly if your application is already prepared.",
-    emailLabel: "Email the firm",
+    text: "Use the form to send us your application. Each profile is reviewed confidentially according to the firm's needs.",
     points: ["CV and cover letter", "Confidential profile review", "Reply according to firm needs"],
   },
   de: {
     title: "Initiativbewerbung",
-    text: "Senden Sie uns die relevanten Unterlagen über das Formular oder schreiben Sie der Kanzlei direkt, wenn Ihre Bewerbung bereits vorbereitet ist.",
-    emailLabel: "Kanzlei kontaktieren",
+    text: "Nutzen Sie das Formular, um uns Ihre Bewerbung zu senden. Jedes Profil wird vertraulich und entsprechend dem Bedarf der Kanzlei geprüft.",
     points: ["Lebenslauf und Anschreiben", "Vertrauliche Prüfung des Profils", "Rückmeldung je nach Bedarf der Kanzlei"],
   },
 };
@@ -102,12 +99,6 @@ export default function Career() {
                 </span>
                 <h2 className="text-white">{applicationCopy.title}</h2>
                 <p className="text-white/80">{applicationCopy.text}</p>
-                <a
-                  href="mailto:info@weil-paris.fr"
-                  className="inline-flex items-center gap-2 rounded-[4px] border border-white/20 px-4 py-3 font-bold text-light-blue transition hover:border-light-blue hover:bg-light-blue hover:text-wa-deep">
-                  <FaEnvelope aria-hidden="true" />
-                  {applicationCopy.emailLabel}
-                </a>
               </div>
 
               <div className="mt-8 grid gap-3">
